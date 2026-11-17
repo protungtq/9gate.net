@@ -105,12 +105,12 @@ const isActive = (href: string) =>
       </a>
       <nav class="hidden md:flex gap-1 text-sm font-semibold">
         {NAV.map((n) => (
-          <a href={n.href} class={`px-4 h-10 grid place-items-center rounded-full transition ${isActive(n.href) ? 'bg-tap text-white shadow-md shadow-tap/30' : 'hover:bg-black/5 dark:hover:bg-white/10'}`}>{n.label}</a>
+          <a href={n.href} class={`px-4 h-10 grid place-items-center rounded-full transition ${isActive(n.href) ? 'bg-tap/10 text-tap' : 'hover:bg-black/5 dark:hover:bg-white/10'}`}>{n.label}</a>
         ))}
       </nav>
       <div class="relative flex-1 max-w-xl ml-auto">
         <svg class="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 muted pointer-events-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-        <input id="q" placeholder="Trò chơi, cập nhật và nhà phát hành" autocomplete="off" class="w-full h-11 rounded-full bg-[#e8eaec] dark:bg-white/10 pl-11 pr-4 text-sm outline-none focus:ring-2 ring-tap" />
+        <input id="q" placeholder="Trò chơi, cập nhật và nhà phát hành" autocomplete="off" class="w-full h-11 rounded-full bg-slate-100 dark:bg-white/10 pl-11 pr-4 text-sm placeholder:text-slate-600 dark:placeholder:text-slate-400 outline-none focus:ring-2 ring-tap" />
         <div id="sr" class="hidden absolute left-0 right-0 top-full mt-2 rounded-2xl bg-white dark:bg-[#1b1e23] ring-1 ring-black/10 dark:ring-white/10 shadow-xl p-2 max-h-80 overflow-auto z-50"></div>
       </div>
       <button id="tg" type="button" aria-label="Chuyển giao diện sáng / tối" title="Sáng / tối" class="w-11 h-11 shrink-0 rounded-full sf grid place-items-center hover:bg-black/10 dark:hover:bg-white/15 transition">
