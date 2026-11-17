@@ -1,13 +1,13 @@
 ---
-title: "Chào mừng đến với Game8 — nhà mới của game thủ Việt"
-description: "Game8 lấy game làm trung tâm: kho game mobile và PC/console, mỗi game một trang riêng với trailer, điểm đánh giá, link tải và những cập nhật mới nhất."
+title: "Chào mừng đến với 9Gate"
+description: "9Gate lấy game làm trung tâm: kho game mobile và PC/console, mỗi game một trang riêng với trailer, điểm đánh giá, link tải và những cập nhật mới nhất."
 date: "2026-10-16"
 image: ""
 game: ""
-tags: ["Game8", "ra mắt"]
+tags: ["9Gate", "ra mắt"]
 ---
 
-Chào mừng bạn đến với **Game8** — nơi mọi thứ đều xoay quanh game.
+Chào mừng bạn đến với **9Gate** — nơi mọi thứ đều xoay quanh game.
 
 ## Ở đây có gì?
 
@@ -19,6 +19,6 @@ Chào mừng bạn đến với **Game8** — nơi mọi thứ đều xoay quanh
 
 ## Vì sao lại là một trang lấy game làm trung tâm?
 
-Vì game thủ thường bắt đầu bằng một câu hỏi rất cụ thể: game này chơi thế nào, tải ở đâu, có gì mới? Game8 được dựng để trả lời đúng những câu hỏi đó — mở trang game là thấy đủ, khỏi phải đào bới giữa một rừng thông tin không liên quan.
+Vì game thủ thường bắt đầu bằng một câu hỏi rất cụ thể: game này chơi thế nào, tải ở đâu, có gì mới? 9Gate được dựng để trả lời đúng những câu hỏi đó — mở trang game là thấy đủ, khỏi phải đào bới giữa một rừng thông tin không liên quan.
 
 Hãy bắt đầu bằng một vòng [Game Mobile](/mobile/) hoặc [Game PC / Console](/pc/), chọn một game bạn thích và bấm Theo dõi nhé!

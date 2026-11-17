@@ -14,7 +14,7 @@ interface Props {
 }
 
 const { title, description, keywords, ogImage, ogType = 'website', canonical, jsonLd } = Astro.props;
-const siteName = 'Game8';
+const siteName = '9Gate';
 const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
 
 // ===== Mục lục tìm kiếm (game + bài viết) =====
@@ -99,9 +99,9 @@ const isActive = (href: string) =>
     <div class="max-w-[1280px] mx-auto px-4 h-[72px] flex items-center gap-4 sm:gap-5">
       <a href="/" class="flex items-center gap-2 font-black text-2xl tracking-tight shrink-0">
         <span class="w-10 h-10 rounded-xl bg-gradient-to-br from-tap to-cyan-500 shadow-lg shadow-tap/30 grid place-items-center">
-          <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="11" rx="5"/><path d="M7 10v5M4.5 12.5h5M16 11.5h.01M18.5 14h.01"/></svg>
+          <span aria-hidden="true" class="text-[21px] font-black leading-none text-white">9</span>
         </span>
-        Game8
+        {siteName}
       </a>
       <nav class="hidden md:flex gap-1 text-sm font-semibold">
         {NAV.map((n) => (
@@ -135,13 +135,13 @@ const isActive = (href: string) =>
 
   <footer class="mt-16 bg-[#0e1114] text-slate-300">
     <div class="h-[3px] bg-gradient-to-r from-tap via-cyan-400 to-violet-500"></div>
-    <div class="max-w-[1280px] mx-auto px-4 py-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr]">
+    <div class="max-w-[1280px] mx-auto px-4 py-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr]">
       <div>
         <div class="flex items-center gap-2 font-black text-2xl text-white">
           <span class="w-10 h-10 rounded-xl bg-gradient-to-br from-tap to-cyan-500 grid place-items-center">
-            <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="11" rx="5"/><path d="M7 10v5M4.5 12.5h5M16 11.5h.01M18.5 14h.01"/></svg>
+            <span aria-hidden="true" class="text-[21px] font-black leading-none text-white">9</span>
           </span>
-          Game8
+          {siteName}
         </div>
         <p class="mt-4 text-sm leading-relaxed text-slate-400 max-w-xs">Khám phá, theo dõi và cập nhật những tựa game mobile, PC và console đáng chơi nhất.</p>
       </div>
@@ -163,18 +163,10 @@ const isActive = (href: string) =>
           <li><a class="hover:text-tap" href="/pc/">PlayStation · Xbox · Switch</a></li>
         </ul>
       </div>
-      <div>
-        <h4 class="font-bold text-white mb-3">Kết nối</h4>
-        <ul class="space-y-2 text-sm">
-          <li><a class="hover:text-tap" href="https://www.facebook.com/game8.vn" target="_blank" rel="noopener">Facebook: Game8.VN</a></li>
-          <li><a class="hover:text-tap" href="https://www.tiktok.com/@Game8.VN" target="_blank" rel="noopener">TikTok: @Game8.VN</a></li>
-          <li><a class="hover:text-tap" href="https://game8.info" target="_blank" rel="noopener">Blog: game8.info</a></li>
-        </ul>
-      </div>
     </div>
     <div class="border-t border-white/10">
       <div class="max-w-[1280px] mx-auto px-4 py-5 text-xs text-slate-500 flex flex-wrap justify-between gap-2">
-        <span>© 2026 Game8 — Nhà mới của game thủ Việt.</span>
+        <span>© 2026 {siteName} — Cổng thông tin game Việt Nam.</span>
         <span>Điều khoản · Chính sách bảo mật</span>
       </div>
     </div>

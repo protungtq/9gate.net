@@ -57,7 +57,7 @@ const jsonLd = [
     "gamePlatform": game.platforms,
     "applicationCategory": "Game",
     "inLanguage": "vi-VN",
-    "url": `https://game8.vn/game/${game.slug}/`,
+    "url": `https://www.9gate.net/game/${game.slug}/`,
     "publisher": { "@type": "Organization", "name": game.publisher },
     ...((game.cover || game.icon) && { "image": game.cover || game.icon }),
     ...(typeof game.rating === 'number' && {
@@ -82,9 +82,9 @@ const jsonLd = [
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://game8.vn/" },
-      { "@type": "ListItem", "position": 2, "name": catLabel, "item": `https://game8.vn${catHref}` },
-      { "@type": "ListItem", "position": 3, "name": game.name, "item": `https://game8.vn/game/${game.slug}/` },
+      { "@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://www.9gate.net/" },
+      { "@type": "ListItem", "position": 2, "name": catLabel, "item": `https://www.9gate.net${catHref}` },
+      { "@type": "ListItem", "position": 3, "name": game.name, "item": `https://www.9gate.net/game/${game.slug}/` },
     ],
   },
 ];
@@ -133,7 +133,7 @@ const secondary: Act[] = [
 ---
 
 <Layout
-  title={game.seoTitle || `${game.name} | Game8`}
+  title={game.seoTitle || `${game.name} | 9Gate`}
   description={game.seoDescription || game.description}
   keywords={game.seoKeywords}
   ogImage={game.cover || game.icon}
@@ -292,7 +292,7 @@ const secondary: Act[] = [
       <aside class="min-w-0 space-y-5 sm:space-y-6">
         <section class="game-panel p-4 sm:p-5">
           <h2 class="section-title mb-2">Thông tin game</h2>
-          <dl class="text-sm divide-y divide-[var(--game8-border)] dark:divide-white/10">
+          <dl class="text-sm divide-y divide-[var(--gate-border)] dark:divide-white/10">
             <div class="flex justify-between gap-3 py-3"><dt class="muted">Nhà phát hành</dt><dd class="font-semibold text-right">{game.publisher}</dd></div>
             <div class="flex justify-between gap-3 py-3"><dt class="muted">Nền tảng</dt><dd class="font-semibold text-right">{platText}</dd></div>
             <div class="flex justify-between gap-3 py-3"><dt class="muted">Thể loại</dt><dd class="font-semibold text-right">{game.genre}</dd></div>

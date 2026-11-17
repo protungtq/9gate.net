@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>GameHub CMS</title>
+<title>9Gate CMS</title>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#f5f6f8;--sf:#fff;--ln:#e4e7ec;--tx:#15171a;--mu:#667085;--ac:#16c79a;--ad:#0e9f7b;--dn:#e5484d;--wn:#b7791f;--in:#f1f3f5;color-scheme:light}
@@ -56,7 +56,7 @@ details{border:1px solid var(--ln);border-radius:12px;padding:12px 14px;margin-b
 <body>
 <div class="app">
 <aside>
-  <div class="logo">Game<b>Hub</b> CMS<small>Quản lý game và bài viết</small></div>
+  <div class="logo">9<b>Gate</b> CMS<small>Quản lý game và bài viết</small></div>
   <button class="nav on" data-v="games">Game <i id="nG">0</i></button>
   <button class="nav" data-v="posts">Bài viết</button>
   <button class="nav" data-v="conn">Kết nối</button>
@@ -114,7 +114,7 @@ details{border:1px solid var(--ln);border-radius:12px;padding:12px 14px;margin-b
   <div class="card">
     <div class="f"><label>Worker proxy URL</label><input id="cw"></div>
     <div class="g2"><div class="f"><label>GitHub repo (owner/repo)</label><input id="cr"></div><div class="f"><label>Nhánh</label><input id="cb"></div></div>
-    <div class="f"><label>Địa chỉ website</label><input id="cs" placeholder="https://game8.vn"></div>
+    <div class="f"><label>Địa chỉ website</label><input id="cs" placeholder="https://www.9gate.net"></div>
     <div class="f"><label>Nơi đọc games.json</label><input id="cj" placeholder="/src/data/games.json"><div class="hint">Nếu không tải được, CMS đọc từ GitHub raw. Bạn cũng có thể nhập file ở danh sách game.</div></div>
     <button class="btn p" id="cok">Lưu kết nối</button>
   </div>
@@ -135,12 +135,12 @@ const sT=t=>{document.documentElement.dataset.t=t;LS("cms-theme",t)};
 sT(LS("cms-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light"));
 $("#theme").onclick=()=>sT(document.documentElement.dataset.t=="dark"?"light":"dark");
 /* config */
-const DEF={w:"https://tq-upload-proxy.mobitungtq.workers.dev",r:"protungtq/game8.vn",b:"main",s:"https://game8.vn",j:"/src/data/games.json"};
-let cfg={...DEF,...JSON.parse(LS("cms-cfg")||"{}")};
+const DEF={w:"",r:"",b:"main",s:"https://www.9gate.net",j:"/src/data/games.json"};
+let cfg={...DEF,...JSON.parse(LS("9gate-cms-cfg")||"{}")};
 const cm={w:"cw",r:"cr",b:"cb",s:"cs",j:"cj"};
 Object.entries(cm).forEach(([k,id])=>$("#"+id).value=cfg[k]);
-$("#cok").onclick=()=>{Object.entries(cm).forEach(([k,id])=>cfg[k]=$("#"+id).value.trim().replace(/\/+$/,""));LS("cms-cfg",JSON.stringify(cfg));toast("Đã lưu kết nối","o");loadGames()};
-const api=async(p,body)=>{const r=await fetch(cfg.w+p,body?{method:"POST",credentials:"include",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)}:{credentials:"include"});const j=await r.json();if(!r.ok||!j.success)throw new Error(j.error||"Lỗi không xác định");return j};
+$("#cok").onclick=()=>{Object.entries(cm).forEach(([k,id])=>cfg[k]=$("#"+id).value.trim().replace(/\/+$/,""));LS("9gate-cms-cfg",JSON.stringify(cfg));toast("Đã lưu kết nối","o");loadGames()};
+const api=async(p,body)=>{if(!cfg.w||!cfg.r)throw new Error("Nhập Worker Proxy và repo GitHub của 9Gate trong mục Kết nối.");const r=await fetch(cfg.w+p,body?{method:"POST",credentials:"include",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)}:{credentials:"include"});const j=await r.json();if(!r.ok||!j.success)throw new Error(j.error||"Lỗi không xác định");return j};
 /* nav */
 $$(".nav[data-v]").forEach(b=>b.onclick=()=>{$$(".nav[data-v]").forEach(x=>x.classList.toggle("on",x==b));$$(".v").forEach(v=>v.classList.toggle("on",v.id=="v-"+b.dataset.v));$("#fix").style.display=b.dataset.v=="games"?"flex":"none"});
 /* image previews */
@@ -149,7 +149,7 @@ document.addEventListener("input",e=>{const id=e.target.dataset?.pv;if(!id)retur
 /* ===== GAMES ===== */
 let games=[],base={},fmiss="",editing=null;
 const miss={cover:g=>!g.cover,trailer:g=>!g.trailer,rating:g=>g.rating==null||g.rating===""};
-async function loadGames(){let d=null;for(const u of [cfg.j,`https://raw.githubusercontent.com/${cfg.r}/${cfg.b}/src/data/games.json`]){try{const r=await fetch(u);if(r.ok){d=await r.json();break}}catch(e){}}
+async function loadGames(){let d=null;for(const u of [cfg.j,...(cfg.r?[`https://raw.githubusercontent.com/${cfg.r}/${cfg.b}/src/data/games.json`]:[])]){try{const r=await fetch(u);if(r.ok){d=await r.json();break}}catch(e){}}
   if(!Array.isArray(d)){$("#list").innerHTML='<div class="empty">Chưa tải được games.json. Kiểm tra mục Kết nối, hoặc bấm "Nhập games.json" để chọn file từ máy.</div>';return}
   setGames(d)}
 function setGames(d,keepBase){games=d;if(!keepBase)base=Object.fromEntries(d.map(g=>[g.slug,JSON.stringify(g)]));renderGames();fillGameSelect()}
@@ -177,7 +177,7 @@ $("#save").onclick=()=>{const v=k=>$("#"+k).value.trim(),name=v("name"),slug=v("
   const g={slug,name,publisher:pub,genre:gen,platforms:v("platforms").split(",").map(s=>s.trim()).filter(Boolean),category:cat,icon:v("icon"),cover:v("cover"),trailer:v("trailer"),description:desc,website:v("website")};
   if(!g.platforms.length)g.platforms=[cat=="mobile"?"Mobile":"PC"];
   if(rt!=="")g.rating=+(+rt).toFixed(1);const an=v("android"),io=v("ios");if(an)g.android=an;if(io)g.ios=io;const oldG=games.find(x=>x.slug===slug),todayStr=new Date().toISOString().slice(0,10);if($("#featured").checked){g.featured=true;g.featuredAt=(oldG&&oldG.featured&&oldG.featuredAt)||todayStr}if($("#hot").checked){g.hot=true;g.hotAt=(oldG&&oldG.hot&&oldG.hotAt)||todayStr}
-  g.seoTitle=v("seoTitle")||`${name} - Tải game, cập nhật, review | Game8`;g.seoDescription=v("seoDescription")||desc.slice(0,150);g.seoKeywords=v("seoKeywords")||`${name}, tải ${name}, ${pub}, ${gen}`;
+  g.seoTitle=v("seoTitle")||`${name} - Tải game, cập nhật, review | 9Gate`;g.seoDescription=v("seoDescription")||desc.slice(0,150);g.seoKeywords=v("seoKeywords")||`${name}, tải ${name}, ${pub}, ${gen}`;
   const i=games.findIndex(x=>x.slug==slug);i>=0?games[i]=g:games.push(g);toast(`Đã lưu "${name}". Nhớ đẩy lên GitHub để đăng`,"o");closeForm();renderGames();fillGameSelect()};
 function delGame(s){const g=games.find(x=>x.slug==s);if(g&&confirm(`Xóa game "${g.name}" khỏi danh sách?`)){games=games.filter(x=>x.slug!=s);renderGames();fillGameSelect();toast("Đã xóa. Nhớ đẩy lên GitHub để áp dụng")}}
 const gjson=()=>JSON.stringify(games,null,2);
@@ -209,10 +209,10 @@ function fillPost(f,b,slug){P("ptitle").value=f.title||"";P("pslug").value=slug|
 const fname=()=>{let s=P("lp").value.trim()||P("pslug").value.trim();if(s.includes("/"))s=s.replace(/\/$/,"").split("/").pop();return s?s.replace(/\.md$/,"")+".md":""};
 P("ln").onclick=()=>{fillPost({},"","");P("lp").value="";P("pdate").value=new Date(Date.now()+7*36e5).toISOString().slice(0,16)};
 P("lo").onclick=async()=>{const f=fname();if(!f)return toast("Nhập slug hoặc link bài viết","e");try{const j=await api("/github-get?file="+encodeURIComponent(f));const p=parseMd(j.markdown);fillPost(p.f,p.b,f.replace(/\.md$/,""));toast("Đã mở bài viết","o")}catch(e){toast("Không mở được bài: "+e.message,"e")}};
-P("ld").onclick=async()=>{const f=fname();if(!f)return toast("Nhập slug hoặc link bài cần xóa","e");if(!confirm(`Xóa vĩnh viễn bài "${f}" khỏi GitHub?`))return;try{await api("/github-delete",{filename:f,path:"src/content/posts/"+f});toast("Đã xóa bài viết","o")}catch(e){toast("Xóa thất bại: "+e.message,"e")}};
+P("ld").onclick=async()=>{const f=fname();if(!f)return toast("Nhập slug hoặc link bài cần xóa","e");if(!confirm(`Xóa vĩnh viễn bài "${f}" khỏi GitHub?`))return;try{await api("/github-delete",{filename:f,path:"src/content/posts/"+f,repo:cfg.r});toast("Đã xóa bài viết","o")}catch(e){toast("Xóa thất bại: "+e.message,"e")}};
 P("ppush").onclick=async()=>{const t=P("ptitle").value.trim();if(!t)return toast("Nhập tiêu đề bài viết","e");if(!P("pdate").value)return toast("Chọn ngày xuất bản","e");const slug=P("pslug").value.trim()||slugify(t),f=slug+".md";if(!confirm(`Đăng hoặc ghi đè bài "${f}" lên GitHub?`))return;
-  try{await api("/github-push",{title:t,filename:f,path:"src/content/posts/"+f,markdownContent:buildMd()});P("pslug").value=slug;toast("Đã đăng bài lên GitHub","o");
-    if(P("pgi").checked)try{await api("/google-index",{articleUrl:`${cfg.s}/${slug}/`});toast("Đã báo Google index","o")}catch(e){toast("Đã đăng bài, nhưng báo Google lỗi: "+e.message,"e")}}catch(e){toast("Đăng thất bại: "+e.message,"e")}};
+  try{await api("/github-push",{title:t,filename:f,path:"src/content/posts/"+f,markdownContent:buildMd(),repo:cfg.r});P("pslug").value=slug;toast("Đã đăng bài lên GitHub","o");
+    if(P("pgi").checked)try{await api("/google-index",{articleUrl:`${cfg.s}/p/${slug}/`});toast("Đã báo Google index","o")}catch(e){toast("Đã đăng bài, nhưng báo Google lỗi: "+e.message,"e")}}catch(e){toast("Đăng thất bại: "+e.message,"e")}};
 P("pmd").onclick=()=>{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([buildMd()],{type:"text/markdown"}));a.download=(P("pslug").value.trim()||slugify(P("ptitle").value)||"bai-viet")+".md";a.click()};
 $$(".tb [data-w]").forEach(b=>b.onclick=()=>{const t=P("body"),[a,z]=b.dataset.w.replace(/\\n/g,"\n").split("|"),s=t.selectionStart,e=t.selectionEnd;t.setRangeText(a+t.value.slice(s,e)+z,s,e,"end");t.focus()});
 const md=s=>esc(s).replace(/^## (.*)$/gm,"<h2>$1</h2>").replace(/\*\*(.+?)\*\*/g,"<b>$1</b>").replace(/\*(.+?)\*/g,"<i>$1</i>").replace(/!\[([^\]]*)\]\(([^)]+)\)/g,'<img alt="$1" src="$2">').replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2">$1</a>').replace(/^- (.*)$/gm,"<li>$1</li>").replace(/\n{2,}/g,"<br><br>");
