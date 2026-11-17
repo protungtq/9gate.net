@@ -4,6 +4,13 @@
 
 @layer base {
   :root {
+    --game8-canvas: #e4eaf0;
+    --game8-chrome: #f0f4f8;
+    --game8-panel: #f8fafc;
+    --game8-feature: #edf3f8;
+    --game8-inset: #eaf0f6;
+    --game8-border: #c7d3df;
+    --game8-panel-shadow: 0 1px 2px #22354d0c, 0 6px 20px #22354d0a;
     --game8-accent: 0 114 94;
     --game8-action: #00725e;
     --game8-action-hover: #00604f;
@@ -14,13 +21,17 @@
   html {
     scroll-padding-top: env(safe-area-inset-top, 0px);
     color-scheme: light;
+    background: var(--game8-canvas);
   }
   html.dark {
+    --game8-canvas: #111316;
+    --game8-chrome: #111316;
     --game8-accent: 99 226 190;
     color-scheme: dark;
   }
   body {
-    @apply font-sans text-[#15171a] dark:text-slate-100 bg-white dark:bg-[#111316] pb-20 md:pb-0;
+    @apply font-sans text-[#15171a] dark:text-slate-100 pb-20 md:pb-0;
+    background: var(--game8-canvas);
   }
   body::before {
     content: "";
@@ -28,10 +39,7 @@
     inset: 0 0 auto;
     height: env(safe-area-inset-top, 0px);
     z-index: 60;
-    background: #fff;
-  }
-  .dark body::before {
-    background: #111316;
+    background: var(--game8-chrome);
   }
 }
 
@@ -52,7 +60,7 @@
 
 @layer components {
   .sf {
-    @apply bg-[#f3f4f5] dark:bg-white/[.06];
+    @apply bg-[var(--game8-inset)] dark:bg-white/[.06];
   }
   .muted {
     @apply text-slate-500 dark:text-slate-400;
@@ -77,7 +85,42 @@
     @apply h-4 w-1 shrink-0 rounded-full bg-tap;
   }
   .game-panel {
-    @apply rounded-2xl border border-slate-200/90 bg-white dark:border-white/10 dark:bg-white/[.04];
+    @apply rounded-2xl border border-[var(--game8-border)] bg-[var(--game8-panel)] dark:border-white/10 dark:bg-white/[.04];
+  }
+  .game-feature {
+    @apply rounded-3xl border border-[var(--game8-border)] bg-[var(--game8-feature)] dark:border-white/10 dark:bg-white/[.04];
+  }
+  .home-section {
+    @apply mt-7 sm:mt-9;
+  }
+  html.dark .home-section {
+    @apply mt-9 border-t border-white/10 pt-6 sm:mt-11 sm:pt-8;
+  }
+  html:not(.dark) .site-chrome {
+    background-color: var(--game8-chrome);
+    border-color: var(--game8-border);
+  }
+  html:not(.dark) .game-panel,
+  html:not(.dark) .game-feature,
+  html:not(.dark) .home-section {
+    box-shadow: var(--game8-panel-shadow);
+  }
+  html:not(.dark) .home-section {
+    @apply rounded-3xl border border-[var(--game8-border)] bg-[var(--game8-panel)] p-4 sm:p-6;
+  }
+  html:not(.dark) :is(.game-card, .collection-card) {
+    @apply rounded-2xl border border-[var(--game8-border)] bg-[var(--game8-panel)] p-2.5;
+    transition: border-color .2s ease, box-shadow .2s ease;
+  }
+  html:not(.dark) .home-section :is(.game-card, .collection-card) {
+    background-color: var(--game8-inset);
+  }
+  html:not(.dark) :is(.game-card, .collection-card):is(:hover, :focus-visible) {
+    border-color: rgb(var(--game8-accent) / .45);
+    box-shadow: var(--game8-panel-shadow);
+  }
+  html:not(.dark) :is(.game-card, .collection-card) > :first-child {
+    @apply rounded-xl;
   }
   .chip {
     @apply rounded-full px-4 h-9 text-sm font-medium whitespace-nowrap bg-[#f3f4f5] dark:bg-white/[.08] transition hover:bg-black/10 dark:hover:bg-white/15 inline-flex items-center;

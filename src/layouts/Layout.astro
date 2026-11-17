@@ -56,7 +56,7 @@ const isActive = (href: string) =>
   <meta name="description" content={description} />
   {keywords && <meta name="keywords" content={keywords} />}
   <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="theme-color" content="#f0f4f8" />
   <link rel="canonical" href={canonical || Astro.url.href} />
 
   <!-- Open Graph -->
@@ -89,12 +89,12 @@ const isActive = (href: string) =>
       if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
       document.documentElement.classList.toggle('dark', t === 'dark');
       var m = document.querySelector('meta[name="theme-color"]');
-      if (m) m.setAttribute('content', t === 'dark' ? '#111316' : '#ffffff');
+      if (m) m.setAttribute('content', t === 'dark' ? '#111316' : '#f0f4f8');
     })();
   </script>
 </head>
 <body>
-  <header class="sticky top-[env(safe-area-inset-top,0px)] z-50 bg-white/95 dark:bg-[#111316]/95 backdrop-blur shadow-[0_6px_24px_-10px_rgba(0,0,0,.25)] border-b border-black/5 dark:border-white/10">
+  <header class="site-chrome sticky top-[env(safe-area-inset-top,0px)] z-50 dark:bg-[#111316]/95 backdrop-blur shadow-[0_6px_24px_-10px_rgba(0,0,0,.25)] border-b border-black/5 dark:border-white/10">
     <div class="h-[3px] bg-gradient-to-r from-tap via-cyan-400 to-violet-500"></div>
     <div class="max-w-[1280px] mx-auto px-4 h-[72px] flex items-center gap-4 sm:gap-5">
       <a href="/" class="flex items-center gap-2 font-black text-2xl tracking-tight shrink-0">
@@ -124,7 +124,7 @@ const isActive = (href: string) =>
     <slot />
   </main>
 
-  <nav class="md:hidden fixed bottom-0 inset-x-0 z-50 grid grid-cols-4 bg-white/95 dark:bg-[#111316]/95 backdrop-blur border-t border-black/5 dark:border-white/10 pb-[env(safe-area-inset-bottom,0px)]">
+  <nav class="site-chrome md:hidden fixed bottom-0 inset-x-0 z-50 grid grid-cols-4 dark:bg-[#111316]/95 backdrop-blur border-t border-black/5 dark:border-white/10 pb-[env(safe-area-inset-bottom,0px)]">
     {NAV.map((n) => (
       <a href={n.href} class={`flex flex-col items-center gap-1 py-2.5 text-[11px] font-semibold ${isActive(n.href) ? 'text-tap' : 'muted'}`}>
         <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" set:html={n.icon}></svg>
@@ -186,7 +186,7 @@ const isActive = (href: string) =>
       document.documentElement.classList.toggle('dark', t === 'dark');
       try { localStorage.setItem('theme', t); } catch (e) {}
       var m = document.querySelector('meta[name="theme-color"]');
-      if (m) m.setAttribute('content', t === 'dark' ? '#111316' : '#ffffff');
+      if (m) m.setAttribute('content', t === 'dark' ? '#111316' : '#f0f4f8');
     }
     var tgBtn = document.getElementById('tg');
     if (tgBtn) tgBtn.addEventListener('click', function () {
