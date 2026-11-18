@@ -90,9 +90,14 @@ const title = activeTag ? `Bài viết về ${tagLabel}` : 'Bài viết';
     <p class="muted mt-1">Bản vá, hướng dẫn và sự kiện mới nhất từ các game</p>
 
     {tags.length > 1 && (
-      <nav class="hs flex gap-2 mt-5 mb-6" aria-label="Chủ đề bài viết">
+      <nav id="post-topics" class="relative flex gap-2 overflow-x-auto p-1 pb-2 mt-4 mb-4" aria-label="Chủ đề bài viết">
         {tags.map(({ label, path, href }) => (
-          <a class:list={['chip', { 'chip-on': path === activeTag }]} aria-current={path === activeTag ? 'true' : undefined} href={href}>{label}</a>
+          <a
+            class:list={['chip shrink-0', { 'chip-on': path === activeTag }]}
+            aria-current={path === activeTag ? 'true' : undefined}
+            href={href}
+            draggable="false"
+          >{label}</a>
         ))}
       </nav>
     )}
@@ -116,3 +121,67 @@ const title = activeTag ? `Bài viết về ${tagLabel}` : 'Bài viết';
     )}
   </div>
 </Layout>
+
+<style>
+  #post-topics {
+    scrollbar-color: rgb(var(--gate-accent) / 0.45) transparent;
+  }
+
+  @media (any-pointer: fine) {
+    #post-topics,
+    #post-topics a {
+      cursor: grab;
+    }
+
+    #post-topics[data-dragging],
+    #post-topics[data-dragging] a {
+      cursor: grabbing;
+      user-select: none;
+    }
+  }
+</style>
+
+<script>
+  const topics = document.getElementById('post-topics');
+
+  if (topics) {
+    const active = topics.querySelector<HTMLElement>('[aria-current="true"]');
+    if (active) {
+      topics.scrollLeft = Math.max(0, active.offsetLeft + active.offsetWidth + 4 - topics.clientWidth);
+    }
+
+    let drag: { id: number; x: number; scrollLeft: number } | undefined;
+
+    topics.addEventListener('pointerdown', (event) => {
+      if (event.pointerType !== 'mouse' || event.button !== 0 || topics.scrollWidth <= topics.clientWidth) return;
+      drag = { id: event.pointerId, x: event.clientX, scrollLeft: topics.scrollLeft };
+    });
+
+    topics.addEventListener('pointermove', (event) => {
+      if (!drag || event.pointerId !== drag.id) return;
+      const distance = event.clientX - drag.x;
+
+      if (!topics.hasPointerCapture(drag.id)) {
+        if (Math.abs(distance) < 6) return;
+        // Keep the drag on the strip so releasing it does not open a topic link.
+        topics.setPointerCapture(drag.id);
+        topics.setAttribute('data-dragging', '');
+      }
+
+      topics.scrollLeft = drag.scrollLeft - distance;
+    });
+
+    const endDrag = (event: PointerEvent) => {
+      if (drag?.id !== event.pointerId) return;
+      drag = undefined;
+      topics.removeAttribute('data-dragging');
+    };
+
+    topics.addEventListener('pointerup', endDrag);
+    topics.addEventListener('pointercancel', endDrag);
+    topics.addEventListener('lostpointercapture', endDrag);
+    topics.addEventListener('pointerleave', (event) => {
+      if (!topics.hasPointerCapture(event.pointerId)) endDrag(event);
+    });
+  }
+</script>
