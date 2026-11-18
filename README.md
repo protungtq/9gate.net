@@ -18,6 +18,8 @@ Mở `/tools/gamehub-cms/` để quản lý game, soạn bài, nhập Markdown h
 
 Điền Worker Proxy, repo và nhánh xuất bản của 9Gate trong mục Kết nối. Worker cần hỗ trợ các tham số `repo` và `branch` cho thao tác đọc, ghi và xóa trên GitHub. Có thể dùng `/tools/games.html` để quản lý riêng danh mục game.
 
+Trình soạn hỗ trợ dán văn bản định dạng, chèn YouTube, tải và rehost ảnh qua Worker. Worker nhận biểu mẫu `multipart/form-data` ở URL gốc với `destination=image-host` và `provider=imgbb` hoặc `provider=freeimage`. Cấu hình khóa nhà cung cấp ở Worker. Biên tập AI dùng endpoint `/gemini-rewrite` tương thích Blog8 và đưa kết quả vào một ô đề xuất để duyệt trước khi thay nội dung.
+
 ## Deploy
 
 Cloudflare Pages dùng `npm run build` và thư mục đầu ra `dist`. Tên miền canonical và sitemap của bản này là `https://www.9gate.net`.

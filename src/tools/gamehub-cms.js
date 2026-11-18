@@ -1,4 +1,4 @@
-import { micromark } from "micromark";
+import { createPostEditor, safeWebUrl } from "./post-editor.js";
 import { parse, stringify } from "yaml";
 
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
@@ -11,13 +11,13 @@ const sT=t=>{document.documentElement.dataset.t=t;LS("cms-theme",t)};
 sT(LS("cms-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light"));
 $("#theme").onclick=()=>sT(document.documentElement.dataset.t=="dark"?"light":"dark");
 /* config */
-const DEF={w:"",r:"",b:"main",s:"https://www.9gate.net",j:"/tools/games-data.json"};
+const DEF={w:"",r:"",b:"main",s:"https://www.9gate.net",j:"/tools/games-data.json",provider:"imgbb"};
 let cfg = { ...DEF };
 try {
   cfg = { ...DEF, ...JSON.parse(LS("9gate-cms-cfg") || "{}") };
 } catch {}
 if (cfg.j === "/src/data/games.json") cfg.j = DEF.j;
-const cm={w:"cw",r:"cr",b:"cb",s:"cs",j:"cj"};
+const cm={w:"cw",r:"cr",b:"cb",s:"cs",j:"cj",provider:"image-provider"};
 Object.entries(cm).forEach(([k,id])=>$("#"+id).value=cfg[k]);
 $("#cok").onclick=()=>{Object.entries(cm).forEach(([k,id])=>cfg[k]=$("#"+id).value.trim().replace(/\/+$/,""));LS("9gate-cms-cfg",JSON.stringify(cfg));toast("Đã lưu kết nối","o");loadGames()};
 async function api(path, body) {
@@ -43,7 +43,7 @@ async function api(path, body) {
 /* nav */
 $$(".nav[data-v]").forEach(b=>b.onclick=()=>{$$(".nav[data-v]").forEach(x=>x.classList.toggle("on",x==b));$$(".v").forEach(v=>v.classList.toggle("on",v.id=="v-"+b.dataset.v));$("#fix").style.display=b.dataset.v=="games"?"flex":"none"});
 /* image previews */
-document.addEventListener("input",e=>{const id=e.target.dataset?.pv;if(!id)return;const i=$("#"+id),u=safeImageUrl(e.target.value);i.style.display=u?"block":"none";if(u)i.src=u;else i.removeAttribute("src")});
+document.addEventListener("input",e=>{const id=e.target.dataset?.pv;if(!id)return;const i=$("#"+id),u=safeImageUrl(e.target.value);i.style.display=u?"block":"none";if(u){i.onerror=()=>{i.style.display="none"};i.src=u}else i.removeAttribute("src")});
 
 /* ===== GAMES ===== */
 let games=[],base={},fmiss="",editing=null;
@@ -57,10 +57,18 @@ async function loadGames(){let d=null;for(const u of gameDataUrls()){try{const r
   setGames(d)}
 function setGames(d,keepBase){games=d;if(!keepBase)base=Object.fromEntries(d.map(g=>[g.slug,JSON.stringify(g)]));renderGames();fillGameSelect()}
 function diff(){const cur=Object.fromEntries(games.map(g=>[g.slug,JSON.stringify(g)]));let a=0,c=0,r=0;for(const k in cur){if(!(k in base))a++;else if(base[k]!=cur[k])c++}for(const k in base)if(!(k in cur))r++;return{a,c,r,n:a+c+r}}
+function gameIcon(game) {
+  const url = safeImageUrl(game.icon);
+  const image = url ? `<img src="${esc(url)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">` : "";
+  return `<div class="ic" aria-hidden="true"><span>${esc(Array.from(game.name)[0] || "?")}</span>${image}</div>`;
+}
+$("#list").addEventListener("error", (event) => {
+  if (event.target instanceof HTMLImageElement) event.target.remove();
+}, true);
 function renderGames(){const q=$("#q").value.toLowerCase(),fc=$("#fc").value;$("#nG").textContent=games.length;
   const L=games.filter(g=>(!q||(g.name+" "+(g.publisher||"")).toLowerCase().includes(q))&&(!fc||g.category==fc)&&(!fmiss||miss[fmiss](g)));
   $("#chips").innerHTML=[["","Tất cả",games.length],["cover","Thiếu ảnh bìa",games.filter(miss.cover).length],["trailer","Thiếu trailer",games.filter(miss.trailer).length],["rating","Chưa có điểm",games.filter(miss.rating).length]].map(([k,l,n])=>`<button class="chip ${fmiss==k?"on":""}" data-m="${k}">${l} (${n})</button>`).join("");
-  $("#list").innerHTML=L.map(g=>`<div class="gi">${safeImageUrl(g.icon)?`<img class="ic" src="${esc(safeImageUrl(g.icon))}" alt="" loading="lazy">`:`<div class="ic">${esc(g.name[0])}</div>`}<div class="t"><h3>${esc(g.name)}</h3><p>${esc(g.publisher||"Chưa có nhà phát hành")}</p><p>${esc(g.genre||"")}</p><span class="tg ${g.category=="mobile"?"g":""}">${g.category=="mobile"?"Mobile":"PC / Console"}</span>${g.featured?'<span class="tg g">Nổi bật</span>':""}${g.hot?'<span class="tg g">Hot</span>':""}${miss.cover(g)?'<span class="tg w">Thiếu bìa</span>':""}${miss.trailer(g)?'<span class="tg w">Thiếu trailer</span>':""}</div><div class="rt">${esc(g.rating??"–")}<small>điểm</small></div><div class="ac"><button data-e="${esc(g.slug)}">Sửa</button><button data-x="${esc(g.slug)}" style="color:var(--dn)">Xóa</button></div></div>`).join("")||'<div class="empty">Không có game nào khớp bộ lọc.</div>';
+  $("#list").innerHTML=L.map(g=>`<div class="gi">${gameIcon(g)}<div class="t"><h3>${esc(g.name)}</h3><p>${esc(g.publisher||"Chưa có nhà phát hành")}</p><p>${esc(g.genre||"")}</p><span class="tg ${g.category=="mobile"?"g":""}">${g.category=="mobile"?"Mobile":"PC / Console"}</span>${g.featured?'<span class="tg g">Nổi bật</span>':""}${g.hot?'<span class="tg g">Hot</span>':""}${miss.cover(g)?'<span class="tg w">Thiếu bìa</span>':""}${miss.trailer(g)?'<span class="tg w">Thiếu trailer</span>':""}</div><div class="rt">${esc(g.rating??"–")}<small>điểm</small></div><div class="ac"><button data-e="${esc(g.slug)}">Sửa</button><button data-x="${esc(g.slug)}" style="color:var(--dn)">Xóa</button></div></div>`).join("")||'<div class="empty">Không có game nào khớp bộ lọc.</div>';
   const d=diff(),f=$("#fix");f.classList.toggle("dirty",d.n>0);$("#fs").textContent=d.n?`Chưa đẩy lên GitHub: ${d.a} thêm, ${d.c} sửa, ${d.r} xóa`:`${games.length} game, đã đồng bộ`}
 ["q","fc"].forEach(i=>$("#"+i).oninput=renderGames);
 $("#chips").onclick=e=>{if(e.target.dataset.m!==undefined){fmiss=e.target.dataset.m;renderGames()}};
@@ -109,17 +117,9 @@ const fields = {
 };
 let original = {};
 let slugEdited = false;
-let previewMode = "edit";
 let busy = false;
 
-function safeImageUrl(value) {
-  try {
-    const url = new URL(value.trim(), location.origin);
-    return value.trim() && ["https:", "http:"].includes(url.protocol) ? url.href : "";
-  } catch {
-    return "";
-  }
-}
+const safeImageUrl = (value) => safeWebUrl(value);
 
 function fillGameSelect(selected = P("pgame").value) {
   const select = P("pgame");
@@ -239,20 +239,7 @@ function fillPost(metadata, body, slug = "") {
   slugEdited = Boolean(slug);
   P("body").value = body;
   P("pimage").dispatchEvent(new Event("input", { bubbles: true }));
-  showPreview("edit");
-}
-
-function showPreview(mode) {
-  previewMode = mode;
-  P("body").hidden = mode !== "edit";
-  P("prev").hidden = mode !== "preview";
-  P("raw-preview").hidden = mode !== "markdown";
-  P("tp").textContent = mode === "preview" ? "Soạn thảo" : "Xem trước";
-  P("tp").setAttribute("aria-pressed", String(mode === "preview"));
-  P("raw-md").setAttribute("aria-pressed", String(mode === "markdown"));
-
-  if (mode === "preview") P("prev").innerHTML = micromark(P("body").value);
-  if (mode === "markdown") P("raw-preview").textContent = buildMarkdown();
+  editor.reset();
 }
 
 function snapshot() {
@@ -269,7 +256,7 @@ function saveDraft() {
   P("draft-status").textContent = LS(draftKey) === draft
     ? "Đã lưu nháp trên trình duyệt này."
     : "Không lưu được bản nháp. Bạn có thể tải file .md.";
-  if (previewMode !== "edit") showPreview(previewMode);
+  editor.refresh();
 }
 
 function clearDraft() {
@@ -342,7 +329,7 @@ P("reset-slug").onclick = () => {
   P("pslug").value = slugify(P("ptitle").value);
   saveDraft();
 };
-for (const id of [...Object.keys(fields), "pslug", "body"]) {
+for (const id of [...Object.keys(fields), "pslug"]) {
   P(id).addEventListener("input", saveDraft);
 }
 P("ln").onclick = () => { if (canReplaceDraft()) newPost(); };
@@ -432,19 +419,11 @@ P("pmd").onclick = () => {
   setTimeout(() => URL.revokeObjectURL(link.href), 1000);
 };
 
-$$(".tb [data-w]").forEach((button) => {
-  button.onclick = () => {
-    showPreview("edit");
-    const body = P("body");
-    const [before, after = ""] = button.dataset.w.replace(/\\n/g, "\n").split("|");
-    const { selectionStart: start, selectionEnd: end } = body;
-    body.setRangeText(before + body.value.slice(start, end) + after, start, end, "end");
-    body.focus();
-    saveDraft();
-  };
+const editor = createPostEditor({
+  onChange: saveDraft,
+  buildMarkdown,
+  getConnection: () => cfg,
 });
-P("tp").onclick = () => showPreview(previewMode === "preview" ? "edit" : "preview");
-P("raw-md").onclick = () => showPreview(previewMode === "markdown" ? "edit" : "markdown");
 
 readDraft();
 loadGames();

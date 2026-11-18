@@ -209,6 +209,9 @@
 .article-body img {
   @apply rounded-2xl my-6 w-full;
 }
+.article-body iframe:is([src^="https://www.youtube.com/embed/"], [src^="https://www.youtube-nocookie.com/embed/"]) {
+  @apply block w-full h-auto aspect-video rounded-xl my-6;
+}
 .article-body strong {
   @apply font-bold;
 }
