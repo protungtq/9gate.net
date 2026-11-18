@@ -1,6 +1,6 @@
 # 9Gate
 
-Cổng thông tin game Việt Nam — game làm nội dung chính (kiểu Google Play Store), bài viết là vệ tinh trong từng game.
+Blog game cá nhân, nơi lưu góc nhìn, ghi chép và những game đáng để thử.
 
 ## Cấu trúc
 
@@ -25,5 +25,5 @@ Cloudflare Pages dùng `npm run build` và thư mục đầu ra `dist`. Tên mi�
 Chạy `npm run images:rehost` trong môi trường có biến bí mật `IMGBB_API_KEY`.
 Lệnh nhận thêm danh sách tệp Markdown sau `--` để chuyển một số bài chọn lọc.
 Lệnh tải lại ảnh từ CDN 9Gate cũ hoặc từ thư mục ảnh nhập cũ nếu còn tệp, kiểm tra
-URL trực tiếp trả về rồi mới ghi vào trường `image`. Khi thêm tin mới, chạy lệnh
+URL trực tiếp trả về rồi mới ghi vào trường `image`. Khi thêm bài mới, chạy lệnh
 này trước khi đưa bài lên GitHub. Chỉ đưa URL ảnh vào mã nguồn.

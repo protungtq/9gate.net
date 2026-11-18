@@ -1,13 +1,13 @@
 ---
-title: "Hướng dẫn Genshin Impact cho người mới: 7 việc nên làm trong tuần đầu tiên"
-description: "Mới bắt đầu Genshin Impact? Đây là những việc nên ưu tiên trong tuần đầu để làm quen nhanh, tránh lãng phí tài nguyên và mở khoá dần các tính năng cốt lõi của game."
+title: "Nếu mới chơi Genshin Impact, đây là 7 việc mình sẽ làm trước"
+description: "Teyvat rộng tới mức mở bản đồ lần đầu đã thấy có quá nhiều việc. Nếu mới bắt đầu Genshin Impact, mình sẽ dành tuần đầu cho vài việc giúp đi đường dài dễ hơn."
 date: "2026-11-02"
 image: "https://i.ibb.co/sZphRGM/genshin-impact-cover.webp"
 game: "genshin-impact"
 tags: ["Hướng dẫn"]
 ---
 
-Mới bắt đầu **Genshin Impact**? Thế giới Teyvat rất rộng và dễ khiến người mới choáng ngợp. Đây là những việc nên làm trước tiên để khởi đầu thuận lợi.
+Teyvat rộng tới mức mở bản đồ lần đầu đã thấy có quá nhiều việc. Nếu mới bắt đầu Genshin Impact, mình sẽ dành tuần đầu cho vài việc giúp đi đường dài dễ hơn.
 
 ## Ba việc nên làm trước tiên
 

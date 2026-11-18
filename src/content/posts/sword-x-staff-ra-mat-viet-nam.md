@@ -1,13 +1,13 @@
 ---
-title: "Sword x Staff chính thức ra mắt tại Việt Nam, mở server 9h sáng 4/11"
-description: "Idle RPG màn hình dọc của BOLTRAY Games do Funtap đồng hành phát hành tại Việt Nam, mở cửa 9h sáng 4/11 trên Android và iOS kèm sự kiện hợp tác Hoa Sơn Tái Khởi."
+title: "Sword x Staff trông hợp với những buổi chỉ rảnh vài phút"
+description: "Sword x Staff hẹn mở máy chủ Việt Nam lúc 9 giờ ngày 4/11. Mình để ý tựa idle RPG màn hình dọc này vì nó có vẻ hợp với những lúc muốn mở game một lát giữa ngày."
 date: "2026-11-03"
 image: "https://i.ibb.co/9kBkLhBH/sword-x-staff-cover.webp"
 game: "sword-x-staff"
 tags: ["Ra mắt", "Funtap"]
 ---
 
-**Sword x Staff** — idle RPG màn hình dọc của BOLTRAY Games — sẽ chính thức ra mắt tại Việt Nam vào **9h sáng mai 4/11/2026**, do Funtap đồng hành phát hành. Game chơi được trên cả Android lẫn iOS và hoàn toàn miễn phí.
+Sword x Staff hẹn mở máy chủ Việt Nam lúc 9 giờ ngày 4/11. Mình để ý tựa idle RPG màn hình dọc này vì nó có vẻ hợp với những lúc muốn mở game một lát giữa ngày.
 
 ## Vì sao đáng để thử?
 

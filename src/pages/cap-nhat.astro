@@ -13,10 +13,10 @@ const entries = await getCollection('posts');
 const posts = entries
   .map((p) => ({
     slug: p.id.replace(/\.(md|mdx)$/i, ''),
-    title: p.data.title ?? 'Cập nhật',
+    title: p.data.title ?? 'Bài viết',
     description: p.data.description ?? '',
     image: p.data.image ?? '',
-    tag: (p.data.tags && p.data.tags[0]) || 'Cập nhật',
+    tag: (p.data.tags && p.data.tags[0]) || 'Bài viết',
     tags: p.data.tags || [],
     dateText: fmtDate(p.data.date),
     _ts: p.data.date ? new Date(p.data.date).getTime() : 0,
@@ -29,12 +29,12 @@ const postImageMap = latestPostImageMap(posts);
 ---
 
 <Layout
-  title="Cập nhật game mới nhất"
-  description="Cập nhật game mới nhất: game mobile, game PC/console, review và sự kiện từ các NPH VTC, VNGGames, Funtap, Gosu."
-  keywords="tin game, tin tức game, review game, game mới ra mắt"
+  title="Bài viết"
+  description="Những ghi chép và góc nhìn của mình về game mobile, PC, console và cộng đồng người chơi."
+  keywords="blog game, bài viết về game, góc nhìn game"
 >
   <div class="max-w-[1280px] mx-auto px-4 py-6">
-    <h1 class="text-3xl sm:text-4xl font-extrabold">Cập nhật mới</h1>
+    <h1 class="text-3xl sm:text-4xl font-extrabold">Bài viết</h1>
     <p class="muted mt-1">Bản vá, hướng dẫn và sự kiện mới nhất từ các game</p>
 
     {allTags.length > 0 && (
@@ -51,10 +51,10 @@ const postImageMap = latestPostImageMap(posts);
       </div>
     ) : (
       <div class="sf rounded-2xl p-12 text-center">
-        <p class="muted">Chưa có cập nhật nào. Hãy quay lại sau!</p>
+        <p class="muted">Mình chưa có bài nào ở đây.</p>
       </div>
     )}
-    <p id="post-empty" class="hidden text-center muted py-16 font-medium">Chưa có cập nhật nào thuộc mục này.</p>
+    <p id="post-empty" class="hidden text-center muted py-16 font-medium">Mục này chưa có bài viết.</p>
   </div>
 </Layout>
 

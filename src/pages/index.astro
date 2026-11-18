@@ -22,7 +22,7 @@ const allPostVMs = (await getCollection('posts'))
     title: p.data.title,
     description: p.data.description || '',
     image: p.data.image || '',
-    tag: (p.data.tags && p.data.tags[0]) || 'Cập nhật',
+    tag: (p.data.tags && p.data.tags[0]) || 'Bài viết',
     tags: p.data.tags || [],
     dateText: fmtDate(p.data.date),
     _ts: p.data.date ? new Date(p.data.date).getTime() : 0,
@@ -79,14 +79,14 @@ const jsonLd = {
   "@type": "WebSite",
   "name": "9Gate",
   "url": "https://www.9gate.net",
-  "description": "9Gate — tải game mobile, game PC/console, cập nhật và review game mới nhất.",
+  "description": "9Gate là blog cá nhân về game mobile, PC và console, với ghi chép, góc nhìn và những game mình để ý.",
 };
 ---
 
 <Layout
-  title="9Gate - Tải game mobile, game PC, cập nhật game mới nhất"
-  description="9Gate — nhà mới của game thủ Việt: tải game mobile VTC, VNG, Funtap, Gosu; game PC/console; cập nhật và review game mới nhất."
-  keywords="game mobile, game pc, tải game, VTC Game, VNG, Funtap, Gosu, tin game, review game"
+  title="9Gate — Blog game cá nhân"
+  description="Mình viết về những tựa game đang để ý, những thay đổi đáng bàn và chuyện cộng đồng game."
+  keywords="blog game cá nhân, game mobile, game PC, console, góc nhìn game"
   jsonLd={jsonLd}
 >
   <div class="max-w-[1280px] mx-auto px-4 py-6">
@@ -140,7 +140,7 @@ const jsonLd = {
     <!-- ============ THỊNH HÀNH ============ -->
     <section class="home-section">
       <div class="flex items-center justify-between mb-4">
-        <h2 class="section-title">Game & chủ đề đang thịnh hành</h2>
+        <h2 class="section-title">Game đáng để ý</h2>
       </div>
       <div id="trending-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-8">
         <GameCard game={trending[0]} postImg={postImageMap[trending[0].slug]} />
@@ -208,7 +208,7 @@ const jsonLd = {
     {latestPosts.length > 0 && (
       <section class="home-section">
         <div class="flex items-center justify-between mb-4">
-          <h2 class="section-title">Cập nhật mới</h2>
+          <h2 class="section-title">Mới trên blog</h2>
           <a href="/cap-nhat/" class="text-sm font-semibold muted hover:text-tap flex items-center">Xem thêm
             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
           </a>

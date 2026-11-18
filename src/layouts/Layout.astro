@@ -29,7 +29,7 @@ const searchIndex = [
   })),
   ...postEntries.map((p) => ({
     t: p.data.title,
-    s: gameBySlug[p.data.game]?.name || 'Cập nhật',
+    s: gameBySlug[p.data.game]?.name || 'Bài viết',
     u: `/p/${p.id.replace(/\.(md|mdx)$/i, '')}/`,
     i: p.data.image || gameBySlug[p.data.game]?.icon || '',
   })),
@@ -41,7 +41,7 @@ const NAV = [
   { href: '/', label: 'Trang chủ', icon: '<path d="M3 11l9-8 9 8v9a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z"/>' },
   { href: '/mobile/', label: 'Game Mobile', icon: '<rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/>' },
   { href: '/pc/', label: 'PC / Console', icon: '<rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/>' },
-  { href: '/cap-nhat/', label: 'Cập nhật', icon: '<path d="M6 8a6 6 0 0112 0c0 7 3 8 3 8H3s3-1 3-8M10 21h4"/>' },
+  { href: '/cap-nhat/', label: 'Bài viết', icon: '<path d="M6 8a6 6 0 0112 0c0 7 3 8 3 8H3s3-1 3-8M10 21h4"/>' },
 ];
 const isActive = (href: string) =>
   href === '/' ? path === '/' : path.startsWith(href) || (href === '/cap-nhat/' && path.startsWith('/p/'));
@@ -110,7 +110,7 @@ const isActive = (href: string) =>
       </nav>
       <div class="relative flex-1 max-w-xl ml-auto">
         <svg class="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 muted pointer-events-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-        <input id="q" placeholder="Trò chơi, cập nhật và nhà phát hành" autocomplete="off" class="w-full h-11 rounded-full bg-slate-100 dark:bg-white/10 pl-11 pr-4 text-sm placeholder:text-slate-600 dark:placeholder:text-slate-400 outline-none focus:ring-2 ring-tap" />
+        <input id="q" placeholder="Tìm game, bài viết, nhà phát hành" autocomplete="off" class="w-full h-11 rounded-full bg-slate-100 dark:bg-white/10 pl-11 pr-4 text-sm placeholder:text-slate-600 dark:placeholder:text-slate-400 outline-none focus:ring-2 ring-tap" />
         <div id="sr" class="hidden absolute left-0 right-0 top-full mt-2 rounded-2xl bg-white dark:bg-[#1b1e23] ring-1 ring-black/10 dark:ring-white/10 shadow-xl p-2 max-h-80 overflow-auto z-50"></div>
       </div>
       <button id="tg" type="button" aria-label="Chuyển giao diện sáng / tối" title="Sáng / tối" class="w-11 h-11 shrink-0 rounded-full sf grid place-items-center hover:bg-black/10 dark:hover:bg-white/15 transition">
@@ -143,7 +143,7 @@ const isActive = (href: string) =>
           </span>
           {siteName}
         </div>
-        <p class="mt-4 text-sm leading-relaxed text-slate-400 max-w-xs">Khám phá, theo dõi và cập nhật những tựa game mobile, PC và console đáng chơi nhất.</p>
+        <p class="mt-4 text-sm leading-relaxed text-slate-400 max-w-xs">Chỗ mình ghi lại những điều hay ho về game mobile, PC và console.</p>
       </div>
       <div>
         <h4 class="font-bold text-white mb-3">Khám phá</h4>
@@ -151,7 +151,7 @@ const isActive = (href: string) =>
           <li><a class="hover:text-tap" href="/">Trang chủ</a></li>
           <li><a class="hover:text-tap" href="/mobile/">Game Mobile</a></li>
           <li><a class="hover:text-tap" href="/pc/">Game PC / Console</a></li>
-          <li><a class="hover:text-tap" href="/cap-nhat/">Cập nhật mới</a></li>
+          <li><a class="hover:text-tap" href="/cap-nhat/">Bài viết</a></li>
         </ul>
       </div>
       <div>
@@ -166,7 +166,7 @@ const isActive = (href: string) =>
     </div>
     <div class="border-t border-white/10">
       <div class="max-w-[1280px] mx-auto px-4 py-5 text-xs text-slate-500 flex flex-wrap justify-between gap-2">
-        <span>© 2026 {siteName} — Cổng thông tin game Việt Nam.</span>
+        <span>© 2026 {siteName} — Blog game cá nhân.</span>
         <span>Điều khoản · Chính sách bảo mật</span>
       </div>
     </div>

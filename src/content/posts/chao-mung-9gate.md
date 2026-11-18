@@ -1,24 +1,18 @@
 ---
-title: "Chào mừng đến với 9Gate"
-description: "9Gate lấy game làm trung tâm: kho game mobile và PC/console, mỗi game một trang riêng với trailer, điểm đánh giá, link tải và những cập nhật mới nhất."
+title: "Chào bạn, đây là góc game của mình"
+description: "Mình mở 9Gate để ghi lại những điều khiến mình tò mò về game. Có lúc là một bản cập nhật đáng xem, có lúc chỉ là lý do một tựa game lọt vào danh sách muốn thử."
 date: "2026-10-16"
 image: ""
 game: ""
 tags: ["9Gate", "ra mắt"]
 ---
 
-Chào mừng bạn đến với **9Gate** — nơi mọi thứ đều xoay quanh game.
+Mình mở 9Gate để ghi lại những điều khiến mình tò mò về game. Có lúc là một bản cập nhật đáng xem, có lúc chỉ là lý do một tựa game lọt vào danh sách muốn thử.
 
-## Ở đây có gì?
+## Có gì trong góc này?
 
-- Các game được chia gọn vào hai mục [Game Mobile](/mobile/) và [Game PC / Console](/pc/) — từ các nhà phát hành quen thuộc như VTC, VNGGames, Funtap, Gosu,... đến những bom tấn quốc tế mới nhất.
-- **Mỗi game một trang riêng**: trailer, điểm đánh giá, link tải Android/iOS, thông tin nhà phát hành và toàn bộ cập nhật liên quan nằm cùng một chỗ.
-- Mục [Cập nhật](/cap-nhat/) gom những cập nhật mới nhất của từng game — ra mắt, sự kiện, phiên bản mới — để bạn không bỏ lỡ nhịp nào.
-- Nút **Theo dõi** ở mỗi trang game giúp lưu lại những game bạn quan tâm, không cần đăng ký tài khoản.
-- Ô tìm kiếm ở đầu trang hỗ trợ gõ không dấu — gõ "lien quan" vẫn tìm ra đúng game.
+- [Game Mobile](/mobile/) và [Game PC / Console](/pc/) là chỗ mình gom những game đáng chú ý.
+- Mỗi game có hồ sơ riêng để xem trailer, nền tảng và các bài mình đã viết về nó.
+- [Bài viết](/cap-nhat/) là chỗ mình chia sẻ góc nhìn, ghi lại vài sự kiện và những điều đáng thử trong game.
 
-## Vì sao lại là một trang lấy game làm trung tâm?
-
-Vì game thủ thường bắt đầu bằng một câu hỏi rất cụ thể: game này chơi thế nào, tải ở đâu, có gì mới? 9Gate được dựng để trả lời đúng những câu hỏi đó — mở trang game là thấy đủ, khỏi phải đào bới giữa một rừng thông tin không liên quan.
-
-Hãy bắt đầu bằng một vòng [Game Mobile](/mobile/) hoặc [Game PC / Console](/pc/), chọn một game bạn thích và bấm Theo dõi nhé!
+Nếu chưa biết bắt đầu từ đâu, thử gõ tên một game bạn thích vào ô tìm kiếm. Gõ không dấu cũng được.
