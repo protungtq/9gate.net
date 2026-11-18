@@ -6,7 +6,7 @@
 
 - [Game Mobile](https://www.9gate.net/mobile/): game cho Android và iOS — VTC, VNGGames, Funtap, Gosu và các nhà phát hành quốc tế.
 - [Game PC / Console](https://www.9gate.net/pc/): game trên Steam, PlayStation, Xbox và Nintendo Switch, từ indie đến bom tấn AAA.
-- [Bài viết](https://www.9gate.net/cap-nhat/): góc nhìn và những điều đáng chú ý quanh từng game.
+- [Cập nhật mới](https://www.9gate.net/cap-nhat/): góc nhìn và những điều đáng chú ý quanh từng game.
 
 ## Cách 9Gate tổ chức nội dung
 

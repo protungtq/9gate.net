@@ -80,7 +80,7 @@ const jsonLd = [
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://www.9gate.net/" },
-      { "@type": "ListItem", "position": 2, "name": "Bài viết", "item": "https://www.9gate.net/cap-nhat/" },
+      { "@type": "ListItem", "position": 2, "name": "Cập nhật mới", "item": "https://www.9gate.net/cap-nhat/" },
       { "@type": "ListItem", "position": 3, "name": title, "item": `https://www.9gate.net/p/${Astro.params.slug}/` },
     ],
   },
@@ -103,7 +103,7 @@ const jsonLd = [
         </>
       ) : (
         <>
-          <a href="/cap-nhat/" class="hover:text-tap">Bài viết</a><span>›</span>
+          <a href="/cap-nhat/" class="hover:text-tap">Cập nhật mới</a><span>›</span>
         </>
       )}
       <span class="font-semibold text-[#15171a] dark:text-white">{tagText}</span>
