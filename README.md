@@ -7,14 +7,16 @@ Blog game cá nhân, nơi lưu góc nhìn, ghi chép và những game đáng đ�
 - `src/data/games.json` — Danh mục game (icon, cover, trailer, mô tả, SEO)
 - `src/pages/index.astro` — Trang chủ lưới game
 - `src/pages/game/[slug].astro` — Chi tiết game + bài viết liên quan
-- `src/pages/cap-nhat.astro` — Danh sách bài viết
+- `src/pages/cap-nhat/[...page].astro` — Danh sách bài viết
 - `src/pages/p/[slug].astro` — Chi tiết bài viết
 - `src/content/posts/` — Bài viết Markdown (frontmatter có field `game: "slug"`)
 - `public/tools/games.html` — Tool quản lý game (thêm/sửa/xóa, đẩy lên GitHub)
 
 ## Quản lý game
 
-Mở `/tools/games.html` hoặc `/tools/gamehub-cms.html` và điền Worker Proxy cùng repo xuất bản của 9Gate trước khi đẩy nội dung lên GitHub.
+Mở `/tools/gamehub-cms/` để quản lý game, soạn bài, nhập Markdown hoặc khôi phục bản nháp đã lưu trên trình duyệt. Đường dẫn cũ `/tools/gamehub-cms.html` chuyển tới CMS mới trên Cloudflare Pages.
+
+Điền Worker Proxy, repo và nhánh xuất bản của 9Gate trong mục Kết nối. Worker cần hỗ trợ các tham số `repo` và `branch` cho thao tác đọc, ghi và xóa trên GitHub. Có thể dùng `/tools/games.html` để quản lý riêng danh mục game.
 
 ## Deploy
 
