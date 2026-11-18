@@ -122,6 +122,38 @@
   html:not(.dark) :is(.game-card, .collection-card) > :first-child {
     @apply rounded-xl;
   }
+  .post-panel {
+    @apply rounded-2xl border border-[var(--gate-border)] bg-[var(--gate-panel)];
+    box-shadow: var(--gate-panel-shadow);
+  }
+  .post-related {
+    background-color: var(--gate-feature);
+  }
+  .news-row {
+    @apply border border-[var(--gate-border)] bg-[var(--gate-panel)];
+    box-shadow: 0 2px 5px #22354d13;
+  }
+  html.dark .post-panel {
+    border-color: #39424e;
+    background-color: #1b2028;
+    box-shadow: 0 6px 18px #0005;
+  }
+  html.dark .post-related {
+    background-color: #171b22;
+  }
+  html.dark .news-row {
+    border-color: #3c4655;
+    background-color: #232a34;
+    box-shadow: 0 2px 5px #0004;
+  }
+  .news-row:is(:hover, :focus-visible) {
+    border-color: rgb(var(--gate-accent) / .6);
+    background-color: var(--gate-feature);
+  }
+  html.dark .news-row:is(:hover, :focus-visible) {
+    border-color: rgb(var(--gate-accent) / .55);
+    background-color: #2b3542;
+  }
   .chip {
     @apply rounded-full px-4 h-9 text-sm font-medium whitespace-nowrap bg-[#f3f4f5] dark:bg-white/[.08] transition hover:bg-black/10 dark:hover:bg-white/15 inline-flex items-center;
   }
