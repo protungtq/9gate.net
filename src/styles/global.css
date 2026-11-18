@@ -30,7 +30,7 @@
     color-scheme: dark;
   }
   body {
-    @apply font-sans text-[#15171a] dark:text-slate-100 pb-20 md:pb-0;
+    @apply font-sans text-[#15171a] dark:text-slate-100;
     background: var(--gate-canvas);
   }
   body::before {
