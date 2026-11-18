@@ -26,6 +26,8 @@ const dateText = post.data.date
   : '';
 
 const game = games.find((g) => g.slug === post.data.game);
+const cover = image || game?.cover || game?.icon || '';
+const shareImage = /^\/(?!\/)/.test(cover) ? new URL(cover, Astro.site ?? Astro.url).href : cover;
 const BADGES = ['bg-cyan-500', 'bg-violet-500', 'bg-rose-500', 'bg-amber-500', 'bg-emerald-500'];
 let hash = 0;
 for (const ch of tagText) hash += ch.charCodeAt(0);
@@ -68,7 +70,7 @@ const jsonLd = [
     "dateModified": post.data.date ?? '',
     "inLanguage": "vi-VN",
     "mainEntityOfPage": `https://www.9gate.net/p/${Astro.params.slug}/`,
-    ...((image || game?.cover || game?.icon) && { "image": image || game?.cover || game?.icon }),
+    ...(shareImage && { "image": shareImage }),
     "author": { "@type": "Organization", "name": "9Gate", "url": "https://www.9gate.net" },
     "publisher": { "@type": "Organization", "name": "9Gate", "url": "https://www.9gate.net" },
     ...(game && { "about": { "@type": "VideoGame", "name": game.name, "url": `https://www.9gate.net/game/${game.slug}/` } }),
@@ -88,7 +90,7 @@ const jsonLd = [
 <Layout
   title={title}
   description={description}
-  ogImage={image || game?.cover || game?.icon || ''}
+  ogImage={shareImage}
   ogType="article"
   jsonLd={jsonLd}
 >
