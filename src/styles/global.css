@@ -14,6 +14,7 @@
     --gate-accent: 0 114 94;
     --gate-action: #00725e;
     --gate-action-hover: #00604f;
+    --mobile-nav-height: 3.75rem;
     box-sizing: border-box;
     padding-top: env(safe-area-inset-top, 0px);
     padding-bottom: env(safe-area-inset-bottom, 0px);
@@ -40,6 +41,24 @@
     height: env(safe-area-inset-top, 0px);
     z-index: 60;
     background: var(--gate-chrome);
+  }
+}
+
+.mobile-nav {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.mobile-nav-item {
+  min-height: calc(var(--mobile-nav-height) - 1px);
+}
+
+@media (max-width: 1023px) {
+  html {
+    scroll-padding-bottom: calc(var(--mobile-nav-height) + env(safe-area-inset-bottom, 0px));
+  }
+
+  body {
+    padding-bottom: var(--mobile-nav-height);
   }
 }
 

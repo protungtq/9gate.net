@@ -44,8 +44,10 @@ const NAV = [
   { href: '/pc/', label: 'PC / Console', icon: '<rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/>' },
   { href: '/cap-nhat/', label: 'Cập nhật mới', icon: '<path d="M6 8a6 6 0 0112 0c0 7 3 8 3 8H3s3-1 3-8M10 21h4"/>' },
 ];
+const detailGame = path.startsWith('/game/') ? gameBySlug[path.split('/')[2]] : undefined;
+const activePath = detailGame ? (detailGame.category === 'mobile' ? '/mobile/' : '/pc/') : path;
 const isActive = (href: string) =>
-  href === '/' ? path === '/' : path.startsWith(href) || (href === '/cap-nhat/' && path.startsWith('/p/'));
+  href === '/' ? activePath === '/' : activePath.startsWith(href) || (href === '/cap-nhat/' && path.startsWith('/p/'));
 ---
 
 <!DOCTYPE html>
@@ -123,25 +125,28 @@ const isActive = (href: string) =>
         <svg class="w-5 h-5 hidden dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
         <svg class="w-5 h-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
       </button>
-      <details id="header-menu" class="relative shrink-0 lg:hidden">
-        <summary aria-label="Menu điều hướng" class="grid h-11 w-11 cursor-pointer list-none place-items-center rounded-full sf hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-tap dark:hover:bg-white/15 [&::-webkit-details-marker]:hidden">
-          <svg aria-hidden="true" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </summary>
-        <nav aria-label="Điều hướng trên màn hình nhỏ" class="absolute right-0 top-full z-30 mt-2 w-56 max-w-[calc(100vw-1.5rem)] rounded-2xl border border-black/10 bg-white p-1.5 shadow-xl dark:border-white/10 dark:bg-[#1b1e23]">
-          {NAV.map((n) => (
-            <a href={n.href} aria-current={isActive(n.href) ? "page" : undefined} class={`flex min-h-11 items-center gap-3 rounded-xl px-3 text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-tap ${isActive(n.href) ? 'bg-tap/10 text-tap' : 'hover:bg-black/5 dark:hover:bg-white/10'}`}>
-              <svg aria-hidden="true" class="h-[18px] w-[18px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" set:html={n.icon}></svg>
-              {n.label}
-            </a>
-          ))}
-        </nav>
-      </details>
     </div>
   </header>
 
   <main>
     <slot />
   </main>
+
+  <nav aria-label="Điều hướng trên thiết bị di động" class="mobile-nav site-chrome fixed inset-x-0 bottom-0 z-50 grid grid-cols-4 border-t border-black/5 backdrop-blur dark:border-white/10 dark:bg-[#111316]/95 lg:hidden">
+    {NAV.map((item) => {
+      const active = isActive(item.href);
+      return (
+        <a
+          href={item.href}
+          aria-current={active ? 'page' : undefined}
+          class:list={['mobile-nav-item flex flex-col items-center justify-center gap-1 px-1 text-center text-[11px] font-semibold leading-tight focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-tap', active ? 'text-tap' : 'muted']}
+        >
+          <svg aria-hidden="true" class="h-6 w-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" set:html={item.icon}></svg>
+          {item.href === '/cap-nhat/' ? 'Cập nhật' : item.label}
+        </a>
+      );
+    })}
+  </nav>
 
   <footer class="mt-16 bg-[#0e1114] text-slate-300">
     <div class="h-[3px] bg-gradient-to-r from-tap via-cyan-400 to-violet-500"></div>
@@ -225,8 +230,7 @@ const isActive = (href: string) =>
       });
     }
 
-    // ===== Điều hướng và tìm kiếm trên màn hình nhỏ =====
-    var headerMenu = document.getElementById('header-menu');
+    // ===== Tìm kiếm trên màn hình nhỏ =====
     var searchToggle = document.getElementById('search-toggle');
     var headerSearch = document.getElementById('header-search');
     var desktopHeader = window.matchMedia('(min-width: 1024px)');
@@ -234,7 +238,6 @@ const isActive = (href: string) =>
       headerSearch.classList.toggle('hidden', !open);
       searchToggle.setAttribute('aria-expanded', String(open));
       if (open) {
-        headerMenu.open = false;
         q.focus();
         if (q.value.trim()) q.dispatchEvent(new Event('input'));
       } else {
@@ -244,15 +247,10 @@ const isActive = (href: string) =>
     searchToggle.addEventListener('click', function () {
       setMobileSearch(searchToggle.getAttribute('aria-expanded') !== 'true');
     });
-    headerMenu.addEventListener('toggle', function () {
-      if (headerMenu.open) setMobileSearch(false);
-    });
     desktopHeader.addEventListener('change', function () {
-      headerMenu.open = false;
       setMobileSearch(false);
     });
     document.addEventListener('click', function (e) {
-      if (!headerMenu.contains(e.target)) headerMenu.open = false;
       if (!headerSearch.contains(e.target) && !searchToggle.contains(e.target)) {
         if (desktopHeader.matches) hideSr();
         else setMobileSearch(false);
@@ -260,10 +258,7 @@ const isActive = (href: string) =>
     });
     document.addEventListener('keydown', function (e) {
       if (e.key !== 'Escape') return;
-      if (headerMenu.open) {
-        headerMenu.open = false;
-        headerMenu.querySelector('summary').focus();
-      } else if (searchToggle.getAttribute('aria-expanded') === 'true') {
+      if (searchToggle.getAttribute('aria-expanded') === 'true') {
         setMobileSearch(false);
         searchToggle.focus();
       } else if (!sr.classList.contains('hidden')) {
