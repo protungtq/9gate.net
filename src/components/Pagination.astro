@@ -1,0 +1,19 @@
+---
+interface Props {
+  label: string;
+  currentPage: number;
+  totalPages: number;
+  previousHref?: string;
+  nextHref?: string;
+}
+
+const { label, currentPage, totalPages, previousHref, nextHref } = Astro.props;
+---
+
+{totalPages > 1 && (
+  <nav class="mt-8 flex flex-wrap items-center justify-center gap-3" aria-label={label}>
+    {previousHref && <a class="chip min-h-11" href={previousHref} rel="prev">← Trang trước</a>}
+    <span class="muted text-sm font-medium">Trang {currentPage} / {totalPages}</span>
+    {nextHref && <a class="chip min-h-11" href={nextHref} rel="next">Trang sau →</a>}
+  </nav>
+)}

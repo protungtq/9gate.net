@@ -1,5 +1,6 @@
 import { getCollection } from 'astro:content';
 import games from '../data/games.json';
+import { categoryGames, categoryPagePath, GAME_PAGE_SIZE } from '../lib/gameCategory';
 
 export const prerender = true;
 
@@ -11,8 +12,14 @@ export async function GET({ site }: { site?: URL }) {
   type U = { loc: string; lastmod: string; changefreq: string; priority: string };
   const urls: U[] = [
     { loc: '', lastmod: today, changefreq: 'daily', priority: '1.0' },
-    { loc: 'mobile/', lastmod: today, changefreq: 'weekly', priority: '0.9' },
-    { loc: 'pc/', lastmod: today, changefreq: 'weekly', priority: '0.9' },
+    ...(['mobile', 'pc'] as const).flatMap((category) =>
+      Array.from({ length: Math.max(1, Math.ceil(categoryGames(category).length / GAME_PAGE_SIZE)) }, (_, index) => ({
+        loc: categoryPagePath(category, index + 1).slice(1),
+        lastmod: today,
+        changefreq: 'weekly',
+        priority: index === 0 ? '0.9' : '0.8',
+      }))
+    ),
     { loc: 'cap-nhat/', lastmod: today, changefreq: 'daily', priority: '0.8' },
     ...games.map((g: any) => ({
       loc: `game/${g.slug}/`,

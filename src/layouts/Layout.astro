@@ -10,10 +10,11 @@ interface Props {
   ogImage?: string;
   ogType?: string;
   canonical?: string;
+  robots?: string;
   jsonLd?: object;
 }
 
-const { title, description, keywords, ogImage, ogType = 'website', canonical, jsonLd } = Astro.props;
+const { title, description, keywords, ogImage, ogType = 'website', canonical, jsonLd, robots = 'index, follow' } = Astro.props;
 const siteName = '9Gate';
 const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
 
@@ -55,7 +56,7 @@ const isActive = (href: string) =>
   <title>{fullTitle}</title>
   <meta name="description" content={description} />
   {keywords && <meta name="keywords" content={keywords} />}
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content={robots} />
   <meta name="theme-color" content="#f0f4f8" />
   <link rel="canonical" href={canonical || Astro.url.href} />
 

@@ -1,88 +1,73 @@
 ---
+import Layout from '../layouts/Layout.astro';
 import GameCard from './GameCard.astro';
+import Pagination from './Pagination.astro';
+import { GAME_PAGE_SIZE, type gameCategoryPaths } from '../lib/gameCategory';
 
-const { title, subtitle, list, postImages = {} } = Astro.props;
+type Props = Awaited<ReturnType<typeof gameCategoryPaths>>[number]['props'];
 
-// Thể loại theo tần suất xuất hiện, tối đa 12 chip
-const freq = new Map<string, number>();
-for (const g of list) if (g.genre) freq.set(g.genre, (freq.get(g.genre) || 0) + 1);
-const genres = [...freq.entries()].sort((a, b) => b[1] - a[1]).slice(0, 12).map(([g]) => g);
+const {
+  title, subtitle, seoTitle, description, keywords, games, gameCount, postImages,
+  filters, activeFilter, sorts, activeSort, currentPage, totalPages, previousHref, nextHref,
+} = Astro.props;
+const genre = filters.find(({ path }) => path === activeFilter)?.label ?? '';
+const pageTitle = activeFilter ? `${title} · ${genre}` : seoTitle;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: activeFilter ? pageTitle : title,
+  itemListElement: games.map((game, index) => ({
+    '@type': 'ListItem',
+    position: (currentPage - 1) * GAME_PAGE_SIZE + index + 1,
+    name: game.name,
+    url: new URL(`/game/${game.slug}/`, Astro.site ?? Astro.url).href,
+  })),
+};
 ---
 
-<div class="max-w-[1280px] mx-auto px-4 py-6">
-  <div class="flex flex-wrap items-end justify-between gap-3">
-    <div>
-      <h1 class="text-3xl sm:text-4xl font-extrabold">{title}</h1>
-      <p class="muted mt-1">{list.length} game · {subtitle}</p>
+<Layout
+  title={currentPage > 1 ? `${pageTitle} · Trang ${currentPage}` : pageTitle}
+  description={description}
+  keywords={keywords}
+  jsonLd={jsonLd}
+  robots={activeSort ? 'noindex, follow' : undefined}
+>
+  <div class="max-w-[1280px] mx-auto px-4 py-6">
+    <div class="flex flex-wrap items-end justify-between gap-3">
+      <div>
+        <h1 class="text-3xl sm:text-4xl font-extrabold">{title}</h1>
+        <p class="muted mt-1">{gameCount} game · {subtitle}</p>
+      </div>
+      <nav class="flex rounded-full sf p-1 text-sm font-semibold" aria-label="Sắp xếp game">
+        {sorts.map(({ path, label, href }) => (
+          <a
+            href={href}
+            aria-current={path === activeSort ? 'true' : undefined}
+            class:list={['inline-flex items-center px-4 h-8 rounded-full transition', path === activeSort ? 'bg-white dark:bg-white/20 shadow-sm' : 'muted']}
+          >{label}</a>
+        ))}
+      </nav>
     </div>
-    <div class="flex rounded-full sf p-1 text-sm font-semibold" id="sort-bar">
-      {([['r', 'Đánh giá'], ['az', 'A–Z'], ['za', 'Z–A']] as const).map(([k, t]) => (
-        <button data-sort={k} class={`sort-btn px-4 h-8 rounded-full transition ${k === 'r' ? 'bg-white dark:bg-white/20 shadow-sm' : 'muted'}`}>{t}</button>
+
+    <nav class="hs flex gap-2 mt-5 mb-7" aria-label="Thể loại game">
+      {filters.map(({ path, label, href }) => (
+        <a
+          href={href}
+          aria-current={path === activeFilter ? 'true' : undefined}
+          class:list={['chip shrink-0', { 'chip-on': path === activeFilter }]}
+        >{label}</a>
       ))}
-    </div>
+    </nav>
+
+    {games.length > 0 ? (
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-8" id="cat-grid">
+        {games.map((game) => <GameCard game={game} postImg={postImages[game.slug]} />)}
+      </div>
+    ) : (
+      <p class="text-center muted py-16 font-medium">Chưa có game nào thuộc thể loại này.</p>
+    )}
+
+    <Pagination label="Phân trang game" {...{ currentPage, totalPages, previousHref, nextHref }} />
   </div>
-
-  <div class="hs flex gap-2 mt-5 mb-7" id="genre-bar">
-    {['Tất cả', ...genres].map((x) => (
-      <button class={`chip ${x === 'Tất cả' ? 'chip-on' : ''}`} data-genre={x}>{x}</button>
-    ))}
-  </div>
-
-  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-8" id="cat-grid">
-    {list.map((g: any) => <GameCard game={g} postImg={postImages[g.slug]} />)}
-  </div>
-  <p id="cat-empty" class="hidden text-center muted py-16 font-medium">Chưa có game nào thuộc thể loại này.</p>
-</div>
-
-<script>
-  const grid = document.getElementById('cat-grid');
-  const empty = document.getElementById('cat-empty');
-  const cards = grid ? [...grid.querySelectorAll('.game-card')] : [];
-  const original = [...cards];
-  let genre = 'Tất cả';
-  let sort = 'r';
-
-  function apply() {
-    let visible = cards.filter((c) => {
-      const el = c as HTMLElement;
-      const show = genre === 'Tất cả' || el.dataset.genre === genre;
-      el.classList.toggle('hidden', !show);
-      return show;
-    });
-    visible = [...visible].sort((a, b) => {
-      const ea = a as HTMLElement;
-      const eb = b as HTMLElement;
-      if (sort === 'az' || sort === 'za') {
-        const an = ea.dataset.name || '';
-        const bn = eb.dataset.name || '';
-        return sort === 'az' ? an.localeCompare(bn) : bn.localeCompare(an);
-      }
-      return (parseFloat(eb.dataset.rating || '0') || 0) - (parseFloat(ea.dataset.rating || '0') || 0);
-    });
-    const hidden = cards.filter((c) => !visible.includes(c));
-    [...visible, ...hidden].forEach((c) => grid?.appendChild(c));
-    empty?.classList.toggle('hidden', visible.length > 0);
-  }
-  apply();
-
-  document.querySelectorAll('#genre-bar .chip').forEach((chip) => {
-    chip.addEventListener('click', () => {
-      genre = (chip as HTMLElement).dataset.genre || 'Tất cả';
-      document.querySelectorAll('#genre-bar .chip').forEach((x) => x.classList.toggle('chip-on', x === chip));
-      apply();
-    });
-  });
-  document.querySelectorAll('.sort-btn').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      sort = (btn as HTMLElement).dataset.sort || 'r';
-      document.querySelectorAll('.sort-btn').forEach((x) => {
-        const on = x === btn;
-        x.classList.toggle('bg-white', on);
-        x.classList.toggle('dark:bg-white/20', on);
-        x.classList.toggle('shadow-sm', on);
-        x.classList.toggle('muted', !on);
-      });
-      apply();
-    });
-  });
-</script>
+</Layout>

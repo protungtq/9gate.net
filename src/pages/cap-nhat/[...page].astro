@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import NewsRow from '../../components/NewsRow.astro';
+import Pagination from '../../components/Pagination.astro';
 import { getCollection } from 'astro:content';
 import games from '../../data/games.json';
 import { latestPostImageMap } from '../../lib/gameArt';
@@ -112,13 +113,7 @@ const title = activeTag ? `Bài viết về ${tagLabel}` : 'Bài viết';
       </div>
     )}
 
-    {totalPages > 1 && (
-      <nav class="mt-8 flex flex-wrap items-center justify-center gap-3" aria-label="Phân trang bài viết">
-        {previousHref && <a class="chip min-h-11" href={previousHref} rel="prev">← Trang trước</a>}
-        <span class="muted text-sm font-medium">Trang {currentPage} / {totalPages}</span>
-        {nextHref && <a class="chip min-h-11" href={nextHref} rel="next">Trang sau →</a>}
-      </nav>
-    )}
+    <Pagination label="Phân trang bài viết" {...{ currentPage, totalPages, previousHref, nextHref }} />
   </div>
 </Layout>
 
