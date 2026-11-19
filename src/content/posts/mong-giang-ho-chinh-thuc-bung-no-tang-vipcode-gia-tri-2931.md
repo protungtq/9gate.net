@@ -1,0 +1,68 @@
+---
+title: "Mộng Giang Hồ chính thức bùng nổ tặng VIPcode giá trị"
+description: "Như vậy sau bao ngày chờ đợi cùng các hoạt động bên lề sôi nổi thì vào lúc 10h hôm nay (20/04) Mộng Giang Hồ sẽ chính thức ra mắt làng game Việt."
+image: "https://img.9gate.net/files/751950259/2015/04/20/1429522958-1mong-giang-ho-chinh-thuc-bung-no-tang-vipcode-gia-tri-9gate.jpg"
+tags: ["GiftCode"]
+legacyId: "2931"
+legacyPath: "/tin-game/giftcode/mong-giang-ho-chinh-thuc-bung-no-tang-vipcode-gia-tri-2931.html"
+date: "2015-04-20"
+legacyAuthor: "HaChou"
+---
+
+Hiện người chơi đã có thể tải siêu phẩm kiếm hiệp **Kim Dung** trên mobile này để trải nghiệm thoải mái trên các dòng máy tầm trung, cấu hình bình thường với cả 3 phiên bản iOS, Android và Window Phone.
+
+Trong ngày ra mắt, [**Mộng Giang Hồ**](<http://www.9gate.vn/game/trong-nuoc/mong-giang-ho-413.html>) sẽ khai mở một máy chủ đầu tiên mang tên Nhất Dương Chỉ để cộng đồng game thủ tập trung trải nghiệm game. Ưu điểm lớn nhất trong Mộng Giang Hồ chính là trong quá trình trải nghiệm, các tân thủ được sẽ hỗ trợ tận răng. Từ việc mở tướng, đăng nhập, điểm danh, tham gia sự kiện trong và ngoài game đều được nhận quà miễn phí hoàn toàn.
+
+![](<https://img.9gate.net/files/751950259/2015/04/20/1429522211-1mong-giang-ho-chinh-thuc-bung-no-tang-vipcode-gia-tri-9gate.jpg>)
+
+_Người chơi sẽ bắt gặp các nhân vật trong các bộ tiểu thuyết kiếm hiệp Kim Dung_
+
+Nhân dịp ra mắt game, người chơi còn được tham gia nhiều sự kiện hot để nhận hàng loạt quà tặng miễn phí và ưu đãi khủng như: Quà Tân Thủ, gift code, Điểm danh nhận quà, Đua top nhận quà, ưu đãi thẻ nạp…
+
+![](<https://img.9gate.net/files/751950259/2015/04/20/1429522212-2mong-giang-ho-chinh-thuc-bung-no-tang-vipcode-gia-tri-9gate.jpg>)
+
+_Quà tặng ingame trong Mộng Giang Hồ_
+
+Được biết Mộng Giang Hồ là một “ách chủ bài” của NPH MeCorp trong năm 2015. Điểm mạnh của tựa game này chính là đồ họa cực đẹp, gameplay hấp dẫn đậm chất kiếm hiệp Kim Dung nhưng rất độc đáo nhờ kế thừa lối chơi từ siêu phẩm Brave Frontier. Với hệ thống Võ hiệp đặc sắc và phong phú, game thủ Mộng Giang Hồ sẽ được đồng hành cùng hàng trăm cao thủ giang hồ từ các bộ truyện Kim Dung như: Xạ Điêu Tam Bộ Khúc, Lộc Đỉnh Ký, Thiên Long Bát Bộ…
+
+<iframe src="https://www.youtube.com/embed/drjMfgj908k" title="Video trong bài" loading="lazy" allowfullscreen=""></iframe>
+
+Bạn sẽ lần lượt bước vào hành trình phiêu bạt giang hồ, tham dự các hoạt động như: _Hoa Sơn Luận Kiếm, Tỷ Võ, Giang Hồ, tranh đoạt Bảo Khố, khiêu chiến Danh Tướng Lầu, tranh ngôi Minh Chủ Võ Lâm..._
+
+![](<https://img.9gate.net/files/751950259/2015/04/20/1429522213-3mong-giang-ho-chinh-thuc-bung-no-tang-vipcode-gia-tri-9gate.jpg>)
+
+_Mộng Giang Hồ hấp dẫn với hệ thống Võ hiệp lên đến hàng trăm cao thủ giang hồ_
+
+Game thủ sẽ thu thập nhiều **Võ Hiệp** giang hồ để tự xây dựng đội hình cho riêng mình. Trong đó, các Võ hiệp sẽ được chia thành 5 hệ nguyên tố có sự tương khắc qua lại theo nhóm: Thủy – Hỏa – Lôi hoặc Ám và Quang. Mỗi anh hùng điều sở hữu tuyệt kỹ riêng trong khi thi đấu như: liên kích, sát thương, hộ vệ, hồi máu, pháp thuật và làm suy yêu địch thủ… Hệ thống, phó bản, phụ bản, PK trong game cũng hết sức phong phú với hàng loạt hoạt động được khai mở liên tục hàng ngày, hằng tuần để phục vụ người chơi.
+
+![](<https://img.9gate.net/files/751950259/2015/04/20/1429522217-4mong-giang-ho-chinh-thuc-bung-no-tang-vipcode-gia-tri-9gate.jpg>)
+
+_Khiêu chiến Thần Đàn – một hoạt động “đỉnh” trong Mộng Giang Hồ_
+
+**Mộng Giang Hồ** hiện đang là tựa game rất thịnh hành tại thị trường Châu Á, đặc biệt là các nước có nhu cầu về game mobile lớn như: Nhật Bản, Hàn Quốc, Thái Lan, Singapore, Trung Quốc. Đối với thị trường Việt Nam, Mộng Giang Hồ được giới chuyên môn đánh giá là hàng hot của làng game Việt trong mùa hè 2015.
+
+Cùng điểm qua một số hình ảnh ingame đặc sắc:
+
+![](<https://img.9gate.net/files/751950259/2015/04/20/1429522217-5mong-giang-ho-chinh-thuc-bung-no-tang-vipcode-gia-tri-9gate.jpg>)
+
+_Màn hình chờ đẹp long lanh trong game_
+
+![](<https://img.9gate.net/files/751950259/2015/04/20/1429522221-6mong-giang-ho-chinh-thuc-bung-no-tang-vipcode-gia-tri-9gate.jpg>)
+
+_Lôi Đài Tỷ Võ quy tụ hàng loạt cao thủ giang hồ_
+
+_![](<https://img.9gate.net/files/751950259/2015/04/20/1429522221-7mong-giang-ho-chinh-thuc-bung-no-tang-vipcode-gia-tri-9gate.jpg>)_
+
+_Một trận đấu kịch tính với tuyệt chiêu đẹp mắt_
+
+![](<https://img.9gate.net/files/751950259/2015/04/20/1429522223-8mong-giang-ho-chinh-thuc-bung-no-tang-vipcode-gia-tri-9gate.jpg>)
+
+_Tạo hình Lý Thu Thủy trong Mộng Giang Hồ_
+
+![](<https://img.9gate.net/files/751950259/2015/04/20/1429522224-9mong-giang-ho-chinh-thuc-bung-no-tang-vipcode-gia-tri-9gate.jpg>)
+
+_Hình ảnh quyến rũ và dễ thương của Lâm Triều Anh_
+
+Nhận **Vipcode**
+
+Trang chủ: [http://mong.mobo.vn/](<http://mong.mobo.vn/teaser>)

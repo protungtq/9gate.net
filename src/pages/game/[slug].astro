@@ -253,6 +253,19 @@ const secondary: Act[] = [
           <button id="desc-more" type="button" class="sm:hidden hidden text-tap text-sm font-semibold mt-1">Thêm</button>
         </section>
 
+        {!!game.legacy?.screenshots?.length && (
+          <section class="game-panel p-4 sm:p-5">
+            <h2 class="section-title mb-3">Ảnh trong game</h2>
+            <div class="flex gap-3 overflow-x-auto pb-2">
+              {game.legacy.screenshots.map((src, index) => (
+                <a href={src} target="_blank" rel="noopener noreferrer" class="block shrink-0">
+                  <img src={src} alt={`Ảnh ${index + 1} của ${game.name}`} loading="lazy" class="h-40 w-auto rounded-lg sm:h-52" />
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+
         {embedUrl && (
           <section id="trailer" class="game-panel scroll-mt-24 p-3 sm:p-4">
             <h2 class="section-title mb-3 px-1">Trailer</h2>
@@ -296,6 +309,9 @@ const secondary: Act[] = [
             <div class="flex justify-between gap-3 py-3"><dt class="muted">Nhà phát hành</dt><dd class="font-semibold text-right">{game.publisher}</dd></div>
             <div class="flex justify-between gap-3 py-3"><dt class="muted">Nền tảng</dt><dd class="font-semibold text-right">{platText}</dd></div>
             <div class="flex justify-between gap-3 py-3"><dt class="muted">Thể loại</dt><dd class="font-semibold text-right">{game.genre}</dd></div>
+            {game.legacy?.releaseDate && (
+              <div class="flex justify-between gap-3 py-3"><dt class="muted">Ngày phát hành</dt><dd class="font-semibold text-right">{game.legacy.releaseDate}</dd></div>
+            )}
           </dl>
         </section>
         <section class="game-panel p-4 sm:p-5">
