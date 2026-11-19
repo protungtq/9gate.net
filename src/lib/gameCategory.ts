@@ -93,7 +93,6 @@ export async function gameCategoryPaths(category: Category) {
         props: {
           ...categories[category],
           games: list.slice(index * GAME_PAGE_SIZE, currentPage * GAME_PAGE_SIZE),
-          gameCount: list.length,
           postImages,
           currentPage,
           totalPages,

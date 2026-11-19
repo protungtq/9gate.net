@@ -7,7 +7,7 @@ import { GAME_PAGE_SIZE, type gameCategoryPaths } from '../lib/gameCategory';
 type Props = Awaited<ReturnType<typeof gameCategoryPaths>>[number]['props'];
 
 const {
-  title, subtitle, seoTitle, description, keywords, games, gameCount, postImages,
+  title, subtitle, seoTitle, description, keywords, games, postImages,
   filters, activeFilter, sorts, activeSort, currentPage, totalPages, previousHref, nextHref,
 } = Astro.props;
 const genre = filters.find(({ path }) => path === activeFilter)?.label ?? '';
@@ -37,7 +37,7 @@ const jsonLd = {
     <div class="flex flex-wrap items-end justify-between gap-3">
       <div>
         <h1 class="text-3xl sm:text-4xl font-extrabold">{title}</h1>
-        <p class="muted mt-1">{gameCount} game · {subtitle}</p>
+        <p class="muted mt-1">{subtitle}</p>
       </div>
       <nav class="flex rounded-full sf p-1 text-sm font-semibold" aria-label="Sắp xếp game">
         {sorts.map(({ path, label, href }) => (

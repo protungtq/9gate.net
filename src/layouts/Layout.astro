@@ -132,7 +132,7 @@ const isActive = (href: string) =>
     <slot />
   </main>
 
-  <nav aria-label="Điều hướng trên thiết bị di động" class="mobile-nav site-chrome fixed inset-x-0 bottom-0 z-50 grid grid-cols-4 border-t border-black/5 backdrop-blur dark:border-white/10 dark:bg-[#111316]/95 lg:hidden">
+  <nav id="mobile-nav" aria-label="Điều hướng trên thiết bị di động" class="mobile-nav site-chrome fixed inset-x-0 bottom-0 z-50 grid grid-cols-4 border-t border-black/5 backdrop-blur dark:border-white/10 dark:bg-[#111316]/95 lg:hidden">
     {NAV.map((item) => {
       const active = isActive(item.href);
       return (
@@ -266,6 +266,33 @@ const isActive = (href: string) =>
         q.focus();
       }
     });
+  </script>
+
+  <script is:inline>
+    (() => {
+      const nav = document.getElementById('mobile-nav');
+      const desktop = window.matchMedia('(min-width: 1024px)');
+      let hideTimer;
+
+      function reveal() {
+        window.clearTimeout(hideTimer);
+        nav.removeAttribute('data-hidden');
+
+        if (!desktop.matches) {
+          hideTimer = window.setTimeout(() => {
+            if (!nav.contains(document.activeElement)) nav.setAttribute('data-hidden', '');
+          }, 3000);
+        }
+      }
+
+      window.addEventListener('pointerdown', reveal, { passive: true });
+      window.addEventListener('scroll', reveal, { passive: true });
+      window.addEventListener('pageshow', reveal);
+      desktop.addEventListener('change', reveal);
+      nav.addEventListener('focusin', reveal);
+      nav.addEventListener('focusout', reveal);
+      reveal();
+    })();
   </script>
 </body>
 </html>
