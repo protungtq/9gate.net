@@ -272,26 +272,52 @@ const isActive = (href: string) =>
     (() => {
       const nav = document.getElementById('mobile-nav');
       const desktop = window.matchMedia('(min-width: 1024px)');
-      let hideTimer;
+      const tapDistance = 10;
+      const swipeDistance = 24;
+      let gesture;
 
-      function reveal() {
-        window.clearTimeout(hideTimer);
-        nav.removeAttribute('data-hidden');
-
-        if (!desktop.matches) {
-          hideTimer = window.setTimeout(() => {
-            if (!nav.contains(document.activeElement)) nav.setAttribute('data-hidden', '');
-          }, 3000);
-        }
+      function track(touch) {
+        const dx = Math.abs(touch.clientX - gesture.x);
+        const dy = touch.clientY - gesture.y;
+        if (dx > tapDistance || Math.abs(dy) > tapDistance) gesture.moved = true;
+        if (dy <= -swipeDistance && -dy > dx) nav.setAttribute('data-hidden', '');
       }
 
-      window.addEventListener('pointerdown', reveal, { passive: true });
-      window.addEventListener('scroll', reveal, { passive: true });
-      window.addEventListener('pageshow', reveal);
-      desktop.addEventListener('change', reveal);
-      nav.addEventListener('focusin', reveal);
-      nav.addEventListener('focusout', reveal);
-      reveal();
+      window.addEventListener('touchstart', (event) => {
+        gesture = undefined;
+        if (desktop.matches || event.touches.length !== 1) return;
+        const touch = event.touches[0];
+        gesture = { id: touch.identifier, x: touch.clientX, y: touch.clientY, started: event.timeStamp, moved: false };
+      }, { passive: true });
+
+      window.addEventListener('touchmove', (event) => {
+        if (!gesture || event.touches.length !== 1) return;
+        const touch = event.touches[0];
+        if (touch.identifier === gesture.id) track(touch);
+      }, { passive: true });
+
+      window.addEventListener('touchend', (event) => {
+        if (!gesture) return;
+        const touch = Array.from(event.changedTouches).find(item => item.identifier === gesture.id);
+        if (!touch) return;
+        track(touch);
+
+        const tapped = !gesture.moved && event.timeStamp - gesture.started < 500;
+        gesture = undefined;
+        if (tapped) {
+          // Let the browser dispatch the tap's click before moving the links.
+          window.requestAnimationFrame(() => {
+            if (!desktop.matches) nav.toggleAttribute('data-hidden');
+          });
+        }
+      }, { passive: true });
+
+      window.addEventListener('touchcancel', () => { gesture = undefined; }, { passive: true });
+      desktop.addEventListener('change', () => {
+        gesture = undefined;
+        nav.removeAttribute('data-hidden');
+      });
+      nav.addEventListener('focusin', () => nav.removeAttribute('data-hidden'));
     })();
   </script>
 </body>
