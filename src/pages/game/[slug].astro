@@ -293,7 +293,7 @@ const secondary: Act[] = [
         <section class="game-panel p-4 sm:p-5">
           <h2 class="section-title mb-4">Bài viết về game này</h2>
           {relatedPosts.length > 0 ? (
-            <div class="space-y-3">
+            <div class="grid">
               {relatedPosts.map((p: any) => <NewsRow post={p} game={game} postImg={postImg} />)}
             </div>
           ) : (

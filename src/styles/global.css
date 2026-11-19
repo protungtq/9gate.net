@@ -160,8 +160,7 @@
     background-color: var(--gate-feature);
   }
   .news-row {
-    @apply border border-[var(--gate-border)] bg-[var(--gate-panel)];
-    box-shadow: 0 2px 5px #22354d13;
+    @apply border-b border-[var(--gate-border)];
   }
   html.dark .post-panel {
     border-color: #39424e;
@@ -173,8 +172,6 @@
   }
   html.dark .news-row {
     border-color: #3c4655;
-    background-color: #232a34;
-    box-shadow: 0 2px 5px #0004;
   }
   .news-row:is(:hover, :focus-visible) {
     border-color: rgb(var(--gate-accent) / .6);

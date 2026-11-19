@@ -147,7 +147,7 @@ const jsonLd = [
     {morePosts.length > 0 && (
       <section class="post-panel post-related mt-6 sm:mt-8 p-4 sm:p-6" aria-labelledby="related-heading">
         <h2 id="related-heading" class="section-title text-xl mb-4">{moreTitle}</h2>
-        <div class="space-y-3">
+        <div class="grid">
           {morePosts.map((p) => <NewsRow post={p} game={gameBySlug[p.gameSlug]} postImg={postImageMap[p.gameSlug]} />)}
         </div>
       </section>

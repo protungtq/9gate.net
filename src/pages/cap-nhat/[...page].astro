@@ -104,7 +104,7 @@ const title = activeTag ? `Bài viết về ${tagLabel}` : 'Bài viết';
     )}
 
     {posts.length > 0 ? (
-      <div class="grid lg:grid-cols-2 gap-4" id="post-grid">
+      <div class="grid lg:grid-cols-2 gap-x-4" id="post-grid">
         {posts.map((post) => <NewsRow post={post} game={gameBySlug[post.gameSlug]} postImg={postImageMap[post.gameSlug]} />)}
       </div>
     ) : (

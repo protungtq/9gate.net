@@ -213,7 +213,7 @@ const jsonLd = {
             <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
           </a>
         </div>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-4">
           {latestPosts.map((p) => <NewsRow post={p} game={gameBySlug[p.gameSlug]} postImg={postImageMap[p.gameSlug]} />)}
         </div>
       </section>
