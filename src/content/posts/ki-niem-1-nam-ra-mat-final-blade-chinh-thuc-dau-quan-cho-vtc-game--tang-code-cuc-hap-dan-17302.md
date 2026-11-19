@@ -27,7 +27,7 @@ Vì mang trong mình yếu tố nhập vai nên người chơi có thể tiến 
 
 Nhân kỷ niệm 01 năm ra mắt, Final Blade gửi tặng game thủ 9Gate giftcode giá trị:
 
-![Final Blade: Giftcode kỷ niệm 01 năm ra mắt](<https://img.9gate.net/thumb_w/240/files/4148393882/2019/02/19/1550521545-logo-final-blade-9gate.png>)
+![Final Blade: Giftcode kỷ niệm 01 năm ra mắt](<https://i.postimg.cc/bJ7zTZkM/9gate-c60f32e4e430fce8c24fd4.jpg>)
 
 ### Final Blade: Giftcode kỷ niệm
 

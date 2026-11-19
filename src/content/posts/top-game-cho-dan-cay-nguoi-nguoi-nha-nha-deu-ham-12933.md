@@ -23,7 +23,7 @@ _![](<https://i.ibb.co/ycRL7Wfy/c5706e73fd0a2ab2.webp>)_
 
 Tiên Kiếm Truyền Kỳ - game mobile “CÀY CHAY LÊN VIP” đầu tiên ở Việt Nam hứa hẹn sẽ tạo nên một sân chơi công bằng cho các game thủ mang trong mình dòng máu “cày cuốc” sắp tới. Đồng thời, game thủ nhà ta sẽ được dịp cười thả ga - không còn phải lo tiêu hao lì xì vì đã có một tựa game tiên hiệp yêu thích lại “CÀY CHAY LÊN VIP” đáng chơi để chơi trong dịp Tết này.
 
-![](<https://img.9gate.net/thumb_w/240/files/4148393882/2017/12/28/1514456566-logo-tien-kiem-truyen-ky-9gate.jpg>)
+![](<https://i.postimg.cc/LXY9Ltgm/9gate-b082bf523815655dc68485.jpg>)
 
 ### Tiên Kiếm Truyền Kỳ
 
@@ -43,7 +43,7 @@ Vốn dĩ tính năng cày điểm đổi Vip thường thấy hơn ở các t�
 
 Một số tính năng khác đáng chú ý: chiêu mộ và nâng cấp các anh hùng với những kỹ năng độc đáo và tính cách riêng biệt, trải nghiệm sự khốc liệt của những trận chiến qua đồ họa 3D tuyệt hảo, thỏa hiệp cùng các quái vật hung tợn và biến chúng thành Cộng Sự…
 
-![](<https://img.9gate.net/thumb_w/240/files/4148393882/2017/08/29/1503998131-logo-lords-mobile-9gate.png>)
+![](<https://i.postimg.cc/zBbzKCHN/9gate-e925acaff87d200e868cdd.jpg>)
 
 ### Lords Mobile
 
@@ -63,7 +63,7 @@ _![](<https://i.ibb.co/3YTggyLq/6fdf309254192c49.webp>)_
 
 Tính cộng đồng trong game vẫn dính chặt với đặc trưng đối kháng cực cao của Hắc Ám. Vẫn cho phép người chơi tự do kết bạn, trò chuyện và tham gia các hoạt động đòi hỏi sự đoàn kết như PvE, PvP, PK tự do ngàn người.
 
-![](<https://img.9gate.net/thumb_w/240/files/4148393882/2017/11/24/1511508792-logo-hac-am-mobile-9gate.jpg>)
+![](<https://i.postimg.cc/gJCYDx81/9gate-732eadef4f929a6f59d88f.jpg>)
 
 ### Hắc Ám Mobile
 

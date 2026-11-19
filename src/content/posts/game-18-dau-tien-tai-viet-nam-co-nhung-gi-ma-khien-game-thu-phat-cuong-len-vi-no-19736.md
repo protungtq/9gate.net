@@ -1,7 +1,7 @@
 ---
 title: "Game 18+ đầu tiên tại Việt Nam có những gì mà khiến game thủ phát cuồng lên vì nó?"
 description: "Mỹ Nữ Truyện hứa hẹn là một sản phẩm game nhập vai 18+ khiến cánh đàn ông “phê” theo cả nghĩa đen lẫn nghĩa bóng và dĩ nhiên cấm trẻ em dưới tuổi vị thành niên."
-image: "https://media.giphy.com/media/ytSZf8UNyPH9JdKK02/giphy.gif"
+image: "https://i.postimg.cc/x8L9F9PF/9gate-e3a52ed49353c4dc5c1fe8.jpg"
 tags: ["Giới Thiệu Game"]
 legacyId: "19736"
 legacyPath: "/tin-game/gioi-thieu-game/game-18-dau-tien-tai-viet-nam-co-nhung-gi-ma-khien-game-thu-phat-cuong-len-vi-no-19736.html"
@@ -21,7 +21,7 @@ _Người đầu tiên độc chiếm toàn bộ mỹ nhân sẽ có trong tay �
 
 Sát cánh cùng người chơi là gần 40 nữ thần tướng nổi tiếng xuyên suốt trong lịch sử Trung Quốc tụ họp nguyện sống chết vì bạn như Giang Nam kỹ nữ nổi tiếng Tô Tiểu Tiểu, tam quốc nữ thần Điêu Thuyền, Lâm Đại Ngọc, Bá Vương biệt cơ Ngu Cơ, thướt tha yểu điệu Triệu Phi Yến,…v….v…
 
-![](<https://media.giphy.com/media/9ZcfAI5IaTabXR7A7p/giphy.gif>)
+![](<https://i.postimg.cc/4ypXFX1B/9gate-8d2bb48f3605200cceef3c.jpg>)
 
 _Dàn Mỹ Nhân xinh đẹp với bộ chiêu thức vô cùng đẹp mắt._
 
@@ -41,7 +41,7 @@ Những mỹ nữ sở hữu body vô cùng sexy, nóng bỏng trong game mobile
 
 Đúng như câu nói “Anh hùng khó vượt qua ải mỹ nhân”, cùng với dàn nhân vật cực kỳ sexy Mỹ Nữ Truyện sẽ cung cấp đầy đủ 500 tuyệt kỹ tán trai từ ngôn từ đến hình thể. Tất nhiên mỗi người vợ của bạn trong game đều là một thành viên trong đội ngũ Mỹ Nhân sẽ cùng bạn xông pha nơi chiến trường. Vậy nên muốn những bà vợ được mạnh mẽ và sở hữu nhiều kỹ năng độc đáo thì bạn cần chăm sóc, nuôi dưỡng hết mực để nâng cao thiện cảm.
 
-![](<https://media.giphy.com/media/ytSZf8UNyPH9JdKK02/giphy.gif>)
+![](<https://i.postimg.cc/x8L9F9PF/9gate-e3a52ed49353c4dc5c1fe8.jpg>)
 
 _Muốn vợ mạnh thì Tôn Chủ cần phải chăm chỉ Thị Tẩm, nuông chiều hằng đêm._
 

@@ -1,7 +1,7 @@
 ---
 title: "Lilith Games tròn 10 tuổi, được gây dựng từ những cựu nhân viên của Tencent"
 description: "Lilith – Hãng sản xuất Rise of Kingdoms kỷ niệm 10 năm thành lập, lọt top 3 công ty game đại lục doanh thu ở nước ngoài cao nhất."
-image: "https://img.9gate.net/files/4148393882/2023/05/18/1684377826-thumb-lilith-games-tron-10-tuoi-duoc-gay-dung-tu-nhung-cuu-nhan-vien-cua-tencent-9gate.jpg"
+image: "https://i.postimg.cc/htk7Xt3Z/9gate-72ed7121839c76ebed62e4.jpg"
 tags: ["Cộng Đồng"]
 legacyId: "23330"
 legacyPath: "/tin-game/cong-dong/lilith-games-tron-10-tuoi-duoc-gay-dung-tu-nhung-cuu-nhan-vien-cua-tencent-23330.html"
@@ -13,7 +13,7 @@ Nhìn lại lịch sử 10 năm, Wang Xinwen, Giám đốc điều hành của L
 
 Lilith có 3 nhà sáng lập đến từ Tencent, từng làm việc cho hãng game số 1 tại Trung Quốc, trước khi rời bỏ để lập công ty riêng của mình. Để so sánh giữa Lilith và Tencent, cần phải giải thích khái niệm “Tencentization”. Bản chất của ”Tencentization” là khổng lồ hóa về quy mô; về tuổi tác ở mức “trung niên”; về chiến lược là “định hướng hiệu quả và có chiến lược trung và dài hạn”… Lilith Games đã áp dụng tính chất này trong quá trình phát triển của mình.
 
-![](<https://img.9gate.net/files/4148393882/2023/05/18/1684377836-01-lilith-games-tron-10-tuoi-duoc-gay-dung-tu-nhung-cuu-nhan-vien-cua-tencent-9gate.jpg>)
+![](<https://i.postimg.cc/cLgn1nXq/9gate-97a08ec81f4e1db956c614.jpg>)
 
 Khổng lồ hóa là một thách thức lớn mà mọi công ty đều phải đối mặt. Chiến lược mở rộng quy mô của Lilith Games như Tencent đã làm là rõ ràng, ai cũng có thể nhìn ra được. Lilith cho thấy sự trưởng thành của mình thông qua nhiều sản phẩm tạo được dấu ấn với cộng đồng người chơi game.
 
@@ -21,7 +21,7 @@ Những người sáng lập Lilith: Wang Xinwen, Yuan Shuai và Zhang Hao, có 
 
 Có một thời kỳ khi game mobile phát triển mạnh mẽ, chính Tencent có chính sách vận động nhân viên trò chơi nghỉ việc và bắt đầu kinh doanh riêng. Khi thị trường phát triển nhanh, Lilith ra đời và trở thành một trong những công ty lớn mạnh cạnh tranh với một số thể loại game do Tencent phát hành.
 
-![](<https://img.9gate.net/files/4148393882/2023/05/18/1684377836-02-lilith-games-tron-10-tuoi-duoc-gay-dung-tu-nhung-cuu-nhan-vien-cua-tencent-9gate.jpg>)
+![](<https://i.postimg.cc/13nqRqMT/9gate-e6cfb642d4b6583c6dc767.jpg>)
 
 Là một trong những công ty sớm nhất ở Trung Quốc nắm bắt cơ hội của sự trỗi dậy của game di động, Lilith Games đã từng rơi vào thời kỳ trì trệ sau khi ra mắt Soul Hunters (trước đây gọi là Soul Clash).
 

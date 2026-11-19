@@ -1,7 +1,7 @@
 ---
 title: "Tìm hiểu về game ký hiệu 18+ và quy định về phân loại trò chơi điện tử theo độ tuổi của người chơi"
 description: "Theo Nghị định 147/2024/NĐ-CP về Quản lý, cung cấp, sử dụng Internet và thông tin trên mạng, quy định về phân loại trò chơi điện tử theo độ tuổi của người chơi có 4 loại: trò chơi điện tử trên mạng (game) 18+, 16+, 12+ và 00+."
-image: "https://img.9gate.net/files/4148393882/2024/11/13/1731473359-thumb-tim-hieu-ve-game-ky-hieu-18-va-quy-dinh-ve-phan-loai-tro-choi-dien-tu-theo-do-tuoi-cua-nguoi-choi-9gate.jpg"
+image: "https://i.postimg.cc/mkPb3QPq/9gate-8c496635b8313d3ff3587b.jpg"
 tags: ["Cộng Đồng"]
 legacyId: "24697"
 legacyPath: "/tin-game/cong-dong/tim-hieu-ve-game-ky-hieu-18-va-quy-dinh-ve-phan-loai-tro-choi-dien-tu-theo-do-tuoi-cua-nguoi-choi-24697.html"
@@ -15,7 +15,7 @@ Theo đó, các trò chơi điện tử trên mạng (game) được phân theo 
 
 **Game dành cho người chơi từ 18 tuổi trở lên (ký hiệu là 18+)** là trò chơi không có hoạt động, hình ảnh, âm thanh, ngôn ngữ, lời thoại khiêu dâm. Đối với trò chơi có hoạt động đối kháng, chiến đấu thì có sử dụng hình ảnh vũ khí cận cảnh, nhân vật mô phỏng người thật.
 
-![](<https://img.9gate.net/files/4148393882/2024/11/13/1731473382-01-tim-hieu-ve-game-ky-hieu-18-va-quy-dinh-ve-phan-loai-tro-choi-dien-tu-theo-do-tuoi-cua-nguoi-choi-9gate.jpg>)
+![](<https://i.postimg.cc/vT4Q7W4X/9gate-2f2b0418cbb6c4592b6eed.jpg>)
 
 **Game dành cho người chơi từ 16 tuổi trở lên (ký hiệu là 16+)** là trò chơi không có hoạt động, hình ảnh, âm thanh, ngôn ngữ, lời thoại khiêu dâm, quay cận cảnh gây chú ý đến các bộ phận nhạy cảm trên cơ thể người. Đối với trò chơi có hoạt động đối kháng, thì không có hình ảnh, hoạt động thể hiện tính chất bạo lực. Đây là giới hạn độ tuổi mới được bổ sung thêm so với các Nghị định trước đó.
 
@@ -23,7 +23,7 @@ Theo đó, các trò chơi điện tử trên mạng (game) được phân theo 
 
 **Game dành cho mọi lứa tuổi (ký hiệu 00+)** là trò chơi mô phỏng dạng hoạt hình; không có hoạt động đối kháng bằng vũ khí; không có hình ảnh, âm thanh ma quái, kinh dị, bạo lực; không có hoạt động, âm thanh, ngôn ngữ, lời thoại, hình ảnh nhân vật mặc hở hang, khiêu dâm, quay cận cảnh gây chú ý đến các bộ phận nhạy cảm trên cơ thể người.
 
-![](<https://img.9gate.net/files/4148393882/2024/11/13/1731473382-02-tim-hieu-ve-game-ky-hieu-18-va-quy-dinh-ve-phan-loai-tro-choi-dien-tu-theo-do-tuoi-cua-nguoi-choi-9gate.jpg>)
+![](<https://i.postimg.cc/zvyJwnyx/9gate-64575446466597af11e41f.jpg>)
 
 Bên cạnh đó, Nghị định 147 cũng quy định trách nhiệm của doanh nghiệp cung cấp dịch vụ trong việc phân loại trò chơi theo độ tuổi. Nếu phát hiện doanh nghiệp phân loại không phù hợp, Bộ Thông tin và Truyền thông (Cục Phát thanh, truyền hình và thông tin điện tử), Sở Thông tin và Truyền thông địa phương có văn bản yêu cầu doanh nghiệp điều chỉnh lại việc phân loại trò chơi trong thời hạn 15 ngày. Nếu tiếp tục không điều chỉnh kết quả phân loại trò chơi theo độ tuổi như yêu cầu sẽ bị thu hồi giấy phép phát hành.
 
@@ -31,7 +31,7 @@ Ngoài ra, các NPH game phải có hệ thống kỹ thuật quản lý thời 
 
 Để đảm bảo tuân thủ quy định, doanh nghiệp phát hành game phải thiết lập các hệ thống kỹ thuật nhằm kiểm soát thời gian chơi. Doanh nghiệp phải liên tục đưa ra cảnh báo về tác hại của việc chơi game quá thời gian quy định. Cụ thể, trên các diễn đàn của trò chơi và trên thiết bị, thông tin khuyến cáo "chơi quá 180 phút một ngày sẽ ảnh hưởng xấu đến sức khỏe" phải được hiển thị ở vị trí dễ nhìn thấy và phát thông báo 30 phút/lần trong suốt quá trình chơi.
 
-![](<https://img.9gate.net/files/4148393882/2024/11/13/1731473388-03-tim-hieu-ve-game-ky-hieu-18-va-quy-dinh-ve-phan-loai-tro-choi-dien-tu-theo-do-tuoi-cua-nguoi-choi-9gate.jpg>)
+![](<https://i.postimg.cc/fyVw7xVq/9gate-533991e2b5dffa040eab7a.jpg>)
 
 Nghị định mới cũng yêu cầu nhà cung cấp dịch vụ game phải lưu trữ và cập nhật đầy đủ thông tin cá nhân của người chơi tại Việt Nam. Những thông tin này bao gồm họ và tên, ngày tháng năm sinh và số điện thoại di động của người chơi.
 

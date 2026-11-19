@@ -15,7 +15,7 @@ Trong những ngày qua, cộng đồng **Tập Kích** càng trở nên sôi đ
 
 Nhân dịp ra mắt chế độ chơi mới, Tập Kích gửi tặng độc giả 500 giftcode trải nghiệm. Nội dung giftcode:
 
-![Tập Kích: Giftcode Update chế độ CABG](<https://img.9gate.net/thumb_w/240/files/4148393882/2016/05/02/1462156319-logo-tap-kich-9gate.jpg>)
+![Tập Kích: Giftcode Update chế độ CABG](<https://i.postimg.cc/9MRmZdwV/9gate-df4efeaac6df7befa1094e.jpg>)
 
 ### Tập Kích: Giftcode Update chế
 

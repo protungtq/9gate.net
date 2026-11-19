@@ -1,7 +1,7 @@
 ---
 title: "40 NPH game Trung Quốc trong top 100 hãng sản xuất game thế giới"
 description: "SensorTower mới công bố xếp hạng doanh thu của các nhà phát hành trò chơi di động Trung Quốc trên App Store và Google Play."
-image: "https://img.9gate.net/files/4148393882/2022/09/15/1663228592-thumb-40-nph-game-trung-quoc-trong-top-100-hang-san-xuat-game-the-gioi-9gate.jpg"
+image: "https://i.postimg.cc/c453Nm7G/9gate-136e8a29c1a15b16e55edd.jpg"
 tags: ["Cộng Đồng"]
 legacyId: "22466"
 legacyPath: "/tin-game/cong-dong/40-nph-game-trung-quoc-trong-top-100-hang-san-xuat-game-the-gioi-22466.html"
@@ -13,7 +13,7 @@ Trong số báo này, có tổng cộng 40 nhà sản xuất Trung Quốc lọt 
 
 Lưu ý đặc biệt báo cáo này chỉ tính doanh thu của nhà phát hành và không bao gồm các kênh Android của bên thứ ba ở Trung Quốc. Bạn có thể thấy 30 nhà phát hành trò chơi di động hàng đầu Trung Quốc theo doanh thu qua bảng xếp hạng.
 
-![](<https://img.9gate.net/files/4148393882/2022/09/15/1663228576-01-40-nph-game-trung-quoc-trong-top-100-hang-san-xuat-game-the-gioi-9gate.jpg>)
+![](<https://i.postimg.cc/Nf0XVVXf/9gate-4305ee16c1a48bf1114012.jpg>)
 
 Vào ngày 11 tháng 08, Tencent và Perfect World đã cùng nhau ra mắt game thế giới mở khoa học viễn tưởng nhẹ nhàng Tower of Fantasy tại thị trường nước ngoài. Trò chơi ngay lập tức đứng đầu danh sách tải game di động tại Hoa Kỳ, Nhật Bản, Hàn Quốc, Trung Quốc, Đài Loan, Hồng Kông và Macau, và trở thành nơi tăng trưởng doanh thu toàn cầu trong tháng 08.
 
@@ -23,7 +23,7 @@ Diablo Immortal của NetEase ra mắt tại thị trường Trung Quốc vào n
 
 Nhờ nội dung phong phú của các hoạt động nhân kỷ niệm 2.5 năm phiên bản máy chủ Nhật Bản của Arknights vào tháng 08, doanh thu của Yoxing Network đã tăng 18% so với tháng trước và xếp hạng tăng lên 3  trở lại vị trí dẫn đầu danh sách doanh thu của 10 NPH game.
 
-![](<https://img.9gate.net/files/4148393882/2022/09/15/1663228577-02-40-nph-game-trung-quoc-trong-top-100-hang-san-xuat-game-the-gioi-9gate.jpg>)
+![](<https://i.postimg.cc/gk0h55hc/9gate-5e167de3063d3107b33cde.jpg>)
 
 Haibi Network đã tung ra trò chơi mới Survivor!.io tại thị trường nước ngoài vào đầu tháng 08. Với lối chơi “Roguelike Survival and Mowing” độc đáo, trò chơi có lợi thế lớn về quảng cáo và nhanh chóng trở nên phổ biến tại thị trường nước ngoài. Game đứng thứ 8 trong danh sách tăng trưởng doanh thu trò chơi di động toàn cầu và đứng đầu trong danh sách doanh thu trò chơi mobile tầm trung. Doanh thu của Haibi Network tăng 159% so với tháng trước, đạt mức cao kỷ lục, đứng thứ 19 trong danh sách doanh thu của các nhà phát hành game di động Trung Quốc.
 

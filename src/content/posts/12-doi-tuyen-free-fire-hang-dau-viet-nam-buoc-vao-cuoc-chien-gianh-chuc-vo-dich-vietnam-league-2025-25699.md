@@ -1,7 +1,7 @@
 ---
 title: "12 đội tuyển Free Fire hàng đầu Việt Nam bước vào cuộc chiến giành chức vô địch VIETNAM LEAGUE 2025"
 description: "Vào ngày 17-18/1 tới đây, Chung kết của VIETNAM LEAGUE 2025 - giải đấu Esports chuyên nghiệp cấp độ cao nhất của Free Fire Việt Nam sẽ chính thức được diễn ra."
-image: "https://img.9gate.net/files/4148393882/2026/01/17/1768661484-thumb-12-doi-tuyen-free-fire-hang-dau-viet-nam-buoc-vao-cuoc-chien-gianh-chuc-vo-dich-vietnam-league-2025-9gate.jpg"
+image: "https://i.postimg.cc/x1v9Pjd2/9gate-9a50a12751eea6932800b4.jpg"
 tags: ["Cộng Đồng"]
 legacyId: "25699"
 legacyPath: "/tin-game/cong-dong/12-doi-tuyen-free-fire-hang-dau-viet-nam-buoc-vao-cuoc-chien-gianh-chuc-vo-dich-vietnam-league-2025-25699.html"
@@ -9,13 +9,13 @@ date: "2026-01-16"
 legacyAuthor: "BQT 9Gate"
 ---
 
-![](<https://img.9gate.net/files/4148393882/2026/01/17/1768661493-01-12-doi-tuyen-free-fire-hang-dau-viet-nam-buoc-vao-cuoc-chien-gianh-chuc-vo-dich-vietnam-league-2025-9gate.jpg>)
+![](<https://i.postimg.cc/MGtxhsR9/9gate-8e29359ca26c140fc6e8d0.jpg>)
 
 Trở lại sau nhiều năm, VIETNAM LEAGUE 2025 là nơi quy tụ các đội tuyển Free Fire mạnh nhất Việt Nam. Sau giai đoạn vòng bảng diễn ra từ ngày 2/1 đến 4/1, 12 đội tuyển xuất sắc nhất sẽ cùng tranh tài ở Chung kết để tìm ra đội tuyển Free Fire mạnh nhất Việt Nam ở thời điểm hiện tại.
 
 **12 đội tuyển xuất sắc nhất góp mặt tại Chung kết VIETNAM LEAGUE 2025**
 
-_![](<https://img.9gate.net/files/4148393882/2026/01/17/1768661493-02-12-doi-tuyen-free-fire-hang-dau-viet-nam-buoc-vao-cuoc-chien-gianh-chuc-vo-dich-vietnam-league-2025-9gate.jpg>)_
+_![](<https://i.postimg.cc/yNnBwf95/9gate-715d067b34eadcc3412417.jpg>)_
 
 Sau 3 tuần tranh tài căng thẳng ở vòng bảng, 12 đội tuyển xuất sắc nhất đã chính thức lộ diện để góp mặt tại Chung kết VIETNAM LEAGUE 2025. Trong đó có 4 đội tuyển đang thi đấu tại FFWS SEA - giải đấu hàng đầu khu vực Đông Nam Á và 8 đội tuyển bán chuyên xuất sắc đi lên từ giải đấu cộng đồng Đại Chiến Quân Đoàn:
 
@@ -27,7 +27,7 @@ Chung Kết VIETNAM LEAGUE 2025 sẽ diễn ra theo thể thức Champion Rush, 
 *   Đội tuyển nào có thể thoả mãn được 2 điều kiện \[Đạt đủ 100 điểm\] + \[Có được Booyah! ở Game sau đó\] sẽ ngay lập tức trở thành NHÀ VÔ ĐỊCH
 *   Tuy nhiên, nếu sau cả 10 Game mà không có đội tuyển nào đủ điều kiện trên thì \[Đội tuyển Top 1 trên BXH Tổng\] sẽ trở thành NHÀ VÔ ĐỊCH
 
-![](<https://img.9gate.net/files/4148393882/2026/01/17/1768661493-03-12-doi-tuyen-free-fire-hang-dau-viet-nam-buoc-vao-cuoc-chien-gianh-chuc-vo-dich-vietnam-league-2025-9gate.jpg>)
+![](<https://i.postimg.cc/1zMPLW6M/9gate-0c66012719b949854a2087.jpg>)
 
 Trước đó, vào ngày 17/1, 12 đội tuyển sẽ tham gia ngày thi đấu Point Rush để tìm kiếm những điểm cộng quý giá cho ngày Chung kết sau đó.
 

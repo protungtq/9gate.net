@@ -15,7 +15,7 @@ legacyAuthor: "BQT 9Gate"
 
 Nhân dịp này, BDH Yulgang Hiệp Khách xin gửi tặng quý đọc giả 50 Gift code giá trị bao gồm_:_**1 Cửu Chuyển Đơn, 1 Thiên Niên Tuyết Sâm và 1 Lễ Vật Yêu Hóa Ma Võ (Hải Sản).**
 
-![Hiệp Khách Mobile - Dzogame: Giftcode Địa Hỏa Môn](<https://img.9gate.net/thumb_w/240/files/4148393882/2022/02/12/1644681690-icon-hiep-khach-mobile-dzogame-9gate.jpg>)
+![Hiệp Khách Mobile - Dzogame: Giftcode Địa Hỏa Môn](<https://i.postimg.cc/26szw1hM/9gate-c47473276f2942864139c9.jpg>)
 
 ### Hiệp Khách Mobile - Dzogame:
 

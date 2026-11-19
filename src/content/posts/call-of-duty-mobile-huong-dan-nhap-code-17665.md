@@ -17,40 +17,40 @@ BƯỚC 2:
 
 **Chọn biểu tượng game **Call of Duty: Mobile VN.****
 
-![](<https://img.zing.vn/upload/codm/source/News/HdCODE/1.png>)
+![](<https://i.postimg.cc/sXkVcM7t/9gate-a5a43a5181e54426e40b8f.jpg>)
 
 BƯỚC 3:
 
 Nhập **mã UID** của tài khoản nhân vật bạn muốn nhập CODE nhận thưởng.
 
-![](<https://img.zing.vn/upload/codm/source/News/HdCODE/2.jpg>)
+![](<https://i.postimg.cc/C13FNRk3/9gate-1d2534498fd97e29041aec.jpg>)
 
 **Nếu bạn chưa biết các tìm mã UID, hãy xem hướng dẫn nhỏ bên dưới nhé:**
 
 Đầu tiên, nhấn vào biểu tượng Avatar nhân vật ở góc trên bên trái trong game.
 
-![](<https://img.zing.vn/upload/codm/source/News/HdCODE/3.jpg>)
+![](<https://i.postimg.cc/Pxgt4C1G/9gate-29a08171601e49d80e2c3a.jpg>)
 
 Tiếp theo, chọn tab thứ hai từ trái qua, **mã UID** sẽ hiện ra ở vị trí như hình dưới.
 
-![](<https://img.zing.vn/upload/codm/source/News/HdCODE/4.jpg>)
+![](<https://i.postimg.cc/j5wxPHnb/9gate-28d5f8eb0bde7edd2b196b.jpg>)
 
 BƯỚC 4:
 
 Nhập mã CODE nhận thưởng của bạn vào ô **Nhập mã code**.
 
-![](<https://img.zing.vn/upload/codm/source/News/HdCODE/5.jpg>)
+![](<https://i.postimg.cc/mk7T6TSm/9gate-0f4fa20b80df35b58c3e44.jpg>)
 
 BƯỚC 5:
 
 Nhập lại thật chính xác mã xác thực đang hiện trên màn hình.
 
-![](<https://img.zing.vn/upload/codm/source/News/HdCODE/6.jpg>)
+![](<https://i.postimg.cc/cCfd5dc9/9gate-70926f5da76991e709dd97.jpg>)
 
 HOÀN TẤT:
 
 Nhấn nút XÁC NHẬN để hoàn tất, phần thưởng từ mã CODE sẽ được gửi lập tức vào Thư của nhân vật trong game!
 
-![](<https://img.zing.vn/upload/codm/source/News/HdCODE/7.jpg>)
+![](<https://i.postimg.cc/nrqnwn1d/9gate-0585127ffab9c7cb00082c.jpg>)
 
 Trang chủ: [https://codm.360mobi.vn](<https://codm.360mobi.vn/>)

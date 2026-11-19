@@ -1,7 +1,7 @@
 ---
 title: "\"Tự động bắn\" trong CrossFire Legends: Tính năng góp phần nâng cao độ... ảo tưởng sức mạnh"
 description: "Dù chỉ là một công cụ để những người mới chơi có thể làm quen nhanh hơn với game, nhưng phải thừa nhận một điều rằng tính năng “Tự động bắn” của CrossFire Legends cũng rất dễ khiến cho người sử dụng nó trở nên “ảo tưởng sức mạnh”"
-image: "https://media.giphy.com/media/3ohzdD7Aa4DuRwRtMQ/giphy.gif"
+image: "https://i.postimg.cc/4ypXFX1P/9gate-d88fa14ff4391d359df8d5.jpg"
 tags: ["Cộng Đồng"]
 legacyId: "11086"
 legacyPath: "/tin-game/cong-dong/tu-dong-ban-trong-crossfire-legends-tinh-nang-gop-phan-nang-cao-do-ao-tuong-suc-manh-11086.html"
@@ -17,13 +17,13 @@ Tuy nhiên thì điều đáng nói ở đây là tính năng “tự động b�
 
 Tuy rằng tính năng này chỉ xuất hiện đối với những người chơi dưới level 10 và không tồn tại trong đấu Rank, nhưng nó cũng nảy sinh một vài vấn đề, đó là khi tham gia các Map đấu có địa hình nhỏ hẹp thì chỉ cần một người chơi chiếm được vị trí thuận lợi, cầm một khẩu súng với độ giật thấp (không quan trọng lực sát thương) là có thể “một tay che trời” khi chỉ cần đối phương xuất hiện là ngay lập tức…ăn đạn.
 
-![crossfire-legend Điều chỉnh Tự động bắn trong CrossFire Legends: Tính năng góp phần nâng cao độ...ảo tưởng sức mạnh 2](<https://media.giphy.com/media/3ohzdD7Aa4DuRwRtMQ/giphy.gif>)
+![crossfire-legend Điều chỉnh Tự động bắn trong CrossFire Legends: Tính năng góp phần nâng cao độ...ảo tưởng sức mạnh 2](<https://i.postimg.cc/4ypXFX1P/9gate-d88fa14ff4391d359df8d5.jpg>)
 
 _Chỉ cần lựa chọn vị trí tốt là dễ dàng có mạng mà chẳng cần nhiều đến kỹ năng_
 
 Rõ ràng là việc chơi một tựa game bắn súng mà lại không phải động tay động chân quá nhiều thì thật là vô vị, và thực tế cũng chứng minh rằng ngay khi trải qua Level 10 và không còn nhận được sự trợ giúp của chế độ bắn tự động nữa thì không ít game thủ ngay lập tức ăn hành “sấp mặt” trong những trận đấu thường lẫn đấu rank.
 
-![crossfire-legend Điều chỉnh Tự động bắn trong CrossFire Legends: Tính năng góp phần nâng cao độ...ảo tưởng sức mạnh 3](<https://media.giphy.com/media/3ohzdWoCZ1soleFZ4s/giphy.gif>)
+![crossfire-legend Điều chỉnh Tự động bắn trong CrossFire Legends: Tính năng góp phần nâng cao độ...ảo tưởng sức mạnh 3](<https://i.postimg.cc/2ynCXCxw/9gate-2c2ef55c02488a8b8a8d66.jpg>)
 
 _Lạm dụng Bắn tự động không phải là lựa chọn khôn ngoan_
 
