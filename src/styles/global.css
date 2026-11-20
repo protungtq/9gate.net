@@ -166,10 +166,6 @@
     color: #391a0d;
     border-color: #d4743870;
   }
-  html:not(.dark) .site-header .brand-link {
-    background-color: #91350f;
-    box-shadow: 0 0 0 4px #91350f;
-  }
   html:not(.dark) .site-header :is(.sf, input[type="search"]) {
     background-color: #fff5e7b8;
   }
