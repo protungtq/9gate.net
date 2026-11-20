@@ -1100,7 +1100,7 @@
     "website": "https://quayma.garena.vn/VN/vn"
   },
   {
-    "slug": "vuong-gia-vinh-dieu-554",
+    "slug": "vuong-gia-vinh-dieu",
     "name": "Vương Giả Vinh Diệu",
     "publisher": "Tencent",
     "genre": "MOBA",
@@ -1131,7 +1131,7 @@
     }
   },
   {
-    "slug": "legends-of-glory-1585",
+    "slug": "legends-of-glory",
     "name": "Legends Of Glory",
     "publisher": "Nước Ngoài",
     "genre": "MOBA",
@@ -1159,7 +1159,7 @@
     }
   },
   {
-    "slug": "dau-pha-thuong-khung-mobile-1197",
+    "slug": "dau-pha-thuong-khung-mobile",
     "name": "Đấu Phá Thương Khung Mobile",
     "publisher": "Tencent",
     "genre": "Game mobile",
@@ -1187,7 +1187,7 @@
     }
   },
   {
-    "slug": "dot-kich-vtc-online-1807",
+    "slug": "dot-kich-vtc-online",
     "name": "Đột Kích - VTC Online",
     "publisher": "goPlay (VTC Online)",
     "genre": "FPS",
@@ -1214,7 +1214,7 @@
     }
   },
   {
-    "slug": "nu-than-tam-quoc-105",
+    "slug": "nu-than-tam-quoc",
     "name": "Nữ Thần Tam Quốc",
     "publisher": "QingCi",
     "genre": "MMORPG",
@@ -1243,7 +1243,7 @@
     }
   },
   {
-    "slug": "thien-ha-3d-956",
+    "slug": "thien-ha-3d",
     "name": "Thiên Hạ 3D",
     "publisher": "Gamota",
     "genre": "Game mobile",
@@ -1271,7 +1271,7 @@
     }
   },
   {
-    "slug": "tieu-ba-vuong-mobile-1242",
+    "slug": "tieu-ba-vuong-mobile",
     "name": "Tiểu Bá Vương Mobile",
     "publisher": "Nước Ngoài",
     "genre": "Game mobile",
@@ -1298,7 +1298,7 @@
     }
   },
   {
-    "slug": "thien-than-truyen-54",
+    "slug": "thien-than-truyen",
     "name": "Thiên Thần Truyện",
     "publisher": "ME Corp",
     "genre": "Game mobile",
@@ -1326,7 +1326,7 @@
     }
   },
   {
-    "slug": "thoi-loan-mobile-196",
+    "slug": "thoi-loan-mobile",
     "name": "Thời Loạn Mobile",
     "publisher": "VNG",
     "genre": "Game mobile",
@@ -1354,7 +1354,7 @@
     }
   },
   {
-    "slug": "lien-minh-bao-boi-1828",
+    "slug": "lien-minh-bao-boi",
     "name": "Liên Minh Bảo Bối",
     "publisher": "Gosu",
     "genre": "Game trình duyệt",
@@ -1380,7 +1380,7 @@
     }
   },
   {
-    "slug": "tam-quoc-chi-huyen-tuong-dai-luc-1862",
+    "slug": "tam-quoc-chi-huyen-tuong-dai-luc",
     "name": "Tam Quốc Chí: Huyễn Tưởng Đại Lục",
     "publisher": "Nước Ngoài",
     "genre": "Game mobile",
@@ -1408,7 +1408,7 @@
     }
   },
   {
-    "slug": "gopet-348",
+    "slug": "gopet",
     "name": "goPet",
     "publisher": "ME Corp",
     "genre": "Game mobile",
@@ -1435,7 +1435,7 @@
     }
   },
   {
-    "slug": "thon-thuc-thien-dia-4-604",
+    "slug": "thon-thuc-thien-dia-4",
     "name": "Thôn Thực Thiên Địa 4",
     "publisher": "Nước Ngoài",
     "genre": "Game mobile",
@@ -1463,7 +1463,7 @@
     }
   },
   {
-    "slug": "ba-dao-tam-quoc-1601",
+    "slug": "ba-dao-tam-quoc",
     "name": "Bá Đạo Tam Quốc",
     "publisher": "Nước Ngoài",
     "genre": "Game mobile",
@@ -1491,7 +1491,7 @@
     }
   },
   {
-    "slug": "loan-dau-tay-du-87",
+    "slug": "loan-dau-tay-du",
     "name": "Loạn Đấu Tây Du",
     "publisher": "NetEase",
     "genre": "MOBA",
@@ -1519,7 +1519,7 @@
     }
   },
   {
-    "slug": "i-am-naruto-82",
+    "slug": "i-am-naruto",
     "name": "I Am Naruto",
     "publisher": "Gamota",
     "genre": "Game mobile",
@@ -1547,7 +1547,7 @@
     }
   },
   {
-    "slug": "ngu-kiem-phi-thien-970",
+    "slug": "ngu-kiem-phi-thien",
     "name": "Ngự Kiếm Phi Thiên",
     "publisher": "SohaGame",
     "genre": "Game mobile",
@@ -1575,7 +1575,7 @@
     }
   },
   {
-    "slug": "ba-khi-giang-ho-120",
+    "slug": "ba-khi-giang-ho",
     "name": "Bá Khí Giang Hồ",
     "publisher": "5 Stars",
     "genre": "Game mobile",
@@ -1603,7 +1603,7 @@
     }
   },
   {
-    "slug": "poke-dai-chien-829",
+    "slug": "poke-dai-chien",
     "name": "Poke Đại Chiến",
     "publisher": "Pocketgamesol",
     "genre": "Game mobile",
@@ -1631,7 +1631,7 @@
     }
   },
   {
-    "slug": "giang-ho-chi-mong-1340",
+    "slug": "giang-ho-chi-mong",
     "name": "Giang Hồ Chi Mộng",
     "publisher": "Funtap",
     "genre": "Game mobile",
@@ -1659,7 +1659,7 @@
     }
   },
   {
-    "slug": "vo-lam-3-185",
+    "slug": "vo-lam-3",
     "name": "Võ Lâm 3",
     "publisher": "MCCorp",
     "genre": "Game mobile",
@@ -1686,7 +1686,7 @@
     }
   },
   {
-    "slug": "tien-nghich-mobile-628",
+    "slug": "tien-nghich-mobile",
     "name": "Tiên Nghịch Mobile",
     "publisher": "Gamota",
     "genre": "Game mobile",
@@ -1714,7 +1714,7 @@
     }
   },
   {
-    "slug": "mong-tam-quoc-truyen-ky-575",
+    "slug": "mong-tam-quoc-truyen-ky",
     "name": "Mộng Tam Quốc Truyền Kỳ",
     "publisher": "Electronic Soul",
     "genre": "Game mobile",
@@ -1742,7 +1742,7 @@
     }
   },
   {
-    "slug": "hang-rong-mobile-1562",
+    "slug": "hang-rong-mobile",
     "name": "Hàng Rong Mobile",
     "publisher": "Đang Cập Nhật",
     "genre": "Game mobile",
@@ -1763,7 +1763,7 @@
     }
   },
   {
-    "slug": "thon-phe-tinh-khong-mobile-1716",
+    "slug": "thon-phe-tinh-khong-mobile",
     "name": "Thôn Phệ Tinh Không Mobile",
     "publisher": "Nước Ngoài",
     "genre": "Game mobile",
@@ -1791,7 +1791,7 @@
     }
   },
   {
-    "slug": "thien-long-bat-bo-3d-97",
+    "slug": "thien-long-bat-bo-3d",
     "name": "Thiên Long Bát Bộ 3D",
     "publisher": "Changyou",
     "genre": "Game mobile",
@@ -1819,7 +1819,7 @@
     }
   },
   {
-    "slug": "phi-tien-mobile-1075",
+    "slug": "phi-tien-mobile",
     "name": "Phi Tiên Mobile",
     "publisher": "YGame",
     "genre": "Game mobile",
@@ -1847,7 +1847,7 @@
     }
   },
   {
-    "slug": "thien-nu-u-hon-756",
+    "slug": "thien-nu-u-hon",
     "name": "Thiến Nữ U Hồn",
     "publisher": "NetEase",
     "genre": "MMORPG",
@@ -1877,7 +1877,7 @@
     }
   },
   {
-    "slug": "mong-giang-ho-413",
+    "slug": "mong-giang-ho",
     "name": "Mộng Giang Hồ",
     "publisher": "ME Corp",
     "genre": "RPG",
@@ -1905,7 +1905,7 @@
     }
   },
   {
-    "slug": "tan-dao-mo-but-ky-1728",
+    "slug": "tan-dao-mo-but-ky",
     "name": "Tân Đạo Mộ Bút Ký",
     "publisher": "Nước Ngoài",
     "genre": "Game mobile",
@@ -1933,7 +1933,7 @@
     }
   },
   {
-    "slug": "minh-chau-tam-quoc-186",
+    "slug": "minh-chau-tam-quoc",
     "name": "Minh Châu Tam Quốc",
     "publisher": "MCCorp",
     "genre": "Game mobile",
@@ -1961,7 +1961,7 @@
     }
   },
   {
-    "slug": "chien-dich-huyen-thoai-729",
+    "slug": "chien-dich-huyen-thoai",
     "name": "Chiến Dịch Huyền Thoại",
     "publisher": "Garena",
     "genre": "FPS",
@@ -1989,7 +1989,7 @@
     }
   },
   {
-    "slug": "ngu-linh-su-mobile-1269",
+    "slug": "ngu-linh-su-mobile",
     "name": "Ngự Linh Sư Mobile",
     "publisher": "Nước Ngoài",
     "genre": "Game mobile",
@@ -2017,7 +2017,7 @@
     }
   },
   {
-    "slug": "thu-vuong-dai-chien-984",
+    "slug": "thu-vuong-dai-chien",
     "name": "Thú Vương Đại Chiến",
     "publisher": "Funtap",
     "genre": "Game mobile",
@@ -2045,7 +2045,7 @@
     }
   },
   {
-    "slug": "gomu-huyen-thoai-1903",
+    "slug": "gomu-huyen-thoai",
     "name": "Gomu Huyền Thoại",
     "publisher": "Gosu",
     "genre": "Game mobile",
@@ -2073,7 +2073,7 @@
     }
   },
   {
-    "slug": "kiem-khach-giang-ho-1083",
+    "slug": "kiem-khach-giang-ho",
     "name": "Kiếm Khách Giang Hồ",
     "publisher": "1618Play",
     "genre": "Game mobile",
@@ -2101,7 +2101,7 @@
     }
   },
   {
-    "slug": "dau-tien-dai-1129",
+    "slug": "dau-tien-dai",
     "name": "Đấu Tiên Đài",
     "publisher": "VNG",
     "genre": "Game mobile",
@@ -2129,7 +2129,7 @@
     }
   },
   {
-    "slug": "vua-hai-tac-219",
+    "slug": "vua-hai-tac",
     "name": "Vua Hải Tặc",
     "publisher": "Funtap",
     "genre": "Game mobile",
@@ -2158,7 +2158,7 @@
     }
   },
   {
-    "slug": "sieu-manga-852",
+    "slug": "sieu-manga",
     "name": "Siêu Manga",
     "publisher": "Funtap",
     "genre": "Game mobile",
@@ -2186,7 +2186,7 @@
     }
   },
   {
-    "slug": "thai-co-than-vuong-1295",
+    "slug": "thai-co-than-vuong",
     "name": "Thái Cổ Thần Vương",
     "publisher": "VTC Mobile TT.HN1",
     "genre": "Game mobile",
@@ -2214,7 +2214,7 @@
     }
   },
   {
-    "slug": "thanh-cat-tu-han-mobile-886",
+    "slug": "thanh-cat-tu-han-mobile",
     "name": "Thành Cát Tư Hãn Mobile",
     "publisher": "Nước Ngoài",
     "genre": "Game mobile",
@@ -2242,7 +2242,7 @@
     }
   },
   {
-    "slug": "thuan-thien-kiem-1394",
+    "slug": "thuan-thien-kiem",
     "name": "Thuận Thiên Kiếm",
     "publisher": "Imba Games",
     "genre": "Game mobile",
@@ -2270,7 +2270,7 @@
     }
   },
   {
-    "slug": "loan-dau-tay-du-2-750",
+    "slug": "loan-dau-tay-du-2",
     "name": "Loạn Đấu Tây Du 2",
     "publisher": "NetEase",
     "genre": "MOBA",
@@ -2298,7 +2298,7 @@
     }
   },
   {
-    "slug": "huyen-thoai-dota-2023",
+    "slug": "huyen-thoai-dota",
     "name": "Huyền Thoại Dota",
     "publisher": "357gen",
     "genre": "Game mobile",
@@ -2319,7 +2319,7 @@
     }
   },
   {
-    "slug": "hoc-vien-thu-cung-525",
+    "slug": "hoc-vien-thu-cung",
     "name": "Học Viện Thú Cưng",
     "publisher": "VGP",
     "genre": "Game mobile",
@@ -2347,7 +2347,7 @@
     }
   },
   {
-    "slug": "so-luu-huong-mobile-1128",
+    "slug": "so-luu-huong-mobile",
     "name": "Sở Lưu Hương Mobile",
     "publisher": "NetEase",
     "genre": "MMORPG",
@@ -2375,7 +2375,7 @@
     }
   },
   {
-    "slug": "quyen-vuong-98-721",
+    "slug": "quyen-vuong-98",
     "name": "Quyền Vương 98",
     "publisher": "Garena",
     "genre": "Game mobile",
@@ -2403,7 +2403,7 @@
     }
   },
   {
-    "slug": "ngoc-rong-dai-chien-658",
+    "slug": "ngoc-rong-dai-chien",
     "name": "Ngọc Rồng Đại Chiến",
     "publisher": "myG",
     "genre": "Game mobile",
@@ -2430,7 +2430,7 @@
     }
   },
   {
-    "slug": "9gate-app-999",
+    "slug": "9gate-app",
     "name": "9Gate APP",
     "publisher": "BQT 9Gate",
     "genre": "Game mobile",
@@ -2458,7 +2458,7 @@
     }
   },
   {
-    "slug": "lien-minh-anh-hung-218",
+    "slug": "lien-minh-anh-hung",
     "name": "Liên Minh Anh Hùng",
     "publisher": "VNG",
     "genre": "Game mobile",
@@ -2489,7 +2489,7 @@
     }
   },
   {
-    "slug": "dao-kiem-than-vuc-1668",
+    "slug": "dao-kiem-than-vuc",
     "name": "Đao Kiếm Thần Vực",
     "publisher": "Nước Ngoài",
     "genre": "Game mobile",
@@ -2517,7 +2517,7 @@
     }
   },
   {
-    "slug": "kiem-the-pc-1998",
+    "slug": "kiem-the-pc",
     "name": "Kiếm Thế PC",
     "publisher": "VNG",
     "genre": "Game PC",
@@ -2537,7 +2537,7 @@
     }
   },
   {
-    "slug": "kim-dung-quan-hiep-truyen-888",
+    "slug": "kim-dung-quan-hiep-truyen",
     "name": "Kim Dung Quần Hiệp Truyện",
     "publisher": "SohaGame",
     "genre": "Game mobile",
@@ -2565,7 +2565,7 @@
     }
   },
   {
-    "slug": "tam-quoc-bum-chiu-2-1277",
+    "slug": "tam-quoc-bum-chiu-2",
     "name": "Tam Quốc Bùm Chíu 2",
     "publisher": "Pocketgamesol",
     "genre": "RPG",
@@ -2593,7 +2593,7 @@
     }
   },
   {
-    "slug": "tam-quoc-phan-xu-961",
+    "slug": "tam-quoc-phan-xu",
     "name": "Tam Quốc Phán Xử",
     "publisher": "VGP",
     "genre": "Game mobile",
@@ -2619,7 +2619,7 @@
     }
   },
   {
-    "slug": "long-vuong-truyen-thuyet-mobile-1160",
+    "slug": "long-vuong-truyen-thuyet-mobile",
     "name": "Long Vương Truyền Thuyết Mobile",
     "publisher": "Nước Ngoài",
     "genre": "Game mobile",
@@ -2647,7 +2647,7 @@
     }
   },
   {
-    "slug": "my-nhan-dai-chien-733",
+    "slug": "my-nhan-dai-chien",
     "name": "Mỹ Nhân Đại Chiến",
     "publisher": "Nước Ngoài",
     "genre": "Game mobile",
@@ -2675,7 +2675,7 @@
     }
   },
   {
-    "slug": "than-thu-dai-chien-1880",
+    "slug": "than-thu-dai-chien",
     "name": "Thần Thú Đại Chiến",
     "publisher": "Nước Ngoài",
     "genre": "Game mobile",
@@ -2696,7 +2696,7 @@
     }
   },
   {
-    "slug": "bao-boi-than-ky-h5-1236",
+    "slug": "bao-boi-than-ky-h5",
     "name": "Bảo Bối Thần Kỳ H5",
     "publisher": "VNG",
     "genre": "Game trình duyệt",
@@ -2716,7 +2716,7 @@
     }
   },
   {
-    "slug": "nhan-gia-haki-1350",
+    "slug": "nhan-gia-haki",
     "name": "Nhẫn Giả Haki",
     "publisher": "Funtap",
     "genre": "Game mobile",
@@ -2737,7 +2737,7 @@
     }
   },
   {
-    "slug": "thai-co-than-vuong-1137",
+    "slug": "thai-co-than-vuong-trung-quoc",
     "name": "Thái Cổ Thần Vương",
     "publisher": "Nước Ngoài",
     "genre": "Game mobile",
@@ -2765,7 +2765,7 @@
     }
   },
   {
-    "slug": "thoi-khong-trieu-hoan-758",
+    "slug": "thoi-khong-trieu-hoan",
     "name": "Thời Không Triệu Hoán",
     "publisher": "Yinhan Games",
     "genre": "MOBA",
@@ -2794,7 +2794,7 @@
     }
   },
   {
-    "slug": "pk-dai-chien-545",
+    "slug": "pk-dai-chien",
     "name": "PK Đại Chiến",
     "publisher": "Ugly Alien",
     "genre": "Game mobile",
@@ -2822,7 +2822,7 @@
     }
   },
   {
-    "slug": "bua-ta-660",
+    "slug": "bua-ta",
     "name": "Búa Tạ",
     "publisher": "CMN Online",
     "genre": "MOBA",
@@ -2849,7 +2849,7 @@
     }
   },
   {
-    "slug": "truy-kich-pc-battle-teams-2-1964",
+    "slug": "truy-kich-pc-battle-teams-2",
     "name": "Truy Kích PC: Battle Teams 2",
     "publisher": "goPlay (VTC Online)",
     "genre": "Game PC",
@@ -2869,7 +2869,7 @@
     }
   },
   {
-    "slug": "cong-thanh-xung-de-123",
+    "slug": "cong-thanh-xung-de",
     "name": "Công Thành Xưng Đế",
     "publisher": "2T - Trường Tồn",
     "genre": "Game mobile",
@@ -2897,7 +2897,7 @@
     }
   },
   {
-    "slug": "mu-miracle-161",
+    "slug": "mu-miracle",
     "name": "MU Miracle",
     "publisher": "KingNet",
     "genre": "MMORPG",
@@ -2929,7 +2929,7 @@
     }
   },
   {
-    "slug": "na-3d-327",
+    "slug": "na-3d",
     "name": "Na 3D",
     "publisher": "SohaGame",
     "genre": "Game mobile",
@@ -2957,7 +2957,7 @@
     }
   },
   {
-    "slug": "ngao-thien-mobile-1069",
+    "slug": "ngao-thien-mobile",
     "name": "Ngạo Thiên Mobile",
     "publisher": "Gamota",
     "genre": "Game mobile",
@@ -2985,7 +2985,7 @@
     }
   },
   {
-    "slug": "phi-nhan-hoc-vien-1786",
+    "slug": "phi-nhan-hoc-vien",
     "name": "Phi Nhân Học Viện",
     "publisher": "NetEase",
     "genre": "MOBA",
@@ -3013,7 +3013,7 @@
     }
   },
   {
-    "slug": "manga-go-474",
+    "slug": "manga-go",
     "name": "Manga GO",
     "publisher": "SohaGame",
     "genre": "Game mobile",
@@ -3041,7 +3041,7 @@
     }
   },
   {
-    "slug": "hoc-vien-ba-vuong-mobile-1857",
+    "slug": "hoc-vien-ba-vuong-mobile",
     "name": "Học Viện Bá Vương Mobile",
     "publisher": "Gosu",
     "genre": "Game mobile",
@@ -3069,7 +3069,7 @@
     }
   },
   {
-    "slug": "huynh-de-ho-lo-1697",
+    "slug": "huynh-de-ho-lo",
     "name": "Huynh Đệ Hồ Lô",
     "publisher": "Nước Ngoài",
     "genre": "Game mobile",
@@ -3097,7 +3097,7 @@
     }
   },
   {
-    "slug": "dai-chien-manga-179",
+    "slug": "dai-chien-manga",
     "name": "Đại Chiến Manga",
     "publisher": "Vanguard Group",
     "genre": "Game mobile",
@@ -3130,7 +3130,7 @@
     }
   },
   {
-    "slug": "hoa-thien-cot-913",
+    "slug": "hoa-thien-cot",
     "name": "Hoa Thiên Cốt",
     "publisher": "Nước Ngoài",
     "genre": "Game mobile",
@@ -3158,7 +3158,7 @@
     }
   },
   {
-    "slug": "hai-tac-loan-chien-1676",
+    "slug": "hai-tac-loan-chien",
     "name": "Hải Tặc Loạn Chiến",
     "publisher": "GZone",
     "genre": "Game mobile",
@@ -3186,7 +3186,7 @@
     }
   },
   {
-    "slug": "poke-origin-1346",
+    "slug": "poke-origin",
     "name": "Poke Origin",
     "publisher": "Nước Ngoài",
     "genre": "Game mobile",
@@ -3207,7 +3207,7 @@
     }
   },
   {
-    "slug": "cuu-vi-dai-chien-1927",
+    "slug": "cuu-vi-dai-chien",
     "name": "Cửu Vĩ Đại Chiến",
     "publisher": "Ace Game",
     "genre": "Game mobile",
@@ -3232,6 +3232,25 @@
         "https://i.postimg.cc/6qPCzLY7/9gate-21a96a1757c96754805865.jpg",
         "https://i.postimg.cc/L5WjvBNk/9gate-2143cfd4bac8cc211fd053.jpg"
       ]
+    }
+  },
+  {
+    "slug": "khan-mobi",
+    "name": "Khan Mobi",
+    "publisher": "ME Corp",
+    "genre": "Nhập vai",
+    "platforms": [
+      "Mobile"
+    ],
+    "category": "mobile",
+    "icon": "",
+    "cover": "",
+    "trailer": "",
+    "description": "Khan Mobi là game nhập vai lấy bối cảnh thời Thành Cát Tư Hãn. Người chơi hóa thân thành chiến binh Mông Cổ và chọn một trong năm môn phái.",
+    "website": "",
+    "legacy": {
+      "id": "214",
+      "sourcePath": "/game/vn/khan-mobi-214.html"
     }
   }
 ]

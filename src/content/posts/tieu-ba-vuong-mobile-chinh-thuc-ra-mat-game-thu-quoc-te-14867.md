@@ -7,12 +7,12 @@ legacyId: "14867"
 legacyPath: "/tin-game/tin-nong/tieu-ba-vuong-mobile-chinh-thuc-ra-mat-game-thu-quoc-te-14867.html"
 date: "2018-12-28"
 legacyAuthor: "BQT 9Gate"
-game: "tieu-ba-vuong-mobile-1242"
+game: "tieu-ba-vuong-mobile"
 ---
 
 ![](<https://i.ibb.co/ksxxdDCB/971fa1a5e1365231.webp>)
 
-Những ai là fan của thể loại game đối kháng chắc hẳn sẽ rất quen thuộc với cái tên [**GetAmped**](</game/tieu-ba-vuong-mobile-1242/>) (hay còn được gọi là Tiểu Bá Vương) trò chơi rất nổi tiếng trên toàn thế giới với hơn 30 triệu tài khoản và từng được NPH Asiasoft mua bản quyền ra mắt tại Việt Nam. Với sự thành công của phiên bản PC, NPH Cyberstep vào tháng 7/2017 đã khiến cộng đồng game thủ phát sốt khi tiết lộ sẽ cho mắt phiên bản mobile với lối chơi và tính năng gần như được giữ nguyên vẹn như đàn anh trước đó. Đặc biệt hơn, hiện tại tựa game đã chính thức ra mắt phiên bản quốc tế trên cả 2 hệ điều hành Android và iOS cho mọi game thủ trải n ghiệm.
+Những ai là fan của thể loại game đối kháng chắc hẳn sẽ rất quen thuộc với cái tên [**GetAmped**](</game/tieu-ba-vuong-mobile/>) (hay còn được gọi là Tiểu Bá Vương) trò chơi rất nổi tiếng trên toàn thế giới với hơn 30 triệu tài khoản và từng được NPH Asiasoft mua bản quyền ra mắt tại Việt Nam. Với sự thành công của phiên bản PC, NPH Cyberstep vào tháng 7/2017 đã khiến cộng đồng game thủ phát sốt khi tiết lộ sẽ cho mắt phiên bản mobile với lối chơi và tính năng gần như được giữ nguyên vẹn như đàn anh trước đó. Đặc biệt hơn, hiện tại tựa game đã chính thức ra mắt phiên bản quốc tế trên cả 2 hệ điều hành Android và iOS cho mọi game thủ trải n ghiệm.
 
 ![Siêu phẩm Tiểu Bá Vương mobile chính thức ra mắt game thủ quốc tế](<https://i.ibb.co/wNm0Z8wB/80b048e2ced60f97.webp>)
 

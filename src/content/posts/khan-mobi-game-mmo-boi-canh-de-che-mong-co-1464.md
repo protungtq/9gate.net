@@ -7,9 +7,10 @@ legacyId: "1464"
 legacyPath: "/tin-game/gioi-thieu-game/khan-mobi-game-mmo-boi-canh-de-che-mong-co-1464.html"
 date: "2014-12-27"
 legacyAuthor: "Cucku"
+game: "khan-mobi"
 ---
 
-[**Khan Mobi**](<http://www.9gate.vn/game/trong-nuoc/tin-tuc/khan-mobi-214.html>) là tựa game nhập vai xoay quanh cuộc đời thăng trầm, những trận chiến chinh phạt của Đại Hãn Genghis Khan – Vị vua sáng lập ra **Đế Chế Mông Cổ** hùng mạnh nhất trong lịch sử loài người.
+[**Khan Mobi**](</game/khan-mobi/>) là tựa game nhập vai xoay quanh cuộc đời thăng trầm, những trận chiến chinh phạt của Đại Hãn Genghis Khan – Vị vua sáng lập ra **Đế Chế Mông Cổ** hùng mạnh nhất trong lịch sử loài người.
 
 ![](<https://i.ibb.co/fYqKjDtY/f903c80a9961a2a5.webp>)
 
@@ -17,7 +18,7 @@ Lấy bối cảnh năm 1206, **_Thành Cát Tư Hãn_** (Gengish Khan) với 
 
 ![](<https://i.ibb.co/Xk8TwYrj/87be61cf7c917a75.webp>)
 
-Đến với **game [Khan Mobi](<http://www.9gate.vn/game/trong-nuoc/tin-tuc/khan-mobi-214.html>)**, bạn sẽ hóa thân thành một vị anh hùng người Mông Cổ cùng đi tham gia các trận chiến để mở rộng lãnh thổ.Trong **Khan Mobi**, có tất cả 5 đại môn phái:
+Đến với **game [Khan Mobi](</game/khan-mobi/>)**, bạn sẽ hóa thân thành một vị anh hùng người Mông Cổ cùng đi tham gia các trận chiến để mở rộng lãnh thổ.Trong **Khan Mobi**, có tất cả 5 đại môn phái:
 
 _Kiếm Khách_: với sở trường kiếm pháp ảo diệu, kết liễu đối phương trong tích tắc
 

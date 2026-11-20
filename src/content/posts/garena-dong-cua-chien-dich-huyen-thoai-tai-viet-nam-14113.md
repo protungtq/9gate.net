@@ -7,10 +7,10 @@ legacyId: "14113"
 legacyPath: "/tin-game/cong-dong/garena-dong-cua-chien-dich-huyen-thoai-tai-viet-nam-14113.html"
 date: "2018-08-14"
 legacyAuthor: "BQT 9Gate"
-game: "chien-dich-huyen-thoai-729"
+game: "chien-dich-huyen-thoai"
 ---
 
-[**Chiến Dịch Huyền Thoại**](</game/chien-dich-huyen-thoai-729/>) có tên gốc tiếng Trung Toàn Dân Đột Kích do Tencent Games sản xuất. Chính công ty này cũng đang phát hành Đột Kích (Crossfire) tại Trung Quốc nên Toàn Dân Đột Kích thu hút được sự quan tâm lớn khi vừa ra mắt. Tại thị trường Việt Nam, Chiến Dịch Huyền Thoại cũng từng nhận được sự quan tâm của đông đảo người chơi, dù tình trạng hack liên tục diễn ra vẫn luôn là điều còn bỏ ngỏ.
+[**Chiến Dịch Huyền Thoại**](</game/chien-dich-huyen-thoai/>) có tên gốc tiếng Trung Toàn Dân Đột Kích do Tencent Games sản xuất. Chính công ty này cũng đang phát hành Đột Kích (Crossfire) tại Trung Quốc nên Toàn Dân Đột Kích thu hút được sự quan tâm lớn khi vừa ra mắt. Tại thị trường Việt Nam, Chiến Dịch Huyền Thoại cũng từng nhận được sự quan tâm của đông đảo người chơi, dù tình trạng hack liên tục diễn ra vẫn luôn là điều còn bỏ ngỏ.
 
 ![](<https://i.ibb.co/DHzp5XXx/36c9d66b3a207194.webp>)
 
