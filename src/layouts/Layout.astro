@@ -16,6 +16,7 @@ interface Props {
 
 const { title, description, keywords, ogImage, ogType = 'website', canonical, jsonLd, robots = 'index, follow' } = Astro.props;
 const siteName = '9Gate';
+const pageUrl = canonical || new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
 const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
 
 // ===== Mục lục tìm kiếm (game + bài viết) =====
@@ -60,7 +61,7 @@ const isActive = (href: string) =>
   {keywords && <meta name="keywords" content={keywords} />}
   <meta name="robots" content={robots} />
   <meta name="theme-color" content="#f0f4f8" />
-  <link rel="canonical" href={canonical || Astro.url.href} />
+  <link rel="canonical" href={pageUrl} />
 
   <!-- Open Graph -->
   <meta property="og:type" content={ogType} />
@@ -68,7 +69,7 @@ const isActive = (href: string) =>
   <meta property="og:title" content={fullTitle} />
   <meta property="og:description" content={description} />
   {ogImage && <meta property="og:image" content={ogImage} />}
-  <meta property="og:url" content={Astro.url.href} />
+  <meta property="og:url" content={pageUrl} />
   <meta property="og:locale" content="vi_VN" />
 
   <!-- Twitter -->

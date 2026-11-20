@@ -78,7 +78,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "9Gate",
-  "url": "https://www.9gate.net",
+  "url": new URL('/', Astro.site ?? Astro.url).href,
   "description": "9Gate là blog cá nhân về game mobile, PC và console, với ghi chép, góc nhìn và những game mình để ý.",
 };
 ---

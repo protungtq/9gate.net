@@ -11,13 +11,13 @@ const sT=t=>{document.documentElement.dataset.t=t;LS("cms-theme",t)};
 sT(LS("cms-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light"));
 $("#theme").onclick=()=>sT(document.documentElement.dataset.t=="dark"?"light":"dark");
 /* config */
-const DEF={w:"",r:"",b:"main",s:"https://www.9gate.net",j:"/tools/games-data.json",provider:"imgbb"};
+const DEF={w:"",r:"",b:"main",j:"/tools/games-data.json",provider:"imgbb"};
 let cfg = { ...DEF };
 try {
   cfg = { ...DEF, ...JSON.parse(LS("9gate-cms-cfg") || "{}") };
 } catch {}
 if (cfg.j === "/src/data/games.json") cfg.j = DEF.j;
-const cm={w:"cw",r:"cr",b:"cb",s:"cs",j:"cj",provider:"image-provider"};
+const cm={w:"cw",r:"cr",b:"cb",j:"cj",provider:"image-provider"};
 Object.entries(cm).forEach(([k,id])=>$("#"+id).value=cfg[k]);
 $("#cok").onclick=()=>{Object.entries(cm).forEach(([k,id])=>cfg[k]=$("#"+id).value.trim().replace(/\/+$/,""));LS("9gate-cms-cfg",JSON.stringify(cfg));toast("Đã lưu kết nối","o");loadGames()};
 async function api(path, body) {
@@ -401,7 +401,7 @@ P("ppush").onclick = () => {
     toast("Đã đăng bài lên GitHub.", "o");
     if (notifyGoogle) {
       try {
-        await api("/google-index", { articleUrl: `${cfg.s}/p/${slug}/` });
+        await api("/google-index", { articleUrl: new URL(`/p/${slug}/`, $("#cs").value).href });
         toast("Đã báo Google index.", "o");
       } catch (error) {
         toast("Đã đăng bài, nhưng báo Google lỗi: " + error.message, "e");

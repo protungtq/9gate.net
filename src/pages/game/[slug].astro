@@ -47,6 +47,9 @@ const relatedGames = games
   })
   .slice(0, 4);
 
+const site = Astro.site ?? Astro.url;
+const gameUrl = new URL(Astro.url.pathname, site).href;
+
 const jsonLd = [
   {
     "@context": "https://schema.org",
@@ -57,7 +60,7 @@ const jsonLd = [
     "gamePlatform": game.platforms,
     "applicationCategory": "Game",
     "inLanguage": "vi-VN",
-    "url": `https://www.9gate.net/game/${game.slug}/`,
+    "url": gameUrl,
     "publisher": { "@type": "Organization", "name": game.publisher },
     ...((game.cover || game.icon) && { "image": game.cover || game.icon }),
     ...(typeof game.rating === 'number' && {
@@ -82,9 +85,9 @@ const jsonLd = [
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://www.9gate.net/" },
-      { "@type": "ListItem", "position": 2, "name": catLabel, "item": `https://www.9gate.net${catHref}` },
-      { "@type": "ListItem", "position": 3, "name": game.name, "item": `https://www.9gate.net/game/${game.slug}/` },
+      { "@type": "ListItem", "position": 1, "name": "Trang chủ", "item": new URL('/', site).href },
+      { "@type": "ListItem", "position": 2, "name": catLabel, "item": new URL(catHref, site).href },
+      { "@type": "ListItem", "position": 3, "name": game.name, "item": gameUrl },
     ],
   },
 ];

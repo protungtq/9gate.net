@@ -1,0 +1,22 @@
+import type { APIRoute } from 'astro';
+
+export const GET: APIRoute = ({ site, url }) => {
+  const link = (path: string) => new URL(path, site ?? url).href;
+  const content = `# 9Gate
+
+> 9Gate là blog cá nhân về game. Danh mục gồm game mobile và game PC/console; mỗi game có một trang riêng với trailer, điểm đánh giá, link tải Android/iOS/Steam và những bài mình viết về game đó.
+
+## Các mục chính
+
+- [Game Mobile](${link('/mobile/')}): game cho Android và iOS — VTC, VNGGames, Funtap, Gosu và các nhà phát hành quốc tế.
+- [Game PC / Console](${link('/pc/')}): game trên Steam, PlayStation, Xbox và Nintendo Switch, từ indie đến bom tấn AAA.
+- [Cập nhật mới](${link('/cap-nhat/')}): góc nhìn và những điều đáng chú ý quanh từng game.
+
+## Cách 9Gate tổ chức nội dung
+
+- Mỗi game một trang riêng tại /game/<slug>/: thể loại, nền tảng, nhà phát hành, trailer, điểm đánh giá và các bài viết liên quan.
+- Người chơi có thể bấm Theo dõi để lưu game quan tâm ngay trên trình duyệt, không cần tài khoản.
+- Ô tìm kiếm hỗ trợ gõ tiếng Việt không dấu.
+`;
+  return new Response(content, { headers: { 'Content-Type': 'text/plain; charset=utf-8' } });
+};

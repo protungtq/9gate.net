@@ -22,4 +22,6 @@ Trình soạn hỗ trợ dán văn bản định dạng, chèn YouTube, tải v�
 
 ## Deploy
 
-Cloudflare Pages dùng `npm run build` và thư mục đầu ra `dist`. Tên miền canonical và sitemap của bản này là `https://www.9gate.net`.
+Cloudflare Pages dùng `npm run build` và thư mục đầu ra `dist`. Đặt tên miền chính thức tại trường `site` trong `astro.config.mjs` rồi build lại khi đổi domain. Các URL canonical, Open Graph, JSON-LD, sitemap, robots.txt, llms.txt và địa chỉ hiển thị trong CMS dùng thiết lập này.
+
+Khi chuyển 9Gate sang domain gốc, gắn `9gate.net` vào Pages và cấu hình Cloudflare Redirect Rule với điều kiện `http.host eq "www.9gate.net"`. Dùng đích động `concat("https://9gate.net", http.request.uri.path)`, mã `301` và bật giữ query string. Áp dụng rule khi domain gốc đã phục vụ bản mới.

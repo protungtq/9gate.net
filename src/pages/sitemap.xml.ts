@@ -1,11 +1,12 @@
+import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 import games from '../data/games.json';
 import { categoryGames, categoryPagePath, GAME_PAGE_SIZE, mobileLegacyLists } from '../lib/gameCategory';
 
 export const prerender = true;
 
-export async function GET({ site }: { site?: URL }) {
-  const base = (site?.href || 'https://www.9gate.net/').replace(/\/?$/, '/');
+export const GET: APIRoute = async ({ site, url }) => {
+  const base = new URL('/', site ?? url).href;
   const posts = await getCollection('posts');
   const today = new Date().toISOString().slice(0, 10);
 
@@ -57,4 +58,4 @@ export async function GET({ site }: { site?: URL }) {
   return new Response(xml, {
     headers: { 'Content-Type': 'application/xml; charset=utf-8' },
   });
-}
+};

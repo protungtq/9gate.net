@@ -1,3 +1,6 @@
+---
+const siteOrigin = (Astro.site ?? Astro.url).origin;
+---
 <!doctype html>
 <html lang="vi">
 <head>
@@ -164,7 +167,7 @@ details{border:1px solid var(--ln);border-radius:12px;padding:12px 14px;margin-b
   <div class="card">
     <div class="f"><label>Worker proxy URL</label><input id="cw"></div>
     <div class="g2"><div class="f"><label>GitHub repo (owner/repo)</label><input id="cr"></div><div class="f"><label>Nhánh</label><input id="cb"></div></div>
-    <div class="f"><label>Địa chỉ website</label><input id="cs" placeholder="https://www.9gate.net"></div>
+    <div class="f"><label for="cs">Tên miền chính thức</label><input id="cs" value={siteOrigin} readonly title="Đổi thiết lập site trong astro.config.mjs"></div>
     <div class="f"><label>Nơi đọc games.json</label><input id="cj" placeholder="/tools/games-data.json"><div class="hint">Nếu không tải được, CMS đọc từ GitHub raw. Bạn cũng có thể nhập file ở danh sách game.</div></div>
     <div class="f"><label for="image-provider">Dịch vụ lưu ảnh</label><select id="image-provider"><option value="imgbb">ImgBB</option><option value="freeimage">Freeimage.host</option></select><p class="hint">Tải và rehost ảnh qua Worker đã cấu hình.</p></div>
     <button class="btn p" id="cok">Lưu kết nối</button>
