@@ -4,16 +4,19 @@
 
 @layer base {
   :root {
-    --gate-canvas: #e4eaf0;
-    --gate-chrome: #f0f4f8;
-    --gate-panel: #f8fafc;
-    --gate-feature: #edf3f8;
-    --gate-inset: #eaf0f6;
-    --gate-border: #c7d3df;
-    --gate-panel-shadow: 0 1px 2px #22354d0c, 0 6px 20px #22354d0a;
-    --gate-accent: 0 114 94;
-    --gate-action: #00725e;
-    --gate-action-hover: #00604f;
+    --gate-canvas: #f8f1ea;
+    --gate-chrome: #fff9f4;
+    --gate-header: #fb813e;
+    --gate-panel: #fffdfa;
+    --gate-feature: #fff2df;
+    --gate-inset: #fff5ed;
+    --gate-border: #ead3be;
+    --gate-muted: #6b5448;
+    --gate-panel-shadow: 0 2px 4px #42220d0d, 0 8px 22px #73421618;
+    --gate-accent: 163 54 14;
+    --gate-action: #a3360e;
+    --gate-action-hover: #842907;
+    --gate-stripe: linear-gradient(90deg, #bc3a0d, #e95419 55%, #ef8f31);
     --mobile-nav-height: 3.75rem;
     box-sizing: border-box;
     padding-top: env(safe-area-inset-top, 0px);
@@ -25,14 +28,30 @@
     background: var(--gate-canvas);
   }
   html.dark {
-    --gate-canvas: #111316;
-    --gate-chrome: #111316;
-    --gate-accent: 99 226 190;
+    --gate-canvas: #141211;
+    --gate-chrome: #191512;
+    --gate-header: #191512;
+    --gate-panel: #231c18;
+    --gate-feature: #2b2019;
+    --gate-inset: #30251e;
+    --gate-border: #48372d;
+    --gate-muted: #c4b2a7;
+    --gate-panel-shadow: 0 6px 18px #0005;
+    --gate-accent: 255 157 107;
+    --gate-action: #ad3e19;
+    --gate-action-hover: #933114;
+    --gate-stripe: linear-gradient(90deg, #fa6833, #ffa24e 60%, #6f2e13);
     color-scheme: dark;
   }
   body {
     @apply font-sans text-[#15171a] dark:text-slate-100;
     background: var(--gate-canvas);
+  }
+  html:not(.dark) body {
+    background:
+      radial-gradient(ellipse 680px 620px at 0 10px, #ffb16ba1, transparent 96%),
+      radial-gradient(ellipse 640px 580px at 100% 0, #ffcd81a6, transparent 96%),
+      var(--gate-canvas);
   }
   body::before {
     content: "";
@@ -40,7 +59,7 @@
     inset: 0 0 auto;
     height: env(safe-area-inset-top, 0px);
     z-index: 60;
-    background: var(--gate-chrome);
+    background: var(--gate-header);
   }
 }
 
@@ -90,10 +109,10 @@
 
 @layer components {
   .sf {
-    @apply bg-[var(--gate-inset)] dark:bg-white/[.06];
+    background-color: var(--gate-inset);
   }
   .muted {
-    @apply text-slate-500 dark:text-slate-400;
+    color: var(--gate-muted);
   }
   .btn {
     @apply inline-flex items-center justify-center gap-2 rounded-full px-5 h-10 text-sm font-bold transition active:scale-95 whitespace-nowrap;
@@ -115,20 +134,57 @@
     @apply h-4 w-1 shrink-0 rounded-full bg-tap;
   }
   .game-panel {
-    @apply rounded-2xl border border-[var(--gate-border)] bg-[var(--gate-panel)] dark:border-white/10 dark:bg-white/[.04];
+    @apply rounded-2xl border border-[var(--gate-border)] bg-[var(--gate-panel)];
   }
   .game-feature {
-    @apply rounded-3xl border border-[var(--gate-border)] bg-[var(--gate-feature)] dark:border-white/10 dark:bg-white/[.04];
+    @apply rounded-3xl border border-[var(--gate-border)] bg-[var(--gate-feature)];
   }
   .home-section {
     @apply mt-7 sm:mt-9;
   }
   html.dark .home-section {
-    @apply mt-9 border-t border-white/10 pt-6 sm:mt-11 sm:pt-8;
+    @apply mt-9 border-t border-[var(--gate-border)] pt-6 sm:mt-11 sm:pt-8;
   }
-  html:not(.dark) .site-chrome {
+  .site-chrome {
     background-color: var(--gate-chrome);
     border-color: var(--gate-border);
+  }
+  .brand-stripe {
+    background-image: var(--gate-stripe);
+  }
+  .site-footer {
+    --gate-accent: 255 157 107;
+    background-color: #161311;
+  }
+  .site-header {
+    background: var(--gate-header) linear-gradient(108deg, var(--gate-header), #ffa350 52%, #ffbf71);
+  }
+  html.dark .site-header {
+    background: var(--gate-header) linear-gradient(108deg, #3d2115, #251914 50%, var(--gate-header));
+  }
+  html:not(.dark) .site-header {
+    color: #391a0d;
+    border-color: #d4743870;
+  }
+  html:not(.dark) .site-header .brand-link {
+    background-color: #91350f;
+    box-shadow: 0 0 0 4px #91350f;
+  }
+  html:not(.dark) .site-header :is(.sf, input[type="search"]) {
+    background-color: #fff5e7b8;
+  }
+  html:not(.dark) .site-header input::placeholder {
+    color: #674631;
+  }
+  html:not(.dark) .site-header nav a[aria-current="page"] {
+    background-color: #fff6e9;
+    color: #863008;
+  }
+  .game-feature {
+    background-image: linear-gradient(126deg, var(--gate-panel) 8%, var(--gate-feature) 67%, #ffe5bf);
+  }
+  html.dark .game-feature {
+    background-image: linear-gradient(126deg, var(--gate-panel) 8%, var(--gate-feature) 80%);
   }
   html:not(.dark) .game-panel,
   html:not(.dark) .game-feature,
@@ -143,7 +199,8 @@
     transition: border-color .2s ease, box-shadow .2s ease;
   }
   html:not(.dark) .home-section :is(.game-card, .collection-card) {
-    background-color: var(--gate-inset);
+    background-color: #fff;
+    box-shadow: 0 2px 5px #6439130d, 0 5px 14px #8447190d;
   }
   html:not(.dark) :is(.game-card, .collection-card):is(:hover, :focus-visible) {
     border-color: rgb(var(--gate-accent) / .45);
@@ -162,30 +219,15 @@
   .news-row {
     @apply border-b border-[var(--gate-border)];
   }
-  html.dark .post-panel {
-    border-color: #39424e;
-    background-color: #1b2028;
-    box-shadow: 0 6px 18px #0005;
-  }
-  html.dark .post-related {
-    background-color: #171b22;
-  }
-  html.dark .news-row {
-    border-color: #3c4655;
-  }
   .news-row:is(:hover, :focus-visible) {
     border-color: rgb(var(--gate-accent) / .6);
     background-color: var(--gate-feature);
   }
-  html.dark .news-row:is(:hover, :focus-visible) {
-    border-color: rgb(var(--gate-accent) / .55);
-    background-color: #2b3542;
-  }
   .chip {
-    @apply rounded-full px-4 h-9 text-sm font-medium whitespace-nowrap bg-[#f3f4f5] dark:bg-white/[.08] transition hover:bg-black/10 dark:hover:bg-white/15 inline-flex items-center;
+    @apply rounded-full px-4 h-9 text-sm font-medium whitespace-nowrap bg-[var(--gate-inset)] transition hover:bg-black/10 dark:hover:bg-white/15 inline-flex items-center;
   }
   .chip-on {
-    @apply bg-[#15171a] text-white dark:bg-white dark:text-[#15171a] hover:bg-[#15171a];
+    @apply bg-[var(--gate-action)] text-white hover:bg-[var(--gate-action-hover)];
   }
   .tag {
     @apply text-[11px] font-medium rounded px-1.5 py-0.5 bg-black/10 dark:bg-white/15 text-slate-500 dark:text-slate-300 align-middle ml-2;

@@ -60,7 +60,7 @@ const isActive = (href: string) =>
   <meta name="description" content={description} />
   {keywords && <meta name="keywords" content={keywords} />}
   <meta name="robots" content={robots} />
-  <meta name="theme-color" content="#f0f4f8" />
+  <meta name="theme-color" content="#fb813e" />
   <link rel="canonical" href={pageUrl} />
 
   <!-- Open Graph -->
@@ -93,16 +93,16 @@ const isActive = (href: string) =>
       if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
       document.documentElement.classList.toggle('dark', t === 'dark');
       var m = document.querySelector('meta[name="theme-color"]');
-      if (m) m.setAttribute('content', t === 'dark' ? '#111316' : '#f0f4f8');
+      if (m) m.setAttribute('content', t === 'dark' ? '#191512' : '#fb813e');
     })();
   </script>
 </head>
 <body>
-  <header class="site-chrome sticky top-[env(safe-area-inset-top,0px)] z-50 dark:bg-[#111316]/95 backdrop-blur shadow-[0_6px_24px_-10px_rgba(0,0,0,.25)] border-b border-black/5 dark:border-white/10">
-    <div class="h-[3px] bg-gradient-to-r from-tap via-cyan-400 to-violet-500"></div>
+  <header class="site-header site-chrome sticky top-[env(safe-area-inset-top,0px)] z-50 backdrop-blur shadow-[0_6px_24px_-10px_rgba(0,0,0,.25)] border-b">
+    <div class="brand-stripe h-[3px]"></div>
     <div class="max-w-[1280px] mx-auto px-3 sm:px-4 h-16 lg:h-[72px] flex items-center gap-2 lg:gap-4">
-      <a href="/" class="flex shrink-0 items-center rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-tap" aria-label={`${siteName} – Trang chủ`}>
-        <img src="/brand/9gate-legacy.png" alt="" width="180" height="62" class="block h-auto w-28 brightness-0 dark:brightness-100 sm:w-32" />
+      <a href="/" class="brand-link flex shrink-0 items-center rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-tap" aria-label={`${siteName} – Trang chủ`}>
+        <img src="/brand/9gate-legacy.png" alt="" width="180" height="62" class="block h-auto w-28 sm:w-32" />
       </a>
       <nav aria-label="Điều hướng chính" class="hidden lg:flex shrink-0 gap-1 text-sm font-semibold">
         {NAV.map((n) => (
@@ -112,11 +112,11 @@ const isActive = (href: string) =>
       <button id="search-toggle" type="button" aria-label="Tìm kiếm" aria-controls="header-search" aria-expanded="false" class="ml-auto grid h-11 w-11 shrink-0 place-items-center rounded-full sf hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-tap dark:hover:bg-white/15 lg:hidden">
         <svg aria-hidden="true" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
       </button>
-      <div id="header-search" role="search" class="hidden absolute inset-x-3 top-full z-20 mt-2 rounded-2xl bg-white p-2 shadow-lg ring-1 ring-black/10 dark:bg-[#1b1e23] dark:ring-white/10 lg:relative lg:inset-auto lg:mt-0 lg:ml-auto lg:block lg:min-w-0 lg:flex-1 lg:max-w-xl lg:bg-transparent lg:p-0 lg:shadow-none lg:ring-0 lg:dark:bg-transparent">
+      <div id="header-search" role="search" class="hidden absolute inset-x-3 top-full z-20 mt-2 rounded-2xl bg-[var(--gate-panel)] p-2 shadow-lg ring-1 ring-[var(--gate-border)] lg:relative lg:inset-auto lg:mt-0 lg:ml-auto lg:block lg:min-w-0 lg:flex-1 lg:max-w-xl lg:bg-transparent lg:p-0 lg:shadow-none lg:ring-0 lg:dark:bg-transparent">
         <div class="relative">
           <svg aria-hidden="true" class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 muted pointer-events-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-          <input id="q" type="search" aria-label="Tìm game hoặc bài viết" placeholder="Tìm game, bài viết…" autocomplete="off" class="w-full h-11 rounded-full bg-slate-100 dark:bg-white/10 pl-10 pr-4 text-base lg:text-sm placeholder:text-slate-600 dark:placeholder:text-slate-400 outline-none focus:ring-2 ring-tap" />
-          <div id="sr" class="hidden absolute left-0 right-0 top-full mt-2 rounded-2xl bg-white dark:bg-[#1b1e23] ring-1 ring-black/10 dark:ring-white/10 shadow-xl p-2 max-h-80 overflow-auto z-50"></div>
+          <input id="q" type="search" aria-label="Tìm game hoặc bài viết" placeholder="Tìm game, bài viết…" autocomplete="off" class="w-full h-11 rounded-full bg-[var(--gate-inset)] pl-10 pr-4 text-base lg:text-sm placeholder:text-slate-600 dark:placeholder:text-slate-400 outline-none focus:ring-2 ring-tap" />
+          <div id="sr" class="hidden absolute left-0 right-0 top-full mt-2 rounded-2xl bg-[var(--gate-panel)] ring-1 ring-[var(--gate-border)] shadow-xl p-2 max-h-80 overflow-auto z-50"></div>
         </div>
       </div>
       <button id="tg" type="button" aria-label="Chuyển giao diện sáng / tối" title="Sáng / tối" class="w-11 h-11 shrink-0 rounded-full sf grid place-items-center hover:bg-black/10 dark:hover:bg-white/15 transition">
@@ -127,7 +127,7 @@ const isActive = (href: string) =>
         <summary aria-label="Menu điều hướng" class="grid h-11 w-11 cursor-pointer list-none place-items-center rounded-full sf hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-tap dark:hover:bg-white/15 [&::-webkit-details-marker]:hidden">
           <svg aria-hidden="true" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
         </summary>
-        <nav aria-label="Điều hướng trên màn hình nhỏ" class="absolute right-0 top-full z-30 mt-2 w-56 max-w-[calc(100vw-1.5rem)] rounded-2xl border border-black/10 bg-white p-1.5 shadow-xl dark:border-white/10 dark:bg-[#1b1e23]">
+        <nav aria-label="Điều hướng trên màn hình nhỏ" class="absolute right-0 top-full z-30 mt-2 w-56 max-w-[calc(100vw-1.5rem)] rounded-2xl border border-[var(--gate-border)] bg-[var(--gate-panel)] p-1.5 shadow-xl">
           {NAV.map((n) => (
             <a href={n.href} aria-current={isActive(n.href) ? "page" : undefined} class={`flex min-h-11 items-center gap-3 rounded-xl px-3 text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-tap ${isActive(n.href) ? 'bg-tap/10 text-tap' : 'hover:bg-black/5 dark:hover:bg-white/10'}`}>
               <svg aria-hidden="true" class="h-[18px] w-[18px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" set:html={n.icon}></svg>
@@ -143,7 +143,7 @@ const isActive = (href: string) =>
     <slot />
   </main>
 
-  <nav id="mobile-nav" aria-label="Điều hướng trên thiết bị di động" class="mobile-nav site-chrome fixed inset-x-0 bottom-0 z-50 grid grid-cols-4 border-t border-black/5 backdrop-blur dark:border-white/10 dark:bg-[#111316]/95 lg:hidden">
+  <nav id="mobile-nav" aria-label="Điều hướng trên thiết bị di động" class="mobile-nav site-chrome fixed inset-x-0 bottom-0 z-50 grid grid-cols-4 border-t backdrop-blur lg:hidden">
     {NAV.map((item) => {
       const active = isActive(item.href);
       return (
@@ -159,16 +159,11 @@ const isActive = (href: string) =>
     })}
   </nav>
 
-  <footer class="mt-16 bg-[#0e1114] text-slate-300">
-    <div class="h-[3px] bg-gradient-to-r from-tap via-cyan-400 to-violet-500"></div>
+  <footer class="site-footer mt-16 text-slate-300">
+    <div class="brand-stripe h-[3px]"></div>
     <div class="max-w-[1280px] mx-auto px-4 py-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr]">
       <div>
-        <div class="flex items-center gap-2 font-black text-2xl text-white">
-          <span class="w-10 h-10 rounded-xl bg-gradient-to-br from-tap to-cyan-500 grid place-items-center">
-            <span aria-hidden="true" class="text-[21px] font-black leading-none text-white">9</span>
-          </span>
-          {siteName}
-        </div>
+        <img src="/brand/9gate-legacy.png" alt={siteName} width="180" height="62" loading="lazy" class="block h-auto w-32" />
         <p class="mt-4 text-sm leading-relaxed text-slate-400 max-w-xs">Chỗ mình ghi lại những điều hay ho về game mobile, PC và console.</p>
       </div>
       <div>
@@ -204,7 +199,7 @@ const isActive = (href: string) =>
       document.documentElement.classList.toggle('dark', t === 'dark');
       try { localStorage.setItem('theme', t); } catch (e) {}
       var m = document.querySelector('meta[name="theme-color"]');
-      if (m) m.setAttribute('content', t === 'dark' ? '#111316' : '#f0f4f8');
+      if (m) m.setAttribute('content', t === 'dark' ? '#191512' : '#fb813e');
     }
     var tgBtn = document.getElementById('tg');
     if (tgBtn) tgBtn.addEventListener('click', function () {
