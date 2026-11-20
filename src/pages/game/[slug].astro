@@ -102,7 +102,6 @@ function youtubeEmbed(url: string): string {
 const embedUrl = youtubeEmbed(game.trailer);
 
 const ratingVal = game.rating ?? game.provisionalRating;
-const ratingLabel = game.rating != null ? 'Điểm đánh giá' : 'Điểm ngẫu nhiên để tham khảo';
 const filledStars = ratingVal != null ? Math.round(ratingVal / 2) : 0;
 const starPath = 'M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6L1.3 7.8l6.1-.7z';
 
@@ -170,7 +169,7 @@ const secondary: Act[] = [
                 : <b class="text-[10px] opacity-70">{t}</b>
             ))}
             <span>•</span><span>{game.genre}</span>
-            {ratingVal != null && (<><span>•</span><span class="text-tap font-bold" title={ratingLabel}>★ {ratingVal.toFixed(1)}</span></>)}
+            {ratingVal != null && (<><span>•</span><span class="text-tap font-bold">★ {ratingVal.toFixed(1)}</span></>)}
           </div>
           <div class="mt-1 text-xs font-bold uppercase tracking-wider text-tap">{game.publisher}</div>
         </div>
@@ -241,7 +240,7 @@ const secondary: Act[] = [
               <svg class="w-3 h-3 fill-current opacity-25" viewBox="0 0 20 20"><path d={starPath} /></svg>
             ))}
           </div>
-          <div class="text-xs muted mt-1.5">{ratingLabel}</div>
+          {game.rating != null && <div class="text-xs muted mt-1.5">Điểm đánh giá</div>}
         </div>
       )}
     </div>
@@ -333,7 +332,7 @@ const secondary: Act[] = [
                   <span class="block text-xs muted truncate">{x.genre} • {(x.platforms || [])[0] || ''}</span>
                 </span>
                 {(x.rating ?? x.provisionalRating) != null && (
-                  <span class="text-base font-extrabold text-tap leading-none shrink-0" title={x.rating != null ? 'Điểm đánh giá' : 'Điểm ngẫu nhiên để tham khảo'}>{(x.rating ?? x.provisionalRating)?.toFixed(1)}</span>
+                  <span class="text-base font-extrabold text-tap leading-none shrink-0">{(x.rating ?? x.provisionalRating)?.toFixed(1)}</span>
                 )}
               </a>
             ))}

@@ -5,7 +5,6 @@ const { game, postImg } = Astro.props;
 const platText = (game.platforms || []).join(' · ');
 const art = gameArt(game, postImg);
 const score = game.rating ?? game.provisionalRating;
-const scoreLabel = game.rating != null ? 'Điểm đánh giá' : 'Điểm ngẫu nhiên để tham khảo';
 ---
 
 <a
@@ -40,10 +39,7 @@ const scoreLabel = game.rating != null ? 'Điểm đánh giá' : 'Điểm ngẫu
       <div class="mt-0.5 text-xs muted truncate">{game.publisher}</div>
     </div>
     {score != null && (
-      <div class="text-right shrink-0" title={scoreLabel} aria-label={`${scoreLabel} ${score.toFixed(1)}`}>
-        <div class="text-xl font-extrabold text-tap leading-none">{score.toFixed(1)}</div>
-        {game.rating == null && <div class="text-[10px] muted mt-1">Tham khảo</div>}
-      </div>
+      <div class="text-xl font-extrabold text-tap leading-none shrink-0" aria-label={`Điểm ${score.toFixed(1)}`}>{score.toFixed(1)}</div>
     )}
   </div>
 </a>
