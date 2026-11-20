@@ -1,6 +1,6 @@
 import { getCollection } from 'astro:content';
 import games from '../data/games.json';
-import { categoryGames, categoryPagePath, GAME_PAGE_SIZE } from '../lib/gameCategory';
+import { categoryGames, categoryPagePath, GAME_PAGE_SIZE, mobileLegacyLists } from '../lib/gameCategory';
 
 export const prerender = true;
 
@@ -18,6 +18,14 @@ export async function GET({ site }: { site?: URL }) {
         lastmod: today,
         changefreq: 'weekly',
         priority: index === 0 ? '0.9' : '0.8',
+      }))
+    ),
+    ...mobileLegacyLists().flatMap(({ path, games }) =>
+      Array.from({ length: Math.ceil(games.length / GAME_PAGE_SIZE) }, (_, index) => ({
+        loc: categoryPagePath('mobile', index + 1, path).slice(1),
+        lastmod: today,
+        changefreq: 'weekly',
+        priority: '0.8',
       }))
     ),
     { loc: 'cap-nhat/', lastmod: today, changefreq: 'daily', priority: '0.8' },

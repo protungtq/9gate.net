@@ -34,6 +34,22 @@ export function categoryGames(category: Category) {
   );
 }
 
+const mobileOrigins = [
+  { code: 'cn', path: 'khu-vuc/trung-quoc', label: 'Trung Quốc' },
+  { code: 'h5', path: 'nen-tang/h5', label: 'H5' },
+];
+
+export function mobileLegacyLists() {
+  const mobile = categoryGames('mobile');
+  return mobileOrigins
+    .map(({ code, path, label }) => ({
+      path,
+      label,
+      games: mobile.filter(game => game.legacy?.sourcePath?.startsWith(`/game/${code}/`)),
+    }))
+    .filter(list => list.games.length > 0);
+}
+
 const pagePath = (page: number, variant: string) =>
   [variant, page > 1 ? String(page) : ''].filter(Boolean).join('/');
 
@@ -61,6 +77,7 @@ export async function gameCategoryPaths(category: Category) {
   const usedSlugs = new Set<string>();
   const filters = [
     { path: '', label: 'Tất cả', games: allGames },
+    ...(category === 'mobile' ? mobileLegacyLists() : []),
     ...[...byGenre].sort((a, b) => b[1].length - a[1].length).slice(0, 12)
       .map(([label, genreGames]) => {
         const base = label.toLowerCase().normalize('NFD').replace(/\p{M}/gu, '').replaceAll('đ', 'd')

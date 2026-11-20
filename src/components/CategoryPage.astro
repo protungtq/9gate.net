@@ -12,6 +12,8 @@ const {
 } = Astro.props;
 const genre = filters.find(({ path }) => path === activeFilter)?.label ?? '';
 const pageTitle = activeFilter ? `${title} · ${genre}` : seoTitle;
+const legacyList = activeFilter.startsWith('khu-vuc/') || activeFilter.startsWith('nen-tang/');
+const heading = legacyList ? pageTitle : title;
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -28,7 +30,7 @@ const jsonLd = {
 
 <Layout
   title={currentPage > 1 ? `${pageTitle} · Trang ${currentPage}` : pageTitle}
-  description={description}
+  description={legacyList ? `Danh sách game ${genre} trên 9Gate, gồm thông tin game và các bài viết liên quan.` : description}
   keywords={keywords}
   jsonLd={jsonLd}
   robots={activeSort ? 'noindex, follow' : undefined}
@@ -36,7 +38,7 @@ const jsonLd = {
   <div class="max-w-[1280px] mx-auto px-4 py-6">
     <div class="flex flex-wrap items-end justify-between gap-3">
       <div>
-        <h1 class="text-3xl sm:text-4xl font-extrabold">{title}</h1>
+        <h1 class="text-3xl sm:text-4xl font-extrabold">{heading}</h1>
         <p class="muted mt-1">{subtitle}</p>
       </div>
       <nav class="flex rounded-full sf p-1 text-sm font-semibold" aria-label="Sắp xếp game">
