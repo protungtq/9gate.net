@@ -98,7 +98,7 @@ export async function gameCategoryPaths(category: Category) {
     const list = [...filter.games].sort((a, b) => {
       if (sort.path === 'a-z') return nameOrder.compare(a.name, b.name);
       if (sort.path === 'z-a') return nameOrder.compare(b.name, a.name);
-      return (b.rating ?? 0) - (a.rating ?? 0);
+      return (b.rating ?? b.provisionalRating ?? 0) - (a.rating ?? a.provisionalRating ?? 0);
     });
     const totalPages = Math.max(1, Math.ceil(list.length / GAME_PAGE_SIZE));
 

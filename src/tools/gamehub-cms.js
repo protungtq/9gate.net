@@ -47,7 +47,7 @@ document.addEventListener("input",e=>{const id=e.target.dataset?.pv;if(!id)retur
 
 /* ===== GAMES ===== */
 let games=[],base={},fmiss="",editing=null;
-const miss={cover:g=>!g.cover,trailer:g=>!g.trailer,rating:g=>g.rating==null||g.rating===""};
+const miss={cover:g=>!g.cover,trailer:g=>!g.trailer,rating:g=>g.rating==null&&g.provisionalRating==null};
 function gameDataUrls() {
   const raw = cfg.r && `https://raw.githubusercontent.com/${cfg.r}/${cfg.b}/src/data/games.json`;
   return (cfg.j === DEF.j ? [raw, cfg.j] : [cfg.j, raw]).filter(Boolean);
@@ -68,7 +68,7 @@ $("#list").addEventListener("error", (event) => {
 function renderGames(){const q=$("#q").value.toLowerCase(),fc=$("#fc").value;$("#nG").textContent=games.length;
   const L=games.filter(g=>(!q||(g.name+" "+(g.publisher||"")).toLowerCase().includes(q))&&(!fc||g.category==fc)&&(!fmiss||miss[fmiss](g)));
   $("#chips").innerHTML=[["","Tất cả",games.length],["cover","Thiếu ảnh bìa",games.filter(miss.cover).length],["trailer","Thiếu trailer",games.filter(miss.trailer).length],["rating","Chưa có điểm",games.filter(miss.rating).length]].map(([k,l,n])=>`<button class="chip ${fmiss==k?"on":""}" data-m="${k}">${l} (${n})</button>`).join("");
-  $("#list").innerHTML=L.map(g=>`<div class="gi">${gameIcon(g)}<div class="t"><h3>${esc(g.name)}</h3><p>${esc(g.publisher||"Chưa có nhà phát hành")}</p><p>${esc(g.genre||"")}</p><span class="tg ${g.category=="mobile"?"g":""}">${g.category=="mobile"?"Mobile":"PC / Console"}</span>${g.featured?'<span class="tg g">Nổi bật</span>':""}${g.hot?'<span class="tg g">Hot</span>':""}${miss.cover(g)?'<span class="tg w">Thiếu bìa</span>':""}${miss.trailer(g)?'<span class="tg w">Thiếu trailer</span>':""}</div><div class="rt">${esc(g.rating??"–")}<small>điểm</small></div><div class="ac"><button data-e="${esc(g.slug)}">Sửa</button><button data-x="${esc(g.slug)}" style="color:var(--dn)">Xóa</button></div></div>`).join("")||'<div class="empty">Không có game nào khớp bộ lọc.</div>';
+  $("#list").innerHTML=L.map(g=>`<div class="gi">${gameIcon(g)}<div class="t"><h3>${esc(g.name)}</h3><p>${esc(g.publisher||"Chưa có nhà phát hành")}</p><p>${esc(g.genre||"")}</p><span class="tg ${g.category=="mobile"?"g":""}">${g.category=="mobile"?"Mobile":"PC / Console"}</span>${g.featured?'<span class="tg g">Nổi bật</span>':""}${g.hot?'<span class="tg g">Hot</span>':""}${miss.cover(g)?'<span class="tg w">Thiếu bìa</span>':""}${miss.trailer(g)?'<span class="tg w">Thiếu trailer</span>':""}</div><div class="rt">${esc(g.rating??(g.provisionalRating!=null?`${g.provisionalRating.toFixed(1)} (tham khảo)`:"–"))}<small>điểm</small></div><div class="ac"><button data-e="${esc(g.slug)}">Sửa</button><button data-x="${esc(g.slug)}" style="color:var(--dn)">Xóa</button></div></div>`).join("")||'<div class="empty">Không có game nào khớp bộ lọc.</div>';
   const d=diff(),f=$("#fix");f.classList.toggle("dirty",d.n>0);$("#fs").textContent=d.n?`Chưa đẩy lên GitHub: ${d.a} thêm, ${d.c} sửa, ${d.r} xóa`:`${games.length} game, đã đồng bộ`}
 ["q","fc"].forEach(i=>$("#"+i).oninput=renderGames);
 $("#chips").onclick=e=>{if(e.target.dataset.m!==undefined){fmiss=e.target.dataset.m;renderGames()}};
@@ -87,7 +87,7 @@ $("#save").onclick=()=>{const v=k=>$("#"+k).value.trim(),name=v("name"),slug=v("
   const cat=v("category"),pub=v("publisher"),gen=v("genre"),desc=v("description");
   const g={slug,name,publisher:pub,genre:gen,platforms:v("platforms").split(",").map(s=>s.trim()).filter(Boolean),category:cat,icon:v("icon"),cover:v("cover"),trailer:v("trailer"),description:desc,website:v("website")};
   if(!g.platforms.length)g.platforms=[cat=="mobile"?"Mobile":"PC"];
-  if(rt!=="")g.rating=+(+rt).toFixed(1);const an=v("android"),io=v("ios");if(an)g.android=an;if(io)g.ios=io;const oldG=games.find(x=>x.slug===slug),todayStr=new Date().toISOString().slice(0,10);if($("#featured").checked){g.featured=true;g.featuredAt=(oldG&&oldG.featured&&oldG.featuredAt)||todayStr}if($("#hot").checked){g.hot=true;g.hotAt=(oldG&&oldG.hot&&oldG.hotAt)||todayStr}
+  if(rt!=="")g.rating=+(+rt).toFixed(1);const an=v("android"),io=v("ios");if(an)g.android=an;if(io)g.ios=io;const oldG=games.find(x=>x.slug===slug),todayStr=new Date().toISOString().slice(0,10);if(rt===""&&oldG?.provisionalRating!=null)g.provisionalRating=oldG.provisionalRating;if(oldG?.trailerType&&oldG.trailer===g.trailer)g.trailerType=oldG.trailerType;if($("#featured").checked){g.featured=true;g.featuredAt=(oldG&&oldG.featured&&oldG.featuredAt)||todayStr}if($("#hot").checked){g.hot=true;g.hotAt=(oldG&&oldG.hot&&oldG.hotAt)||todayStr}
   g.seoTitle=v("seoTitle")||`${name} - Tải game, cập nhật, review | 9Gate`;g.seoDescription=v("seoDescription")||desc.slice(0,150);g.seoKeywords=v("seoKeywords")||`${name}, tải ${name}, ${pub}, ${gen}`;
   const i=games.findIndex(x=>x.slug==slug);i>=0?games[i]=g:games.push(g);toast(`Đã lưu "${name}". Nhớ đẩy lên GitHub để đăng`,"o");closeForm();renderGames();fillGameSelect()};
 function delGame(s){const g=games.find(x=>x.slug==s);if(g&&confirm(`Xóa game "${g.name}" khỏi danh sách?`)){games=games.filter(x=>x.slug!=s);renderGames();fillGameSelect();toast("Đã xóa. Nhớ đẩy lên GitHub để áp dụng")}}

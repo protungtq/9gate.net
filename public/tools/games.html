@@ -355,7 +355,9 @@ function saveGame() {
 
   const existingIdx = allGames.findIndex(x => x.slug === slug);
   if (existingIdx >= 0) {
-    allGames[existingIdx] = game;
+    const existing = allGames[existingIdx];
+    allGames[existingIdx] = { ...existing, ...game };
+    if (game.trailer !== existing.trailer) delete allGames[existingIdx].trailerType;
   } else {
     // Check duplicate slug for new games
     if (allGames.some(x => x.slug === slug)) {

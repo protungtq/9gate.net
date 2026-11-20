@@ -4,6 +4,8 @@ import { gameArt } from '../lib/gameArt';
 const { game, postImg } = Astro.props;
 const platText = (game.platforms || []).join(' · ');
 const art = gameArt(game, postImg);
+const score = game.rating ?? game.provisionalRating;
+const scoreLabel = game.rating != null ? 'Điểm đánh giá' : 'Điểm ngẫu nhiên để tham khảo';
 ---
 
 <a
@@ -11,7 +13,7 @@ const art = gameArt(game, postImg);
   class="game-card group block min-w-0 fade"
   data-name={(game.name || '').toLowerCase()}
   data-genre={game.genre || ''}
-  data-rating={game.rating ?? ''}
+  data-rating={score ?? ''}
 >
   <div class="relative aspect-video rounded-2xl overflow-hidden ring-1 ring-black/5 dark:ring-white/10">
     {art ? (
@@ -37,8 +39,11 @@ const art = gameArt(game, postImg);
       </div>
       <div class="mt-0.5 text-xs muted truncate">{game.publisher}</div>
     </div>
-    {game.rating != null && (
-      <div class="text-xl font-extrabold text-tap leading-none shrink-0">{Number(game.rating).toFixed(1)}</div>
+    {score != null && (
+      <div class="text-right shrink-0" title={scoreLabel} aria-label={`${scoreLabel} ${score.toFixed(1)}`}>
+        <div class="text-xl font-extrabold text-tap leading-none">{score.toFixed(1)}</div>
+        {game.rating == null && <div class="text-[10px] muted mt-1">Tham khảo</div>}
+      </div>
     )}
   </div>
 </a>
