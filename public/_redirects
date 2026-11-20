@@ -1,6 +1,5 @@
 /tin-tuc /cap-nhat/ 301
 /tin-tuc/ /cap-nhat/ 301
-/tin/* /p/:splat 301
 /tools/gamehub-cms.html /tools/gamehub-cms/ 301
 
 # URL nội dung chuyển từ 9Gate cũ
@@ -472,3 +471,5 @@
 /game/vua-hai-tac-219 /game/vua-hai-tac/ 301
 /game/vuong-gia-vinh-dieu-554/ /game/vuong-gia-vinh-dieu/ 301
 /game/vuong-gia-vinh-dieu-554 /game/vuong-gia-vinh-dieu/ 301
+
+/tin/* /p/:splat 301
