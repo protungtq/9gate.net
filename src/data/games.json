@@ -3367,5 +3367,20 @@
       "sourcePath": "/game/vn/khan-mobi-214.html"
     },
     "provisionalRating": 7.3
+  },
+  {
+    "slug": "ngoa-long-vng",
+    "name": "Ngọa Long VNG",
+    "publisher": "VNGGames",
+    "genre": "Chiến thuật, SLG",
+    "platforms": [
+      "Mobile"
+    ],
+    "category": "mobile",
+    "icon": "https://i.ibb.co/BKBYfCCS/03e176cdf4dd.webp",
+    "cover": "https://i.ibb.co/rfcByVhS/30ebab10d814.webp",
+    "trailer": "",
+    "description": "Game chiến thuật SLG lấy bối cảnh Tam Quốc, ra mắt từ 2011. Phiên bản Tam Quốc Đỉnh Lập (16/11/2026) bổ sung dàn Tướng Vàng, server Trần Lưu và chuỗi hoạt động mừng sinh nhật 15 tuổi.",
+    "website": "https://ngoalong.vnggames.com/"
   }
 ]
