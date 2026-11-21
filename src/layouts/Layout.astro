@@ -200,14 +200,17 @@ const isActive = (href: string) =>
       </div>
     </div>
     <div class="border-t border-white/10">
-      <div class="max-w-[1280px] mx-auto px-4 py-5 text-xs text-slate-500 flex flex-wrap justify-between gap-2">
-        <span>© 2026 {siteName} - Thế giới GAME của bạn</span>
+      <div class="max-w-[1280px] mx-auto grid gap-2 px-4 py-5 text-center text-xs text-slate-500">
+        <p>©2012 - <span id="copyright-year">{new Date().getFullYear()}</span> || {siteName} - Thế giới GAME của bạn</p>
         <span>Điều khoản · Chính sách bảo mật</span>
       </div>
     </div>
   </footer>
 
   <script is:inline define:vars={{ searchIndex }}>
+    const copyrightYear = document.getElementById('copyright-year');
+    if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
+
     // ===== Sáng / tối =====
     function setTheme(t) {
       document.documentElement.classList.toggle('dark', t === 'dark');
