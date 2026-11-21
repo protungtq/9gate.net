@@ -62,7 +62,7 @@ const jsonLd = [
     "applicationCategory": "Game",
     "inLanguage": "vi-VN",
     "url": gameUrl,
-    "publisher": { "@type": "Organization", "name": game.publisher },
+    ...(game.publisher && { "publisher": { "@type": "Organization", "name": game.publisher } }),
     ...((game.cover || game.icon) && { "image": game.cover || game.icon }),
     ...(typeof game.rating === 'number' && {
       "aggregateRating": {
@@ -250,14 +250,14 @@ const secondary: Act[] = [
     <!-- Nội dung chính + cột phải -->
     <div class="grid lg:grid-cols-[minmax(0,1fr)_320px] gap-6 lg:gap-8 mt-6 lg:mt-8 items-start">
       <div class="space-y-5 sm:space-y-6 min-w-0">
-        <section class="game-panel p-4 sm:p-5">
+        <section id="gioi-thieu" class="game-panel scroll-mt-24 p-4 sm:p-5">
           <h2 class="section-title mb-2">Giới thiệu</h2>
-          <p id="game-desc" class="text-sm sm:text-base leading-relaxed text-slate-700 dark:text-slate-300 line-clamp-3 sm:line-clamp-none">{game.description}</p>
+          <p id="game-desc" class="whitespace-pre-line text-sm sm:text-base leading-relaxed text-slate-700 dark:text-slate-300 line-clamp-3 sm:line-clamp-none">{game.description}</p>
           <button id="desc-more" type="button" class="sm:hidden hidden text-tap text-sm font-semibold mt-1">Thêm</button>
         </section>
 
         {!!game.legacy?.screenshots?.length && (
-          <section class="game-panel p-4 sm:p-5">
+          <section id="anh" class="game-panel scroll-mt-24 p-4 sm:p-5">
             <h2 class="section-title mb-3">Ảnh trong game</h2>
             <div class="flex gap-3 overflow-x-auto pb-2">
               {game.legacy.screenshots.map((src, index) => (
@@ -293,7 +293,7 @@ const secondary: Act[] = [
           </section>
         )}
 
-        <section class="game-panel p-4 sm:p-5">
+        <section id="bai-viet" class="game-panel scroll-mt-24 p-4 sm:p-5">
           <h2 class="section-title mb-4">Bài viết về game này</h2>
           {relatedPosts.length > 0 ? (
             <div class="grid">
@@ -306,12 +306,15 @@ const secondary: Act[] = [
       </div>
 
       <aside class="min-w-0 space-y-5 sm:space-y-6">
-        <section class="game-panel p-4 sm:p-5">
+        <section id="thong-tin" class="game-panel scroll-mt-24 p-4 sm:p-5">
           <h2 class="section-title mb-2">Thông tin game</h2>
           <dl class="text-sm divide-y divide-[var(--gate-border)] dark:divide-white/10">
-            <div class="flex justify-between gap-3 py-3"><dt class="muted">Nhà phát hành</dt><dd class="font-semibold text-right">{game.publisher}</dd></div>
-            <div class="flex justify-between gap-3 py-3"><dt class="muted">Nền tảng</dt><dd class="font-semibold text-right">{platText}</dd></div>
-            <div class="flex justify-between gap-3 py-3"><dt class="muted">Thể loại</dt><dd class="font-semibold text-right">{game.genre}</dd></div>
+            <div class="flex justify-between gap-3 py-3"><dt class="muted">Nhà phát hành</dt><dd class="font-semibold text-right">{game.publisher || 'Chưa rõ'}</dd></div>
+            <div class="flex justify-between gap-3 py-3"><dt class="muted">Nền tảng</dt><dd class="font-semibold text-right">{platText || 'Chưa rõ'}</dd></div>
+            <div class="flex justify-between gap-3 py-3"><dt class="muted">Thể loại</dt><dd class="font-semibold text-right">{game.genre || 'Chưa rõ'}</dd></div>
+            {game.legacy?.status && (
+              <div class="flex justify-between gap-3 py-3"><dt class="muted">Tình trạng lúc lưu trữ</dt><dd class="font-semibold text-right">{game.legacy.status}</dd></div>
+            )}
             {game.legacy?.releaseDate && (
               <div class="flex justify-between gap-3 py-3"><dt class="muted">Ngày phát hành</dt><dd class="font-semibold text-right">{game.legacy.releaseDate}</dd></div>
             )}

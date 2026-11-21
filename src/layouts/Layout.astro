@@ -1,6 +1,5 @@
 ---
 import '../styles/global.css';
-import { getCollection } from 'astro:content';
 import games from '../data/games.json';
 
 interface Props {
@@ -19,23 +18,7 @@ const siteName = '9Gate';
 const pageUrl = canonical || new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
 const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
 
-// ===== Mục lục tìm kiếm (game + bài viết) =====
-const postEntries = await getCollection('posts');
 const gameBySlug = Object.fromEntries(games.map((g) => [g.slug, g]));
-const searchIndex = [
-  ...games.map((g) => ({
-    t: g.name,
-    s: `${g.genre} · ${g.publisher}`,
-    u: `/game/${g.slug}/`,
-    i: g.icon || '',
-  })),
-  ...postEntries.map((p) => ({
-    t: p.data.title,
-    s: gameBySlug[p.data.game]?.name || 'Bài viết',
-    u: `/p/${p.id.replace(/\.(md|mdx)$/i, '')}/`,
-    i: p.data.image || gameBySlug[p.data.game]?.icon || '',
-  })),
-];
 
 // ===== Điều hướng =====
 const path = Astro.url.pathname;
@@ -207,7 +190,7 @@ const isActive = (href: string) =>
     </div>
   </footer>
 
-  <script is:inline define:vars={{ searchIndex }}>
+  <script is:inline>
     const copyrightYear = document.getElementById('copyright-year');
     if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
 
@@ -229,18 +212,51 @@ const isActive = (href: string) =>
     };
     var q = document.getElementById('q');
     var sr = document.getElementById('sr');
-    function hideSr() { if (sr) sr.classList.add('hidden'); }
+    let searchIndexPromise;
+    let searchRequest = 0;
+    function hideSr() {
+      searchRequest++;
+      if (sr) sr.classList.add('hidden');
+    }
+    function loadSearchIndex() {
+      searchIndexPromise ??= fetch('/search-index.json').then(function (response) {
+        if (!response.ok) throw new Error('Không tải được dữ liệu tìm kiếm');
+        return response.json();
+      }).catch(function (error) {
+        searchIndexPromise = undefined;
+        throw error;
+      });
+      return searchIndexPromise;
+    }
+    const escapeSearchText = (value) => String(value || '').replace(/[&<>"']/g, (char) => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+    })[char]);
     if (q && sr) {
-      q.addEventListener('input', function () {
-        var v = norm(q.value.trim());
-        if (!v) { hideSr(); return; }
-        var r = searchIndex.filter(function (x) { return norm(x.t + ' ' + x.s).includes(v); }).slice(0, 8);
-        sr.innerHTML = r.length
-          ? r.map(function (x) {
-              return '<a href="' + x.u + '" class="flex items-center gap-3 p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10">' +
-                (x.i ? '<img src="' + x.i + '" alt="" class="w-10 h-10 rounded-[22%] object-cover shrink-0" loading="lazy">' : '<span class="w-10 h-10 rounded-[22%] bg-tap/15 shrink-0"></span>') +
-                '<span class="min-w-0"><span class="block font-bold text-sm truncate">' + x.t + '</span>' +
-                '<span class="block text-xs muted truncate">' + x.s + '</span></span></a>';
+      q.addEventListener('input', async function () {
+        const term = norm(q.value.trim());
+        hideSr();
+        if (!term) return;
+        const request = searchRequest;
+        let searchIndex;
+        try {
+          searchIndex = await loadSearchIndex();
+        } catch {
+          if (request !== searchRequest) return;
+          sr.textContent = 'Không tải được dữ liệu tìm kiếm.';
+          sr.classList.remove('hidden');
+          return;
+        }
+        if (request !== searchRequest) return;
+        const results = searchIndex.filter((entry) => norm(entry.t + ' ' + entry.s).includes(term)).slice(0, 8);
+        sr.innerHTML = results.length
+          ? results.map(function (entry) {
+              const { t, s, i, u } = Object.fromEntries(
+                Object.entries(entry).map(([key, value]) => [key, escapeSearchText(value)])
+              );
+              return '<a href="' + u + '" class="flex items-center gap-3 p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10">' +
+                (i ? '<img src="' + i + '" alt="" class="w-10 h-10 rounded-[22%] object-cover shrink-0" loading="lazy">' : '<span class="w-10 h-10 rounded-[22%] bg-tap/15 shrink-0"></span>') +
+                '<span class="min-w-0"><span class="block font-bold text-sm truncate">' + t + '</span>' +
+                '<span class="block text-xs muted truncate">' + s + '</span></span></a>';
             }).join('')
           : '<div class="p-3 text-sm muted">Không tìm thấy kết quả phù hợp</div>';
         sr.classList.remove('hidden');

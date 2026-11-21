@@ -35,19 +35,27 @@ export function categoryGames(category: Category) {
 }
 
 const mobileOrigins = [
-  { code: 'cn', path: 'khu-vuc/trung-quoc', label: 'Trung Quốc' },
-  { code: 'h5', path: 'nen-tang/h5', label: 'H5' },
+  { codes: ['cn'], path: 'khu-vuc/trung-quoc', label: 'Trung Quốc' },
+  { codes: ['h5'], path: 'nen-tang/h5', label: 'H5' },
+  { codes: ['vn', 'trong-nuoc'], path: 'khu-vuc/viet-nam', label: 'Việt Nam' },
+  { codes: ['kr'], path: 'khu-vuc/han-quoc', label: 'Hàn Quốc' },
+  { codes: ['us'], path: 'khu-vuc/my', label: 'Mỹ' },
+  { codes: ['jp'], path: 'khu-vuc/nhat-ban', label: 'Nhật Bản' },
+  { codes: ['tw'], path: 'khu-vuc/dai-loan', label: 'Đài Loan' },
+  { codes: ['hk'], path: 'khu-vuc/hong-kong', label: 'Hồng Kông' },
+  { codes: ['sg'], path: 'khu-vuc/singapore', label: 'Singapore' },
+  { codes: ['id'], path: 'khu-vuc/indonesia', label: 'Indonesia' },
 ];
 
 export function mobileLegacyLists() {
   const mobile = categoryGames('mobile');
   return mobileOrigins
-    .map(({ code, path, label }) => ({
+    .map(({ codes, path, label }) => ({
       path,
       label,
-      games: mobile.filter(game => game.legacy?.sourcePath?.startsWith(`/game/${code}/`)),
+      games: mobile.filter((game) => codes.includes(game.legacy?.sourcePath?.split('/')[2] ?? '')),
     }))
-    .filter(list => list.games.length > 0);
+    .filter((list) => list.games.length > 0);
 }
 
 const pagePath = (page: number, variant: string) =>
