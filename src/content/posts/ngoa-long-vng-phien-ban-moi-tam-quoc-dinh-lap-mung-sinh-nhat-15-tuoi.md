@@ -1,7 +1,7 @@
 ---
 title: "Ngọa Long VNG bước sang tuổi 15 với bản cập nhật lớn Tam Quốc Đỉnh Lập"
 description: "Ngọa Long VNG kỷ niệm 15 tuổi bằng phiên bản Tam Quốc Đỉnh Lập: dàn Tướng Vàng mới, server Trần Lưu mở 17/11 và chuỗi hoạt động tri ân cộng đồng."
-image: "https://i.postimg.cc/DJN8X76f/ngoa-long-cover.jpg"
+image: "https://i.postimg.cc/WzNrx3JZ/ngoa-long-cover.jpg"
 tags: ["Tin Game"]
 game: "ngoa-long-vng"
 date: "2026-11-21"
@@ -23,13 +23,13 @@ Các phó bản chính tuyến, phụ tuyến mới cùng giới hạn Thành Ch
 
 Nối tiếp phiên bản mới, máy chủ sinh nhật Trần Lưu đã khai mở lúc 10h ngày 17/11, tạo sân chơi mới cho các Thành Chủ xây dựng thế lực và cạnh tranh thứ hạng.
 
-![](<https://i.postimg.cc/TLspDT0P/ngoa-long-tran-luu.jpg>)
+![](<https://i.postimg.cc/cCxYPH8f/ngoa-long-tran-luu.jpg>)
 
 Tại đây, người chơi có thể tham gia chuỗi phúc lợi khởi đầu gồm đăng nhập 7 ngày nhận quà, thăng cấp nhận thưởng lên đến 10.000 Vàng và nhiều phần thưởng hỗ trợ phát triển đội hình. Hoạt động Bát Trận Đồ mang đến cơ hội nhận quà mỗi ngày khi đáp ứng điều kiện tích lũy 200 Vàng/ngày. Sự kiện Tăng Cấp Nhận Quà trao thưởng tại nhiều cột mốc từ cấp 20 đến 310, với Bạc, Chiến Công và nguyên liệu tăng cấp trang bị.
 
 Đáng chú ý là cuộc đua TOP Lực Chiến Server Trần Lưu diễn ra từ ngày 18/11 đến 02/12/2026. Ngoài phần thưởng trong game, các Thành Chủ đứng đầu bảng xếp hạng còn có cơ hội nhận loạt quà lưu niệm như áo thun Ngọa Long, thú bông Gia Cát Lượng, móc khóa, túi phúc và bình nước độc quyền.
 
-![](<https://i.postimg.cc/WFyhks8d/ngoa-long-dua-top.jpg>)
+![](<https://i.postimg.cc/zvzW4BRF/ngoa-long-dua-top.jpg>)
 
 ## Chuỗi hoạt động sôi động tri ân game thủ dịp sinh nhật
 

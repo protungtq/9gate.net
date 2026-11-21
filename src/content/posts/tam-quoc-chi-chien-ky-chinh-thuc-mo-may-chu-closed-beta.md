@@ -1,7 +1,7 @@
 ---
 title: "Tam Quốc Chí - Chiến Kỳ chính thức mở máy chủ Closed Beta, game thủ nô nức trải nghiệm"
 description: "Sáng 16/11, VNGGames chính thức mở Closed Beta Tam Quốc Chí - Chiến Kỳ, game chiến thuật SLG pha SRPG được Koei Tecmo ủy quyền. CBT kéo dài tới 22/11."
-image: "https://i.postimg.cc/Pp7Pwdy8/chien-ky-cover.jpg"
+image: "https://i.postimg.cc/nrF7NzQT/chien-ky-cover.jpg"
 tags: ["Tin Game"]
 game: "tam-quoc-chi-chien-ky"
 date: "2026-11-21"
@@ -21,7 +21,7 @@ Trên hệ thống mạng xã hội của Tam Quốc Chí - Chiến Kỳ, nhà p
 
 Đặc biệt, sự kiện Hoàn Trả Nạp được thông báo giúp tăng lợi ích cho game thủ khi nạp thẻ trải nghiệm trong giai đoạn Closed Beta. Cụ thể, người chơi sẽ được hoàn trả 100% giá trị khi nạp thông qua kênh ingame và 115% khi nạp trên webshop, đặc biệt lên đến 120% khi mua các gói chiết khấu của webshop. Bên cạnh đó, còn có các mức tặng thêm Ngọc Bích cho mỗi 10.000đ nạp vào. Sự kiện sẽ thực hiện hoàn trả khi game bước sang giai đoạn Open Beta sắp tới.
 
-![](<https://i.postimg.cc/phSpFPCj/chien-ky-hoan-tra.jpg>)
+![](<https://i.postimg.cc/gjzR1J6g/chien-ky-hoan-tra.jpg>)
 
 ## Gameplay: dàn trận Chiến Kỳ, tướng thẻ bài, PK liên server
 
@@ -29,6 +29,6 @@ Không chỉ có danh tiếng nền từ các công ty game lớn, gameplay củ
 
 Các luồng vận hành trong game cũng được đơn giản hóa giúp người chơi dễ làm quen, đồng thời cung cấp chức năng đăng ký ủy thác để tham gia các cuộc chiến lớn ngay cả khi không thể online lúc bắt đầu.
 
-![](<https://i.postimg.cc/9Rkr7cbw/chien-ky-ban-do.jpg>)
+![](<https://i.postimg.cc/RhSf2Fnd/chien-ky-ban-do.jpg>)
 
 Tam Quốc Chí - Chiến Kỳ đã mở cửa Closed Beta. Giai đoạn thử nghiệm kéo dài tới 22/11. Game thủ quan tâm có thể xem thêm thông tin tại website https://tamquocchichienky.vnggames.com/, fanpage https://www.facebook.com/tqcck.vnggames và group https://www.facebook.com/groups/tamquocchichienky.
