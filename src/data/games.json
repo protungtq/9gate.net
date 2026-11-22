@@ -46017,5 +46017,21 @@
       ],
       "releaseDate": "15/10/2025"
     }
+  },
+  {
+    "slug": "grand-theft-auto-vi",
+    "name": "Grand Theft Auto VI",
+    "publisher": "Rockstar Games",
+    "genre": "Hành động, Thế giới mở",
+    "platforms": [
+      "PS5",
+      "Xbox Series X/S"
+    ],
+    "category": "pc-console",
+    "icon": "https://i.postimg.cc/kXbDt4Tr/gta6-icon.jpg",
+    "cover": "https://i.postimg.cc/c4n68HXV/gta6-cover.jpg",
+    "trailer": "https://www.youtube.com/watch?v=rz1B4B2yBZY",
+    "description": "Game hành động thế giới mở của Rockstar Games, lấy bối cảnh bang Leonida và thành phố Vice City. Ra mắt 19/11/2026 trên PS5 và Xbox Series X|S, đạt 99 điểm Metacritic và 3,79 tỷ USD doanh số bán lẻ ngày đầu tiên.",
+    "website": "https://www.rockstargames.com/VI"
   }
 ]
