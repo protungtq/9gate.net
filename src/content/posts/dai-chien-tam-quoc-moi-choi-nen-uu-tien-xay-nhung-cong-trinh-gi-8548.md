@@ -2,7 +2,7 @@
 title: "Đại Chiến Tam Quốc: Mới chơi nên ưu tiên xây những công trình gì?"
 description: "Nếu bạn là tân thủ, đừng bỏ qua bài viết này."
 image: "https://i.ibb.co/spcvj9qg/f11c9adb20635602.webp"
-tags: ["Đại Chiến Tam Quốc", "Tải game Đại Chiến Tam Quốc", "SLG Tam Quốc"]
+tags: ["Đại Chiến Tam Quốc", "tải game Đại Chiến Tam Quốc", "SLG Tam Quốc"]
 legacyId: "8548"
 legacyPath: "/cam-nang/huong-dan/dai-chien-tam-quoc-moi-choi-nen-uu-tien-xay-nhung-cong-trinh-gi-8548.html"
 date: "2016-09-23"

@@ -2,7 +2,7 @@
 title: "Điểm danh những skin miễn phí dành cho PUBG Mobile Việt ở thời điểm hiện tại"
 description: "Chỉ cần sưu tập đủ mảnh trang phục cần thiết là game thủ PUBG Mobile Việt Nam có cơ hội sở hữu miễn phí khá nhiều skin tuyệt đẹp…"
 image: "https://i.ibb.co/Nnd5fnBn/606b2c8e7a8238e6.webp"
-tags: ["PUBG Mobile", "Tải game PUBG Mobile", "Cập nhật PUBG Mobile", "Battle Royale"]
+tags: ["PUBG Mobile", "tải game PUBG Mobile", "cập nhật PUBG Mobile", "Battle Royale"]
 legacyId: "15807"
 legacyPath: "/tin-game/cong-dong/diem-danh-nhung-skin-mien-phi-danh-cho-pubg-mobile-viet-o-thoi-diem-hien-tai-15807.html"
 date: "2019-05-16"

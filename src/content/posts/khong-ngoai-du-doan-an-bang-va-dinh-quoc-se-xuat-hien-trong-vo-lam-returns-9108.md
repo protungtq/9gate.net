@@ -2,7 +2,7 @@
 title: "Không ngoài dự đoán, An Bang và Định Quốc sẽ xuất hiện trong Võ Lâm Returns"
 description: "Sau cặp nhẫn Vô Danh Giới Chỉ xuất hiện gây chấn động toàn cộng đồng Võ Lâm Returns, những game thủ chờ đợi trò chơi này tiếp tục nhận được tin sốc: An Bang, Định Quốc, hai bộ trang bị Hoàng Kim cực phẩm cũng sẽ lộ diện trong game."
 image: "https://i.ibb.co/sdjTXfqM/6ce43069faa91889.webp"
-tags: ["Võ Lâm Returns", "Tải game Võ Lâm Returns", "Cập nhật Võ Lâm Returns"]
+tags: ["Võ Lâm Returns", "tải game Võ Lâm Returns", "cập nhật Võ Lâm Returns"]
 legacyId: "9108"
 legacyPath: "/tin-game/cong-dong/khong-ngoai-du-doan-an-bang-va-dinh-quoc-se-xuat-hien-trong-vo-lam-returns-9108.html"
 date: "2016-10-31"

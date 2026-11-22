@@ -2,7 +2,7 @@
 title: "Garena đóng cửa Chiến Dịch Huyền Thoại tại Việt Nam"
 description: "Sau gần 3 năm hoạt động, tựa game bắn súng trên di động của Nhà phát hành Garena đã xác nhận sẽ ngừng vận hành trong thời gian tới."
 image: "https://i.ibb.co/nqhDjRYS/f5929d402ada903c.webp"
-tags: ["Chiến Dịch Huyền Thoại", "Tải game Chiến Dịch Huyền Thoại", "Cập nhật Chiến Dịch Huyền Thoại", "FPS"]
+tags: ["Chiến Dịch Huyền Thoại", "tải game Chiến Dịch Huyền Thoại", "cập nhật Chiến Dịch Huyền Thoại", "FPS"]
 legacyId: "14113"
 legacyPath: "/tin-game/cong-dong/garena-dong-cua-chien-dich-huyen-thoai-tai-viet-nam-14113.html"
 date: "2018-08-14"

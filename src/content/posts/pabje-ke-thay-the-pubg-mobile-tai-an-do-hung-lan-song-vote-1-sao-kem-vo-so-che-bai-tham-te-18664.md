@@ -2,7 +2,7 @@
 title: "PABJE - \"kẻ thay thế\" PUBG Mobile tại Ấn Độ hứng làn sóng \"vote\" 1 sao kèm vô số chê bai thậm tệ"
 description: "PABJE (Player and BattleJung Ends) được phát triển bởi Dipak Kattikar là sản phẩm được game thủ ở quốc gia đông dân thứ 2 thế giới chọn sau biến cố với PUBG Mobile."
 image: "https://i.ibb.co/TfgHbky/8afbb3ced07103d6.webp"
-tags: ["PUBG Mobile", "Tải game PUBG Mobile", "Cập nhật PUBG Mobile", "Battle Royale"]
+tags: ["PUBG Mobile", "tải game PUBG Mobile", "cập nhật PUBG Mobile", "Battle Royale"]
 legacyId: "18664"
 legacyPath: "/tin-game/cong-dong/pabje-ke-thay-the-pubg-mobile-tai-an-do-hung-lan-song-vote-1-sao-kem-vo-so-che-bai-tham-te-18664.html"
 date: "2020-09-09"

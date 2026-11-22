@@ -2,7 +2,7 @@
 title: "Free Fire chi tiết cập nhật OB21: Xếp hạng tử chiến"
 description: "Chế độ này sẽ có cơ chế xếp hạng riêng và khác so với xếp hạng trong chế độ Sinh Tồn. Free Fire vẫn giữ chế độ thông thường cho Tử Chiến cho những người chơi vẫn đang chuẩn bị, nhưng nếu không, đã đến lúc xếp hạng!”"
 image: "https://i.ibb.co/XrBztB1x/113bb21950f98999.webp"
-tags: ["Free Fire", "Tải game Free Fire", "Cập nhật Free Fire", "Battle Royale", "Sinh tồn"]
+tags: ["Free Fire", "tải game Free Fire", "cập nhật Free Fire", "Battle Royale", "Sinh tồn"]
 legacyId: "17572"
 legacyPath: "/cam-nang/he-thong/free-fire-chi-tiet-cap-nhat-ob21-xep-hang-tu-chien-17572.html"
 date: "2020-04-12"

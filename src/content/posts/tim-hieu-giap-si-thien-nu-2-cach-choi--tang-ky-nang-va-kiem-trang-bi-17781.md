@@ -2,7 +2,7 @@
 title: "Tìm hiểu Giáp Sĩ Thiện Nữ 2: Cách chơi, tăng kỹ năng và kiếm trang bị"
 description: "Để chinh phục môn phái Giáp Sĩ trong Thiện Nữ 2 VNG bạn cũng cần một vài “bí kíp”."
 image: "https://i.ibb.co/yBhmrpVF/472f0a7205cd0224.webp"
-tags: ["Thiện Nữ 2", "Tải game Thiện Nữ 2"]
+tags: ["Thiện Nữ 2", "tải game Thiện Nữ 2"]
 legacyId: "17781"
 legacyPath: "/tin-game/cong-dong/tim-hieu-giap-si-thien-nu-2-cach-choi--tang-ky-nang-va-kiem-trang-bi-17781.html"
 date: "2020-05-19"

@@ -2,7 +2,7 @@
 title: "Call of Duty Mobile: Hướng Dẫn Nhập Code"
 description: "Trải nghiệm game tối ưu hơn với code xịn từ NPH."
 image: "https://i.ibb.co/Pzg8cpXN/b25d5377338af601.webp"
-tags: ["Call of Duty Mobile", "Tải game Call of Duty Mobile"]
+tags: ["Call of Duty Mobile", "tải game Call of Duty Mobile"]
 legacyId: "17665"
 legacyPath: "/cam-nang/huong-dan/call-of-duty-mobile-huong-dan-nhap-code-17665.html"
 date: "2020-04-25"

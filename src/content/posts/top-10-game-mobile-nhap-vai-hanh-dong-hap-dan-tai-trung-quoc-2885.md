@@ -2,7 +2,7 @@
 title: "Top 10 game mobile nhập vai hành động hấp dẫn tại Trung Quốc"
 description: "Sau đây là top 10 game nhập vai làm được giới game thủ đón nhận nhất trong tuần vừa qua."
 image: "https://i.ibb.co/rKLZxhKw/43ae6a22e795164c.webp"
-tags: ["Cập nhật"]
+tags: ["cập nhật"]
 legacyId: "2885"
 legacyPath: "/tin-game/cong-dong/top-10-game-mobile-nhap-vai-hanh-dong-hap-dan-tai-trung-quoc-2885.html"
 date: "2015-04-14"

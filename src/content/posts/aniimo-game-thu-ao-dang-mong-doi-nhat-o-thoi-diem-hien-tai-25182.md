@@ -2,7 +2,7 @@
 title: "Aniimo - Game thú ảo đáng mong đợi nhất ở thời điểm hiện tại"
 description: "Tân binh thú ảo hứa hẹn vượt mặt Palworld?"
 image: "https://i.postimg.cc/c1z1x5zh/9gate-29f62f373ebd865ddfbd71.jpg"
-tags: ["Aniimo", "Tải game Aniimo", "Cập nhật Aniimo"]
+tags: ["Aniimo", "tải game Aniimo", "cập nhật Aniimo"]
 legacyId: "25182"
 legacyPath: "/tin-game/gioi-thieu-game/aniimo-game-thu-ao-dang-mong-doi-nhat-o-thoi-diem-hien-tai-25182.html"
 date: "2025-06-11"

@@ -2,7 +2,7 @@
 title: "5 đội hình gợi ý cực mạnh dành cho game thủ One Punch Man: The Strongest"
 description: "Trong One Punch Man: The Strongest người chơi hoàn toàn có thể sử dụng tất cả các nhân vật ở 5 phe/4 hệ trong cùng một đội hình. Hãy thử sức với 5 đội hình gợi ý dưới đây."
 image: "https://i.ibb.co/tT3syHTy/13c0d5c6c6a40dea.webp"
-tags: ["One Punch Man: The Strongest", "Tải game One Punch Man: The Strongest", "Cập nhật One Punch Man: The Strongest"]
+tags: ["One Punch Man: The Strongest", "tải game One Punch Man: The Strongest", "cập nhật One Punch Man: The Strongest"]
 legacyId: "20810"
 legacyPath: "/tin-game/gioi-thieu-game/5-doi-hinh-goi-y-cuc-manh-danh-cho-game-thu-one-punch-man-the-strongest-20810.html"
 date: "2021-08-11"

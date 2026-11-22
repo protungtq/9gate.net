@@ -2,7 +2,7 @@
 title: "Tru Thần: gMO “lão làng” về đề tài tiên hiệp"
 description: "Trước sự đổ bộ của hàng loạt tựa game mới, Tru Thần vẫn giữ được vị trí gMO hàng đầu về đề tài tiên hiệp tại Việt Nam."
 image: "https://i.ibb.co/jvxH7T95/9e95f9e9ee3dd62f.webp"
-tags: ["Tru Thần", "Tải game Tru Thần", "Cập nhật Tru Thần"]
+tags: ["Tru Thần", "tải game Tru Thần", "cập nhật Tru Thần"]
 legacyId: "1885"
 legacyPath: "/tin-game/trai-nghiem/tru-than-gmo-lao-lang-ve-de-tai-tien-hiep-1885.html"
 date: "2015-01-27"

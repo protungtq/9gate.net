@@ -2,7 +2,7 @@
 title: "Tìm hiểu về game ký hiệu 18+ và quy định về phân loại trò chơi điện tử theo độ tuổi của người chơi"
 description: "Theo Nghị định 147/2024/NĐ-CP về Quản lý, cung cấp, sử dụng Internet và thông tin trên mạng, quy định về phân loại trò chơi điện tử theo độ tuổi của người chơi có 4 loại: trò chơi điện tử trên mạng (game) 18+, 16+, 12+ và 00+."
 image: "https://i.postimg.cc/mkPb3QPq/9gate-8c496635b8313d3ff3587b.jpg"
-tags: ["Cập nhật"]
+tags: ["cập nhật"]
 legacyId: "24697"
 legacyPath: "/tin-game/cong-dong/tim-hieu-ve-game-ky-hieu-18-va-quy-dinh-ve-phan-loai-tro-choi-dien-tu-theo-do-tuoi-cua-nguoi-choi-24697.html"
 date: "2024-11-13"

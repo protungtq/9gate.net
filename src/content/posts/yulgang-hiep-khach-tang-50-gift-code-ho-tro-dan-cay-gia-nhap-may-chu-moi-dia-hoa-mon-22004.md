@@ -2,7 +2,7 @@
 title: "Yulgang Hiệp Khách tặng 50 gift code hỗ trợ “dân cày” gia nhập máy chủ mới Địa Hỏa Môn"
 description: "Khởi đầu hành trình gia nhập máy chủ đặt biệt của Yulgang Hiệp Khách sẽ trở nên thở hơn cho dân cày."
 image: "https://i.ibb.co/rR4NkXjb/dff6f111bdc427e3.webp"
-tags: ["Yulgang Hiệp Khách", "Tải game Yulgang Hiệp Khách", "Giftcode Yulgang Hiệp Khách"]
+tags: ["Yulgang Hiệp Khách", "tải game Yulgang Hiệp Khách", "giftcode Yulgang Hiệp Khách"]
 legacyId: "22004"
 legacyPath: "/tin-game/giftcode/yulgang-hiep-khach-tang-50-gift-code-ho-tro-dan-cay-gia-nhap-may-chu-moi-dia-hoa-mon-22004.html"
 date: "2022-05-10"

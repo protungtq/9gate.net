@@ -2,7 +2,7 @@
 title: "Thống kê doanh thu các tựa game Gacha tháng 1/2026: Genshin Impact trở lại ngai vàng, Arknights: Endfield leo hạng nhanh chóng mặt"
 description: "Genshin Impact - &quot;Nhà vua&quot; Gacha trở lại ngai vàng đầy thuyết phục"
 image: "https://i.postimg.cc/vmXMpP9N/9gate-21346c6f14e7e2910f6fbb.jpg"
-tags: ["Cập nhật"]
+tags: ["cập nhật"]
 legacyId: "25751"
 legacyPath: "/tin-game/cong-dong/thong-ke-doanh-thu-cac-tua-game-gacha-thang-1-2026-genshin-impact-tro-lai-ngai-vang--arknights--endfield-leo-hang-nhanh-chong-mat-25751.html"
 date: "2026-02-05"

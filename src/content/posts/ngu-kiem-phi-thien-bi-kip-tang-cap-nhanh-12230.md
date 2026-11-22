@@ -2,7 +2,7 @@
 title: "Ngự Kiếm Phi Thiên: Bí kíp tăng cấp nhanh"
 description: "Hướng dẫn tân thủ bí kíp tăng cấp nhanh"
 image: "https://i.ibb.co/fzZNjH0j/9f16422f845220e3.webp"
-tags: ["Ngự Kiếm Phi Thiên", "Tải game Ngự Kiếm Phi Thiên", "Game mobile"]
+tags: ["Ngự Kiếm Phi Thiên", "tải game Ngự Kiếm Phi Thiên", "Game mobile"]
 legacyId: "12230"
 legacyPath: "/cam-nang/huong-dan/ngu-kiem-phi-thien-bi-kip-tang-cap-nhanh-12230.html"
 date: "2017-10-18"

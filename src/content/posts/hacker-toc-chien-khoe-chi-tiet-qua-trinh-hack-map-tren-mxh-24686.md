@@ -2,7 +2,7 @@
 title: "Hacker Tốc Chiến khoe chi tiết quá trình hack map trên MXH"
 description: "Không thể tin các hacker này có thể ngang nhiên hoạt động như vậy."
 image: "https://i.postimg.cc/SsTSzZxR/9gate-d3e4818d5aaa5c39bee2e4.jpg"
-tags: ["Liên Minh Huyền Thoại: Tốc Chiến", "Tải game Liên Minh Huyền Thoại: Tốc Chiến", "Cập nhật Liên Minh Huyền Thoại: Tốc Chiến", "MOBA"]
+tags: ["Liên Minh Huyền Thoại: Tốc Chiến", "tải game Liên Minh Huyền Thoại: Tốc Chiến", "cập nhật Liên Minh Huyền Thoại: Tốc Chiến", "MOBA"]
 legacyId: "24686"
 legacyPath: "/tin-game/cong-dong/hacker-toc-chien-khoe-chi-tiet-qua-trinh-hack-map-tren-mxh-24686.html"
 date: "2024-11-07"

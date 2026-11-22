@@ -2,7 +2,7 @@
 title: "Modern Strike Online chính thức phân phối tại Việt Nam bởi VTC Game với tên mới: Biệt Đội Đặc Biệt"
 description: "Tựa game bắn súng trên di động Modern Strike Online sắp được NPH VTC Game phân phối chính thức ở Việt Nam trong thời gian tới với tên việt hóa: Biệt Đội Đặc Biệt."
 image: "https://i.postimg.cc/VkxbJkHT/9gate-92fe1670ee8eec9d1db140.jpg"
-tags: ["Biệt Đội Đặc Biệt", "Tải game Biệt Đội Đặc Biệt", "Cập nhật Biệt Đội Đặc Biệt"]
+tags: ["Biệt Đội Đặc Biệt", "tải game Biệt Đội Đặc Biệt", "cập nhật Biệt Đội Đặc Biệt"]
 legacyId: "23332"
 legacyPath: "/tin-game/tin-nong/modern-strike-online-chinh-thuc-phan-phoi-tai-viet-nam-boi-vtc-game-voi-ten-moi-biet-doi-dac-biet-23332.html"
 date: "2023-05-19"

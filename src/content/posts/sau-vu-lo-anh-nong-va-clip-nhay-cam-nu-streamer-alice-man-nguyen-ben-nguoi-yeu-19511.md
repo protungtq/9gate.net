@@ -2,7 +2,7 @@
 title: "Sau vụ lộ ảnh nóng và clip nhạy cảm, nữ streamer Alice mãn nguyện bên người yêu"
 description: "Sau khi nói “đây có thể là video cuối cùng của mình”, nữ streamer Alice bất ngờ trở lại đầy mạnh mẽ và ấn tượng."
 image: "https://i.ibb.co/QvLGzXpW/92a996e0265de0cb.webp"
-tags: ["Cập nhật"]
+tags: ["cập nhật"]
 legacyId: "19511"
 legacyPath: "/tin-game/cong-dong/sau-vu-lo-anh-nong-va-clip-nhay-cam-nu-streamer-alice-man-nguyen-ben-nguoi-yeu-19511.html"
 date: "2020-12-15"

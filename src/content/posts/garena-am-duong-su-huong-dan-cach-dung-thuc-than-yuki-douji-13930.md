@@ -2,7 +2,7 @@
 title: "Garena Âm Dương Sư: Hướng dẫn cách dùng thức thần Yuki Douji"
 description: "Vừa mới xuất hiện ở bản cập nhật mới nhất, Yuki Douji là một thức thần với sức mạnh thâm sâu khó lường mà các Âm Dương Sư nên dành nhiều sự chú ý"
 image: "https://i.ibb.co/rRnk0jpV/aa24803dac4da415.webp"
-tags: ["Garena Âm Dương Sư", "Tải game Garena Âm Dương Sư"]
+tags: ["Garena Âm Dương Sư", "tải game Garena Âm Dương Sư"]
 legacyId: "13930"
 legacyPath: "/cam-nang/huong-dan/garena-am-duong-su-huong-dan-cach-dung-thuc-than-yuki-douji-13930.html"
 date: "2018-06-28"

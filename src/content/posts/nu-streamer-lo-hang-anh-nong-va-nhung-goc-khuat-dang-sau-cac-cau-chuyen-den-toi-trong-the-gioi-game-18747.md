@@ -2,7 +2,7 @@
 title: "Nữ streamer lộ hàng, ảnh nóng và những góc khuất đằng sau các câu chuyện đen tối trong thế giới game"
 description: "Thay vì những vẻ hào nhoáng và sang chảnh thường thấy của các nữ streamer, có những mặt đen tối trong sự nghiệp mà chưa bao giờ họ từng tiết lộ."
 image: "https://i.ibb.co/JRZ8pBxn/e1d536c00562218c.webp"
-tags: ["Cập nhật"]
+tags: ["cập nhật"]
 legacyId: "18747"
 legacyPath: "/tin-game/cong-dong/nu-streamer-lo-hang-anh-nong-va-nhung-goc-khuat-dang-sau-cac-cau-chuyen-den-toi-trong-the-gioi-game-18747.html"
 date: "2020-09-18"

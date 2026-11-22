@@ -2,7 +2,7 @@
 title: "Tai Ương: Game kinh dị 100% Việt Nam và câu chuyện lạnh gáy về sự mất tích bí ẩn của bốn cô gái trẻ"
 description: "Tai Ương là tựa game kinh dị được sản xuất từ những chất liệu của Việt Nam, từ hình ảnh cho đến nội dung."
 image: "https://i.ibb.co/rRKWMDC1/17599288cc21c2e7.webp"
-tags: ["Tai Ương", "Tải game Tai Ương", "Cập nhật Tai Ương"]
+tags: ["Tai Ương", "tải game Tai Ương", "cập nhật Tai Ương"]
 legacyId: "19705"
 legacyPath: "/tin-game/gioi-thieu-game/tai-uong-game-kinh-di-100-viet-nam-va-cau-chuyen-lanh-gay-ve-su-mat-tich-bi-an-cua-bon-co-gai-tre-19705.html"
 date: "2021-01-11"

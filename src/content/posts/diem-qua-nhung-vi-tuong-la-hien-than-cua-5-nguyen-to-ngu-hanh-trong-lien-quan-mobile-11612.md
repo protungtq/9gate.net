@@ -2,7 +2,7 @@
 title: "Điểm qua những vị tướng là hiện thân của 5 nguyên tố Ngũ hành trong Liên Quân Mobile"
 description: "Đây đều là những vị tướng Liên Quân Mobile có nguồn gốc tới từ đất, biển, rừng,..."
 image: "https://i.ibb.co/ht8K9Dd/f6d193ed2f7a06ac.webp"
-tags: ["Liên Quân Mobile", "Tải game Liên Quân Mobile", "Cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
+tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
 legacyId: "11612"
 legacyPath: "/tin-game/cong-dong/diem-qua-nhung-vi-tuong-la-hien-than-cua-5-nguyen-to-ngu-hanh-trong-lien-quan-mobile-11612.html"
 date: "2017-07-29"

@@ -2,7 +2,7 @@
 title: "Khám phá 8 loại HACK mà game thủ thường gặp trong PUBG Mobile"
 description: "Đây là 8 loại HACK trong game PUBG Mobile mà bạn rất hay gặp trong game, đương nhiên là loại nào cũng là gian lận và bạn cũng chẳng vui vẻ gì khi gặp những game thủ chơi HACK cả."
 image: "https://i.ibb.co/398Q3TDM/e42dcdfe854451e3.webp"
-tags: ["PUBG Mobile", "Tải game PUBG Mobile", "Cập nhật PUBG Mobile", "Battle Royale"]
+tags: ["PUBG Mobile", "tải game PUBG Mobile", "cập nhật PUBG Mobile", "Battle Royale"]
 legacyId: "17312"
 legacyPath: "/tin-game/cong-dong/kham-pha-8-loai-hack-ma-game-thu-thuong-gap-trong-pubg-mobile-17312.html"
 date: "2020-03-01"

@@ -2,7 +2,7 @@
 title: "Hàng Rong Mobile chính thức công bố thời điểm ra mắt game thủ Việt"
 description: "Trong thời gian vừa qua, một trong những tựa game được game thủ Việt mong đợi chính là Hàng Rong Mobile."
 image: "https://i.ibb.co/G4k17sbp/ac6b4452a689d77a.webp"
-tags: ["Hàng Rong Mobile", "Tải game Hàng Rong Mobile", "Cập nhật Hàng Rong Mobile", "Game mobile"]
+tags: ["Hàng Rong Mobile", "tải game Hàng Rong Mobile", "cập nhật Hàng Rong Mobile", "Game mobile"]
 legacyId: "19607"
 legacyPath: "/tin-game/su-kien/hang-rong-mobile-chinh-thuc-cong-bo-thoi-diem-ra-mat-game-thu-viet-19607.html"
 date: "2020-12-26"

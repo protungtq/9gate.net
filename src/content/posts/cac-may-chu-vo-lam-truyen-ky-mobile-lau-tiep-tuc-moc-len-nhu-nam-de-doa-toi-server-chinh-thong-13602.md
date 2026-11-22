@@ -2,7 +2,7 @@
 title: "Các máy chủ Võ Lâm Truyền Kỳ Mobile lậu tiếp tục mọc lên như nấm đe dọa tới server chính thống"
 description: "Sau máy chủ lậu có thể đăng nhập tài khoản Zing ID, các máy chủ VLTK mobile lậu tiếp tục mọc lên với tỷ lệ nạp tiền vô lý khiến người chơi ham rẻ đổ xô tát nước theo mưa."
 image: "https://i.ibb.co/mrS4sWGd/f5469e6787d088ba.webp"
-tags: ["Võ Lâm Truyền Kỳ Mobile", "Tải game Võ Lâm Truyền Kỳ Mobile", "Cập nhật Võ Lâm Truyền Kỳ Mobile", "MMORPG kiếm hiệp"]
+tags: ["Võ Lâm Truyền Kỳ Mobile", "tải game Võ Lâm Truyền Kỳ Mobile", "cập nhật Võ Lâm Truyền Kỳ Mobile", "MMORPG kiếm hiệp"]
 legacyId: "13602"
 legacyPath: "/tin-game/cong-dong/cac-may-chu-vo-lam-truyen-ky-mobile-lau-tiep-tuc-moc-len-nhu-nam-de-doa-toi-server-chinh-thong-13602.html"
 date: "2018-04-16"

@@ -2,7 +2,7 @@
 title: "Trải nghiệm 3Q 360Mobi: Tái hiện 3Q Củ Hành trên nền tảng di động"
 description: "Game thủ yêu thích thể loại MOBA ở Việt Nam sẽ không thể thất vọng vì 3Q 360Mobi sở hữu hệ thống tính năng và hình ảnh tướng đều rất tương đồng với 3Q Củ Hành"
 image: "https://i.ibb.co/cc98tbkw/f148dd9e745d47df.webp"
-tags: ["3Q 360Mobi", "Tải game 3Q 360Mobi", "Cập nhật 3Q 360Mobi"]
+tags: ["3Q 360Mobi", "tải game 3Q 360Mobi", "cập nhật 3Q 360Mobi"]
 legacyId: "6888"
 legacyPath: "/tin-game/trai-nghiem/trai-nghiem-3q-360mobi-tai-hien-3q-cu-hanh-tren-nen-tang-di-dong-6888.html"
 date: "2016-06-13"

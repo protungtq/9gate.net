@@ -2,7 +2,7 @@
 title: "Wuthering Waves 3.8 ra mắt nhân vật mới Lily và hé lộ bối cảnh ở bản 4.0"
 description: "Wuthering Waves ấn định phát hành phiên bản 3.8 vào ngày 12/11/2026 với nhân vật mới Lily, tiếp nối cốt truyện chính và mở đường cho đại bản 4.0."
 image: "https://i.postimg.cc/gr9Pv1F0/9gate-dfed7a1fc2584ad9fb3c6a.jpg"
-tags: ["Wuthering Waves", "Tải game Wuthering Waves", "Cập nhật Wuthering Waves"]
+tags: ["Wuthering Waves", "tải game Wuthering Waves", "cập nhật Wuthering Waves"]
 legacyId: "26208"
 legacyPath: "/tin-game/cap-nhat/wuthering-waves-38-ra-mat-nhan-vat-moi-lily-va-he-lo-boi-canh-o-ban-40-26208.html"
 date: "2026-11-09"

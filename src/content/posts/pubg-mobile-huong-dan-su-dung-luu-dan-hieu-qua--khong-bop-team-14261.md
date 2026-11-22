@@ -2,7 +2,7 @@
 title: "PUBG Mobile: Hướng dẫn sử dụng lựu đạn hiệu quả, không \"bóp team\""
 description: "Sử dụng lựu đạn đúng cách không phải là điều mà game thủ PUBG Mobile nào cũng nắm vững."
 image: "https://i.ibb.co/DP3n4vND/7c669025a3f576aa.webp"
-tags: ["PUBG Mobile", "Tải game PUBG Mobile", "Battle Royale"]
+tags: ["PUBG Mobile", "tải game PUBG Mobile", "Battle Royale"]
 legacyId: "14261"
 legacyPath: "/cam-nang/huong-dan/pubg-mobile-huong-dan-su-dung-luu-dan-hieu-qua--khong-bop-team-14261.html"
 date: "2018-09-26"

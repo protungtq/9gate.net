@@ -2,7 +2,7 @@
 title: "Tam Quốc Truyền Kỳ Mobile: Hướng dẫn chơi Ngụy Quốc"
 description: "Ngụy Quốc con đường trở thành bá giả chốn Tam Quốc Truyền Kỳ Mobile"
 image: "https://i.ibb.co/KJw4GzK/06bc0a43410f2509.webp"
-tags: ["Tam Quốc Truyền Kỳ Mobile", "Tải game Tam Quốc Truyền Kỳ Mobile"]
+tags: ["Tam Quốc Truyền Kỳ Mobile", "tải game Tam Quốc Truyền Kỳ Mobile"]
 legacyId: "12363"
 legacyPath: "/cam-nang/huong-dan/tam-quoc-truyen-ky-mobile-huong-dan-choi-nguy-quoc-12363.html"
 date: "2017-10-23"

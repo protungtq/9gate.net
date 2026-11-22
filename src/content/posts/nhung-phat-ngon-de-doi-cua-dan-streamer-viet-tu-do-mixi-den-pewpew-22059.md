@@ -2,7 +2,7 @@
 title: "Những phát ngôn để đời của dàn streamer Việt: Từ Độ Mixi đến PewPew..."
 description: "Có thể nói những streamer đều có những phát ngôn để đời, nhắc đến câu nào nghĩ ngay đến streamer đó"
 image: "https://i.postimg.cc/Df6sxF84/9gate-a90a85cbf4d5824b92452b.jpg"
-tags: ["Cập nhật"]
+tags: ["cập nhật"]
 legacyId: "22059"
 legacyPath: "/tin-game/cong-dong/nhung-phat-ngon-de-doi-cua-dan-streamer-viet-tu-do-mixi-den-pewpew-22059.html"
 date: "2022-05-24"

@@ -2,7 +2,7 @@
 title: "Tin đồn: Liên Quân Mobile tiếp nhận \"Bộ tứ SNK\" của Vương Giả Vinh Diệu dưới hình thức skin"
 description: "Liệu Liên Quân Mobile có lên kế hoạch hợp tác với thương hiệu SNK?"
 image: "https://i.ibb.co/Kjr26LBJ/b7b39004bb64d042.webp"
-tags: ["Liên Quân Mobile", "Tải game Liên Quân Mobile", "Cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
+tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
 legacyId: "16645"
 legacyPath: "/tin-game/cong-dong/tin-don-lien-quan-mobile-tiep-nhan-bo-tu-snk-cua-vuong-gia-vinh-dieu-duoi-hinh-thuc-skin-16645.html"
 date: "2019-09-26"

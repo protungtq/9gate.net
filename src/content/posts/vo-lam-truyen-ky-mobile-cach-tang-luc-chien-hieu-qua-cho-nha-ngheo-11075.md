@@ -2,7 +2,7 @@
 title: "Võ Lâm Truyền Kỳ Mobile: Cách tăng lực chiến hiệu quả cho nhà nghèo"
 description: "VLTK Mobile đã ra mắt được 6 tháng, nhưng không phải ai cũng biết các cách tăng lực chiến đơn giản mà hiệu quả. Bài viết này sẽ hướng dẫn cách tăng lực chiến hiệu quả cho nhà nghèo"
 image: "https://i.ibb.co/ds0zqCF3/e58e92dbb33f704f.webp"
-tags: ["Võ Lâm Truyền Kỳ Mobile", "Tải game Võ Lâm Truyền Kỳ Mobile", "MMORPG kiếm hiệp"]
+tags: ["Võ Lâm Truyền Kỳ Mobile", "tải game Võ Lâm Truyền Kỳ Mobile", "MMORPG kiếm hiệp"]
 legacyId: "11075"
 legacyPath: "/tin-game/cong-dong/vo-lam-truyen-ky-mobile-cach-tang-luc-chien-hieu-qua-cho-nha-ngheo-11075.html"
 date: "2017-05-08"

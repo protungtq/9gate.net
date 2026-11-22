@@ -2,7 +2,7 @@
 title: "Liên Quân Mobile: Tất tần tật về cơ chế Trụ"
 description: "Tìm hiểu những thông tin xung quanh về Trụ."
 image: "https://i.ibb.co/11drxMv/6f5c92ca8f2375b1.webp"
-tags: ["Liên Quân Mobile", "Tải game Liên Quân Mobile", "Cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
+tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
 legacyId: "13189"
 legacyPath: "/cam-nang/he-thong/lien-quan-mobile-tat-tan-tat-ve-co-che-tru-13189.html"
 date: "2018-03-02"

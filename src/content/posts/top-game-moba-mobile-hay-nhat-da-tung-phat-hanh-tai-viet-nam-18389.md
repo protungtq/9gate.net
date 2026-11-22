@@ -2,7 +2,7 @@
 title: "Top game MOBA Mobile hay nhất đã từng phát hành tại Việt Nam"
 description: "Đây đều là những tựa game MOBA được đánh giá cao bởi trang phê bình nổi tiếng trên thế giới và cả tại thị trường Đông Nam Á, trong đó có Việt Nam. Trong danh sách này, cái tên đầu tiên được nhắc tới bất ngờ không phải là Liên Quân."
 image: "https://i.ibb.co/mjwz74S/09e366f2fc015073.webp"
-tags: ["Cập nhật"]
+tags: ["cập nhật"]
 legacyId: "18389"
 legacyPath: "/tin-game/cong-dong/top-game-moba-mobile-hay-nhat-da-tung-phat-hanh-tai-viet-nam-18389.html"
 date: "2020-08-10"

@@ -2,7 +2,7 @@
 title: "Bom tấn đua xe Racing Master của NetEase mở thử nghiệm, có thể sắp ra mắt ở cả Việt Nam?"
 description: "Rất nhiều anh em game thủ Việt đang chờ đợi siêu phẩm này."
 image: "https://i.postimg.cc/ZKybCxtp/9gate-629b11d08e56c25134d502.jpg"
-tags: ["Racing Master", "Tải game Racing Master", "Cập nhật Racing Master"]
+tags: ["Racing Master", "tải game Racing Master", "cập nhật Racing Master"]
 legacyId: "25264"
 legacyPath: "/tin-game/cong-dong/bom-tan-dua-xe-racing-master-cua-netease-mo-thu-nghiem-co-the-sap-ra-mat-o-ca-viet-nam-25264.html"
 date: "2025-07-14"

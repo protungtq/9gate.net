@@ -2,7 +2,7 @@
 title: "Rise of Eros: Game AAA gắn mác 18+ đầu tiên trên di động"
 description: "Rise of Eros gây ấn tượng với người chơi với đồ họa đẹp mắt và cốt truyện hấp dẫn. Đặc biệt hơn là dàn nhân vật nữ đầy “trần trụi” khiến game thủ không thể rời mắt!"
 image: "https://i.postimg.cc/DwXS3KyN/9gate-46f5ce7fcc3b323da989b4.jpg"
-tags: ["Rise of Eros", "Tải game Rise of Eros", "Cập nhật Rise of Eros"]
+tags: ["Rise of Eros", "tải game Rise of Eros", "cập nhật Rise of Eros"]
 legacyId: "23779"
 legacyPath: "/tin-game/gioi-thieu-game/rise-of-eros-game-aaa-gan-mac-18-dau-tien-tren-di-dong-23779.html"
 date: "2023-11-03"

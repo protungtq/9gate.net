@@ -2,7 +2,7 @@
 title: "Free Fire: Battlegrounds ra mắt Open Beta, cập nhật thêm nhiều tính năng mới"
 description: "Phiên bản Open Beta của trò chơi sẽ chính thức trình làng vào hôm nay (4/12) với khoảng 10 hạng mục update mới cho game thủ thỏa sức trải nghiệm."
 image: "https://i.ibb.co/ks8n43v4/df13f5cab04ab46e.webp"
-tags: ["Free Fire", "Tải game Free Fire", "Cập nhật Free Fire", "Battle Royale", "Sinh tồn"]
+tags: ["Free Fire", "tải game Free Fire", "cập nhật Free Fire", "Battle Royale", "Sinh tồn"]
 legacyId: "12762"
 legacyPath: "/tin-game/su-kien/free-fire-battlegrounds-ra-mat-open-beta--cap-nhat-them-nhieu-tinh-nang-moi-12762.html"
 date: "2017-12-04"

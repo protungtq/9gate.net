@@ -2,7 +2,7 @@
 title: "Những chuyện ít ai biết về Hiếu Mèo và Huy Gà, cặp sinh đôi “bá cháy” bậc nhất làng game Việt"
 description: "Trước khi thành công với PUBG Mobile, Hiếu Mèo và Huy Gà từng khiến cho rất nhiều đối thủ của mình phải run sợ trước khả năng bá đạo của mình."
 image: "https://i.ibb.co/1YFf2sfW/e1f2f414b845f143.webp"
-tags: ["Cập nhật"]
+tags: ["cập nhật"]
 legacyId: "18328"
 legacyPath: "/tin-game/cong-dong/nhung-chuyen-it-ai-biet-ve-hieu-meo-va-huy-ga-cap-sinh-doi-ba-chay-bac-nhat-lang-game-viet-18328.html"
 date: "2020-08-04"

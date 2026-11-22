@@ -2,7 +2,7 @@
 title: "Khan Mobi - game MMO bối cảnh Đế Chế Mông Cổ"
 description: "Khan Mobi là tựa gMO nhập vai hành động được NPH Wasabi liên kết cùng NPH MECorp cho ra mắt tại thị trường Việt Nam."
 image: "https://i.ibb.co/0VrD0b3G/e4701094f86a8bfd.webp"
-tags: ["Khan Mobi", "Tải game Khan Mobi", "Cập nhật Khan Mobi", "Nhập vai"]
+tags: ["Khan Mobi", "tải game Khan Mobi", "cập nhật Khan Mobi", "Nhập vai"]
 legacyId: "1464"
 legacyPath: "/tin-game/gioi-thieu-game/khan-mobi-game-mmo-boi-canh-de-che-mong-co-1464.html"
 date: "2014-12-27"

@@ -4,7 +4,7 @@ description: "Idle RPG màn hình dọc của BOLTRAY Games do Funtap đồng h�
 date: "2026-11-03"
 image: "https://i.ibb.co/9kBkLhBH/sword-x-staff-cover.webp"
 game: "sword-x-staff"
-tags: ["Sword x Staff", "Tải game Sword x Staff", "Cập nhật Sword x Staff", "Idle RPG"]
+tags: ["Sword x Staff", "tải game Sword x Staff", "cập nhật Sword x Staff", "Idle RPG"]
 ---
 
 **Sword x Staff** — idle RPG màn hình dọc của BOLTRAY Games — sẽ chính thức ra mắt tại Việt Nam vào **9h sáng mai 4/11/2026**, do Funtap đồng hành phát hành. Game chơi được trên cả Android lẫn iOS và hoàn toàn miễn phí.

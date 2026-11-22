@@ -2,7 +2,7 @@
 title: "Bí quyết để trở thành thiện xạ khi sử dụng Mk12 trong PUBG Mobile"
 description: "Mk12 là một khẩu súng trường thiện xạ (Marksman Rifle) chỉ có trên bản đồ Livik trong PUBG Mobile."
 image: "https://i.ibb.co/LXM6Wc3H/edbbb7e517734310.webp"
-tags: ["PUBG Mobile", "Tải game PUBG Mobile", "Battle Royale"]
+tags: ["PUBG Mobile", "tải game PUBG Mobile", "Battle Royale"]
 legacyId: "18884"
 legacyPath: "/tin-game/cong-dong/bi-quyet-de-tro-thanh-thien-xa-khi-su-dung-mk12-trong-pubg-mobile-18884.html"
 date: "2020-10-04"

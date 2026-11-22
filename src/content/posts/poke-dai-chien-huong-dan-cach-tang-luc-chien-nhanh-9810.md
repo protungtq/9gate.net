@@ -2,7 +2,7 @@
 title: "Poke Đại Chiến: Hướng Dẫn Cách Tăng Lực Chiến Nhanh"
 description: "Đối với Poke Đại Chiến, lực chiến là thước đo sức mạnh của 1 nhân vật, không ít HLV đều tập trung nâng cấp Pet mà bỏ qua 1 số cách tăng lực chiến ngoài Pet, vậy nguồn tăng lực chiến bao gồm những cách nào? Tăng như thế nào là hiệu quả nhất? Hãy cùng nghiên cứu nhé!"
 image: "https://i.ibb.co/nq44w92P/07616603db9af35b.webp"
-tags: ["Poke Đại Chiến", "Tải game Poke Đại Chiến", "Game mobile"]
+tags: ["Poke Đại Chiến", "tải game Poke Đại Chiến", "Game mobile"]
 legacyId: "9810"
 legacyPath: "/cam-nang/huong-dan/poke-dai-chien-huong-dan-cach-tang-luc-chien-nhanh-9810.html"
 date: "2017-01-03"

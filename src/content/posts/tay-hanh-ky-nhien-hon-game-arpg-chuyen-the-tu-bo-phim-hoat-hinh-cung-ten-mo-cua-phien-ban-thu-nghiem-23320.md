@@ -2,7 +2,7 @@
 title: "Tây Hành Kỷ: Nhiên Hồn – Game ARPG chuyển thể từ bộ phim hoạt hình cùng tên mở cửa phiên bản thử nghiệm"
 description: "Tây Hành Kỷ: Nhiên Hồn hiện đang mở thử nghiệm giới hạn cho người dùng Android ở khu vực Trung Quốc từ ngày 11/05."
 image: "https://i.postimg.cc/HsPMC20C/9gate-0bf1957aeba0b1baf1d9f6.jpg"
-tags: ["Tây Hành Kỷ: Nhiên Hồn", "Tải game Tây Hành Kỷ: Nhiên Hồn", "Cập nhật Tây Hành Kỷ: Nhiên Hồn"]
+tags: ["Tây Hành Kỷ: Nhiên Hồn", "tải game Tây Hành Kỷ: Nhiên Hồn", "cập nhật Tây Hành Kỷ: Nhiên Hồn"]
 legacyId: "23320"
 legacyPath: "/tin-game/thu-nghiem/tay-hanh-ky-nhien-hon-game-arpg-chuyen-the-tu-bo-phim-hoat-hinh-cung-ten-mo-cua-phien-ban-thu-nghiem-23320.html"
 date: "2023-05-15"

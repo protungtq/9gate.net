@@ -2,7 +2,7 @@
 title: "12 cung hoàng đạo tương ứng với nhân vật nào trong kiếm hiệp Kim Dung?"
 description: "Cùng tìm hiểu xem bạn là nhân vật đại hiệp nào trong những tác phẩm phim truyện kinh điển của Kim Dung nhé!"
 image: "https://i.ibb.co/NnCzvRQQ/935a8446b85a6a7d.webp"
-tags: ["Cập nhật"]
+tags: ["cập nhật"]
 legacyId: "1015"
 legacyPath: "/tin-game/cong-dong/12-cung-hoang-dao-tuong-ung-voi-nhan-vat-nao-trong-kiem-hiep-kim-dung-1015.html"
 date: "2014-10-27"

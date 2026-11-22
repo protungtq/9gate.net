@@ -2,7 +2,7 @@
 title: "Cùng tìm hiểu những vị tướng cực mạnh nhưng ít người chơi trong Liên Quân Mobile"
 description: "Hãy cùng tìm hiểu những vị tướng cực mạnh nhưng đang không được để mắt tới trong Liên Quân Mobile nhé!"
 image: "https://i.ibb.co/YBpRsZ1r/0bd076e5d2da3da9.webp"
-tags: ["Liên Quân Mobile", "Tải game Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
+tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
 legacyId: "20693"
 legacyPath: "/tin-game/cong-dong/cung-tim-hieu-nhung-vi-tuong-cuc-manh-nhung-it-nguoi-choi-trong-lien-quan-mobile-20693.html"
 date: "2021-07-20"

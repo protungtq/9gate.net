@@ -2,7 +2,7 @@
 title: "Love is All Around 2 - Thêm một game hẹn hò ảo theo phong cách \"cổ trang\", ra mắt trong tháng 6"
 description: "Các game hẹn hò ảo ngày càng được đầu tư và xây dựng hệ thống nhân vật &quot;mướt mắt&quot;."
 image: "https://i.postimg.cc/6qFBMyR4/9gate-aa5826618689873f2add26.jpg"
-tags: ["Love is All Around 2", "Tải game Love is All Around 2"]
+tags: ["Love is All Around 2", "tải game Love is All Around 2"]
 legacyId: "25164"
 legacyPath: "/tin-game/gioi-thieu-game/love-is-all-around-2-them-mot-game-hen-ho-ao-theo-phong-cach-co-trang--ra-mat-trong-thang-6-25164.html"
 date: "2025-06-02"

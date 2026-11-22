@@ -2,7 +2,7 @@
 title: "Võ Lâm Truyền Kỳ Mobile: Cách tăng lực chiến hiệu quả nhất"
 description: "Nhà nghèo không có tiền nạp thẻ, bạn phải tích cực tăng xin giảm mua, vậy làm thế nào để tăng lực chiến cho bằng bạn bằng bè trong Võ Lâm Truyền Kỳ Mobile?"
 image: "https://i.ibb.co/KcrG3bZf/ce769b3e02ba25b6.webp"
-tags: ["Võ Lâm Truyền Kỳ Mobile", "Tải game Võ Lâm Truyền Kỳ Mobile", "MMORPG kiếm hiệp"]
+tags: ["Võ Lâm Truyền Kỳ Mobile", "tải game Võ Lâm Truyền Kỳ Mobile", "MMORPG kiếm hiệp"]
 legacyId: "10145"
 legacyPath: "/cam-nang/huong-dan/vo-lam-truyen-ky-mobile-cach-tang-luc-chien-hieu-qua-nhat-10145.html"
 date: "2017-02-20"

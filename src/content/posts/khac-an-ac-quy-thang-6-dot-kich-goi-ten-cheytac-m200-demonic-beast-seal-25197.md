@@ -2,7 +2,7 @@
 title: "Khắc Ấn Ác Quỷ tháng 6, Đột Kích gọi tên Cheytac M200 Demonic Beast Seal"
 description: "Kho Báu Hoàng Gia Sapphire của tháng 6 sẽ mang đến cho game thủ Đột Kích siêu phẩm bắn tỉa Cheytac M200 Demonic Beast Seal kèm sự kiện Khắc Ấn Ác Quỷ."
 image: "https://i.postimg.cc/pXnWpJbK/9gate-717ee8c66922bc9bbcb491.jpg"
-tags: ["Đột Kích (Cross Fire)", "Tải game Đột Kích (Cross Fire)", "Cập nhật Đột Kích (Cross Fire)", "FPS"]
+tags: ["Đột Kích (Cross Fire)", "tải game Đột Kích (Cross Fire)", "cập nhật Đột Kích (Cross Fire)", "FPS"]
 legacyId: "25197"
 legacyPath: "/tin-game/pc-console/khac-an-ac-quy-thang-6-dot-kich-goi-ten-cheytac-m200-demonic-beast-seal-25197.html"
 date: "2025-06-18"

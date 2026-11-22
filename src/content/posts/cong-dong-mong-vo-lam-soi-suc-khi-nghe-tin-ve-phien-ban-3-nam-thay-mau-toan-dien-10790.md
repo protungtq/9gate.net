@@ -2,7 +2,7 @@
 title: "Cộng đồng Mộng Võ Lâm sôi sục khi nghe tin về phiên bản 3 năm \"Thay Máu Toàn Diện\""
 description: "Với phiên bản Big update kỷ niệm 3 năm ra mắt thành công diễn ra sắp tới đây, game Việt Mộng Võ Lâm đã tạo cho hàng trăm ngàn game thủ cảm giác phấn khích, rạo rực trước những bước thay đổi đột phá thú vị nhất từ trước đến nay game sở hữu."
 image: "https://i.ibb.co/0R4NLRm1/af2476beda12ba9d.webp"
-tags: ["Mộng Võ Lâm", "Tải game Mộng Võ Lâm", "Cập nhật Mộng Võ Lâm"]
+tags: ["Mộng Võ Lâm", "tải game Mộng Võ Lâm", "cập nhật Mộng Võ Lâm"]
 legacyId: "10790"
 legacyPath: "/tin-game/cap-nhat/cong-dong-mong-vo-lam-soi-suc-khi-nghe-tin-ve-phien-ban-3-nam-thay-mau-toan-dien-10790.html"
 date: "2017-04-12"

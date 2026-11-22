@@ -2,7 +2,7 @@
 title: "miHoYo mở buổi test game bí mật cho bom tấn Starry Sky Valley"
 description: "Các game thủ đang rất ngóng chờ với dự án mới nhất của miHoYo."
 image: "https://i.postimg.cc/76sHTBZL/9gate-0e5ef10d63bd8a8b31d368.jpg"
-tags: ["Starry Sky Valley", "Tải game Starry Sky Valley", "Cập nhật Starry Sky Valley"]
+tags: ["Starry Sky Valley", "tải game Starry Sky Valley", "cập nhật Starry Sky Valley"]
 legacyId: "24692"
 legacyPath: "/tin-game/gioi-thieu-game/mihoyo-mo-buoi-test-game-bi-mat-cho-bom-tan-starry-sky-valley-24692.html"
 date: "2024-11-11"

@@ -2,7 +2,7 @@
 title: "Game 18+ đầu tiên tại Việt Nam có những gì mà khiến game thủ phát cuồng lên vì nó?"
 description: "Mỹ Nữ Truyện hứa hẹn là một sản phẩm game nhập vai 18+ khiến cánh đàn ông “phê” theo cả nghĩa đen lẫn nghĩa bóng và dĩ nhiên cấm trẻ em dưới tuổi vị thành niên."
 image: "https://i.postimg.cc/x8L9F9PF/9gate-e3a52ed49353c4dc5c1fe8.jpg"
-tags: ["Mỹ Nữ Truyện", "Tải game Mỹ Nữ Truyện", "Cập nhật Mỹ Nữ Truyện"]
+tags: ["Mỹ Nữ Truyện", "tải game Mỹ Nữ Truyện", "cập nhật Mỹ Nữ Truyện"]
 legacyId: "19736"
 legacyPath: "/tin-game/gioi-thieu-game/game-18-dau-tien-tai-viet-nam-co-nhung-gi-ma-khien-game-thu-phat-cuong-len-vi-no-19736.html"
 date: "2021-01-14"

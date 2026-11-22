@@ -2,7 +2,7 @@
 title: "Game thủ phẫn nộ lên tiếng bênh vực VNG, cho rằng: Game là phải hút máu, người chơi nên tự hào và “cảm tạ”"
 description: "Mới đây, một game thủ Việt bất ngờ lên tiếng bảo vệ VNG, cho rằng mọi người đừng lên án VNG nữa."
 image: "https://i.ibb.co/B5v2tKnH/6dc5ff52094290bf.webp"
-tags: ["Huyền Thoại Runeterra", "Tải game Huyền Thoại Runeterra", "Cập nhật Huyền Thoại Runeterra"]
+tags: ["Huyền Thoại Runeterra", "tải game Huyền Thoại Runeterra", "cập nhật Huyền Thoại Runeterra"]
 legacyId: "19325"
 legacyPath: "/tin-game/cong-dong/game-thu-phan-no-len-tieng-benh-vuc-vng-cho-rang--game-la-phai-hut-mau--nguoi-choi-nen-tu-hao-va-cam-ta-19325.html"
 date: "2020-11-25"

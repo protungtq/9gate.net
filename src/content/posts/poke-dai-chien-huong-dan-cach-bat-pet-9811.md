@@ -2,7 +2,7 @@
 title: "Poke Đại Chiến: Hướng Dẫn Cách Bắt Pet"
 description: "Là 1 HLV chuyên nghiệp, làm sao có thể thiếu pokemon đầy sức mạnh được?"
 image: "https://i.ibb.co/4nj9ZP8Z/0546e1271ced9cb8.webp"
-tags: ["Poke Đại Chiến", "Tải game Poke Đại Chiến", "Game mobile"]
+tags: ["Poke Đại Chiến", "tải game Poke Đại Chiến", "Game mobile"]
 legacyId: "9811"
 legacyPath: "/cam-nang/huong-dan/poke-dai-chien-huong-dan-cach-bat-pet-9811.html"
 date: "2017-01-04"

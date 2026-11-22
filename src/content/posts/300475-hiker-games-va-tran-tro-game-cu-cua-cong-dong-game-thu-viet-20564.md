@@ -2,7 +2,7 @@
 title: "300475, Hiker Games và trăn trở \"game cũ\" của cộng đồng game thủ Việt"
 description: "Dự án 300475 của Hiker Games và các vấn đề bên lề vẫn đang thu hút được nhiều bàn luận từ cộng đồng."
 image: "https://i.ibb.co/B29Fm2ZM/897a75e27e756c6e.webp"
-tags: ["300475", "Tải game 300475", "Cập nhật 300475"]
+tags: ["300475", "tải game 300475", "cập nhật 300475"]
 legacyId: "20564"
 legacyPath: "/tin-game/pc-console/300475-hiker-games-va-tran-tro-game-cu-cua-cong-dong-game-thu-viet-20564.html"
 date: "2021-06-24"

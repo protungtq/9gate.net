@@ -2,7 +2,7 @@
 title: "Tìm hiểu sự thật về 12 cung hoàng đạo trong Đại Thánh Vương"
 description: "Hãy cùng chúng tôi vén màn bí mật về cung hoàng đạo thực sự của các nhân vật trong phim Tây Du Ký là gì nhé"
 image: "https://i.ibb.co/zHLMWtqJ/c9194bec39013b32.webp"
-tags: ["Đại Thánh Vương", "Tải game Đại Thánh Vương"]
+tags: ["Đại Thánh Vương", "tải game Đại Thánh Vương"]
 legacyId: "8983"
 legacyPath: "/tin-game/cong-dong/tim-hieu-su-that-ve-12-cung-hoang-dao-trong-dai-thanh-vuong-8983.html"
 date: "2016-10-23"

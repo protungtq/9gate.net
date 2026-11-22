@@ -2,7 +2,7 @@
 title: "Liên Quân Mobile: Ngắm bộ ảnh cosplay thần sầu của nữ game thủ Việt"
 description: "Mãn nhãn với bộ ảnh Cosplay Airi Kiemono &quot;chất&quot; đến từng chi tiết."
 image: "https://i.ibb.co/pj48nPjZ/162ad313de42cbdd.webp"
-tags: ["Liên Quân Mobile", "Tải game Liên Quân Mobile", "Cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
+tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
 legacyId: "13717"
 legacyPath: "/tin-game/cong-dong/lien-quan-mobile-ngam-bo-anh-cosplay-than-sau-cua-nu-game-thu-viet-13717.html"
 date: "2018-05-04"

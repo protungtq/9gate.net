@@ -2,7 +2,7 @@
 title: "Những biệt danh \"đi cùng năm tháng\" của Độ Mixi sau khi làm Streamer"
 description: "Những cái tên này đều do fan game đặt cho nam streamer người Tày."
 image: "https://i.ibb.co/nNZ142F8/8e1616f96c213c12.webp"
-tags: ["Cập nhật"]
+tags: ["cập nhật"]
 legacyId: "20886"
 legacyPath: "/tin-game/cong-dong/nhung-biet-danh-di-cung-nam-thang-cua-do-mixi-sau-khi-lam-streamer-20886.html"
 date: "2021-08-25"

@@ -2,7 +2,7 @@
 title: "Nghi vấn nữ streamer Liên Quân lộ clip 18+, là hot girl TikTok gần 2 triệu người theo dõi?"
 description: "Mới đây, một trong những nữ streamer khá có tiếng của cộng đồng Liên Quân Mobile được cho là bị lộ clip nhạy cảm."
 image: "https://i.ibb.co/JRfRpyKr/3aee852b8676506a.webp"
-tags: ["Liên Quân Mobile", "Tải game Liên Quân Mobile", "Cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
+tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
 legacyId: "19862"
 legacyPath: "/tin-game/cong-dong/nghi-van-nu-streamer-lien-quan-lo-clip-18-la-hot-girl-tiktok-gan-2-trieu-nguoi-theo-doi-19862.html"
 date: "2021-02-01"

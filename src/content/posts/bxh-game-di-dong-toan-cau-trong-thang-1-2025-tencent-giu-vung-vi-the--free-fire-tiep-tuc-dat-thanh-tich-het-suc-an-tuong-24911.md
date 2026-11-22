@@ -2,7 +2,7 @@
 title: "BXH game di động toàn cầu trong tháng 1/2025: Tencent giữ vững vị thế, Free Fire tiếp tục đạt thành tích hết sức ấn tượng"
 description: "Năm 2025 tiếp tục mang tới những diễn biến bất ngờ trên BXH game toàn cầu."
 image: "https://i.postimg.cc/Y0vpN1vZ/9gate-9347a2497b04f72e13b504.jpg"
-tags: ["Cập nhật"]
+tags: ["cập nhật"]
 legacyId: "24911"
 legacyPath: "/tin-game/cong-dong/bxh-game-di-dong-toan-cau-trong-thang-1-2025-tencent-giu-vung-vi-the--free-fire-tiep-tuc-dat-thanh-tich-het-suc-an-tuong-24911.html"
 date: "2025-02-20"

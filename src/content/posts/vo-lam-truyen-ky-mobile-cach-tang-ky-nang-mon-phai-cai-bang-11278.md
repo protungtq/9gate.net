@@ -2,7 +2,7 @@
 title: "Võ Lâm Truyền Kỳ Mobile: Cách tăng kỹ năng môn phái Cái Bang"
 description: "Bài viết chi tiết hướng dẫn tăng kỹ năng môn phái Cái Bang trong game Võ Lâm Truyền Kỳ Mobile."
 image: "https://i.ibb.co/3mpDt6fg/00c5a76d0c799414.webp"
-tags: ["Võ Lâm Truyền Kỳ Mobile", "Tải game Võ Lâm Truyền Kỳ Mobile", "MMORPG kiếm hiệp"]
+tags: ["Võ Lâm Truyền Kỳ Mobile", "tải game Võ Lâm Truyền Kỳ Mobile", "MMORPG kiếm hiệp"]
 legacyId: "11278"
 legacyPath: "/cam-nang/huong-dan/vo-lam-truyen-ky-mobile-cach-tang-ky-nang-mon-phai-cai-bang-11278.html"
 date: "2017-05-29"

@@ -2,7 +2,7 @@
 title: "Ngọa Long VNG bước sang tuổi 15 với bản cập nhật lớn Tam Quốc Đỉnh Lập"
 description: "Ngọa Long VNG kỷ niệm 15 tuổi bằng phiên bản Tam Quốc Đỉnh Lập: dàn Tướng Vàng mới, server Trần Lưu mở 17/11 và chuỗi hoạt động tri ân cộng đồng."
 image: "https://i.postimg.cc/WzNrx3JZ/ngoa-long-cover.jpg"
-tags: ["Ngọa Long VNG", "Tải game Ngọa Long VNG", "Cập nhật Ngọa Long VNG", "Chiến thuật", "SLG"]
+tags: ["Ngọa Long VNG", "tải game Ngọa Long VNG", "cập nhật Ngọa Long VNG", "Chiến thuật", "SLG"]
 game: "ngoa-long-vng"
 date: "2026-11-21"
 ---

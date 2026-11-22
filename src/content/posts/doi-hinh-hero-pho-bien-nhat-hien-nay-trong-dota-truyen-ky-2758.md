@@ -2,7 +2,7 @@
 title: "Đội hình hero phổ biến nhất hiện nay trong Dota Truyền Kỳ"
 description: "Trên đây là các hero/đội hình mà người chơi DoTa Truyền Kỳ ưa chuộng sử dụng nhất hiện nay."
 image: "https://i.postimg.cc/52b2TQT8/9gate-65d46588b18c48db6b4193.jpg"
-tags: ["Dota Truyền Kỳ", "Tải game Dota Truyền Kỳ"]
+tags: ["Dota Truyền Kỳ", "tải game Dota Truyền Kỳ"]
 legacyId: "2758"
 legacyPath: "/cam-nang/huong-dan/doi-hinh-hero-pho-bien-nhat-hien-nay-trong-dota-truyen-ky-2758.html"
 date: "2015-04-03"

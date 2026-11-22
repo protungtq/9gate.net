@@ -2,7 +2,7 @@
 title: "Top 5 game mobile nhập vai màn hình dọc có lối chơi đột phá mới lạ"
 description: "Thuận tiện trải nghiệm trên Smartphone, dòng game mobile màn hình dọc đang phát triển mạnh mẽ trong năm 2020 với lối chơi đột phá, mới lạ và đa dạng."
 image: "https://i.ibb.co/NgdtX370/b33c92902a34ff32.webp"
-tags: ["Cập nhật"]
+tags: ["cập nhật"]
 legacyId: "18864"
 legacyPath: "/tin-game/gioi-thieu-game/top-5-game-mobile-nhap-vai-man-hinh-doc-co-loi-choi-dot-pha-moi-la-18864.html"
 date: "2020-10-02"

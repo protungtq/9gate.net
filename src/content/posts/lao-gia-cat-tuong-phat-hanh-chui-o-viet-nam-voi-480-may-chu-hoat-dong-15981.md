@@ -2,7 +2,7 @@
 title: "Lão Gia Cát Tường phát hành 'chui' ở Việt Nam với 480 máy chủ hoạt động"
 description: "Sử dụng hình ảnh ngôn từ tục tĩu, Lão Gia Cát Tường ngang nhiên hoạt động không phép ở Việt Nam bất chấp những quy định của pháp luật."
 image: "https://i.ibb.co/v6XPPc34/3a75b86b9454f0bb.webp"
-tags: ["Lão Gia Cát Tường", "Tải game Lão Gia Cát Tường", "Cập nhật Lão Gia Cát Tường"]
+tags: ["Lão Gia Cát Tường", "tải game Lão Gia Cát Tường", "cập nhật Lão Gia Cát Tường"]
 legacyId: "15981"
 legacyPath: "/tin-game/cong-dong/lao-gia-cat-tuong-phat-hanh-chui-o-viet-nam-voi-480-may-chu-hoat-dong-15981.html"
 date: "2019-06-07"

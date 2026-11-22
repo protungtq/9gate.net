@@ -2,7 +2,7 @@
 title: "Tam Quốc Chí - Chiến Kỳ chính thức mở máy chủ Closed Beta, game thủ nô nức trải nghiệm"
 description: "Sáng 16/11, VNGGames chính thức mở Closed Beta Tam Quốc Chí - Chiến Kỳ, game chiến thuật SLG pha SRPG được Koei Tecmo ủy quyền. CBT kéo dài tới 22/11."
 image: "https://i.postimg.cc/nrF7NzQT/chien-ky-cover.jpg"
-tags: ["Tam Quốc Chí - Chiến Kỳ", "Tải game Tam Quốc Chí - Chiến Kỳ", "Cập nhật Tam Quốc Chí - Chiến Kỳ", "Chiến thuật", "SLG", "SRPG"]
+tags: ["Tam Quốc Chí - Chiến Kỳ", "tải game Tam Quốc Chí - Chiến Kỳ", "cập nhật Tam Quốc Chí - Chiến Kỳ", "Chiến thuật", "SLG", "SRPG"]
 game: "tam-quoc-chi-chien-ky"
 date: "2026-11-21"
 ---

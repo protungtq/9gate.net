@@ -2,7 +2,7 @@
 title: "Phòng chung cư Phong Xích Lan trong Tai Ương bất ngờ bị quảng cáo rao bán"
 description: "Game bom tấn kinh dị của Việt Nam bất ngờ bị &quot;rao bán&quot; “rần rần” trên MXH theo cách không ngờ đến."
 image: "https://i.postimg.cc/RFsSnPZC/9gate-77a69c54e8bbf343dc7d48.jpg"
-tags: ["Tai Ương", "Tải game Tai Ương", "Cập nhật Tai Ương"]
+tags: ["Tai Ương", "tải game Tai Ương", "cập nhật Tai Ương"]
 legacyId: "24672"
 legacyPath: "/tin-game/cong-dong/phong-chung-cu-phong-xich-lan-trong-tai-uong-bat-ngo-bi-quang-cao-rao-ban-24672.html"
 date: "2024-10-31"

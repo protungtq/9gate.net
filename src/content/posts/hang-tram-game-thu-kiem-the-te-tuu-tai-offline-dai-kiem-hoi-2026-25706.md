@@ -2,7 +2,7 @@
 title: "Hàng trăm game thủ Kiếm Thế tề tựu tại Offline Đại Kiếm Hội 2026"
 description: "Sự kiện offline Đại Kiếm Hội 2026 đã diễn ra trong không khí đầy cảm xúc, trở thành dịp hội ngộ đầu năm ý nghĩa của các game thủ tựa game Kiếm Thế."
 image: "https://i.postimg.cc/FKGm2Pcp/9gate-d0feaa9e62e351f5ec8009.jpg"
-tags: ["Kiếm Thế", "Tải game Kiếm Thế", "Cập nhật Kiếm Thế"]
+tags: ["Kiếm Thế", "tải game Kiếm Thế", "cập nhật Kiếm Thế"]
 legacyId: "25706"
 legacyPath: "/tin-game/cong-dong/hang-tram-game-thu-kiem-the-te-tuu-tai-offline-dai-kiem-hoi-2026-25706.html"
 date: "2026-01-19"

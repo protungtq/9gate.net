@@ -2,7 +2,7 @@
 title: "Hack sập game trong nước, hacker Việt tuyên bố sang bản Trung Quốc càn quét, làm cả clip hướng dẫn 500 anh em"
 description: "Tình trạng hack càn quét các tựa game mobile trong nước, thậm chí đến nỗi NPH phải tuyên bố “đầu hàng” vẫn chưa thỏa mãn niềm thích thú của bè lũ hacker."
 image: "https://i.ibb.co/wbHg4QT/08bfbef5a16c9261.webp"
-tags: ["Crossfire Legends", "Tải game Crossfire Legends", "Cập nhật Crossfire Legends"]
+tags: ["Crossfire Legends", "tải game Crossfire Legends", "cập nhật Crossfire Legends"]
 legacyId: "18678"
 legacyPath: "/tin-game/cong-dong/hack-sap-game-trong-nuoc-hacker-viet-tuyen-bo-sang-ban-trung-quoc-can-quet--lam-ca-clip-huong-dan-500-anh-em-18678.html"
 date: "2020-09-10"

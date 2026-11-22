@@ -2,7 +2,7 @@
 title: "Rộ tin TiMi của Tencent khai tử bộ phận làm game quan trọng?"
 description: "Tencent IEG (tập đoàn kinh doanh giải trí tương tác) gần đây đã thực hiện một đợt điều chỉnh mới liên quan đến TiMi."
 image: "https://i.postimg.cc/KjW8C06W/9gate-5ca0b1282fa5b0833de9de.jpg"
-tags: ["Cập nhật"]
+tags: ["cập nhật"]
 legacyId: "23916"
 legacyPath: "/tin-game/cong-dong/ro-tin-timi-cua-tencent-khai-tu-bo-phan-lam-game-quan-trong-23916.html"
 date: "2023-12-13"

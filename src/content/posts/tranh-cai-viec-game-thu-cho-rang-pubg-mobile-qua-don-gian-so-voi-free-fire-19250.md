@@ -2,7 +2,7 @@
 title: "Tranh cãi việc game thủ cho rằng PUBG Mobile quá đơn giản so với Free Fire"
 description: "Mới đây, cộng đồng PUBG Mobile bất ngờ khi một người chơi Free Fire cho rằng, PUBG Mobile quá dễ chơi."
 image: "https://i.ibb.co/SkF3V1n/3f1a3c9705615ee9.webp"
-tags: ["PUBG Mobile", "Tải game PUBG Mobile", "Cập nhật PUBG Mobile", "Battle Royale"]
+tags: ["PUBG Mobile", "tải game PUBG Mobile", "cập nhật PUBG Mobile", "Battle Royale"]
 legacyId: "19250"
 legacyPath: "/tin-game/cong-dong/tranh-cai-viec-game-thu-cho-rang-pubg-mobile-qua-don-gian-so-voi-free-fire-19250.html"
 date: "2020-11-17"

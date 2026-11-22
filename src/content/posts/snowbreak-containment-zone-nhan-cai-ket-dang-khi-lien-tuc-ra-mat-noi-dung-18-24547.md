@@ -2,7 +2,7 @@
 title: "Snowbreak: Containment Zone nhận cái kết đắng khi liên tục ra mắt nội dung 18+"
 description: "Trường hợp hi hữu của tựa game gacha này đang khiến CĐM bàn tán xôn xao."
 image: "https://i.postimg.cc/CK0xyB2N/9gate-2c9513a13613974901fc76.jpg"
-tags: ["Snowbreak: Containment Zone", "Tải game Snowbreak: Containment Zone", "Cập nhật Snowbreak: Containment Zone"]
+tags: ["Snowbreak: Containment Zone", "tải game Snowbreak: Containment Zone", "cập nhật Snowbreak: Containment Zone"]
 legacyId: "24547"
 legacyPath: "/tin-game/gioi-thieu-game/snowbreak-containment-zone-nhan-cai-ket-dang-khi-lien-tuc-ra-mat-noi-dung-18-24547.html"
 date: "2024-08-26"

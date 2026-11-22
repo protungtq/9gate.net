@@ -2,7 +2,7 @@
 title: "Top 10 NPH kiếm được nhiều tiền nhất từ game thủ"
 description: "Thị trường game 2024 vẫn đang được thống trị bởi NPH game này."
 image: "https://i.postimg.cc/4Nr35FbK/9gate-cf415b2da5f125cd640f55.jpg"
-tags: ["Cập nhật"]
+tags: ["cập nhật"]
 legacyId: "24459"
 legacyPath: "/tin-game/cong-dong/top-10-nph-kiem-duoc-nhieu-tien-nhat-tu-game-thu-24459.html"
 date: "2024-07-16"
