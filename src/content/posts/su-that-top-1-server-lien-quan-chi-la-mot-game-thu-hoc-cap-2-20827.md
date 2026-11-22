@@ -3,6 +3,7 @@ title: "Sự thật, Top 1 server Liên Quân chỉ là một game thủ học c
 description: "Vừa qua, thần đồng mới của Liên Quân Mobile đã leo lên được Top 1 server, tuy nhiên chỉ giữ được trong thời gian ngắn."
 image: "https://i.ibb.co/wNZ460GG/4fe64275e0398495.webp"
 tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "Garena", "cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
+game: "lien-quan-mobile"
 legacyId: "20827"
 legacyPath: "/tin-game/cong-dong/su-that-top-1-server-lien-quan-chi-la-mot-game-thu-hoc-cap-2-20827.html"
 date: "2021-08-14"

@@ -3,6 +3,7 @@ title: "Chiến Cơ Huyền Thoại: Tại sao game thủ rủ nhau cùng chơi 
 description: "Các bạn độc giả hãy cùng 9Gate chỉ ra những lý do khiến game thủ Chiến Cơ Huyền Thoại Việt cùng nhau bỏ sang trải nghiệm tại máy chủ Trung Quốc."
 image: "https://i.ibb.co/N6VR5zYy/9491f4fc4906372a.webp"
 tags: ["Chiến Cơ Huyền Thoại", "tải game Chiến Cơ Huyền Thoại", "Garena", "cập nhật Chiến Cơ Huyền Thoại"]
+game: "chien-co-huyen-thoai"
 legacyId: "7264"
 legacyPath: "/tin-game/cong-dong/chien-co-huyen-thoai-tai-sao-game-thu-ru-nhau-cung-choi-phien-ban-trung-quoc-7264.html"
 date: "2016-07-13"

@@ -3,6 +3,7 @@ title: "Cha đẻ của Phong Vân 3D Mobile - Mã Vinh Thành 27 năm một huy
 description: "Hiếm người biết rằng Mã tiên sinh không chỉ là một họa sĩ, mà còn làm chủ một nhà xuất bản, lấy tên Thiên Hạ như tên một bang hội trong truyện tranh"
 image: "https://i.ibb.co/CK12J7cQ/b45538032bf4ca16.webp"
 tags: ["Phong Vân 3D", "tải game Phong Vân 3D", "VNGGames", "cập nhật Phong Vân 3D"]
+game: "phong-van-3d"
 legacyId: "6346"
 legacyPath: "/tin-game/cong-dong/cha-de-cua-phong-van-3d-mobile-ma-vinh-thanh-27-nam-mot-huyen-thoai-6346.html"
 date: "2016-05-11"

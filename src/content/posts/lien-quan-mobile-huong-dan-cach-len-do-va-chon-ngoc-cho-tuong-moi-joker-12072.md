@@ -3,6 +3,7 @@ title: "Liên Quân Mobile: Hướng dẫn cách lên đồ và chọn ngọc ch
 description: "Joker là vị tướng thứ 49 của Liên Quân Mobile Việt Nam với nhiều ưu điểm vượt trội so với các xạ thủ khác."
 image: "https://i.ibb.co/Sw257Q0Z/3f3754c5bc42127d.webp"
 tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "Garena", "MOBA", "Chiến thuật", "Hành động"]
+game: "lien-quan-mobile"
 legacyId: "12072"
 legacyPath: "/cam-nang/huong-dan/lien-quan-mobile-huong-dan-cach-len-do-va-chon-ngoc-cho-tuong-moi-joker-12072.html"
 date: "2017-10-05"

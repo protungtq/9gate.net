@@ -3,6 +3,7 @@ title: "Vương Giả Vinh Diệu phiên bản quốc tế đang được thử 
 description: "Honor of Kings (Vương Giả Vinh Diệu) là tựa game MOBA trên nền tảng mobile do TiMi Studio sản xuất và Tencent Games quản lý và phát hành."
 image: "https://i.postimg.cc/v8h90Mc1/9gate-0f9fc6543d9da8622a9fdb.jpg"
 tags: ["Vương Giả Vinh Diệu", "tải game Vương Giả Vinh Diệu", "Tencent", "cập nhật Vương Giả Vinh Diệu", "MOBA"]
+game: "vuong-gia-vinh-dieu"
 legacyId: "22247"
 legacyPath: "/tin-game/cong-dong/vuong-gia-vinh-dieu-phien-ban-quoc-te-dang-duoc-thu-nghiem-voi-ten-goi-honor-of-kings-22247.html"
 date: "2022-07-15"

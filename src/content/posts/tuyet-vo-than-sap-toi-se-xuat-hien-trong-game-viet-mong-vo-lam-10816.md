@@ -3,6 +3,7 @@ title: "Tuyệt Vô Thần sắp tới sẽ xuất hiện trong game Việt Mộ
 description: "Vô Danh, Phong Vân đều là những cái tên vang danh thiên hạ bởi tài dụng kiếm, dụng đao nhưng ít ai biết được rằng, họ từng là bại tướng dưới tay một người, mà kẻ đó lại là ngoại bang, không thuộc bất kỳ giáo phái nào trong võ lâm Trung Nguyên."
 image: "https://i.ibb.co/YT4mcN6t/a775581d448bf49c.webp"
 tags: ["Mộng Võ Lâm", "tải game Mộng Võ Lâm", "cập nhật Mộng Võ Lâm"]
+game: "mong-vo-lam"
 legacyId: "10816"
 legacyPath: "/tin-game/cap-nhat/tuyet-vo-than-sap-toi-se-xuat-hien-trong-game-viet-mong-vo-lam-10816.html"
 date: "2017-04-13"

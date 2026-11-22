@@ -3,6 +3,7 @@ title: "Liên Quân Mobile: Hot Streamer Bé Chanh công khai giá cày thuê sa
 description: "Garena dứt khoát không chào đón Streamer Liên Quân Mobile đình đám từng đạt Á quân AIC tiếp cận các giải đấu của họ."
 image: "https://i.ibb.co/kVKZVy2Z/6b556522783e6ce2.webp"
 tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "Garena", "cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
+game: "lien-quan-mobile"
 legacyId: "17526"
 legacyPath: "/tin-game/cong-dong/lien-quan-mobile-hot-streamer-be-chanh-cong-khai-gia-cay-thue-sau-khi-bi-garena-triet-duong-thi-dau-chuyen-nghiep-17526.html"
 date: "2020-04-07"

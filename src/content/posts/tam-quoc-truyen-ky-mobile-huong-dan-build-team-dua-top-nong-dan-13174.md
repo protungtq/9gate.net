@@ -3,6 +3,7 @@ title: "Tam Quốc Truyền Kỳ Mobile: Hướng Dẫn Build Team Đua Top Nôn
 description: "Hướng Dẫn Build Team Đua Top Nông Dân Từ Tướng Quân Dương (Gió) Từ Hội Cuồng Tam Quốc Truyền Kỳ Mobile"
 image: "https://i.ibb.co/jktT1bCy/e07b3bc372e91b74.webp"
 tags: ["Tam Quốc Truyền Kỳ Mobile", "tải game Tam Quốc Truyền Kỳ Mobile"]
+game: "tam-quoc-truyen-ky-mobile"
 legacyId: "13174"
 legacyPath: "/cam-nang/huong-dan/tam-quoc-truyen-ky-mobile-huong-dan-build-team-dua-top-nong-dan-13174.html"
 date: "2018-03-01"

@@ -3,6 +3,7 @@ title: "Biệt Đội Thú Cưng - Lối chơi đơn giản mang tính giải tr
 description: "Không tạo được nhiều điểm nhấn qua gameplay nhưng Biệt Đội Thú Cưng ghi dấu ấn ở đồ họa và tính giải trí cao."
 image: "https://i.ibb.co/8gD1X1dr/8f870afedc768d1d.webp"
 tags: ["Biệt Đội Thú Cưng", "tải game Biệt Đội Thú Cưng", "Efunen", "cập nhật Biệt Đội Thú Cưng"]
+game: "biet-doi-thu-cung"
 legacyId: "588"
 legacyPath: "/giai-tri/trong-nuoc/biet-doi-thu-cung-loi-choi-don-gian-mang-tinh-giai-tri-cao-588.html"
 date: "2014-10-28"

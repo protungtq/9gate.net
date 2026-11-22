@@ -3,6 +3,7 @@ title: "Liên Quân Mobile: 6 trang bị trấn phái tăng tốc chạy"
 description: "Tốc chạy là chỉ số rất hữu ích với từng vị trí trong đội. Hãy cùng 9Gate tìm ra những trang bị tăng tốc chạy hiện có trong game nhé!"
 image: "https://i.ibb.co/fzJR6cW8/42b0f40a15f3b21a.webp"
 tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "Garena", "MOBA", "Chiến thuật", "Hành động"]
+game: "lien-quan-mobile"
 legacyId: "10325"
 legacyPath: "/cam-nang/huong-dan/lien-quan-mobile-6-trang-bi-tran-phai-tang-toc-chay-10325.html"
 date: "2017-03-08"

@@ -3,6 +3,7 @@ title: "Đại Chiến Tam Quốc: Những vị tướng nào nên dùng thời 
 description: "Sau đây là một số hướng dẫn cơ bản về hệ thống võ tướng này"
 image: "https://i.ibb.co/Zp51XVR5/023f330906020d96.webp"
 tags: ["Đại Chiến Tam Quốc", "tải game Đại Chiến Tam Quốc", "VTC Mobile", "SLG Tam Quốc"]
+game: "dai-chien-tam-quoc"
 legacyId: "8549"
 legacyPath: "/cam-nang/huong-dan/dai-chien-tam-quoc-nhung-vi-tuong-nao-nen-dung-thoi-gian-dau-va-sau-nay-8549.html"
 date: "2016-09-24"

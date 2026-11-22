@@ -3,6 +3,7 @@ title: "Top 5 khẩu súng bắn tỉa tốt nhất dành cho các xạ thủ tr
 description: "Dưới đây là danh sách 5 vũ khí tầm xa mạnh nhất mà các tay súng bắn tỉa nên sử dụng trong Free Fire."
 image: "https://i.ibb.co/gbXJXVmm/c8b535ddee729a05.webp"
 tags: ["Free Fire", "tải game Free Fire", "Garena", "cập nhật Free Fire", "Battle Royale", "Sinh tồn"]
+game: "free-fire"
 legacyId: "18012"
 legacyPath: "/tin-game/cong-dong/top-5-khau-sung-ban-tia-tot-nhat-danh-cho-cac-xa-thu-trong-free-fire-18012.html"
 date: "2020-06-29"

@@ -3,6 +3,7 @@ title: "[Cửu Dương Thần Công] Kỳ 1: Cửu Dương Hiện, Giang Hồ Lo
 description: "Hữu thực nhi vô hồ xứ giả, vũ dã. Hữu trường nhi vô bản tiêu giả, trụ dã."
 image: "https://i.postimg.cc/HxRLhZ1V/9gate-1c2115a06f710886e1aac9.jpg"
 tags: ["Cửu Dương Thần Công", "tải game Cửu Dương Thần Công", "cập nhật Cửu Dương Thần Công"]
+game: "cuu-duong-than-cong"
 legacyId: "2108"
 legacyPath: "/tin-game/cong-dong/cuu-duong-than-cong-ky-1-cuu-duong-hien--giang-ho-loan-2108.html"
 date: "2015-02-11"

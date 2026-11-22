@@ -3,6 +3,7 @@ title: "iCá: Tính năng kết bạn"
 description: "9Gate giới thiệu bài viết chi tiết về tính năng kết bạn trong game"
 image: "https://i.ibb.co/j7rPGNY/49321e4af06b5e30.webp"
 tags: ["iCá", "tải game iCá", "VNGGames", "cập nhật iCá"]
+game: "ica"
 legacyId: "6032"
 legacyPath: "/cam-nang/he-thong/ica-tinh-nang-ket-ban-6032.html"
 date: "2016-04-24"

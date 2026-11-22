@@ -3,6 +3,7 @@ title: "Top 5 khẩu súng cực tốt giúp bạn bạn đến gần với chi�
 description: "Bạn có phải là fan hâm mộ của Call of Duty Mobile không? Nếu có, đừng bỏ lỡ hướng dẫn sử dụng về 5 khẩu súng tốt nhất trong Call of Duty Mobile!"
 image: "https://i.ibb.co/fGVGx7Y1/0a4dfffc2a5b2691.webp"
 tags: ["Call of Duty Mobile", "tải game Call of Duty Mobile", "VNGGames", "cập nhật Call of Duty Mobile"]
+game: "call-of-duty-mobile"
 legacyId: "18252"
 legacyPath: "/tin-game/cong-dong/top-5-khau-sung-cuc-tot-giup-ban-ban-den-gan-voi-chien-thang-trong-call-of-duty-mobile-18252.html"
 date: "2020-07-27"

@@ -3,6 +3,7 @@ title: "Liên Minh Anh Hùng – Game thẻ tướng Việt đa nền tảng"
 description: "Liên Minh Anh Hùng là gMO thẻ tướng ăn theo tựa game MOBA nổi tiếng Liên Minh Huyền Thoại. Game được phát triển và vận hành bởi VNG."
 image: "https://i.postimg.cc/BvZtLPBk/9gate-8d0843c564a6e0f986567a.jpg"
 tags: ["Liên Minh Anh Hùng", "tải game Liên Minh Anh Hùng", "VNGGames", "cập nhật Liên Minh Anh Hùng", "Game mobile"]
+game: "lien-minh-anh-hung"
 legacyId: "1189"
 legacyPath: "/tin-game/gioi-thieu-game/lien-minh-anh-hung-game-the-tuong-viet-da-nen-tang-1189.html"
 date: "2014-12-11"

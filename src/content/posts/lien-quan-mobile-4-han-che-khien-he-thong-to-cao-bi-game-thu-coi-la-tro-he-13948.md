@@ -3,6 +3,7 @@ title: "Liên Quân Mobile: 4 hạn chế khiến hệ thống tố cáo bị ga
 description: "Hệ thống tố cáo trong Liên Quân Mobile được game thủ sử dụng với mục đích trừng phạt những người chơi có hành vi không đẹp."
 image: "https://i.ibb.co/8LR8bR7K/531a14699bdd24d0.webp"
 tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "Garena", "cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
+game: "lien-quan-mobile"
 legacyId: "13948"
 legacyPath: "/tin-game/cong-dong/lien-quan-mobile-4-han-che-khien-he-thong-to-cao-bi-game-thu-coi-la-tro-he-13948.html"
 date: "2018-07-03"

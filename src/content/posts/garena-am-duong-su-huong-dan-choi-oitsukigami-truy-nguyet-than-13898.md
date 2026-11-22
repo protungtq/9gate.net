@@ -3,6 +3,7 @@ title: "Garena Âm Dương Sư: Hướng Dẫn Chơi Oitsukigami (Truy Nguyệt 
 description: "Oitsukigami (Truy Nguyệt Thần) là một hồn ma sống trong đền. Đẹp nhưng không chạm đến được, nàng được biết đến với tên là Oitsuki."
 image: "https://i.ibb.co/wN3CQc4s/5559d1a7d677293e.webp"
 tags: ["Garena Âm Dương Sư", "tải game Garena Âm Dương Sư"]
+game: "garena-am-duong-su"
 legacyId: "13898"
 legacyPath: "/cam-nang/huong-dan/garena-am-duong-su-huong-dan-choi-oitsukigami-truy-nguyet-than-13898.html"
 date: "2018-06-19"

@@ -3,6 +3,7 @@ title: "Liên Quân Mobile: Tổng hợp những biệt danh ngắn gọn của 
 description: "Tướng Liên Quân Mobile với những biệt danh ngắn gọn mà không phải ai cũng biết."
 image: "https://i.ibb.co/wrYwwdTs/5a46860c2daa8948.webp"
 tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "Garena", "cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
+game: "lien-quan-mobile"
 legacyId: "14795"
 legacyPath: "/tin-game/cong-dong/lien-quan-mobile-tong-hop-nhung-biet-danh-ngan-gon-cua-hang-chuc-tuong-14795.html"
 date: "2018-12-20"

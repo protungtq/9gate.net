@@ -3,6 +3,7 @@ title: "\"Tự động bắn\" trong CrossFire Legends: Tính năng góp phần 
 description: "Dù chỉ là một công cụ để những người mới chơi có thể làm quen nhanh hơn với game, nhưng phải thừa nhận một điều rằng tính năng “Tự động bắn” của CrossFire Legends cũng rất dễ khiến cho người sử dụng nó trở nên “ảo tưởng sức mạnh”"
 image: "https://i.postimg.cc/4ypXFX1P/9gate-d88fa14ff4391d359df8d5.jpg"
 tags: ["Crossfire Legends", "tải game Crossfire Legends", "VNGGames", "cập nhật Crossfire Legends"]
+game: "crossfire-legends"
 legacyId: "11086"
 legacyPath: "/tin-game/cong-dong/tu-dong-ban-trong-crossfire-legends-tinh-nang-gop-phan-nang-cao-do-ao-tuong-suc-manh-11086.html"
 date: "2017-05-09"

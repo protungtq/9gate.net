@@ -3,6 +3,7 @@ title: "Liên Quân Mobile: Đội hình tướng thế hệ đầu nhưng luôn
 description: "Đối với game MOBA, những tướng thế hệ đầu luôn bị xem như lỗi thời sau thời gian dài bổ sung tướng mới, với Liên Quân Mobile mọi chuyện lại khác."
 image: "https://i.ibb.co/XZ3kQd90/f4df2a48340e4f0d.webp"
 tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "Garena", "cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
+game: "lien-quan-mobile"
 legacyId: "13646"
 legacyPath: "/tin-game/cong-dong/lien-quan-mobile-doi-hinh-tuong-the-he-dau-nhung-luon-manh-trong-moi-meta-13646.html"
 date: "2018-04-21"

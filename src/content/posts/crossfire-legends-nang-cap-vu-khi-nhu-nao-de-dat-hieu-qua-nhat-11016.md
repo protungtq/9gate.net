@@ -3,6 +3,7 @@ title: "Crossfire Legends: Nâng cấp vũ khí như nào để đạt hiệu qu
 description: "Những vũ khí cơ bản mà bạn nhận được khi tham gia vào Crossfire Legends người chơi có thể nâng cấp chúng lên 1 cấp độ khác."
 image: "https://i.ibb.co/HkthC6M/c01eb0da61d7b389.webp"
 tags: ["Crossfire Legends", "tải game Crossfire Legends", "VNGGames", "cập nhật Crossfire Legends"]
+game: "crossfire-legends"
 legacyId: "11016"
 legacyPath: "/tin-game/cong-dong/crossfire-legends-nang-cap-vu-khi-nhu-nao-de-dat-hieu-qua-nhat-11016.html"
 date: "2017-05-03"

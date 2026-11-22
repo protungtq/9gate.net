@@ -3,6 +3,7 @@ title: "Lý do Crossfire Legends đóng cửa: 2 năm trời không thể update
 description: "Nói đến số phận của những tựa game hẩm hiu nhất tại Việt Nam thì đây có lẽ là sản phẩm “đau khổ” nhất."
 image: "https://i.ibb.co/Jw25b2qz/de7da99db18f380b.webp"
 tags: ["Crossfire Legends", "tải game Crossfire Legends", "VNGGames", "cập nhật Crossfire Legends"]
+game: "crossfire-legends"
 legacyId: "21035"
 legacyPath: "/tin-game/cong-dong/ly-do-crossfire-legends-dong-cua-2-nam-troi-khong-the-update--bi-app-store-va-tencent-cach-mat-vinh-vien-21035.html"
 date: "2021-09-27"

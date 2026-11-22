@@ -3,6 +3,7 @@ title: "Tập Kích tặng 500 giftcode trải nghiệm chào mừng chế độ
 description: "Nhân dịp ra mắt chế độ chơi mới, Tập Kích gửi tặng độc giả 9Gate giftcode trải nghiệm."
 image: "https://i.ibb.co/27jkH115/e97894dc5c679d3c.webp"
 tags: ["Tập Kích", "tải game Tập Kích", "VTC Mobile TT.HN2", "giftcode Tập Kích"]
+game: "tap-kich"
 legacyId: "12039"
 legacyPath: "/tin-game/giftcode/tap-kich-tang-500-giftcode-trai-nghiem-chao-mung-che-do-choi-moi-cabg-12039.html"
 date: "2017-10-02"

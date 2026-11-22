@@ -3,6 +3,7 @@ title: "PUBG: Blindspot gây thất vọng toàn tập, lượng người chơi 
 description: "Phiên bản mới này dường như không làm hài lòng các fan cứng của PUBG."
 image: "https://i.postimg.cc/9Mn2frLP/9gate-45211de1015f9f4b302ba9.jpg"
 tags: ["PUBG Mobile", "tải game PUBG Mobile", "VNGGames", "cập nhật PUBG Mobile", "Battle Royale"]
+game: "pubg-mobile"
 legacyId: "25764"
 legacyPath: "/tin-game/cong-dong/pubg-blindspot-gay-that-vong-toan-tap--luong-nguoi-choi-han-che-25764.html"
 date: "2026-02-12"

@@ -3,6 +3,7 @@ title: "Lộ diện hình ảnh Thánh Gióng đẹp “mê mẩn” trong Anh H
 description: "Có thể khẳng định đây là tựa game Việt sở hữu hình ảnh Thánh Gióng đẹp nhất từ trước tới nay"
 image: "https://i.ibb.co/HT35D8bX/1e97d26d994099a8.webp"
 tags: ["Anh Hùng Đại Chiến Mobile", "tải game Anh Hùng Đại Chiến Mobile", "SohaGame", "cập nhật Anh Hùng Đại Chiến Mobile"]
+game: "anh-hung-dai-chien-mobile"
 legacyId: "6390"
 legacyPath: "/tin-game/cong-dong/lo-dien-hinh-anh-thanh-giong-dep-me-man-trong-anh-hung-dai-chien-mobile-6390.html"
 date: "2016-05-13"

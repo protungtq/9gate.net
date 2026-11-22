@@ -3,6 +3,7 @@ title: "Garena Âm Dương Sư: Hướng Dẫn Chơi Hotarugusa (Huỳnh Thảo)
 description: "Hotarugusa (Huỳnh Thảo) hay còn được cộng đồng Âm Dương Sư gọi là Thảo Lực Điền là một Thức Thần hỗ trợ hồi máu khá tốt so với những Thức Thần thuộc bậc R. Hãy cùng mình đi tìm hiểu về cô bé có vai trò chỉ là một hỗ trợ nhưng lại có thể Solo rắn 10 một cách dễ dàng này nhé."
 image: "https://i.ibb.co/GQgtCM35/d659847340597aa6.webp"
 tags: ["Garena Âm Dương Sư", "tải game Garena Âm Dương Sư"]
+game: "garena-am-duong-su"
 legacyId: "13870"
 legacyPath: "/cam-nang/huong-dan/garena-am-duong-su-huong-dan-choi-hotarugusa-huynh-thao-13870.html"
 date: "2018-06-14"

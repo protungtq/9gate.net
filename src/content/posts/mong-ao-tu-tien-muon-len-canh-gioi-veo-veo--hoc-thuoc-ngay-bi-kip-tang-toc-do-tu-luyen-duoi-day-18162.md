@@ -3,6 +3,7 @@ title: "Mộng Ảo Tu Tiên: Muốn lên cảnh giới “vèo vèo”, học t
 description: "Bạn đã tự hỏi vì sao có những đạo hữu chỉ trong ngày đầu tiên đã chạm tới cảnh giới Phân Thần?"
 image: "https://i.ibb.co/xt0nNyg4/2b6df26109d7644a.webp"
 tags: ["Mộng Ảo Tu Tiên", "tải game Mộng Ảo Tu Tiên", "SohaGame", "cập nhật Mộng Ảo Tu Tiên"]
+game: "mong-ao-tu-tien"
 legacyId: "18162"
 legacyPath: "/tin-game/cong-dong/mong-ao-tu-tien-muon-len-canh-gioi-veo-veo--hoc-thuoc-ngay-bi-kip-tang-toc-do-tu-luyen-duoi-day-18162.html"
 date: "2020-07-18"

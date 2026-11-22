@@ -3,6 +3,7 @@ title: "Hắc Ám Tây Du – gMO dành cho nền tảng Java và Android"
 description: "Hắc Ám Tây Du là tựa gMO 2D thuộc thể loại nhập vai turn-based lấy đề tài theo bộ danh tác Tây Du Ký."
 image: "https://i.postimg.cc/6pX8Km2n/9gate-7880b9cd916037cd6f7e63.jpg"
 tags: ["Hắc Ám Tây Du", "tải game Hắc Ám Tây Du", "cập nhật Hắc Ám Tây Du"]
+game: "hac-am-tay-du"
 legacyId: "1158"
 legacyPath: "/tin-game/gioi-thieu-game/hac-am-tay-du-gmo-danh-cho-nen-tang-java-va-android-1158.html"
 date: "2014-11-29"

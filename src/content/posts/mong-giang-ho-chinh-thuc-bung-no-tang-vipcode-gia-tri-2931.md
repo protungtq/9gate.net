@@ -3,6 +3,7 @@ title: "Mộng Giang Hồ chính thức bùng nổ tặng VIPcode giá tr�
 description: "Như vậy sau bao ngày chờ đợi cùng các hoạt động bên lề sôi nổi thì vào lúc 10h hôm nay (20/04) Mộng Giang Hồ sẽ chính thức ra mắt làng game Việt."
 image: "https://i.postimg.cc/rppFFX8D/9gate-b0603a1a6fc33573cbbcfa.jpg"
 tags: ["Mộng Giang Hồ", "tải game Mộng Giang Hồ", "ME Corp", "giftcode Mộng Giang Hồ", "RPG"]
+game: "mong-giang-ho"
 legacyId: "2931"
 legacyPath: "/tin-game/giftcode/mong-giang-ho-chinh-thuc-bung-no-tang-vipcode-gia-tri-2931.html"
 date: "2015-04-20"

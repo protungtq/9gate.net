@@ -3,6 +3,7 @@ title: "Garena Âm Dương Sư: Hướng dẫn tìm quái ẩn Truy Nã Yêu Qu�
 description: "Chắc chắn có rất nhiều bạn đau đầu về cách tím quái ẩn trong nhiệm vụ Truy Nã Yêu Quái hàng ngày. Nên bài viết này sẽ tổng hợp lại nội dung một số nhiệm vụ Truy Nã Yêu Quái."
 image: "https://i.ibb.co/yFTxsY4w/d5d1c7e311bbd89b.webp"
 tags: ["Garena Âm Dương Sư", "tải game Garena Âm Dương Sư"]
+game: "garena-am-duong-su"
 legacyId: "13136"
 legacyPath: "/cam-nang/huong-dan/garena-am-duong-su-huong-dan-tim-quai-an-truy-na-yeu-quai-13136.html"
 date: "2018-02-19"

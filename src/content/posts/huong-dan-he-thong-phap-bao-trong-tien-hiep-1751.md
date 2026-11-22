@@ -3,6 +3,7 @@ title: "Hướng dẫn Hệ Thống Pháp Bảo trong Tiên Hiệp"
 description: "Pháp bảo tượng trưng cho đẳng cấp, thế lực cùng địa vị của mỗi tiên gia"
 image: "https://i.postimg.cc/SsJsV052/9gate-228e04563e52654e27937a.jpg"
 tags: ["Tiên Hiệp", "tải game Tiên Hiệp", "VTC Mobile"]
+game: "tien-hiep"
 legacyId: "1751"
 legacyPath: "/cam-nang/he-thong/huong-dan-he-thong-phap-bao-trong-tien-hiep-1751.html"
 date: "2015-01-18"

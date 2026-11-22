@@ -3,6 +3,7 @@ title: "Tổng quan hệ thống môn phái trong Võ Lâm Truyền Kỳ Mobile"
 description: "Khác với phiên bản trên nền tảng PC, Võ Lâm Truyền Kỳ Mobile mang nhiều nét đổi mới trong hệ thống môn phái và kỹ năng nhân vật."
 image: "https://i.ibb.co/0z648V2/bbed67a0776bc679.webp"
 tags: ["Võ Lâm Truyền Kỳ Mobile", "tải game Võ Lâm Truyền Kỳ Mobile", "VNGGames", "cập nhật Võ Lâm Truyền Kỳ Mobile", "MMORPG kiếm hiệp"]
+game: "vo-lam-truyen-ky-mobile"
 legacyId: "7967"
 legacyPath: "/tin-game/cong-dong/tong-quan-he-thong-mon-phai-trong-vo-lam-truyen-ky-mobile-7967.html"
 date: "2016-08-29"

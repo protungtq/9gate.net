@@ -3,6 +3,7 @@ title: "Liên Minh Huyền Thoại Mobi: Hướng dẫn tăng cấp nhanh từ l
 description: "Bài hướng dẫn chi tiết cho tân thủ để tăng cấp và lực chiến nhanh nhất."
 image: "https://i.ibb.co/0jPVN580/c69940c2a3032a0e.webp"
 tags: ["Liên Minh Huyền Thoại Mobi", "tải game Liên Minh Huyền Thoại Mobi", "VGame"]
+game: "lien-minh-huyen-thoai-mobi"
 legacyId: "7457"
 legacyPath: "/cam-nang/huong-dan/lien-minh-huyen-thoai-mobi-huong-dan-tang-cap-nhanh-tu-level-1---30-7457.html"
 date: "2016-07-30"

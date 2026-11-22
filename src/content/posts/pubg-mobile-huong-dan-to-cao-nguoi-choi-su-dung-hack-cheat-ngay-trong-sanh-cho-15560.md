@@ -3,6 +3,7 @@ title: "PUBG Mobile: Hướng dẫn tố cáo người chơi sử dụng hack/ch
 description: "Để tố cáo người chơi gian lận trong PUBG Mobile là điều khá dễ dàng, tuy nhiên không phải ai cũng biết cách tố cáo người chơi gian lận."
 image: "https://i.ibb.co/zhLFQjhC/dd8b7a6d940aac26.webp"
 tags: ["PUBG Mobile", "tải game PUBG Mobile", "VNGGames", "Battle Royale"]
+game: "pubg-mobile"
 legacyId: "15560"
 legacyPath: "/tin-game/cong-dong/pubg-mobile-huong-dan-to-cao-nguoi-choi-su-dung-hack-cheat-ngay-trong-sanh-cho-15560.html"
 date: "2019-04-17"

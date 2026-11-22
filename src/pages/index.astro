@@ -32,10 +32,10 @@ const allPostVMs = (await getCollection('posts'))
 const latestPosts = allPostVMs.slice(0, 6);
 const postImageMap = latestPostImageMap(allPostVMs);
 
-// ===== Hero: tối đa 6 game nổi bật (tick trong CMS). Độ "mới" của một game =
-// thời điểm gần nhất giữa lúc được tick và bài cập nhật mới nhất gắn vào game đó —
-// game tick lâu rồi nhưng hôm nay có bài mới vẫn được đẩy lên đầu.
-// Đủ 6 thì game kém mới nhất tự rơi ra dù vẫn còn tick. =====
+// ===== Hero: tối đa 6 game nổi bật. Game vào hero khi được tick trong CMS HOẶC có bài
+// mới gắn vào game đó. Độ "mới" của một game = thời điểm gần nhất giữa lúc được tick
+// và bài cập nhật mới nhất gắn vào game đó — game tick lâu rồi nhưng hôm nay có bài
+// mới vẫn được đẩy lên đầu. Đủ 6 thì game kém mới nhất tự rơi ra dù vẫn còn tick. =====
 const latestPostTs: Record<string, number> = {};
 for (const p of allPostVMs) {
   if (p.gameSlug && p._ts > (latestPostTs[p.gameSlug] || 0)) latestPostTs[p.gameSlug] = p._ts;
@@ -43,7 +43,7 @@ for (const p of allPostVMs) {
 const featuredFresh = (g: any) =>
   Math.max(g.featuredAt ? new Date(g.featuredAt).getTime() || 0 : 0, latestPostTs[g.slug] || 0);
 const featuredPool = games
-  .filter((g: any) => g.featured)
+  .filter((g: any) => g.featured || latestPostTs[g.slug])
   .sort(
     (a: any, b: any) =>
       featuredFresh(b) - featuredFresh(a) ||

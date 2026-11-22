@@ -3,6 +3,7 @@ title: "Hướng dẫn cách chơi Cờ Liên Quân, chế độ \"cờ nhân ph
 description: "Sau một khoảng thời gian dài ngóng chờ thì Cờ Liên Quân đã chính thức ra mắt trong sự vui mừng của cộng đồng game thủ Liên Quân Mobile"
 image: "https://i.ibb.co/kV7chqJC/662f95d6c39c1d89.webp"
 tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "Garena", "MOBA", "Chiến thuật", "Hành động"]
+game: "lien-quan-mobile"
 legacyId: "17513"
 legacyPath: "/tin-game/cong-dong/huong-dan-cach-choi-co-lien-quan-che-do-co-nhan-pham-moi-nhat-cua-lien-quan-mobile-17513.html"
 date: "2020-04-05"

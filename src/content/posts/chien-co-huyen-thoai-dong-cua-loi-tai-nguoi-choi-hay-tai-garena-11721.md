@@ -3,6 +3,7 @@ title: "Chiến Cơ Huyền Thoại đóng cửa: Lỗi tại người chơi hay
 description: "Ra mắt vào tháng 6/2015, Chiến Cơ Huyền Thoại đã có thời gian hơn 2 năm hoạt động tương đối thành công tại thị trường Việt Nam, nhưng CCHT sẽ chính thức đóng cửa vào 10/11/2017 tới đây."
 image: "https://i.ibb.co/MyfLcYt3/a837b84de93e3125.webp"
 tags: ["Chiến Cơ Huyền Thoại", "tải game Chiến Cơ Huyền Thoại", "Garena", "cập nhật Chiến Cơ Huyền Thoại"]
+game: "chien-co-huyen-thoai"
 legacyId: "11721"
 legacyPath: "/tin-game/cong-dong/chien-co-huyen-thoai-dong-cua-loi-tai-nguoi-choi-hay-tai-garena-11721.html"
 date: "2017-08-17"

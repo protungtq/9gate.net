@@ -3,6 +3,7 @@ title: "Na 3D (Naruto 3D) - gMO dành cho fan chuẩn Naruto"
 description: "Điều nào giúp Na 3D (Naruto 3D) ngày càng tạo được sự tò mò thú vị cho những người lần đầu biết tới trào lưu “fan chuẩn Naruto chỉ chơi Naruto 3D” tại Việt Nam."
 image: "https://i.ibb.co/HpbnvJ81/224cc760c30e2990.webp"
 tags: ["Na 3D", "tải game Na 3D", "SohaGame", "cập nhật Na 3D", "Game mobile"]
+game: "na-3d"
 legacyId: "2172"
 legacyPath: "/tin-game/cong-dong/na-3d-naruto-3d-gmo-danh-cho-fan-chuan-naruto-2172.html"
 date: "2015-02-26"

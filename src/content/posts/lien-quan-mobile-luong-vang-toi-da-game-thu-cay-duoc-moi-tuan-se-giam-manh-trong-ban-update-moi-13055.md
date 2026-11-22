@@ -3,6 +3,7 @@ title: "Liên Quân Mobile: Lượng vàng tối đa game thủ cày được m�
 description: "Phiên bản mới của Liên Quân Mobile sắp ra mắt với nhiều thay đổi lớn cho người chơi."
 image: "https://i.ibb.co/SXx67nQf/39b243596ad58b3d.webp"
 tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "Garena", "cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
+game: "lien-quan-mobile"
 legacyId: "13055"
 legacyPath: "/tin-game/cap-nhat/lien-quan-mobile-luong-vang-toi-da-game-thu-cay-duoc-moi-tuan-se-giam-manh-trong-ban-update-moi-13055.html"
 date: "2018-01-26"

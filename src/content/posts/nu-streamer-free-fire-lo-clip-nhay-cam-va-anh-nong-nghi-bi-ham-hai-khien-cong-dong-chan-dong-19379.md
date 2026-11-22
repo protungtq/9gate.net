@@ -3,6 +3,7 @@ title: "Nữ streamer Free Fire lộ clip nhạy cảm và ảnh nóng, nghi b�
 description: "Vào tối muộn ngày hôm qua, cộng đồng game thủ Free Fire chấn động khi một trong những nữ streamer của tựa game này bị lộ clip nhạy cảm."
 image: "https://i.ibb.co/qYtQDJ4z/24387bf570a216bf.webp"
 tags: ["Free Fire", "tải game Free Fire", "Garena", "cập nhật Free Fire", "Battle Royale", "Sinh tồn"]
+game: "free-fire"
 legacyId: "19379"
 legacyPath: "/tin-game/cong-dong/nu-streamer-free-fire-lo-clip-nhay-cam-va-anh-nong-nghi-bi-ham-hai-khien-cong-dong-chan-dong-19379.html"
 date: "2020-12-01"

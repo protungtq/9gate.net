@@ -3,6 +3,7 @@ title: "Liên Quân Mobile: Những cô nàng có trang phục nóng nhất tron
 description: "Dưới đây là danh sách một số những cô nàng sở hữu các loại trang phục mà nhìn &quot;nóng hết cả người&quot;, khỏi cần phải tốn tiền mua đồ làm gì cho khổ. Họ là ai, hãy cùng tìm hiểu ngay."
 image: "https://i.ibb.co/84SB2TtW/bca292be10bb1a05.webp"
 tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "Garena", "cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
+game: "lien-quan-mobile"
 legacyId: "12377"
 legacyPath: "/cam-nang/he-thong/lien-quan-mobile-nhung-co-nang-co-trang-phuc-nong-nhat-trong-game-12377.html"
 date: "2017-10-29"

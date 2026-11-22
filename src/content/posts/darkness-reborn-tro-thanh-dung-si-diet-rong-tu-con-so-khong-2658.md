@@ -3,6 +3,7 @@ title: "Darkness Reborn – Trở thành dũng sĩ diệt Rồng từ con số �
 description: "Darkness Reborn chính là một lựa chọn sáng suốt của bạn cho một tựa game nhập vai hành động chất lượng cao trên Smartphone."
 image: "https://i.ibb.co/hxXQDXJd/24f7970a39ff0bad.webp"
 tags: ["Darkness Reborn", "tải game Darkness Reborn", "GameVil", "cập nhật Darkness Reborn"]
+game: "darkness-reborn"
 legacyId: "2658"
 legacyPath: "/tin-game/trai-nghiem/darkness-reborn-tro-thanh-dung-si-diet-rong-tu-con-so-khong-2658.html"
 date: "2015-03-28"

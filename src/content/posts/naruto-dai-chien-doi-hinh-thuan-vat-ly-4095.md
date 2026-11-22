@@ -3,6 +3,7 @@ title: "Naruto Đại Chiến: Đội hình thuần vật lý"
 description: "Đội hình gồm: Gai, Tsunade, Oonoki, Minato, Madara"
 image: "https://i.ibb.co/dR9TW2W/771d9eb42d6dbaf5.webp"
 tags: ["Naruto Đại Chiến", "tải game Naruto Đại Chiến", "Ingame Mobi"]
+game: "naruto-dai-chien"
 legacyId: "4095"
 legacyPath: "/cam-nang/huong-dan/naruto-dai-chien-doi-hinh-thuan-vat-ly-4095.html"
 date: "2015-09-04"

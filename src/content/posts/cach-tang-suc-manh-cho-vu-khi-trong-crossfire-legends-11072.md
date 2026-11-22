@@ -3,6 +3,7 @@ title: "Cách tăng sức mạnh cho vũ khí trong Crossfire Legends"
 description: "Một vũ khí trắng trong CF Legends có thể cường hóa lên mạnh hơn bằng cách nâng cấp. Dưới đây là những gì bạn cần biết về tính năng này. Cách tăng sức mạnh cho vũ khí trong CF Legends"
 image: "https://i.ibb.co/0pkwyJ0M/d40a3d9bbaba4926.webp"
 tags: ["Crossfire Legends", "tải game Crossfire Legends", "VNGGames"]
+game: "crossfire-legends"
 legacyId: "11072"
 legacyPath: "/tin-game/cong-dong/cach-tang-suc-manh-cho-vu-khi-trong-crossfire-legends-11072.html"
 date: "2017-05-08"

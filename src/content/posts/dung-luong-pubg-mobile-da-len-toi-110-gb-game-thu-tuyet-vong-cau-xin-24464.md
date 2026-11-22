@@ -3,6 +3,7 @@ title: "Dung lượng PUBG Mobile đã lên tới 110 GB, game thủ tuyệt v�
 description: "Có vẻ, VNG vẫn chưa thể giải quyết triệt để các vấn đề liên quan đến tựa game này."
 image: "https://i.postimg.cc/kXV4Wd8x/9gate-ab5f978dd00b3809649ef4.jpg"
 tags: ["PUBG Mobile", "tải game PUBG Mobile", "VNGGames", "cập nhật PUBG Mobile", "Battle Royale"]
+game: "pubg-mobile"
 legacyId: "24464"
 legacyPath: "/tin-game/cong-dong/dung-luong-pubg-mobile-da-len-toi-110-gb-game-thu-tuyet-vong-cau-xin-24464.html"
 date: "2024-07-19"

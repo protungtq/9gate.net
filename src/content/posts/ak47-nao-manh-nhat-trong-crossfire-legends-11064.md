@@ -3,6 +3,7 @@ title: "AK47 nào mạnh nhất trong Crossfire Legends?"
 description: "Bất cứ game thủ FPS nào cũng đều biết đến khẩu AK47, thế nhưng bạn đã biết khẩu nào hiệu quả nhất trong CF Legends hay chưa? AK47 nào mạnh nhất trong Crossfire Legends?"
 image: "https://i.ibb.co/ZZZh73N/b99dd1d700138d65.webp"
 tags: ["Crossfire Legends", "tải game Crossfire Legends", "VNGGames", "cập nhật Crossfire Legends"]
+game: "crossfire-legends"
 legacyId: "11064"
 legacyPath: "/tin-game/cong-dong/ak47-nao-manh-nhat-trong-crossfire-legends-11064.html"
 date: "2017-05-07"

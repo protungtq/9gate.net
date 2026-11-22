@@ -3,6 +3,7 @@ title: "Trãnh cãi xung quanh việc Tru Tiên Kiếm là thần khí hay tà v
 description: "Tru Tiên Kiếm vốn là bảo vật trấn phái của môn phái Thanh Vân đứng đầu chính phái nhưng lại nhuốm máu của hàng vạn người. Vậy thực chất Tru Tiên Kiếm là thần khí hay tà vật?"
 image: "https://i.ibb.co/XZ26QRqK/43243f38829723aa.webp"
 tags: ["Tru Tiên Kiếm", "tải game Tru Tiên Kiếm", "VTC Mobile TT.HN1", "cập nhật Tru Tiên Kiếm"]
+game: "tru-tien-kiem"
 legacyId: "10606"
 legacyPath: "/tin-game/cong-dong/tranh-cai-xung-quanh-viec-tru-tien-kiem-la-than-khi-hay-ta-vat-10606.html"
 date: "2017-03-25"

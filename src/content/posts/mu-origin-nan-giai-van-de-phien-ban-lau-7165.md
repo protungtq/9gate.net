@@ -3,6 +3,7 @@ title: "MU Origin: Nan giải vấn đề phiên bản lậu"
 description: "Gần đây, tựa game MU Origin đã bất ngờ xuất hiện những đối thủ cạnh trạnh xấu tính mang tên phiên bản lậu."
 image: "https://i.ibb.co/sv6TTq8p/d74a8426c8496a9e.webp"
 tags: ["MU Origin", "tải game MU Origin", "Hope", "cập nhật MU Origin"]
+game: "mu-origin"
 legacyId: "7165"
 legacyPath: "/tin-game/cong-dong/mu-origin-nan-giai-van-de-phien-ban-lau-7165.html"
 date: "2016-07-07"

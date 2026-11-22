@@ -3,6 +3,7 @@ title: "Thục Sơn Kỳ Hiệp Mobile: Game \"quốc dân\" luôn hướng đ�
 description: "1 năm là quá đủ để Thục Sơn chứng minh được giá trị &quot;game quốc dân&quot; của mình"
 image: "https://i.ibb.co/gZMh6VmL/b550accde1f791e5.webp"
 tags: ["Thục Sơn Kỳ Hiệp Mobile", "tải game Thục Sơn Kỳ Hiệp Mobile", "SohaGame", "cập nhật Thục Sơn Kỳ Hiệp Mobile"]
+game: "thuc-son-ky-hiep-mobile"
 legacyId: "18385"
 legacyPath: "/tin-game/cong-dong/thuc-son-ky-hiep-mobile-game-quoc-dan-luon-huong-den-loi-ich-toan-dan--thi-truong-chi-co-mot-18385.html"
 date: "2020-08-10"

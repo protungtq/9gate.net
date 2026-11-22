@@ -3,6 +3,7 @@ title: "Vua Bóng Đá sau hai năm hoạt động: Thoi thóp chờ ngày chia 
 description: "Sau hơn hai năm hoạt động Vua Bóng Đá đã bắt đầu bộc lộ những yếu kém và đang rơi vào tình trạng xấu hơn bao giờ hết."
 image: "https://i.ibb.co/SwL1HC2h/05f61ea5b8731881.webp"
 tags: ["Vua Bóng Đá", "tải game Vua Bóng Đá", "Gamota", "cập nhật Vua Bóng Đá"]
+game: "vua-bong-da"
 legacyId: "9360"
 legacyPath: "/tin-game/cong-dong/vua-bong-da-sau-hai-nam-hoat-dong-thoi-thop-cho-ngay-chia-tay-9360.html"
 date: "2016-11-14"

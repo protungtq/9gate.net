@@ -3,6 +3,7 @@ title: "Võ Lâm Truyền Kỳ 1 Mobile: Thập Đại phái, môn phái nào m�
 description: "Võ Lâm Truyền Kỳ 1 Mobile ra mắt phục vụ các tín đồ thích xài hàng cổ. Dù đã xuất hiện trước đó rất lâu, song việc lựa chọn Võ Lâm Truyền Kỳ 1 Mobile phái nào mạnh nhất vẫn là câu hỏi khó trả lời. Mỗi môn phái đều có một thế mạnh riêng mà chỉ các cao thủ trải nghiệm hết mới có thể trả lời được câu hỏi này."
 image: "https://i.ibb.co/chtf09pS/54a25025c10d474b.webp"
 tags: ["Võ Lâm Truyền Kỳ 1 Mobile", "tải game Võ Lâm Truyền Kỳ 1 Mobile", "VNGGames", "cập nhật Võ Lâm Truyền Kỳ 1 Mobile"]
+game: "vo-lam-truyen-ky-1-mobile"
 legacyId: "20527"
 legacyPath: "/tin-game/cong-dong/vo-lam-truyen-ky-1-mobile-thap-dai-phai--mon-phai-nao-manh-nhat-20527.html"
 date: "2021-06-17"
