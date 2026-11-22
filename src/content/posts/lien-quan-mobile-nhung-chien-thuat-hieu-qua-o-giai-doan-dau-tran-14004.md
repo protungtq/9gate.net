@@ -2,7 +2,7 @@
 title: "Liên Quân Mobile: Những chiến thuật hiệu quả ở giai đoạn Đầu Trận"
 description: "Với Liên Quân Mobile, chiến thuật tốt luôn là ưu tiên hàng đầu và là con đường ngắn nhất dẫn đến chiến thắng. Hãy cùng tìm hiểu những chiến thuật hiệu quả mang về lợi thế cho team ở giai đoạn đầu trận."
 image: "https://i.ibb.co/j9j0CP4m/f59d33b14815b86a.webp"
-tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
+tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "Garena", "MOBA", "Chiến thuật", "Hành động"]
 legacyId: "14004"
 legacyPath: "/cam-nang/huong-dan/lien-quan-mobile-nhung-chien-thuat-hieu-qua-o-giai-doan-dau-tran-14004.html"
 date: "2018-07-19"

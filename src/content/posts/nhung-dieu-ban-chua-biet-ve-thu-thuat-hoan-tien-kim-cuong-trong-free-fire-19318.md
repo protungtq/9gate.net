@@ -2,7 +2,7 @@
 title: "Những điều bạn chưa biết về thủ thuật hoàn tiền kim cương trong Free Fire"
 description: "Nếu bạn muốn biết thêm về cách hoàn trả kim cương trong Free Fire hoặc thủ thuật hoàn tiền trong Free Fire thì bài viết này chính là thứ bạn đang tìm kiếm."
 image: "https://i.ibb.co/jkSSZShY/16234e6b39225b24.webp"
-tags: ["Free Fire", "tải game Free Fire", "cập nhật Free Fire", "Battle Royale", "Sinh tồn"]
+tags: ["Free Fire", "tải game Free Fire", "Garena", "cập nhật Free Fire", "Battle Royale", "Sinh tồn"]
 legacyId: "19318"
 legacyPath: "/tin-game/cong-dong/nhung-dieu-ban-chua-biet-ve-thu-thuat-hoan-tien-kim-cuong-trong-free-fire-19318.html"
 date: "2020-11-24"

@@ -2,7 +2,7 @@
 title: "GTA VI thu 3,79 tỷ USD ngày đầu tiên, trở thành màn ra mắt lớn nhất lịch sử giải trí"
 description: "Take-Two công bố GTA VI đạt 3,79 tỷ USD doanh số bán lẻ trong ngày đầu tiên, với 32,5 triệu bản bán trước ngày phát hành."
 image: "https://i.postimg.cc/c4n68HXV/gta6-cover.jpg"
-tags: ["Grand Theft Auto VI", "tải game Grand Theft Auto VI", "cập nhật Grand Theft Auto VI", "Hành động", "Thế giới mở"]
+tags: ["Grand Theft Auto VI", "tải game Grand Theft Auto VI", "Rockstar Games", "cập nhật Grand Theft Auto VI", "Hành động", "Thế giới mở"]
 game: "grand-theft-auto-vi"
 date: "2026-11-22"
 ---

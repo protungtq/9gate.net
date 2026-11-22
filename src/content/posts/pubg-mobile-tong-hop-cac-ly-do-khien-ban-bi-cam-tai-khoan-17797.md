@@ -2,7 +2,7 @@
 title: "PUBG Mobile: Tổng hợp các lý do khiến bạn bị cấm tài khoản"
 description: "Một số hành động trong PUBG Mobile có thể khiến bạn bị cấm tài khoản. Cùng tìm hiểu các cách tránh bị cấm và hủy tài khoản trò chơi nhé."
 image: "https://i.ibb.co/3yZWkssf/f73ade6d8e00a5c1.webp"
-tags: ["PUBG Mobile", "tải game PUBG Mobile", "cập nhật PUBG Mobile", "Battle Royale"]
+tags: ["PUBG Mobile", "tải game PUBG Mobile", "VNGGames", "cập nhật PUBG Mobile", "Battle Royale"]
 legacyId: "17797"
 legacyPath: "/tin-game/cong-dong/pubg-mobile-tong-hop-cac-ly-do-khien-ban-bi-cam-tai-khoan-17797.html"
 date: "2020-05-22"

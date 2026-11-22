@@ -4,7 +4,7 @@ description: "Bản cập nhật mới nhất của PUBG Mobile tập trung vào
 date: "2026-11-01"
 image: ""
 game: "pubg-mobile"
-tags: ["PUBG Mobile", "tải game PUBG Mobile", "cập nhật PUBG Mobile", "Battle Royale"]
+tags: ["PUBG Mobile", "tải game PUBG Mobile", "VNGGames", "cập nhật PUBG Mobile", "Battle Royale"]
 ---
 
 Bản cập nhật mới của **PUBG Mobile** đã chính thức ra mắt, tập trung vào trải nghiệm mượt mà hơn và nội dung mới cho cả người chơi mới lẫn lâu năm.

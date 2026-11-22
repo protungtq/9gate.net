@@ -2,7 +2,7 @@
 title: "Liên Quân Mobile: Kinh nghiệm chơi Valhein để leo rank Kim Cương"
 description: "Valhein là vị tướng có rất nhiều điểm đặc biệt nhưng cũng là trung tâm của những tranh cãi không hồi hết trong cộng đồng Liên Quân Mobile."
 image: "https://i.ibb.co/ycJSnYTC/8d9972b82c0c81bb.webp"
-tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
+tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "Garena", "MOBA", "Chiến thuật", "Hành động"]
 legacyId: "13759"
 legacyPath: "/cam-nang/huong-dan/lien-quan-mobile-kinh-nghiem-choi-valhein-de-leo-rank-kim-cuong-13759.html"
 date: "2018-05-12"

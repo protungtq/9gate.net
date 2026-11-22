@@ -2,7 +2,7 @@
 title: "Tất tần tật các thông tin mà bạn cần biết về DP-28 trong PUBG Mobile"
 description: "DP-28 là một trong những loại là Súng máy hạng nhẹ - LMG với hỏa lựa và sát thương giống như một sự kết hợp giữa súng trường tấn công (AR) và súng máy hạng nặng (HMG)."
 image: "https://i.ibb.co/BHdP2NsT/890ffe799d31d3b0.webp"
-tags: ["PUBG Mobile", "tải game PUBG Mobile", "cập nhật PUBG Mobile", "Battle Royale"]
+tags: ["PUBG Mobile", "tải game PUBG Mobile", "VNGGames", "cập nhật PUBG Mobile", "Battle Royale"]
 legacyId: "18322"
 legacyPath: "/tin-game/gioi-thieu-game/tat-tan-tat-cac-thong-tin-ma-ban-can-biet-ve-dp-28-trong-pubg-mobile-18322.html"
 date: "2020-08-03"

@@ -2,7 +2,7 @@
 title: "Hướng dẫn cơ bản cho Tân thủ chơi MU Origin"
 description: "Đối với các bạn lần đầu tham gia MU chắc sẽ bỡ ngỡ về giao diện game, cách thức chơi, và mẹo đi phó bản. Sau đây là một số hướng dẫn cơ bản về cấp độ và săn đồ trong MU Origin"
 image: "https://i.ibb.co/PZ4Hc4Tw/9b10f30a2f45c211.webp"
-tags: ["MU Origin", "tải game MU Origin"]
+tags: ["MU Origin", "tải game MU Origin", "Hope"]
 legacyId: "4753"
 legacyPath: "/cam-nang/huong-dan/huong-dan-co-ban-cho-tan-thu-choi-mu-origin-4753.html"
 date: "2015-11-18"

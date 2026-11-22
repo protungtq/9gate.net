@@ -2,7 +2,7 @@
 title: "Poke Đại Chiến: Hướng Dẫn Cách Bồi Dưỡng Pet"
 description: "Pokemon là đồng đội và là người bạn của 1 HLV pokemon thực thụ, thể hiện 1 tổ hợp quan trọng nhất trong chiến đấu."
 image: "https://i.ibb.co/GfPyk7ZG/a143f3996d2c9ca9.webp"
-tags: ["Poke Đại Chiến", "tải game Poke Đại Chiến", "Game mobile"]
+tags: ["Poke Đại Chiến", "tải game Poke Đại Chiến", "Pocketgamesol", "Game mobile"]
 legacyId: "9812"
 legacyPath: "/cam-nang/huong-dan/poke-dai-chien-huong-dan-cach-boi-duong-pet-9812.html"
 date: "2017-01-05"

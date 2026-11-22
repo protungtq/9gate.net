@@ -2,7 +2,7 @@
 title: "Tổng quan các loại thần binh trong Phong Vân 3D"
 description: "Thần Binh – Thần khí chọn chủ nhân! Vừa là sát vật, vừa là cuộc đời, mỗi thanh đao kiếm chính là tấm gương phản chiếu, là một phần hồn trong tay võ giả. Hãy cùng điểm qua một số Thần Binh khủng trong Phong Vân 3D"
 image: "https://i.ibb.co/C3NT5nf3/f5e8c07a958ee89b.webp"
-tags: ["Phong Vân 3D", "tải game Phong Vân 3D", "cập nhật Phong Vân 3D"]
+tags: ["Phong Vân 3D", "tải game Phong Vân 3D", "VNGGames", "cập nhật Phong Vân 3D"]
 legacyId: "6442"
 legacyPath: "/tin-game/cong-dong/tong-quan-cac-loai-than-binh-trong-phong-van-3d-6442.html"
 date: "2016-05-16"

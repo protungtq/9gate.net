@@ -2,7 +2,7 @@
 title: "Tập Kích: Bí kíp giúp bạn luôn chiến thắng"
 description: "Dưới đây là kinh nghiệm đúc kết sau một thời gian trải nghiệm Tập Kích. Hy vọng bài viết này sẽ phần nào giúp bạn cải thiện trình độ chơi của mình."
 image: "https://i.ibb.co/R4ST3xWc/e611f2bd7fad66a2.webp"
-tags: ["Tập Kích", "tải game Tập Kích"]
+tags: ["Tập Kích", "tải game Tập Kích", "VTC Mobile TT.HN2"]
 legacyId: "6683"
 legacyPath: "/cam-nang/huong-dan/tap-kich-bi-kip-giup-ban-luon-chien-thang-6683.html"
 date: "2016-05-31"

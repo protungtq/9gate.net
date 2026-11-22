@@ -4,7 +4,7 @@ description: "Mới bắt đầu Genshin Impact? Đây là những việc nên �
 date: "2026-11-02"
 image: "https://i.ibb.co/sZphRGM/genshin-impact-cover.webp"
 game: "genshin-impact"
-tags: ["Genshin Impact", "tải game Genshin Impact", "ARPG thế giới mở"]
+tags: ["Genshin Impact", "tải game Genshin Impact", "Funtap", "ARPG thế giới mở"]
 ---
 
 Mới bắt đầu **Genshin Impact**? Thế giới Teyvat rất rộng và dễ khiến người mới choáng ngợp. Đây là những việc nên làm trước tiên để khởi đầu thuận lợi.

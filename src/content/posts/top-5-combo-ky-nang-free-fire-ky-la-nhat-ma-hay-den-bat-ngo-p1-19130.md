@@ -2,7 +2,7 @@
 title: "Top 5 Combo kỹ năng Free Fire kỳ lạ nhất mà hay đến bất ngờ (P1)"
 description: "Đây là combo kỹ năng kỳ lạ nhất cũng như độc đáo nhất trong Free Fire sẽ khiến bạn bất ngờ và chúng thực sự hoạt động khá tốt."
 image: "https://i.ibb.co/mrDKTCWj/5f39eaaeb167e715.webp"
-tags: ["Free Fire", "tải game Free Fire", "cập nhật Free Fire", "Battle Royale", "Sinh tồn"]
+tags: ["Free Fire", "tải game Free Fire", "Garena", "cập nhật Free Fire", "Battle Royale", "Sinh tồn"]
 legacyId: "19130"
 legacyPath: "/tin-game/gioi-thieu-game/top-5-combo-ky-nang-free-fire-ky-la-nhat-ma-hay-den-bat-ngo-p1-19130.html"
 date: "2020-11-04"

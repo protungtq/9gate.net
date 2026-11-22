@@ -2,7 +2,7 @@
 title: "Đã rõ lý do vì sao Độ Mixi ghét cay, ghét đắng Free Fire?"
 description: "Những ngày qua, khi mà MV Độ Tộc 2 của Độ Mixi đang rất hot thì fan của Lửa Chùa vẫn có cách để cho tất cả phải chú ý đến mình."
 image: "https://i.ibb.co/6c9V6Sxb/3e529c9bd7d2ccce.webp"
-tags: ["Free Fire", "tải game Free Fire", "cập nhật Free Fire", "Battle Royale", "Sinh tồn"]
+tags: ["Free Fire", "tải game Free Fire", "Garena", "cập nhật Free Fire", "Battle Royale", "Sinh tồn"]
 legacyId: "20802"
 legacyPath: "/tin-game/cong-dong/da-ro-ly-do-vi-sao-do-mixi-ghet-cay-ghet-dang-free-fire-20802.html"
 date: "2021-08-10"

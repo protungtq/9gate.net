@@ -2,7 +2,7 @@
 title: "Ngạo Kiếm Vô Song Mobile chính thức công bố lộ trình ra mắt vào ngày 16/7"
 description: "Sau thời gian dài chờ đợi, cuối cùng game thủ cũng được trải nghiệm Ngạo Kiếm Vô Song vào ngày 16/7/2019 sau khi được NPH bổ sung thêm nhiều tính năng độc, lạ."
 image: "https://i.ibb.co/c9pTT9h/faee3cfbd6ca43d8.webp"
-tags: ["Ngạo Kiếm Vô Song Mobile", "tải game Ngạo Kiếm Vô Song Mobile", "cập nhật Ngạo Kiếm Vô Song Mobile"]
+tags: ["Ngạo Kiếm Vô Song Mobile", "tải game Ngạo Kiếm Vô Song Mobile", "Gosu", "cập nhật Ngạo Kiếm Vô Song Mobile"]
 legacyId: "16218"
 legacyPath: "/tin-game/cong-dong/ngao-kiem-vo-song-mobile-chinh-thuc-cong-bo-lo-trinh-ra-mat-vao-ngay-16-7-16218.html"
 date: "2019-07-10"

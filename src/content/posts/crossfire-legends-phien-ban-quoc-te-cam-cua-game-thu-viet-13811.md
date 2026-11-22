@@ -2,7 +2,7 @@
 title: "Crossfire Legends phiên bản quốc tế 'cấm cửa' game thủ Việt"
 description: "Hiện vẫn chưa rõ lý do khiến Tencent đóng đăng ký Crossfire Legends phiên bản quốc tế đối với game thủ Việt."
 image: "https://i.ibb.co/7JYh5SZb/bb9ba68ae324c7a0.webp"
-tags: ["Crossfire Legends", "tải game Crossfire Legends", "cập nhật Crossfire Legends"]
+tags: ["Crossfire Legends", "tải game Crossfire Legends", "VNGGames", "cập nhật Crossfire Legends"]
 legacyId: "13811"
 legacyPath: "/tin-game/cong-dong/crossfire-legends-phien-ban-quoc-te-cam-cua-game-thu-viet-13811.html"
 date: "2018-05-31"

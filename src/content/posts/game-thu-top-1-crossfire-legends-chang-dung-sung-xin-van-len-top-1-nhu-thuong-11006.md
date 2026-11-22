@@ -2,7 +2,7 @@
 title: "Game thủ Top 1 Crossfire Legends: Chẳng dùng súng xịn vẫn lên Top 1 như thường"
 description: "Đó là những chia sẻ của bạn Lưu Văn Thủy, người đang đứng Top 1 BXH Đấu Rank của Crossfire Legends. Game thủ Top 1 Crossfire Legends: Chẳng dùng súng xịn vẫn lên Top 1 như thường"
 image: "https://i.ibb.co/DPJQC3wk/af143906ad351322.webp"
-tags: ["Crossfire Legends", "tải game Crossfire Legends", "cập nhật Crossfire Legends"]
+tags: ["Crossfire Legends", "tải game Crossfire Legends", "VNGGames", "cập nhật Crossfire Legends"]
 legacyId: "11006"
 legacyPath: "/tin-game/cong-dong/game-thu-top-1-crossfire-legends-chang-dung-sung-xin-van-len-top-1-nhu-thuong-11006.html"
 date: "2017-05-01"

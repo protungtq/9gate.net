@@ -2,7 +2,7 @@
 title: "Liên Quân Mobile: Hướng dẫn nhận miễn phí quân huy mà không phải nạp thẻ"
 description: "Quân huy là loại tiền tệ có &quot;quyền lực&quot; hàng đầu trong Liên Quân Mobile mà chỉ những game thủ nạp tiền mới sở hữu."
 image: "https://i.ibb.co/hxKWKX37/ae53bc278bc112d0.webp"
-tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
+tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "Garena", "MOBA", "Chiến thuật", "Hành động"]
 legacyId: "13837"
 legacyPath: "/cam-nang/huong-dan/lien-quan-mobile-huong-dan-nhan-mien-phi-quan-huy-ma-khong-phai-nap-the-13837.html"
 date: "2018-06-06"

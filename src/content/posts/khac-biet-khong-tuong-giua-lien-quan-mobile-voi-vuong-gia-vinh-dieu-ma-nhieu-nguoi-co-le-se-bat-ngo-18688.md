@@ -2,7 +2,7 @@
 title: "Khác biệt không tưởng giữa Liên Quân Mobile với Vương Giả Vinh Diệu mà nhiều người có lẽ sẽ bất ngờ"
 description: "Dù cùng là game MOBA 5v5 do Timi - studio Tencent phát triển nhưng Liên Quân Mobile và Vương Giả Vinh Diệu lại có những meta tương đối khác biệt."
 image: "https://i.ibb.co/WS05y9j/98ba96e597fb7e21.webp"
-tags: ["Vương Giả Vinh Diệu", "tải game Vương Giả Vinh Diệu", "cập nhật Vương Giả Vinh Diệu", "MOBA"]
+tags: ["Vương Giả Vinh Diệu", "tải game Vương Giả Vinh Diệu", "Tencent", "cập nhật Vương Giả Vinh Diệu", "MOBA"]
 legacyId: "18688"
 legacyPath: "/tin-game/cong-dong/khac-biet-khong-tuong-giua-lien-quan-mobile-voi-vuong-gia-vinh-dieu-ma-nhieu-nguoi-co-le-se-bat-ngo-18688.html"
 date: "2020-09-11"

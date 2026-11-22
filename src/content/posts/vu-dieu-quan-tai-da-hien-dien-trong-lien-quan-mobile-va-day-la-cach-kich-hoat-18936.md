@@ -2,7 +2,7 @@
 title: "\"Vũ điệu quan tài\" đã hiện diện trong Liên Quân Mobile và đây là cách \"kích hoạt\"?"
 description: "&quot;Vũ điệu quan tài&quot; đã từng được rất nhiều game thủ Liên Quân mong ngóng."
 image: "https://i.ibb.co/CpWxD5t0/e59299a3a8e86452.webp"
-tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
+tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "Garena", "MOBA", "Chiến thuật", "Hành động"]
 legacyId: "18936"
 legacyPath: "/tin-game/cong-dong/vu-dieu-quan-tai-da-hien-dien-trong-lien-quan-mobile-va-day-la-cach-kich-hoat-18936.html"
 date: "2020-10-10"

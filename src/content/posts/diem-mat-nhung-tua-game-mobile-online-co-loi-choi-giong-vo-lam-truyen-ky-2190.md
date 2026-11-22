@@ -2,7 +2,7 @@
 title: "Điểm mặt những tựa game mobile online có lối chơi giống Võ Lâm Truyền Kỳ"
 description: "Là một trong những tựa game thành công nhất tại Việt Nam, không khó để tìm kiếm những tựa game mobile có lối chơi tương tự Võ Lâm Truyền Kỳ."
 image: "https://i.ibb.co/KcdBF1z6/db44bf2dd5fd8f57.webp"
-tags: ["Võ Lâm Truyền Kỳ Mobile", "tải game Võ Lâm Truyền Kỳ Mobile", "cập nhật Võ Lâm Truyền Kỳ Mobile", "MMORPG kiếm hiệp"]
+tags: ["Võ Lâm Truyền Kỳ Mobile", "tải game Võ Lâm Truyền Kỳ Mobile", "VNGGames", "cập nhật Võ Lâm Truyền Kỳ Mobile", "MMORPG kiếm hiệp"]
 legacyId: "2190"
 legacyPath: "/tin-game/cong-dong/diem-mat-nhung-tua-game-mobile-online-co-loi-choi-giong-vo-lam-truyen-ky-2190.html"
 date: "2015-03-01"

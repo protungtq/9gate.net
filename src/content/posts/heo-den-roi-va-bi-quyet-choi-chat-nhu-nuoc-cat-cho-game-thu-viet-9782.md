@@ -2,7 +2,7 @@
 title: "Heo Đến Rồi và bí quyết chơi “chất như nước cất” cho game thủ Việt"
 description: "Heo Đến Rồi (Piggy Is Coming) đang là tựa game di động thu hút được rất đông game thủ Việt ở mọi độ tuổi tham gia thời gian gần đây. Mặc dù có lối chơi vô cùng đơn giản, nhưng để “bá đạo” trong game bạn nên giắt túi một vài bí quyết sau."
 image: "https://i.ibb.co/PJRxrmN/12d3504a6b3d320c.webp"
-tags: ["Heo Đến Rồi", "tải game Heo Đến Rồi"]
+tags: ["Heo Đến Rồi", "tải game Heo Đến Rồi", "Dataverse Entertainment"]
 legacyId: "9782"
 legacyPath: "/tin-game/cong-dong/heo-den-roi-va-bi-quyet-choi-chat-nhu-nuoc-cat-cho-game-thu-viet-9782.html"
 date: "2016-12-29"

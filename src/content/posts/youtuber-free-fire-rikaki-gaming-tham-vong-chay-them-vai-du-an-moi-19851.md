@@ -2,7 +2,7 @@
 title: "YouTuber Free Fire Rikaki Gaming tham vọng chạy thêm vài “dự án\" mới"
 description: "Với mong muốn phát triển tiềm năng của bản thân, nam YouTuber mạnh dạn đặt mục tiêu mở rộng hoạt động của mình trong năm mới."
 image: "https://i.ibb.co/93ZV2qQm/808985b3b7845e47.webp"
-tags: ["Free Fire", "tải game Free Fire", "cập nhật Free Fire", "Battle Royale", "Sinh tồn"]
+tags: ["Free Fire", "tải game Free Fire", "Garena", "cập nhật Free Fire", "Battle Royale", "Sinh tồn"]
 legacyId: "19851"
 legacyPath: "/tin-game/cong-dong/youtuber-free-fire-rikaki-gaming-tham-vong-chay-them-vai-du-an-moi-19851.html"
 date: "2021-01-29"

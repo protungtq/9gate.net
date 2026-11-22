@@ -2,7 +2,7 @@
 title: "12 đội tuyển Free Fire hàng đầu Việt Nam bước vào cuộc chiến giành chức vô địch VIETNAM LEAGUE 2025"
 description: "Vào ngày 17-18/1 tới đây, Chung kết của VIETNAM LEAGUE 2025 - giải đấu Esports chuyên nghiệp cấp độ cao nhất của Free Fire Việt Nam sẽ chính thức được diễn ra."
 image: "https://i.postimg.cc/x1v9Pjd2/9gate-9a50a12751eea6932800b4.jpg"
-tags: ["Free Fire", "tải game Free Fire", "cập nhật Free Fire", "Battle Royale", "Sinh tồn"]
+tags: ["Free Fire", "tải game Free Fire", "Garena", "cập nhật Free Fire", "Battle Royale", "Sinh tồn"]
 legacyId: "25699"
 legacyPath: "/tin-game/cong-dong/12-doi-tuyen-free-fire-hang-dau-viet-nam-buoc-vao-cuoc-chien-gianh-chuc-vo-dich-vietnam-league-2025-25699.html"
 date: "2026-01-16"

@@ -2,7 +2,7 @@
 title: "Liên Quân Mobile quốc tế cập nhật bản Lite, dung lượng cực nhẹ chỉ còn dưới 1GB"
 description: "Trò chơi MOBA Arena of Valor (Liên Quân Mobile quốc tế) sẽ giới thiệu đến người chơi một bản nhẹ hơn, chỉ dưới 1GB."
 image: "https://i.ibb.co/Y4nhb74P/198d029ac8b7395f.webp"
-tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
+tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "Garena", "cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
 legacyId: "16681"
 legacyPath: "/tin-game/cong-dong/lien-quan-mobile-quoc-te-cap-nhat-ban-lite-dung-luong-cuc-nhe-chi-con-duoi-1gb-16681.html"
 date: "2019-10-03"

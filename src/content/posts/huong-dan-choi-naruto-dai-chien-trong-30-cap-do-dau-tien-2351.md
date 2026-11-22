@@ -2,7 +2,7 @@
 title: "Hướng dẫn chơi Naruto Đại Chiến trong 30 cấp độ đầu tiên"
 description: "Trong Naruto Đại Chiến, quãng đường từ cấp chiến đội 1 đến 30 là quá trình huấn luyện và làm quen với thế giới của game."
 image: "https://i.postimg.cc/1RVXqQDR/9gate-33dbca172400b0c4fcb49c.jpg"
-tags: ["Naruto Đại Chiến", "tải game Naruto Đại Chiến"]
+tags: ["Naruto Đại Chiến", "tải game Naruto Đại Chiến", "Ingame Mobi"]
 legacyId: "2351"
 legacyPath: "/cam-nang/huong-dan/huong-dan-choi-naruto-dai-chien-trong-30-cap-do-dau-tien-2351.html"
 date: "2015-03-11"

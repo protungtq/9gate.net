@@ -2,7 +2,7 @@
 title: "Khám phá 5 điều quan trọng bạn cần biết về chế độ Metro Royale mới trong PUBG Mobile"
 description: "Chế độ mới Metro Royale Mode của PUBG Mobile sẽ ra mắt vào ngày 10/11. Hãy chắc chắn rằng bạn biết về những điều này trước khi trải nghiệm chế độ này."
 image: "https://i.ibb.co/93vfnjQ7/23b80c5bb35f7ceb.webp"
-tags: ["PUBG Mobile", "tải game PUBG Mobile", "cập nhật PUBG Mobile", "Battle Royale"]
+tags: ["PUBG Mobile", "tải game PUBG Mobile", "VNGGames", "cập nhật PUBG Mobile", "Battle Royale"]
 legacyId: "19183"
 legacyPath: "/tin-game/cong-dong/kham-pha-5-dieu-quan-trong-ban-can-biet-ve-che-do-metro-royale-moi-trong-pubg-mobile-19183.html"
 date: "2020-11-10"
