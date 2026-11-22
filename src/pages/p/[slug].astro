@@ -4,6 +4,7 @@ import NewsRow from '../../components/NewsRow.astro';
 import { getCollection, render } from 'astro:content';
 import games from '../../data/games.json';
 import { latestPostImageMap } from '../../lib/gameArt';
+import { tagSlug } from '../../lib/tags';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
@@ -143,7 +144,11 @@ const jsonLd = [
 
       {tags.length > 0 && (
         <ul class="flex flex-wrap gap-2 mt-6 border-t border-[var(--gate-border)] dark:border-slate-700 pt-4" aria-label="Chủ đề bài viết">
-          {tags.map((t) => <li class="text-xs font-medium rounded-full border border-[var(--gate-border)] dark:border-slate-600 bg-[var(--gate-inset)] dark:bg-slate-800 px-3 py-1">{t}</li>)}
+          {tags.map((t) => (
+            <li class="text-xs font-medium rounded-full border border-[var(--gate-border)] dark:border-slate-600 bg-[var(--gate-inset)] dark:bg-slate-800 px-3 py-1">
+              <a href={`/tags/${tagSlug(t)}/`} class="hover:text-tap">{t}</a>
+            </li>
+          ))}
         </ul>
       )}
     </article>

@@ -1,0 +1,91 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import NewsRow from '../../../components/NewsRow.astro';
+import Pagination from '../../../components/Pagination.astro';
+import { getCollection } from 'astro:content';
+import games from '../../../data/games.json';
+import { latestPostImageMap } from '../../../lib/gameArt';
+import { mapPost, sortPosts, groupPostsByTag } from '../../../lib/tags';
+
+export async function getStaticPaths({ paginate }) {
+  const PAGE_SIZE = 12;
+  const entries = await getCollection('posts');
+  const posts = sortPosts(entries.map(({ id, data }) => mapPost(id, data)));
+  const postImageMap = latestPostImageMap(posts);
+  const groups = groupPostsByTag(posts);
+
+  return groups.flatMap((group) => {
+    const paginated = paginate(group.posts, {
+      params: { tag: group.slug },
+      props: { tagLabel: group.label, tags: groups, postImageMap },
+      pageSize: PAGE_SIZE,
+    });
+
+    // Bỏ qua trang 1 vì trang 1 đã được render bởi index.astro tại /tags/<tag>/
+    return paginated.filter((p) => p.params.page !== '1');
+  });
+}
+
+const gameBySlug = Object.fromEntries(games.map((game) => [game.slug, game]));
+const { page, tagLabel, tags, postImageMap } = Astro.props;
+const site = Astro.site ?? Astro.url;
+const tagUrl = new URL(`/tags/${Astro.params.tag}/`, site).href;
+const homeUrl = new URL('/', site).href;
+const currentPage = page.currentPage;
+const totalPages = page.lastPage;
+// Trang 2 quay về /tags/<tag>/ (trang 1), các trang sau dùng page.url.prev như thường.
+// Astro sinh page.url.prev/next không có dấu '/' cuối — thêm cho đồng nhất với
+// quy ước link của 9Gate (luôn có '/' cuối).
+const withSlash = (u?: string) => (u && !u.endsWith('/') ? `${u}/` : u);
+const previousHref = withSlash(currentPage === 2 ? `/tags/${Astro.params.tag}/` : page.url.prev);
+const nextHref = withSlash(page.url.next);
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Trang chủ', item: homeUrl },
+    { '@type': 'ListItem', position: 2, name: 'Cập nhật mới', item: new URL('/cap-nhat/', site).href },
+    { '@type': 'ListItem', position: 3, name: tagLabel, item: tagUrl },
+  ],
+};
+---
+
+<Layout
+  title={`Chủ đề: ${tagLabel} · Trang ${currentPage}`}
+  description={`Danh sách bài viết thuộc chủ đề ${tagLabel} trên 9Gate.`}
+  keywords={`${tagLabel}, 9gate, game`}
+  jsonLd={jsonLd}
+>
+  <div class="max-w-[1280px] mx-auto px-4 py-6">
+    <span class="text-[11px] font-bold uppercase tracking-wider muted block mb-1">Chủ đề bài viết</span>
+    <h1 class="text-3xl sm:text-4xl font-extrabold">
+      <span class="text-tap">#</span>{tagLabel} <span class="text-base font-normal muted">(Trang {currentPage})</span>
+    </h1>
+    <p class="muted mt-1">{tags.find((t) => t.label === tagLabel)?.posts.length ?? page.data.length} bài viết</p>
+
+    <nav class="relative flex gap-2 overflow-x-auto p-1 pb-2 mt-4 mb-4" aria-label="Chủ đề bài viết">
+      <a class="chip shrink-0" href="/cap-nhat/" draggable="false">Tất cả</a>
+      {tags.map((t) => (
+        <a
+          class:list={['chip shrink-0', { 'chip-on': t.label === tagLabel }]}
+          aria-current={t.label === tagLabel ? 'true' : undefined}
+          href={`/tags/${t.slug}/`}
+          draggable="false"
+        >{t.label}</a>
+      ))}
+    </nav>
+
+    {page.data.length > 0 ? (
+      <div class="grid lg:grid-cols-2 gap-x-4">
+        {page.data.map((post) => <NewsRow post={post} game={gameBySlug[post.gameSlug]} postImg={postImageMap[post.gameSlug]} />)}
+      </div>
+    ) : (
+      <div class="sf rounded-2xl p-12 text-center">
+        <p class="muted">Mình chưa có bài nào ở đây.</p>
+      </div>
+    )}
+
+    <Pagination label="Phân trang bài viết" {...{ currentPage, totalPages, previousHref, nextHref }} />
+  </div>
+</Layout>

@@ -2,6 +2,7 @@ import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 import games from '../data/games.json';
 import { categoryGames, categoryPagePath, GAME_PAGE_SIZE, mobileLegacyLists } from '../lib/gameCategory';
+import { groupPostsByTag, mapPost, sortPosts } from '../lib/tags';
 
 export const prerender = true;
 
@@ -42,6 +43,15 @@ export const GET: APIRoute = async ({ site, url }) => {
       changefreq: 'monthly',
       priority: '0.6',
     })),
+    ...groupPostsByTag(sortPosts(posts.map((p: any) => mapPost(String(p.id), p.data)))).flatMap((group) => {
+      const totalPages = Math.max(1, Math.ceil(group.posts.length / 12));
+      return Array.from({ length: totalPages }, (_, index) => ({
+        loc: `tags/${group.slug}/${index === 0 ? '' : `${index + 1}/`}`,
+        lastmod: today,
+        changefreq: 'weekly',
+        priority: '0.6',
+      }));
+    }),
   ];
 
   const xml =
