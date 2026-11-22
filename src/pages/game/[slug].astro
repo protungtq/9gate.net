@@ -73,14 +73,9 @@ const jsonLd = [
         "ratingCount": 1,
       },
     }),
-    ...(game.trailer && !game.trailerType && {
-      "trailer": {
-        "@type": "VideoObject",
-        "name": `${videoLabel} ${game.name}`,
-        "embedUrl": game.trailer,
-        "thumbnailUrl": gameArt(game),
-      },
-    }),
+    // Không gắn VideoObject cho trailer: Google yêu cầu uploadDate + description
+    // cho kết quả video, mà trailer không phải nội dung chính của trang hub
+    // (GSC báo thiếu 2 trường này trên 901 trang hub ngày 22/11/2026).
   },
   {
     "@context": "https://schema.org",
