@@ -5,6 +5,7 @@ import Pagination from '../../components/Pagination.astro';
 import { getCollection } from 'astro:content';
 import games from '../../data/games.json';
 import { latestPostImageMap } from '../../lib/gameArt';
+import { featuredGroups } from '../../lib/tags';
 
 export async function getStaticPaths() {
   const pageSize = 12;
@@ -54,6 +55,14 @@ export async function getStaticPaths() {
   };
   const tags = filters.map(({ label, path }) => ({ label, path, href: pageHref(path, 1) }));
 
+  // Thanh chip chỉ hiện tag nổi bật (top 20 theo số bài); các trang lọc chu-de vẫn giữ nguyên.
+  const featuredTags = [
+    { label: 'Tất cả', path: '', href: '/cap-nhat/' },
+    ...featuredGroups(
+      filters.slice(1).map(({ label, path, posts: fp }) => ({ label, path, href: pageHref(path, 1), posts: fp })),
+    ).map(({ label, path, href }) => ({ label, path, href })),
+  ];
+
   return filters.flatMap(({ label, path, posts: filteredPosts }) => {
     const totalPages = Math.max(1, Math.ceil(filteredPosts.length / pageSize));
     return Array.from({ length: totalPages }, (_, index) => {
@@ -63,7 +72,7 @@ export async function getStaticPaths() {
         props: {
           posts: filteredPosts.slice(index * pageSize, currentPage * pageSize),
           postImageMap,
-          tags,
+          tags: featuredTags,
           activeTag: path,
           tagLabel: label,
           currentPage,

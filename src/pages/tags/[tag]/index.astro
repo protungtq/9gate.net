@@ -5,7 +5,7 @@ import Pagination from '../../../components/Pagination.astro';
 import { getCollection } from 'astro:content';
 import games from '../../../data/games.json';
 import { latestPostImageMap } from '../../../lib/gameArt';
-import { mapPost, sortPosts, groupPostsByTag } from '../../../lib/tags';
+import { mapPost, sortPosts, groupPostsByTag, featuredGroups } from '../../../lib/tags';
 
 export async function getStaticPaths() {
   const PAGE_SIZE = 12;
@@ -21,6 +21,7 @@ export async function getStaticPaths() {
       props: {
         tagLabel: group.label,
         tags: groups,
+        navTags: featuredGroups(groups),
         posts: group.posts.slice(0, PAGE_SIZE),
         postImageMap,
         currentPage: 1,
@@ -32,7 +33,7 @@ export async function getStaticPaths() {
 }
 
 const gameBySlug = Object.fromEntries(games.map((game) => [game.slug, game]));
-const { tagLabel, tags, posts, postImageMap, currentPage, totalPages, nextHref } = Astro.props;
+const { tagLabel, tags, navTags, posts, postImageMap, currentPage, totalPages, nextHref } = Astro.props;
 const site = Astro.site ?? Astro.url;
 const tagUrl = new URL(`/tags/${Astro.params.tag}/`, site).href;
 const homeUrl = new URL('/', site).href;
@@ -63,7 +64,7 @@ const jsonLd = {
 
     <nav class="relative flex gap-2 overflow-x-auto p-1 pb-2 mt-4 mb-4" aria-label="Chủ đề bài viết">
       <a class="chip shrink-0" href="/cap-nhat/" draggable="false">Tất cả</a>
-      {tags.map((t) => (
+      {navTags.map((t) => (
         <a
           class:list={['chip shrink-0', { 'chip-on': t.label === tagLabel }]}
           aria-current={t.label === tagLabel ? 'true' : undefined}

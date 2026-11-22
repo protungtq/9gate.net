@@ -77,3 +77,25 @@ export function groupPostsByTag(posts: TagPost[]): TagGroup[] {
     })
     .sort((a, b) => b.posts.length - a.posts.length || a.label.localeCompare(b.label, 'vi'));
 }
+
+// Tag nổi bật cho thanh chip lọc: top theo số bài, tối đa 20.
+// Tag "tải game X" trùng y hệt tập bài với tag tên game "X" nên chỉ giữ tag tên game.
+export function featuredGroups<T extends { label: string; posts: unknown[] }>(groups: T[], limit = 20): T[] {
+  const keyOf = (label: string) => (label.startsWith('tải game ') ? label.slice('tải game '.length) : label);
+  const sorted = [...groups].sort(
+    (a, b) =>
+      b.posts.length - a.posts.length ||
+      (a.label.startsWith('tải game ') ? 1 : 0) - (b.label.startsWith('tải game ') ? 1 : 0) ||
+      a.label.localeCompare(b.label, 'vi'),
+  );
+  const picked: T[] = [];
+  const seen = new Set<string>();
+  for (const g of sorted) {
+    if (picked.length >= limit) break;
+    const key = keyOf(g.label);
+    if (seen.has(key)) continue;
+    seen.add(key);
+    picked.push(g);
+  }
+  return picked;
+}
