@@ -2,7 +2,7 @@
 title: "Đại Chiến Thất Vũ Hải: Bạn có biết tất cả những tàu hải tặc trong One Piece?"
 description: "Các tàu hải tặc với những đặc trưng riêng cũng là một nét đặc sắc được tác giả Oda vẽ nên trong bộ manga One Piece"
 image: "https://i.ibb.co/svB0pFCm/af75ee690605da44.webp"
-tags: ["Cộng Đồng"]
+tags: ["Đại Chiến Thất Vũ Hải", "Tải game Đại Chiến Thất Vũ Hải", "Cập nhật Đại Chiến Thất Vũ Hải"]
 legacyId: "6729"
 legacyPath: "/tin-game/cong-dong/dai-chien-that-vu-hai-ban-co-biet-tat-ca-nhung-tau-hai-tac-trong-one-piece-6729.html"
 date: "2016-06-02"

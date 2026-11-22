@@ -2,7 +2,7 @@
 title: "“Liên Kích” và “Hợp Kích” là gì mà game thủ Việt hay nhầm lẫn?"
 description: "Chắc hẳn nhiều game thủ đã từng nghe đến khái niệm “Liên Kích” trong một vài tựa game nhập vai và &quot;Hợp Kích&quot; trong game chiến thuật. Tuy nhiên hiểu về ý nghĩa và công dụng thì không phải ai cũng biết."
 image: "https://i.ibb.co/3m67Pxtq/7c6b8d875db2924a.webp"
-tags: ["Cộng Đồng"]
+tags: ["Cập nhật"]
 legacyId: "10119"
 legacyPath: "/tin-game/cong-dong/lien-kich-va-hop-kich-la-gi-ma-game-thu-viet-hay-nham-lan-10119.html"
 date: "2017-02-15"

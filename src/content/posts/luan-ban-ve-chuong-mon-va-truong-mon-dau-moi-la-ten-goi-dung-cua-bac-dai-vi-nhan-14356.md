@@ -2,7 +2,7 @@
 title: "Luận bàn về Chưởng Môn và Trưởng Môn - đâu mới là tên gọi đúng của bậc đại vĩ nhân?"
 description: "Trong các tiểu thuyết về kiếm hiệp, khái niệm Chưởng Môn thường dùng để nói về người đứng đầu một môn phái, vậy còn Trưởng Môn thì sao ?"
 image: "https://i.ibb.co/hF63D5bz/761aa62b9c9b41dc.webp"
-tags: ["Cộng Đồng"]
+tags: ["Cập nhật"]
 legacyId: "14356"
 legacyPath: "/tin-game/cong-dong/luan-ban-ve-chuong-mon-va-truong-mon-dau-moi-la-ten-goi-dung-cua-bac-dai-vi-nhan-14356.html"
 date: "2018-10-17"

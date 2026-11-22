@@ -2,7 +2,7 @@
 title: "Voodoo – Hành trình gây dựng thương hiệu game casual đình đám thế giới"
 description: "Voodoo SAS, thường được gọi là Voodoo.io, được thành lập vào năm 2013 bởi Alexandre Yazdi và Laurent Ritter."
 image: "https://i.postimg.cc/VvvN7xhQ/9gate-3d8df7237203776235d5ab.jpg"
-tags: ["Giới Thiệu Game"]
+tags: ["Cập nhật"]
 legacyId: "24082"
 legacyPath: "/tin-game/gioi-thieu-game/voodoo-hanh-trinh-gay-dung-thuong-hieu-game-casual-dinh-dam-the-gioi-24082.html"
 date: "2024-02-20"

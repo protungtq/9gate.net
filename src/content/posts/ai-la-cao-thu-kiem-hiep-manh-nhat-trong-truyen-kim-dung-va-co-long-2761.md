@@ -2,7 +2,7 @@
 title: "Ai là cao thủ kiếm hiệp mạnh nhất trong truyện Kim Dung và Cổ Long?"
 description: "Hai cây đại thụ của tiểu thuyết kiếm hiệp đỉnh cao, đã cho ra đời rất nhiều tác phẩm làm say đắm nhiều độc giả trên thế giới, trong đó có Việt Nam"
 image: "https://i.ibb.co/X1d1Bzk/cc4eed9c56d1e33e.webp"
-tags: ["Cộng Đồng"]
+tags: ["Cập nhật"]
 legacyId: "2761"
 legacyPath: "/tin-game/community/ai-la-cao-thu-kiem-hiep-manh-nhat-trong-truyen-kim-dung-va-co-long-2761.html"
 date: "2015-04-04"

@@ -2,7 +2,7 @@
 title: "Khái niệm game lậu, game được cấp phép và cái nhìn công bằng từ game thủ"
 description: "Khái niệm game lậu và game được cấp phép luôn là chủ đề nóng bỏng tại thị trường game Việt. Hôm nay các bạn độc giả hãy cùng 9Gate chỉ ra sự khác nhau giữa hai loại sản phẩm này."
 image: "https://i.ibb.co/Y4HzcgJ2/f472cc176979a1a4.webp"
-tags: ["Cộng Đồng"]
+tags: ["Cập nhật"]
 legacyId: "7625"
 legacyPath: "/tin-game/cong-dong/khai-niem-game-lau-game-duoc-cap-phep-va-cai-nhin-cong-bang-tu-game-thu-7625.html"
 date: "2016-08-12"

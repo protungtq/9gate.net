@@ -2,7 +2,7 @@
 title: "Người trong cuộc lên tiếng vụ nữ streamer Free Fire lộ clip nhạy cảm"
 description: "Vào tối ngày hôm qua, sự việc nữ streamer Free Fire lộ clip nhạy cảm đã khiến cộng đồng tựa game này chấn động."
 image: "https://i.ibb.co/5yPqqdF/0e724759836ebed9.webp"
-tags: ["Cộng Đồng"]
+tags: ["Cập nhật"]
 legacyId: "19389"
 legacyPath: "/tin-game/cong-dong/nguoi-trong-cuoc-len-tieng-vu-nu-streamer-free-fire-lo-clip-nhay-cam-19389.html"
 date: "2020-12-02"

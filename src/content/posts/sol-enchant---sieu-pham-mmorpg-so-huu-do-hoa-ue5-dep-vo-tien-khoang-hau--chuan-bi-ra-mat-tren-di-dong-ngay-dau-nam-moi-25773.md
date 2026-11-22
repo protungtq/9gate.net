@@ -2,7 +2,7 @@
 title: "SOL: Enchant - Siêu phẩm MMORPG sở hữu đồ họa UE5 đẹp \"vô tiền khoáng hậu\", chuẩn bị ra mắt trên di động ngay đầu năm mới"
 description: "Đây có lẽ sẽ là &quot;cú nổ&quot; đầu tiên của làng game trong năm 2026."
 image: "https://i.postimg.cc/0QBvNbV0/9gate-6b4669a95f0a561e3b92fb.jpg"
-tags: ["Giới Thiệu Game"]
+tags: ["SOL: Enchant", "Tải game SOL: Enchant", "Cập nhật SOL: Enchant"]
 legacyId: "25773"
 legacyPath: "/tin-game/gioi-thieu-game/sol-enchant---sieu-pham-mmorpg-so-huu-do-hoa-ue5-dep-vo-tien-khoang-hau--chuan-bi-ra-mat-tren-di-dong-ngay-dau-nam-moi-25773.html"
 date: "2026-02-23"

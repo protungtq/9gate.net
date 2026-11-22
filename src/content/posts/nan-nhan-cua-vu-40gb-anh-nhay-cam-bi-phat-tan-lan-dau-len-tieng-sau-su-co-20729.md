@@ -2,7 +2,7 @@
 title: "Nạn nhân của vụ \"40GB ảnh nhạy cảm\" bị phát tán lần đầu lên tiếng sau sự cố"
 description: "Lần thứ hai rơi vào sự cố bị phát tán ảnh nhạy cảm, cựu streamer sexy đã quyết định đối diện, lên tiếng cảnh tỉnh những bạn trẻ muốn làm nghề."
 image: "https://i.ibb.co/NdDkcYRq/a28adc92818f5b5a.webp"
-tags: ["Cộng Đồng"]
+tags: ["Cập nhật"]
 legacyId: "20729"
 legacyPath: "/tin-game/cong-dong/nan-nhan-cua-vu-40gb-anh-nhay-cam-bi-phat-tan-lan-dau-len-tieng-sau-su-co-20729.html"
 date: "2021-07-27"

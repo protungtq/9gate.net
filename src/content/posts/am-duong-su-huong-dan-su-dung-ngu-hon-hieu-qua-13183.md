@@ -2,7 +2,7 @@
 title: "Âm Dương Sư: Hướng dẫn sử dụng Ngự Hồn hiệu quả"
 description: "Bạn đã sử dụng Ngự Hồn một cách đúng đắn cho Thức Thần của mình chưa? Cùng theo dõi bài viết dưới đây để có câu trả lời."
 image: "https://i.ibb.co/bjHx2kDf/4b1c286af5640d2d.webp"
-tags: ["Hướng Dẫn"]
+tags: ["Âm Dương Sư", "Tải game Âm Dương Sư"]
 legacyId: "13183"
 legacyPath: "/cam-nang/huong-dan/am-duong-su-huong-dan-su-dung-ngu-hon-hieu-qua-13183.html"
 date: "2018-03-01"

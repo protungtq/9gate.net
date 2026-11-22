@@ -2,7 +2,7 @@
 title: "Chiến Cơ Huyền Thoại tung bản update tính năng Siêu Chiến Cơ cực hot"
 description: "Tính năng này mang lại sự hợp nhất giữa các chiến cơ tạo nên hệ thống Chiến Cơ mang trong mình sức mạnh Hủy Diệt có thể xoay chuyển vũ trụ đánh tan Bóng Tối"
 image: "https://i.ibb.co/gLthWtnp/ddcb5521d97b283d.webp"
-tags: ["Cập Nhật"]
+tags: ["Chiến Cơ Huyền Thoại", "Tải game Chiến Cơ Huyền Thoại", "Cập nhật Chiến Cơ Huyền Thoại"]
 legacyId: "4973"
 legacyPath: "/tin-game/cap-nhat/chien-co-huyen-thoai-tung-ban-update-tinh-nang-sieu-chien-co-cuc-hot-4973.html"
 date: "2015-11-27"

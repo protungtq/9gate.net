@@ -2,7 +2,7 @@
 title: "Liên Quân Mobile: Tại sao Garena ghép server MSP với Indonesia, thay vì đẩy sang Việt Nam?"
 description: "Khá nhiều game thủ Liên Quân Mobile thắc mắc vấn đề này trong suốt nhiều ngày qua."
 image: "https://i.ibb.co/hJNFgLBS/af3b5f21b73d3a42.webp"
-tags: ["Cộng Đồng"]
+tags: ["Liên Quân Mobile", "Tải game Liên Quân Mobile", "Cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
 legacyId: "15533"
 legacyPath: "/tin-game/cong-dong/lien-quan-mobile-tai-sao-garena-ghep-server-msp-voi-indonesia--thay-vi-day-sang-viet-nam-15533.html"
 date: "2019-04-14"

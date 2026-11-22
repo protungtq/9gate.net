@@ -2,7 +2,7 @@
 title: "Siêu Nhân Đại Chiến - gMO nhập vai kết hợp thẻ bài đang được yêu thích nhất hiện nay"
 description: "Mới đây, 1 nhóm Start Up Việt đang dần hoàn thiện 1 tựa game mobile mang tên Siêu Nhân Đại Chiến."
 image: "https://i.ibb.co/tpp5YZTT/dc3860a0d6f00272.webp"
-tags: ["Cộng Đồng"]
+tags: ["Siêu Nhân Đại Chiến", "Tải game Siêu Nhân Đại Chiến", "Cập nhật Siêu Nhân Đại Chiến"]
 legacyId: "1025"
 legacyPath: "/tin-game/cong-dong/sieu-nhan-dai-chien-gmo-nhap-vai-ket-hop-the-bai-dang-duoc-yeu-thich-nhat-hien-nay-1025.html"
 date: "2014-10-29"

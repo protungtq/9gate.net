@@ -2,7 +2,7 @@
 title: "Liên Quân Mobile: Cộng đồng vẫn ghi nhận mức phạt tới 20 Uy tín, tranh cãi nổ ra về tính chính xác"
 description: "Liệu mức phạt 20 Uy tín trong Liên Quân Mobile có phù hợp?"
 image: "https://i.ibb.co/VYkqtVyF/70a0a26861e92b11.webp"
-tags: ["Cộng Đồng"]
+tags: ["Liên Quân Mobile", "Tải game Liên Quân Mobile", "Cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
 legacyId: "18877"
 legacyPath: "/tin-game/cong-dong/lien-quan-mobile-cong-dong-van-ghi-nhan-muc-phat-toi-20-uy-tin--tranh-cai-no-ra-ve-tinh-chinh-xac-18877.html"
 date: "2020-10-03"

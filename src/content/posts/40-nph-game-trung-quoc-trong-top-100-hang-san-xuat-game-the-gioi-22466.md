@@ -2,7 +2,7 @@
 title: "40 NPH game Trung Quốc trong top 100 hãng sản xuất game thế giới"
 description: "SensorTower mới công bố xếp hạng doanh thu của các nhà phát hành trò chơi di động Trung Quốc trên App Store và Google Play."
 image: "https://i.postimg.cc/c453Nm7G/9gate-136e8a29c1a15b16e55edd.jpg"
-tags: ["Cộng Đồng"]
+tags: ["Cập nhật"]
 legacyId: "22466"
 legacyPath: "/tin-game/cong-dong/40-nph-game-trung-quoc-trong-top-100-hang-san-xuat-game-the-gioi-22466.html"
 date: "2022-09-15"

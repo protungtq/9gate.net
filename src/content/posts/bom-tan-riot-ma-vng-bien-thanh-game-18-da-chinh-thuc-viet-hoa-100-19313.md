@@ -2,7 +2,7 @@
 title: "Bom tấn Riot mà VNG biến thành game 18+ đã chính thức Việt hóa 100%"
 description: "Tựa game bom tấn Riot mà VNG gắn mác 18+ đã chính thức có phiên bản Việt hóa 100%."
 image: "https://i.ibb.co/j9m5pGFD/2f088da2a95e68a4.webp"
-tags: ["Cộng Đồng"]
+tags: ["Huyền Thoại Runeterra", "Tải game Huyền Thoại Runeterra", "Cập nhật Huyền Thoại Runeterra"]
 legacyId: "19313"
 legacyPath: "/tin-game/cong-dong/bom-tan-riot-ma-vng-bien-thanh-game-18-da-chinh-thuc-viet-hoa-100-19313.html"
 date: "2020-11-24"

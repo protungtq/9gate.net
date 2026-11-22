@@ -2,7 +2,7 @@
 title: "Brown Dust 2 – Game nhập vai đến từ Hàn Quốc đã chính thức ra mắt"
 description: "Không thể bỏ qua tựa game Brown Dust 2 – tựa game nhập vai đầu tư về cốt truyện cùng với lối chơi tư duy chiến thuật vừa ra mắt 22/06."
 image: "https://i.postimg.cc/vTZ4Jgcf/9gate-859a90c5d5bb996d15466a.jpg"
-tags: ["Giới Thiệu Game"]
+tags: ["Brown Dust 2", "Tải game Brown Dust 2", "Cập nhật Brown Dust 2"]
 legacyId: "23458"
 legacyPath: "/tin-game/gioi-thieu-game/brown-dust-2-game-nhap-vai-den-tu-han-quoc-da-chinh-thuc-ra-mat-23458.html"
 date: "2023-06-28"

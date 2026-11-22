@@ -2,7 +2,7 @@
 title: "The Hidden Ones - Game mới của Tencent mở đăng ký trải nghiệm trước, đồ hoạ đẹp mê mẩn"
 description: "Tân binh mới nhà Tencent hứa hẹn sẽ “làm mưa làm gió” ngay khi ra mắt."
 image: "https://i.postimg.cc/nrXHKvXd/9gate-988504dfdbd4e9a4c5d156.jpg"
-tags: ["Giới Thiệu Game"]
+tags: ["The Hidden Ones", "Tải game The Hidden Ones", "Cập nhật The Hidden Ones"]
 legacyId: "24930"
 legacyPath: "/tin-game/gioi-thieu-game/the-hidden-ones-game-moi-cua-tencent-mo-dang-ky-trai-nghiem-truoc--do-hoa-dep-me-man-24930.html"
 date: "2025-02-28"

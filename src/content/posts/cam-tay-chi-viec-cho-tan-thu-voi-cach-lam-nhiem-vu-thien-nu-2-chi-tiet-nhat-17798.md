@@ -2,7 +2,7 @@
 title: "\"Cầm tay chỉ việc\" cho tân thủ với cách làm nhiệm vụ Thiện Nữ 2 chi tiết nhất"
 description: "Đây sẽ là một trong những cách giúp bạn tăng lực chiến nhanh nhất."
 image: "https://i.ibb.co/ZDBnK9B/4c71af3d619c2319.webp"
-tags: ["Cộng Đồng"]
+tags: ["Thiện Nữ 2", "Tải game Thiện Nữ 2"]
 legacyId: "17798"
 legacyPath: "/tin-game/cong-dong/cam-tay-chi-viec-cho-tan-thu-voi-cach-lam-nhiem-vu-thien-nu-2-chi-tiet-nhat-17798.html"
 date: "2020-05-22"

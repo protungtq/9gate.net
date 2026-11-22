@@ -2,7 +2,7 @@
 title: "Phàm Nhân Tu Tiên VNG: Hệ Thống Cảnh Giới"
 description: "Tìm hiểu vai trò của hệ thống cảnh giới qua bài viết dưới đây."
 image: "https://i.ibb.co/60VsYzKs/904f2f7a9d688ca9.webp"
-tags: ["Hệ Thống"]
+tags: ["Phàm Nhân Tu Tiên", "Tải game Phàm Nhân Tu Tiên", "Cập nhật Phàm Nhân Tu Tiên"]
 legacyId: "12258"
 legacyPath: "/cam-nang/he-thong/pham-nhan-tu-tien-vng-he-thong-canh-gioi-12258.html"
 date: "2017-10-19"

@@ -2,7 +2,7 @@
 title: "Đỉnh Phong Tam Quốc đưa tuổi thơ chiến game thùng, Playstation 2 trở lại trên mobile"
 description: "Nếu bạn đã từng chơi qua các game nhập vai đi cảnh lấy chủ đề Tam Quốc Chí ở máy game thùng cho đến PlayStation hay gần nhất là PC cho tới Mobile thì có lẽ chỉ mỗi Đỉnh Phong Tam Quốc là đưa đến cảm giác quen thuộc nhất."
 image: "https://i.ibb.co/Wv2VV4kj/b0caa039e604aebc.webp"
-tags: ["Cộng Đồng"]
+tags: ["Đỉnh Phong Tam Quốc", "Tải game Đỉnh Phong Tam Quốc", "Cập nhật Đỉnh Phong Tam Quốc"]
 legacyId: "16291"
 legacyPath: "/tin-game/cong-dong/dinh-phong-tam-quoc-dua-tuoi-tho-chien-game-thung-playstation-2-tro-lai-tren-mobile-16291.html"
 date: "2019-07-20"

@@ -2,7 +2,7 @@
 title: "Hướng dẫn cường hóa và hợp thành trang bị trong Gunny Mobi"
 description: "Cường hóa và Hợp thành là 2 chức năng quan trọng trong Gunny Mobi."
 image: "https://i.postimg.cc/gkv0gHSd/9gate-18c8209c074142863e7155.jpg"
-tags: ["Hướng Dẫn"]
+tags: ["Gunny Mobi", "Tải game Gunny Mobi", "Bắn súng tọa độ", "Casual", "PvP"]
 legacyId: "2538"
 legacyPath: "/cam-nang/huong-dan/huong-dan-cuong-hoa-va-hop-thanh-trang-bi-trong-gunny-mobi-2538.html"
 date: "2015-03-23"

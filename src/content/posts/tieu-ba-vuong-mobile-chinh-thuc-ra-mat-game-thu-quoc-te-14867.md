@@ -2,7 +2,7 @@
 title: "Tiểu Bá Vương mobile chính thức ra mắt game thủ quốc tế"
 description: "NPH Cyberstep vừa chính thức ra mắt phiên bản quốc tế của tựa game nổi tiếng GetAmped Mobile (Tiểu Bá Vương mobile) trên cả 2 hệ điều hành Android và iOS."
 image: "https://i.ibb.co/ksxxdDCB/971fa1a5e1365231.webp"
-tags: ["Tin Nóng"]
+tags: ["Tiểu Bá Vương Mobile", "Tải game Tiểu Bá Vương Mobile", "Cập nhật Tiểu Bá Vương Mobile", "Game mobile"]
 legacyId: "14867"
 legacyPath: "/tin-game/tin-nong/tieu-ba-vuong-mobile-chinh-thuc-ra-mat-game-thu-quoc-te-14867.html"
 date: "2018-12-28"

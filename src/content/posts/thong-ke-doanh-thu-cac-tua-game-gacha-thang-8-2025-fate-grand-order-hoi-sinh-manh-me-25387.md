@@ -2,7 +2,7 @@
 title: "Thống kê doanh thu các tựa game Gacha tháng 8/2025: Fate/Grand Order hồi sinh mạnh mẽ"
 description: "FGO bùng nổ doanh thu nhờ tháng kỷ niệm và loạt banner “khủng”"
 image: "https://i.postimg.cc/dV2J9Q0c/9gate-ed80735900703724a6af70.jpg"
-tags: ["Cộng Đồng"]
+tags: ["Cập nhật"]
 legacyId: "25387"
 legacyPath: "/tin-game/cong-dong/thong-ke-doanh-thu-cac-tua-game-gacha-thang-8-2025-fate-grand-order-hoi-sinh-manh-me-25387.html"
 date: "2025-09-05"

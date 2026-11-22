@@ -2,7 +2,7 @@
 title: "Mộng Ảo Tu Tiên: Muốn lên cảnh giới “vèo vèo”, học thuộc ngay bí kíp tăng tốc độ tu luyện dưới đây!"
 description: "Bạn đã tự hỏi vì sao có những đạo hữu chỉ trong ngày đầu tiên đã chạm tới cảnh giới Phân Thần?"
 image: "https://i.ibb.co/xt0nNyg4/2b6df26109d7644a.webp"
-tags: ["Cộng Đồng"]
+tags: ["Mộng Ảo Tu Tiên", "Tải game Mộng Ảo Tu Tiên", "Cập nhật Mộng Ảo Tu Tiên"]
 legacyId: "18162"
 legacyPath: "/tin-game/cong-dong/mong-ao-tu-tien-muon-len-canh-gioi-veo-veo--hoc-thuoc-ngay-bi-kip-tang-toc-do-tu-luyen-duoi-day-18162.html"
 date: "2020-07-18"

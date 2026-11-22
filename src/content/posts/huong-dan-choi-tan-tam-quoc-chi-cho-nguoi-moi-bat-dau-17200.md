@@ -2,7 +2,7 @@
 title: "Hướng dẫn chơi Tân Tam Quốc Chí cho người mới bắt đầu"
 description: "Có vô vàn nội dung để khám phá, từ quản lý thành trì như một quốc vương, cho đến những cuộc chiến đầy tính chiến lược đòi hỏi chiến thuật hợp lý ở Tân Tam Quốc Chí."
 image: "https://i.ibb.co/WNbyptCX/0c6ea67648dbb895.webp"
-tags: ["Hướng Dẫn"]
+tags: ["Tân Tam Quốc", "Tải game Tân Tam Quốc"]
 legacyId: "17200"
 legacyPath: "/cam-nang/huong-dan/huong-dan-choi-tan-tam-quoc-chi-cho-nguoi-moi-bat-dau-17200.html"
 date: "2020-01-15"

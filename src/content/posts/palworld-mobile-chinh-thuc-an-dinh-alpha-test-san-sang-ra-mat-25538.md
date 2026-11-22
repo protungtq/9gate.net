@@ -2,7 +2,7 @@
 title: "Palworld Mobile chính thức ấn định Alpha Test, sẵn sàng ra mắt?"
 description: "Cuối cùng thì siêu phẩm này cũng có thêm thông tin quan trọng mới."
 image: "https://i.postimg.cc/52Bfm9td/9gate-1f3043c15a7c5575bb779b.jpg"
-tags: ["Thử Nghiệm"]
+tags: ["Palworld Mobile", "Tải game Palworld Mobile", "Cập nhật Palworld Mobile"]
 legacyId: "25538"
 legacyPath: "/tin-game/thu-nghiem/palworld-mobile-chinh-thuc-an-dinh-alpha-test-san-sang-ra-mat-25538.html"
 date: "2025-11-12"

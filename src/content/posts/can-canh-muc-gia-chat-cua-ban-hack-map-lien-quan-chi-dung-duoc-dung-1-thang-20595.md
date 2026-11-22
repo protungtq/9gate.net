@@ -2,7 +2,7 @@
 title: "Cận cảnh mức giá chát của bản hack map Liên Quân, chỉ dùng được đúng 1 tháng"
 description: "Giờ trong Liên Quân thật khó để phân biệt thật – giả, trắng – đen bởi có thể ngay cả cao thủ thách đấu cũng là hacker."
 image: "https://i.ibb.co/3ySPpbqM/0fe131bf400b4b15.webp"
-tags: ["Cộng Đồng"]
+tags: ["Liên Quân Mobile", "Tải game Liên Quân Mobile", "Cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
 legacyId: "20595"
 legacyPath: "/tin-game/cong-dong/can-canh-muc-gia-chat-cua-ban-hack-map-lien-quan-chi-dung-duoc-dung-1-thang-20595.html"
 date: "2021-06-30"

@@ -2,7 +2,7 @@
 title: "Mộng Giang Hồ - Phiên bản ‘khác’ của Brave Frontier sẽ đến tay game thủ Việt"
 description: "Theo thông tin mà 9Gate được biết, Mộng Giang Hồ sẽ là tên chính thức của Đại Võ Hiệp Vật Ngữ tại Việt Nam."
 image: "https://i.ibb.co/Hp4FqfV8/a6ce56de31d7bb8c.webp"
-tags: ["Tin Nóng"]
+tags: ["Mộng Giang Hồ", "Tải game Mộng Giang Hồ", "Cập nhật Mộng Giang Hồ", "RPG"]
 legacyId: "2541"
 legacyPath: "/tin-game/tin-nong/mong-giang-ho-phien-ban-khac-cua-brave-frontier-se-den-tay-game-thu-viet-2541.html"
 date: "2015-03-26"

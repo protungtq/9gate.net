@@ -2,7 +2,7 @@
 title: "PUBG Mobile: Hướng dẫn fake IP sang Thổ Nhĩ Kỳ để nhận FREE 9 mẫu phiếu hòm cao cấp"
 description: "Game thủ PUBG Mobile lại có thể nhận FREE một item thú vị nữa thông qua việc sử dụng các ứng dụng chuyển vùng."
 image: "https://i.ibb.co/1t4c5F8Z/4452adf6cb8d98ea.webp"
-tags: ["Cộng Đồng"]
+tags: ["PUBG Mobile", "Tải game PUBG Mobile", "Battle Royale"]
 legacyId: "16397"
 legacyPath: "/tin-game/cong-dong/pubg-mobile-huong-dan-fake-ip-sang-tho-nhi-ky-de-nhan-free-9-mau-phieu-hom-cao-cap-16397.html"
 date: "2019-08-06"

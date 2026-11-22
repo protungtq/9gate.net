@@ -2,7 +2,7 @@
 title: "Garena chơi tất tay, tặng game thủ Liên Quân 6 tướng, 5 skin đá quý"
 description: "Trong chung kết AIC 2020 sắp tới, game thủ Liên Quân Việt sẽ có cơ hội nhận tổng cộng 6 tướng và 5 trang phục, trong đó có 1 tướng và skin đá quý."
 image: "https://i.ibb.co/W4r4BqhK/a40818bf57b2e928.webp"
-tags: ["Cộng Đồng"]
+tags: ["Liên Quân Mobile", "Tải game Liên Quân Mobile", "Cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
 legacyId: "19520"
 legacyPath: "/tin-game/cong-dong/garena-choi-tat-tay-tang-game-thu-lien-quan-6-tuong--5-skin-da-quy-19520.html"
 date: "2020-12-16"

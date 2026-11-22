@@ -2,7 +2,7 @@
 title: "Nữ streamer diễn cảnh 18+ công khai trên sóng stream, yêu cầu fan muốn xem video dài hơn thì phải “bỏ tiền ra”"
 description: "Được biết đây là một nữ streamer khá có tiếng và cũng từng chơi phiên bản gốc của Liên Quân Mobile."
 image: "https://i.ibb.co/x83ZPmSz/03ebc2f971c86f16.webp"
-tags: ["Cộng Đồng"]
+tags: ["Cập nhật"]
 legacyId: "19707"
 legacyPath: "/tin-game/cong-dong/nu-streamer-dien-canh-18-cong-khai-tren-song-stream-yeu-cau-fan-muon-xem-video-dai-hon-thi-phai-bo-tien-ra-19707.html"
 date: "2021-01-11"

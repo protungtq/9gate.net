@@ -2,7 +2,7 @@
 title: "Võ Lâm Hắc Đạo chính thức ra mắt, tặng Giftcode VIP độc quyền dành cho Đại Hiệp"
 description: "Võ Lâm Hắc Đạo chính thức ra mắt cùng loạt Giftcode giá trị dành cho tân thủ. Không chỉ mang đến lợi thế khởi đầu, tựa game còn thu hút sự chú ý nhờ lối chơi đề cao chiến thuật và thế giới kiếm hiệp Kim Dung được tái hiện trên nền tảng di động."
 image: "https://i.postimg.cc/JtwWbSV4/9gate-8697762fa5491ac74bc6cc.jpg"
-tags: ["Sự Kiện"]
+tags: ["Võ Lâm Hắc Đạo", "Tải game Võ Lâm Hắc Đạo", "Giftcode Võ Lâm Hắc Đạo"]
 legacyId: "25899"
 legacyPath: "/tin-game/su-kien/vo-lam-hac-dao-chinh-thuc-ra-mat-tang-giftcode-vip-doc-quyen-danh-cho-dai-hiep-25899.html"
 date: "2026-07-08"

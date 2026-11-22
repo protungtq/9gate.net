@@ -2,7 +2,7 @@
 title: "Chơi game giao dịch tự do, game thủ sẽ không còn làm giàu cho NPH?"
 description: "Bài phân tích kinh tế, chia sẻ kinh nghiệm đua Top rất đáng đọc đến từ một game thủ Việt thường xuyên nạp tiền khi chơi game online."
 image: "https://i.ibb.co/67NJ2tF6/500c664c92198a9b.webp"
-tags: ["Cộng Đồng"]
+tags: ["Thần Long Quyết", "Tải game Thần Long Quyết", "Cập nhật Thần Long Quyết"]
 legacyId: "8592"
 legacyPath: "/tin-game/cong-dong/choi-game-giao-dich-tu-do-game-thu-se-khong-con-lam-giau-cho-nph-8592.html"
 date: "2016-09-24"

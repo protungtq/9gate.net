@@ -2,7 +2,7 @@
 title: "Hãng miHoYo xây dựng trụ sở mới ngay sát toà nhà Tencent"
 description: "Gần đây, cư dân mạng đã đăng tải hình ảnh quá trình khởi công trụ sở của miHoYo tại Khu phát triển Caohejing ở Xuhui, Thượng Hải ngay cạnh Tencent."
 image: "https://i.postimg.cc/prSL3sw7/9gate-a4d2c7a36dc0e707c256bb.jpg"
-tags: ["Cộng Đồng"]
+tags: ["Cập nhật"]
 legacyId: "24212"
 legacyPath: "/tin-game/cong-dong/hang-mihoyo-xay-dung-tru-so-moi-ngay-sat-toa-nha-tencent-24212.html"
 date: "2024-04-08"

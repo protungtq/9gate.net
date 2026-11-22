@@ -2,7 +2,7 @@
 title: "Cách đạt điểm S chặng 13 Công Chúa và Thiếu Nữ trong Ngôi Sao Thời Trang"
 description: "Sau bài viết cách đạt S chặng 12 thiếu nữ và công chúa đã được nhiều sự ủng hộ từ cộng đồng. Bài viết sau đây sẽ hướng dẫn các bạn cách đạt S chặng 13 công chúa và thiếu nữ mới nhất."
 image: "https://i.ibb.co/bMRCnyDd/71793e6362fd56e2.webp"
-tags: ["Cộng Đồng"]
+tags: ["Ngôi Sao Thời Trang", "Tải game Ngôi Sao Thời Trang"]
 legacyId: "10923"
 legacyPath: "/tin-game/cong-dong/cach-dat-diem-s-chang-13-cong-chua-va-thieu-nu-trong-ngoi-sao-thoi-trang-10923.html"
 date: "2017-04-24"

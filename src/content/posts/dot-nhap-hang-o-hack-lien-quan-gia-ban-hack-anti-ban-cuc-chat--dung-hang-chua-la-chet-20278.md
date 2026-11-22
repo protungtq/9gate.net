@@ -2,7 +2,7 @@
 title: "Đột nhập hang ổ hack Liên Quân: Giá bản hack \"anti ban\" cực chát, dùng “hàng chùa” là chết"
 description: "Nhìn chung tình hình hack map trong Liên Quân hiện tại diễn biến ngày một phức tạp."
 image: "https://i.ibb.co/N29wqXNj/2cc5b5703f55ddcf.webp"
-tags: ["Cộng Đồng"]
+tags: ["Liên Quân Mobile", "Tải game Liên Quân Mobile", "Cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
 legacyId: "20278"
 legacyPath: "/tin-game/cong-dong/dot-nhap-hang-o-hack-lien-quan-gia-ban-hack-anti-ban-cuc-chat--dung-hang-chua-la-chet-20278.html"
 date: "2021-04-26"

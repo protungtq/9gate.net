@@ -2,7 +2,7 @@
 title: "Naruto Đại Chiến: Đội hình gây \"Ức Chế\" đối thủ"
 description: "Đội hình có khả năng khống chế, phong ấn cao, gây ức chế đối thủ, tạo lợi thế 5 vs 3"
 image: "https://i.ibb.co/gbRr6y0N/b446f8b1d18fc469.webp"
-tags: ["Hướng Dẫn"]
+tags: ["Naruto Đại Chiến", "Tải game Naruto Đại Chiến"]
 legacyId: "4096"
 legacyPath: "/cam-nang/huong-dan/naruto-dai-chien-doi-hinh-gay-uc-che-doi-thu-4096.html"
 date: "2015-09-04"

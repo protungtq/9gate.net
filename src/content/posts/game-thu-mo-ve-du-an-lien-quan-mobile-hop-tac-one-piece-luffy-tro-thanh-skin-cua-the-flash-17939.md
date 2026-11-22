@@ -2,7 +2,7 @@
 title: "Game thủ mơ về dự án Liên Quân Mobile hợp tác One Piece: Luffy trở thành skin của The Flash"
 description: "Những dự án hợp tác giữa Liên Quân Mobile với các thương hiệu anime, manga luôn nhận được sự chú ý lớn của cộng đồng."
 image: "https://i.ibb.co/pBCW4VcG/320446c3ec5a5823.webp"
-tags: ["Cộng Đồng"]
+tags: ["Liên Quân Mobile", "Tải game Liên Quân Mobile", "Cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
 legacyId: "17939"
 legacyPath: "/tin-game/cong-dong/game-thu-mo-ve-du-an-lien-quan-mobile-hop-tac-one-piece-luffy-tro-thanh-skin-cua-the-flash-17939.html"
 date: "2020-06-18"

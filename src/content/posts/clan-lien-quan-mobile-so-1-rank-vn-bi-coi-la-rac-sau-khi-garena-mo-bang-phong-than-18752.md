@@ -2,7 +2,7 @@
 title: "Clan Liên Quân Mobile số 1 Rank VN bị coi là \"rác\" sau khi Garena mở \"Bảng Phong Thần\""
 description: "Thay vì chơi một cách đàng hoàng, những thành viên trong Clan Liên Quân Mobile này lại chủ động chia phe để cho - nhận Sao khá tinh vi."
 image: "https://i.ibb.co/tMhzSCRN/3937d8c4f61e65bc.webp"
-tags: ["Cộng Đồng"]
+tags: ["Liên Quân Mobile", "Tải game Liên Quân Mobile", "Cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
 legacyId: "18752"
 legacyPath: "/tin-game/cong-dong/clan-lien-quan-mobile-so-1-rank-vn-bi-coi-la-rac-sau-khi-garena-mo-bang-phong-than-18752.html"
 date: "2020-09-18"

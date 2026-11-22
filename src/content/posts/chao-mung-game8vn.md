@@ -4,7 +4,7 @@ description: "Game8 lấy game làm trung tâm: kho game mobile và PC/console, 
 date: "2026-10-16"
 image: ""
 game: ""
-tags: ["Game8", "ra mắt"]
+tags: ["Cập nhật"]
 ---
 
 Chào mừng bạn đến với **Game8** — nơi mọi thứ đều xoay quanh game.

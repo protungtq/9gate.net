@@ -2,7 +2,7 @@
 title: "Liên Quân Mobile: Những điều cần biết khi đi rừng phiên bản 2.0"
 description: "Với bản đồ Liên Quân Mobile tại phiên bản 2.0, những người chơi đi rừng sẽ phải có những lối chơi mới để phù hợp với meta."
 image: "https://i.ibb.co/pjDyWc4c/d5d98295083b5a9d.webp"
-tags: ["Hướng Dẫn"]
+tags: ["Liên Quân Mobile", "Tải game Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
 legacyId: "14298"
 legacyPath: "/cam-nang/huong-dan/lien-quan-mobile-nhung-dieu-can-biet-khi-di-rung-phien-ban-20-14298.html"
 date: "2018-10-06"

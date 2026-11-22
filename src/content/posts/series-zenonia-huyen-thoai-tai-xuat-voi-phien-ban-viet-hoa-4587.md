@@ -2,7 +2,7 @@
 title: "Series ZENONIA huyền thoại tái xuất với phiên bản Việt hóa"
 description: "Phần mới nhất trong series game RPG đình đám của GAMEVIL được mong chờ bấy lâu nay mới đây vừa đã được phát hành toàn cầu trên App Store và Google Play với cái tên cực kì ấn tượng ZENONIA S: Thời Khắc Sinh Tử"
 image: "https://i.ibb.co/p66C12VZ/01d0fca872ab95e6.webp"
-tags: ["Cộng Đồng"]
+tags: ["Zenonia", "Tải game Zenonia", "Cập nhật Zenonia"]
 legacyId: "4587"
 legacyPath: "/tin-game/cong-dong/series-zenonia-huyen-thoai-tai-xuat-voi-phien-ban-viet-hoa-4587.html"
 date: "2015-11-05"

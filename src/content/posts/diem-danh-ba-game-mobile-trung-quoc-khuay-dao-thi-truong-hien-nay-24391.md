@@ -2,7 +2,7 @@
 title: "Điểm danh ba game mobile Trung Quốc khuấy đảo thị trường hiện nay"
 description: "Genshin Impact mới tung bản cập nhật chính thức phiên bản 4.7 vào ngày 5 tháng 6 tạo hiệu ứng tốt."
 image: "https://i.postimg.cc/zX9fjPSW/9gate-e25b57093fd616dfbc0797.jpg"
-tags: ["Cộng Đồng"]
+tags: ["Cập nhật"]
 legacyId: "24391"
 legacyPath: "/tin-game/cong-dong/diem-danh-ba-game-mobile-trung-quoc-khuay-dao-thi-truong-hien-nay-24391.html"
 date: "2024-06-12"

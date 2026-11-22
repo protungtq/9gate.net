@@ -2,7 +2,7 @@
 title: "Chiêm ngưỡng phiên bản quốc tế bom tấn MMORPG Nghịch Thủy Hàn Mobile trước ngày ra mắt"
 description: "NetEase vừa hé lộ phiên bản quốc tế Nghịch Thủy Hàn Mobile hớp hồn game thủ. Đồng thời, ấn định ngày phát hành chính thức tại thị trường Trung Quốc vào 30/06 tới đây!"
 image: "https://i.postimg.cc/0yTJzyHH/9gate-59cf905d0b98d691bbdcf4.jpg"
-tags: ["Trải Nghiệm"]
+tags: ["Nghịch Thủy Hàn Mobile", "Tải game Nghịch Thủy Hàn Mobile", "Cập nhật Nghịch Thủy Hàn Mobile"]
 legacyId: "23321"
 legacyPath: "/tin-game/trai-nghiem/chiem-nguong-phien-ban-quoc-te-bom-tan-mmorpg-nghich-thuy-han-mobile-truoc-ngay-ra-mat-23321.html"
 date: "2023-05-15"

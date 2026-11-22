@@ -2,7 +2,7 @@
 title: "Phàm Nhân Tu Tiên VNG: Hệ thống pháp bảo"
 description: "Tìm hiểu hệ thống pháp bảo trong game."
 image: "https://i.ibb.co/GQtBQkcG/7f2e88d751b509b1.webp"
-tags: ["Hệ Thống"]
+tags: ["Phàm Nhân Tu Tiên", "Tải game Phàm Nhân Tu Tiên", "Cập nhật Phàm Nhân Tu Tiên"]
 legacyId: "12257"
 legacyPath: "/cam-nang/he-thong/pham-nhan-tu-tien-vng-he-thong-phap-bao-12257.html"
 date: "2017-10-18"

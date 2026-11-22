@@ -2,7 +2,7 @@
 title: "Thả thính công khai trên Facebook, fan chỉ ra streamer Tippy có “điềm” lạ"
 description: "Fan ruột của nữ streamer này nhanh chóng nhận ra, từ khi có tóc mới, cô nàng thả thính ngọt ngào hơn hẳn."
 image: "https://i.ibb.co/prf83p5s/8d7ea160b26d470a.webp"
-tags: ["Cộng Đồng"]
+tags: ["Cập nhật"]
 legacyId: "19741"
 legacyPath: "/tin-game/cong-dong/tha-thinh-cong-khai-tren-facebook-fan-chi-ra-streamer-tippy-co-diem-la-19741.html"
 date: "2021-01-14"

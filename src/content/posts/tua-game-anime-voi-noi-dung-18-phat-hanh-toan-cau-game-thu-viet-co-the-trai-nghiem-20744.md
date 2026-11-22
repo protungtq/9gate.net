@@ -2,7 +2,7 @@
 title: "Tựa game Anime với nội dung 18+ phát hành toàn cầu, game thủ Việt có thể trải nghiệm"
 description: "Vào đầu tháng 8 sắp tới, một tựa game đúng chuẩn Anime sẽ được phát hành trên toàn cầu, trong đó có cả Việt Nam."
 image: "https://i.ibb.co/RGXS1YvF/7868ce91a96f3a27.webp"
-tags: ["Giới Thiệu Game"]
+tags: ["Girl Cafe Gun", "Tải game Girl Cafe Gun", "Cập nhật Girl Cafe Gun"]
 legacyId: "20744"
 legacyPath: "/tin-game/gioi-thieu-game/tua-game-anime-voi-noi-dung-18-phat-hanh-toan-cau-game-thu-viet-co-the-trai-nghiem-20744.html"
 date: "2021-07-30"

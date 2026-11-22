@@ -2,7 +2,7 @@
 title: "Lục Long Tranh Bá 3D: Hướng dẫn tải game bản Trung Quốc trên App Store"
 description: "Lục Long Tranh Bá 3D còn được biết dưới tên gọi “Lục Long Ngự Thiên”, là game mobile 3D thuộc thể loại MMORPG có đề tài lịch sử quốc chiến được phát triển bởi công ty Loong và do Tencent Games vận hành"
 image: "https://i.ibb.co/TDWM9dP8/2ffee5ae38ef06e2.webp"
-tags: ["Hướng Dẫn"]
+tags: ["Lục Long Tranh Bá 3D", "Tải game Lục Long Tranh Bá 3D"]
 legacyId: "5862"
 legacyPath: "/cam-nang/huong-dan/luc-long-tranh-ba-3d-huong-dan-tai-game-ban-trung-quoc-tren-app-store-5862.html"
 date: "2016-04-18"

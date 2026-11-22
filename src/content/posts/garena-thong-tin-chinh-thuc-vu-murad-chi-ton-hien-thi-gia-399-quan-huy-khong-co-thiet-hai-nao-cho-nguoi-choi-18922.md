@@ -2,7 +2,7 @@
 title: "Garena thông tin chính thức vụ Murad Chí Tôn hiển thị giá 399 Quân Huy: Không có thiệt hại nào cho người chơi"
 description: "Cộng đồng Liên Quân mới đây đã vô cùng sôi sục trước thông tin skin Murad Chí Tôn Thần Kiếm được bán với giá quá ưu đãi."
 image: "https://i.ibb.co/h1KGpT1y/24b222b592fbc0b1.webp"
-tags: ["Cộng Đồng"]
+tags: ["Liên Quân Mobile", "Tải game Liên Quân Mobile", "Cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
 legacyId: "18922"
 legacyPath: "/tin-game/cong-dong/garena-thong-tin-chinh-thuc-vu-murad-chi-ton-hien-thi-gia-399-quan-huy-khong-co-thiet-hai-nao-cho-nguoi-choi-18922.html"
 date: "2020-10-08"

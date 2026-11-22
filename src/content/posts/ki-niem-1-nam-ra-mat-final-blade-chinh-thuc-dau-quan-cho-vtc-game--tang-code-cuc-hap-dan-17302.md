@@ -2,7 +2,7 @@
 title: "Kỉ niệm 1 năm ra mắt, Final Blade chính thức đầu quân cho VTC Game, tặng CODE cực hấp dẫn."
 description: "Final Blade sau 1 năm gây bão trong giới mê game RPG toàn cầu nhờ vào đồ họa đẹp cùng lối chơi đơn giản nhưng đầy cuốn hút. Tháng 2 này, VTC Game chính thức đánh dấu cột mốc phát hành Final Blade hứa hẹn nhiều sự kiện đặc sắc và những đãi ngộ đặc biệt dành riêng cho game thủ Việt Nam."
 image: "https://i.ibb.co/1JqpdhfX/2c555ce6fd362660.webp"
-tags: ["Cộng Đồng"]
+tags: ["Final Blade", "Tải game Final Blade", "Giftcode Final Blade"]
 legacyId: "17302"
 legacyPath: "/tin-game/cong-dong/ki-niem-1-nam-ra-mat-final-blade-chinh-thuc-dau-quan-cho-vtc-game--tang-code-cuc-hap-dan-17302.html"
 date: "2020-02-29"

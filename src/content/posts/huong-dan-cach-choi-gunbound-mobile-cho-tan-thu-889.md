@@ -2,7 +2,7 @@
 title: "Hướng dẫn cách chơi GunBound Mobile cho tân thủ"
 description: "Là tựa game bắn súng canh góc tọa độ làm chao đảo cộng đồng chơi game với lối đánh đơn giản nhưng gay cấn với đồ họa đẹp mắt"
 image: "https://i.ibb.co/wrdBxcd5/c8db55c293af922d.webp"
-tags: ["Hướng Dẫn"]
+tags: ["GunBound Mobile", "Tải game GunBound Mobile"]
 legacyId: "889"
 legacyPath: "/cam-nang/huong-dan/huong-dan-cach-choi-gunbound-mobile-cho-tan-thu-889.html"
 date: "2014-10-05"

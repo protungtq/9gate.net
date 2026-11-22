@@ -2,7 +2,7 @@
 title: "Lilith Games tròn 10 tuổi, được gây dựng từ những cựu nhân viên của Tencent"
 description: "Lilith – Hãng sản xuất Rise of Kingdoms kỷ niệm 10 năm thành lập, lọt top 3 công ty game đại lục doanh thu ở nước ngoài cao nhất."
 image: "https://i.postimg.cc/htk7Xt3Z/9gate-72ed7121839c76ebed62e4.jpg"
-tags: ["Cộng Đồng"]
+tags: ["Cập nhật"]
 legacyId: "23330"
 legacyPath: "/tin-game/cong-dong/lilith-games-tron-10-tuoi-duoc-gay-dung-tu-nhung-cuu-nhan-vien-cua-tencent-23330.html"
 date: "2023-05-18"

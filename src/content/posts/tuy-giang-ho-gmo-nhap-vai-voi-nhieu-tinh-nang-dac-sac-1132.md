@@ -2,7 +2,7 @@
 title: "Túy Giang Hồ - gMO nhập vai với nhiều tính năng đặc sắc"
 description: "Tựa gMO Túy Giang Hồ thể loại RPG đã làm “say” rất nhiều game thủ Việt từ khi ra mắt."
 image: "https://i.postimg.cc/vH94psmt/9gate-62be07b975d8b043cb392e.jpg"
-tags: ["Trong Nước"]
+tags: ["Túy Giang Hồ", "Tải game Túy Giang Hồ", "Cập nhật Túy Giang Hồ"]
 legacyId: "1132"
 legacyPath: "/giai-tri/trong-nuoc/tuy-giang-ho-gmo-nhap-vai-voi-nhieu-tinh-nang-dac-sac-1132.html"
 date: "2014-11-20"

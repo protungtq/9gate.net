@@ -2,7 +2,7 @@
 title: "Truy Kích Mobile phiên bản Trung Quốc: Nhiều tính năng mới đậm chất eSports"
 description: "Trải nghiệm thực tế Truy Kích Mobile phiên bản Trung Quốc cho thấy trò chơi thừa hưởng lối chơi thân thiện, phong phú của bản web đồng thời sở hữu nhiều tính năng mới đậm chất eSports."
 image: "https://i.ibb.co/BH46xpS7/294a19780a57cc78.webp"
-tags: ["Trải Nghiệm"]
+tags: ["Truy Kích Mobile", "Tải game Truy Kích Mobile", "Cập nhật Truy Kích Mobile"]
 legacyId: "10458"
 legacyPath: "/tin-game/trai-nghiem/truy-kich-mobile-phien-ban-trung-quoc-nhieu-tinh-nang-moi-dam-chat-esports-10458.html"
 date: "2017-03-11"

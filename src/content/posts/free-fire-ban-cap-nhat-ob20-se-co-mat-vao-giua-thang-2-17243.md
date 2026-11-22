@@ -2,7 +2,7 @@
 title: "Free Fire: Bản cập nhật OB20 sẽ có mặt vào giữa tháng 2"
 description: "Trong bản update OB20, Free Fire sẽ mang tới bản đồ mới Kalahari, vũ khí mới mang tên Shield Gun và chế độ chơi mới."
 image: "https://i.ibb.co/G37t71xw/f6dd2a0523732025.webp"
-tags: ["Cộng Đồng"]
+tags: ["Free Fire", "Tải game Free Fire", "Cập nhật Free Fire", "Battle Royale", "Sinh tồn"]
 legacyId: "17243"
 legacyPath: "/tin-game/cong-dong/free-fire-ban-cap-nhat-ob20-se-co-mat-vao-giua-thang-2-17243.html"
 date: "2020-02-04"

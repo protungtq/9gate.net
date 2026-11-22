@@ -2,7 +2,7 @@
 title: "Những đội hình duyên phận bá đạo nhất trong Mộng Giang Hồ"
 description: "Dưới đây là một số đội hình Duyên phận đang hot nhất trong Mộng Giang Hồ."
 image: "https://i.postimg.cc/1tnmwGVs/9gate-32102a7ab47ce5f7b09183.jpg"
-tags: ["Cộng Đồng"]
+tags: ["Mộng Giang Hồ", "Tải game Mộng Giang Hồ", "Cập nhật Mộng Giang Hồ", "RPG"]
 legacyId: "3168"
 legacyPath: "/tin-game/community/nhung-doi-hinh-duyen-phan-ba-dao-nhat-trong-mong-giang-ho-3168.html"
 date: "2015-05-22"

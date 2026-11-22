@@ -2,7 +2,7 @@
 title: "Những tựa game đam mỹ trên điện thoại dành cho hủ nữ"
 description: "Những tựa game đam mỹ trên điện thoại sắp được chúng tôi giới thiệu sau đây sẽ giúp các hủ nữ thỏa mãn đam mê của mình."
 image: "https://i.postimg.cc/PqnPtFP0/9gate-25eab1871ce4daaf311c51.jpg"
-tags: ["Giới Thiệu Game"]
+tags: ["Cập nhật"]
 legacyId: "23722"
 legacyPath: "/tin-game/gioi-thieu-game/nhung-tua-game-dam-my-tren-dien-thoai-danh-cho-hu-nu-23722.html"
 date: "2023-10-16"

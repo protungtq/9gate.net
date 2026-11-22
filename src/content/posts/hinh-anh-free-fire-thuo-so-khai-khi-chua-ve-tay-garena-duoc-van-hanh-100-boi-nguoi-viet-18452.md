@@ -2,7 +2,7 @@
 title: "Hình ảnh Free Fire thuở sơ khai khi chưa về tay Garena, được vận hành 100% bởi người Việt"
 description: "Free Fire cách đây ba năm khác biệt rất nhiều so với bây giờ. Nhìn lại những hình ảnh này của Free Fire, nhiều game thủ không nghĩ rằng tựa game này sẽ có diện mạo như ngày hôm nay."
 image: "https://i.ibb.co/XfzMFft6/c455d283614d7500.webp"
-tags: ["Cộng Đồng"]
+tags: ["Free Fire", "Tải game Free Fire", "Cập nhật Free Fire", "Battle Royale", "Sinh tồn"]
 legacyId: "18452"
 legacyPath: "/tin-game/cong-dong/hinh-anh-free-fire-thuo-so-khai-khi-chua-ve-tay-garena-duoc-van-hanh-100-boi-nguoi-viet-18452.html"
 date: "2020-08-17"

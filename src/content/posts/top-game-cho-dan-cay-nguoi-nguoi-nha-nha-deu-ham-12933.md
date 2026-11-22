@@ -2,7 +2,7 @@
 title: "Top game cho “dân cày” – người người nhà nhà đều ham"
 description: "Phần đông game thủ đều mong muốn một tựa game đúng chất cày cuốc để thỏa mãn máu hiếu chiến của mình và đặc biệt là có cơ hội “đè” đại gia trong game."
 image: "https://i.ibb.co/fG0f51ph/1b673125261c2fa6.webp"
-tags: ["Cộng Đồng"]
+tags: ["Cập nhật"]
 legacyId: "12933"
 legacyPath: "/tin-game/cong-dong/top-game-cho-dan-cay-nguoi-nguoi-nha-nha-deu-ham-12933.html"
 date: "2018-01-04"

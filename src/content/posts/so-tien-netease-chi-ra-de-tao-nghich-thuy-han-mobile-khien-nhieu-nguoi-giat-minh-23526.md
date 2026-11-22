@@ -2,7 +2,7 @@
 title: "Số tiền NetEase chi ra để tạo Nghịch Thuỷ Hàn Mobile khiến nhiều người giật mình"
 description: "Phiên bản di động của tựa game MMO nổi tiếng Nghịch Thuỷ Hàn Mobile của NetEase đang kiếm về vài triệu đô la mỗi ngày trên iOS, hiện chỉ có ở Trung Quốc."
 image: "https://i.postimg.cc/FzHYMd7V/9gate-a2af91483148fc97444ba0.jpg"
-tags: ["Cộng Đồng"]
+tags: ["Nghịch Thủy Hàn Mobile", "Tải game Nghịch Thủy Hàn Mobile", "Cập nhật Nghịch Thủy Hàn Mobile"]
 legacyId: "23526"
 legacyPath: "/tin-game/cong-dong/so-tien-netease-chi-ra-de-tao-nghich-thuy-han-mobile-khien-nhieu-nguoi-giat-minh-23526.html"
 date: "2023-07-24"

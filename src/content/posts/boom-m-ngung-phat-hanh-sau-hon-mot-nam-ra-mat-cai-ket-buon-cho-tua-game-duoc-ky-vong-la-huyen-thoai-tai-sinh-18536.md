@@ -2,7 +2,7 @@
 title: "Boom M ngừng phát hành sau hơn một năm ra mắt, cái kết buồn cho tựa game được kỳ vọng là huyền thoại tái sinh"
 description: "Từng được kỳ vọng là huyền thoại tái sinh trên nền tảng di động, song mới đây, Boom M đã chính thức thông báo dừng phát hành."
 image: "https://i.ibb.co/QvKg1pfw/d8accd0872462fbd.webp"
-tags: ["Cộng Đồng"]
+tags: ["Boom M", "Tải game Boom M", "Cập nhật Boom M"]
 legacyId: "18536"
 legacyPath: "/tin-game/cong-dong/boom-m-ngung-phat-hanh-sau-hon-mot-nam-ra-mat-cai-ket-buon-cho-tua-game-duoc-ky-vong-la-huyen-thoai-tai-sinh-18536.html"
 date: "2020-08-26"

@@ -2,7 +2,7 @@
 title: "EA và Nexon đồng phát hành FC Mobile tại châu Á"
 description: "Sự hợp tác của EA và Nexon không phải là mới vì cả hai đã từng hợp tác giới thiệu một phiên bản FIFA Mobile bản địa hóa dành riêng cho Hàn Quốc và Nhật Bản."
 image: "https://i.postimg.cc/kGg206Bb/9gate-720ba1253c25e33f532f65.jpg"
-tags: ["Giới Thiệu Game"]
+tags: ["FC Mobile", "Tải game FC Mobile", "Cập nhật FC Mobile"]
 legacyId: "23589"
 legacyPath: "/tin-game/gioi-thieu-game/ea-va-nexon-dong-phat-hanh-fc-mobile-tai-chau-a-23589.html"
 date: "2023-08-11"

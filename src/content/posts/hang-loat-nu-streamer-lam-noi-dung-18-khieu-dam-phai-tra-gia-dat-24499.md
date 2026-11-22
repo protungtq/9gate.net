@@ -2,7 +2,7 @@
 title: "Hàng loạt nữ streamer làm nội dung 18+, khiêu dâm phải trả giá đắt"
 description: "Hoành hành công khai, các nữ streamer hoạt động trái phép bị bắt giữ."
 image: "https://i.postimg.cc/Jh8zwDFZ/9gate-c3b0cd2e99646346baaccb.jpg"
-tags: ["Cộng Đồng"]
+tags: ["Cập nhật"]
 legacyId: "24499"
 legacyPath: "/tin-game/cong-dong/hang-loat-nu-streamer-lam-noi-dung-18-khieu-dam-phai-tra-gia-dat-24499.html"
 date: "2024-08-05"

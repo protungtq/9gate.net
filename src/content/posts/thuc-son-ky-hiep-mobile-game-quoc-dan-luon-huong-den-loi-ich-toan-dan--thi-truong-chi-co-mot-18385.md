@@ -2,7 +2,7 @@
 title: "Thục Sơn Kỳ Hiệp Mobile: Game \"quốc dân\" luôn hướng đến lợi ích \"toàn dân\", thị trường chỉ có một!"
 description: "1 năm là quá đủ để Thục Sơn chứng minh được giá trị &quot;game quốc dân&quot; của mình"
 image: "https://i.ibb.co/gZMh6VmL/b550accde1f791e5.webp"
-tags: ["Cộng Đồng"]
+tags: ["Thục Sơn Kỳ Hiệp Mobile", "Tải game Thục Sơn Kỳ Hiệp Mobile", "Cập nhật Thục Sơn Kỳ Hiệp Mobile"]
 legacyId: "18385"
 legacyPath: "/tin-game/cong-dong/thuc-son-ky-hiep-mobile-game-quoc-dan-luon-huong-den-loi-ich-toan-dan--thi-truong-chi-co-mot-18385.html"
 date: "2020-08-10"
