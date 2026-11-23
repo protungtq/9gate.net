@@ -1,0 +1,54 @@
+name: Prepare 9Gate R2 transfer
+on:
+  push:
+    branches: [r2-media-upload]
+    paths: ['.github/workflows/r2-media-prepare.yml']
+permissions: {}
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: python -m pip install boto3
+      - name: Verify bucket and issue encrypted temporary upload URLs
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+        run: |
+          cat > transfer-cert.pem <<'CERT'
+          -----BEGIN CERTIFICATE-----
+          MIIEGzCCAoOgAwIBAgIUETzwABKt5Nr/QXunQL15Z8AHEigwDQYJKoZIhvcNAQEL
+          BQAwHTEbMBkGA1UEAwwSOWdhdGUtcjItbWlncmF0aW9uMB4XDTI2MTEyMzA2MTgx
+          OFoXDTI2MTEyNTA2MTgxOFowHTEbMBkGA1UEAwwSOWdhdGUtcjItbWlncmF0aW9u
+          MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAzVCIR2qpr0Yca38U5hLY
+          C5uLernN2NzDkMVFkXAe/vLRNhTli0HFkqUcpO2bMJGRQBFoozunIVLYNnTl2TbZ
+          igvV+JVvd3ReNm05PaRPXQCrXdUvIVK86wojXUR10PttviiyzXPvICXY0H+tlJqs
+          mZT+ajqCX371DD+NP5W4YotC2pzh00s9fXKMlIqBMhf+j5WZaFm+g51i0ZMKFX/9
+          XGb2PIeYrib72LugMlh7CFDVLFlrGd3HrwE2C+6HqRyXvEr0qiLVFsI7yRMIhfhL
+          Mt2H9A6ATBUjUZMLWttz9Kdwl1/csYcpmJPPsLi/zkldoH1zWz9AZtNahcPX/Uyx
+          i6rAwyIA//AuCHlFwFEVEmiGl6CH3AfKazy6ZCkQNc2otaSiFvw+EXYXKHm4Ha3V
+          rkc21pWunq3+7sKjlmbspni7HosW7mkgtHGHUoqHDJqfbBQtLlNoYYey1Bd4yFVi
+          oRPGOcPfvg/nUNANGAhqFu7wIbHeLyo2bLuKrJw9lvmJAgMBAAGjUzBRMB0GA1Ud
+          DgQWBBR8kU/9olwN4Gsp3u47cC0uv/1mPTAfBgNVHSMEGDAWgBR8kU/9olwN4Gsp
+          3u47cC0uv/1mPTAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBgQCP
+          KyDKAdDII2gcz9zWlIeGjXD0nHTH7Wjt47+ZrxVcQmNanYAAF6swrWRORSi9Z/mV
+          qGAiO2FM3wuExglJvPFyN0nyqkiZWU+2fum2hAqj3HfA3bL+L3+LJ0DDWepg8tC8
+          ALFqef9UAqGFF4NYqxpS/aoXh1JZhk4eKvPpQLS0G+PXapv25ZmiZP6uDl/RRSQW
+          MOQ2AJRDgODqnr4ffhL2jiW6Xv3G2w7RQu8ykORqnlgxlXCp8FxOVaKnhU1l5+30
+          kjP7qt1w7ZT7XMmCa9SK/QuW67DbG5nLzPH9VUVetkDMbZvdtgQJaE4OqVZm007F
+          HfeA6IotHrU7WQ+/gvNH9EESkqfjRtGPQ1e2w21ilgHi8UDXb6F4VcqcFTwPZfkT
+          K03k93B59+1CQ+2+HmNbSzCCo1XirGEmsHSjdqKSRIyxIi03BfduxqPmZ2E8IUtZ
+          XPFeUyk4fquew2nHEkvveGaiuxsD2szfbdTjYei1nRNJL0bepV4XsXDH5sYEEtI=
+          -----END CERTIFICATE-----
+          CERT
+          python - <<'PY' | openssl cms -encrypt -binary -aes-256-cbc -outform DER transfer-cert.pem | base64 -w 0 > encrypted.txt
+          import json, os, boto3
+          from botocore.config import Config
+          config = Config(signature_version='s3v4', s3={'addressing_style': 'path'})
+          client = boto3.client('s3', endpoint_url=os.environ['R2_ENDPOINT'], region_name='auto', config=config)
+          bucket = '9gate-game-media'
+          client.list_objects_v2(Bucket=bucket, Prefix='game/', MaxKeys=1)
+          print(json.dumps([client.generate_presigned_url('put_object', Params={'Bucket': bucket, 'Key': '_migration/a85abaf/' + name}, ExpiresIn=3600) for name in ('base.zip', 'delta.zip')]))
+          PY
+          printf 'ENCRYPTED_TRANSFER=%s\n' "$(cat encrypted.txt)"
