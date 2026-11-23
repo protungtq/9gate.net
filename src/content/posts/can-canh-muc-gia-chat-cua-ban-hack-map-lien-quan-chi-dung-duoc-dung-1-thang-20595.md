@@ -1,7 +1,7 @@
 ---
 title: "Cận cảnh mức giá chát của bản hack map Liên Quân, chỉ dùng được đúng 1 tháng"
 description: "Giờ trong Liên Quân thật khó để phân biệt thật – giả, trắng – đen bởi có thể ngay cả cao thủ thách đấu cũng là hacker."
-image: "https://i.ibb.co/3ySPpbqM/0fe131bf400b4b15.webp"
+image: "https://i.postimg.cc/3N91nJZM/9gate-thumbnail-20595.jpg"
 tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "Garena", "cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
 game: "lien-quan-mobile"
 legacyId: "20595"

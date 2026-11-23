@@ -1,7 +1,7 @@
 ---
 title: "Người yêu của các tuyển thủ Liên Quân: Cô nàng nào cũng xinh đẹp chẳng kém mỹ nhân"
 description: "Chọn người yêu khéo như các tuyển thủ Liên Quân, cô nàng nào cũng xinh đẹp như mỹ nhân."
-image: "https://i.ibb.co/0jctWTkc/3a0417d3373d1bb8.webp"
+image: "https://i.postimg.cc/D056BycT/9gate-thumbnail-19699.jpg"
 tags: ["Liên Quân Mobile", "tải game Liên Quân Mobile", "Garena", "cập nhật Liên Quân Mobile", "MOBA", "Chiến thuật", "Hành động"]
 game: "lien-quan-mobile"
 legacyId: "19699"
