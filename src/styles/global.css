@@ -35,6 +35,9 @@
     --gate-feature: #2b2019;
     --gate-inset: #30251e;
     --gate-border: #48372d;
+    --gate-card: #302721;
+    --gate-card-border: #57453a;
+    --gate-card-shadow: inset 0 1px 0 #ffffff08, 0 3px 8px #0003, 0 8px 18px #0003;
     --gate-muted: #c4b2a7;
     --gate-panel-shadow: 0 6px 18px #0005;
     --gate-accent: 255 157 107;
@@ -140,10 +143,8 @@
     @apply rounded-3xl border border-[var(--gate-border)] bg-[var(--gate-feature)];
   }
   .home-section {
-    @apply mt-7 sm:mt-9;
-  }
-  html.dark .home-section {
-    @apply mt-9 border-t border-[var(--gate-border)] pt-6 sm:mt-11 sm:pt-8;
+    @apply mt-7 rounded-3xl border border-[var(--gate-border)] bg-[var(--gate-panel)] p-4 sm:mt-9 sm:p-6;
+    box-shadow: var(--gate-panel-shadow);
   }
   .site-chrome {
     background-color: var(--gate-chrome);
@@ -183,27 +184,29 @@
     background-image: linear-gradient(126deg, var(--gate-panel) 8%, var(--gate-feature) 80%);
   }
   html:not(.dark) .game-panel,
-  html:not(.dark) .game-feature,
-  html:not(.dark) .home-section {
+  .game-feature {
     box-shadow: var(--gate-panel-shadow);
   }
-  html:not(.dark) .home-section {
-    @apply rounded-3xl border border-[var(--gate-border)] bg-[var(--gate-panel)] p-4 sm:p-6;
-  }
-  html:not(.dark) :is(.game-card, .collection-card) {
-    @apply rounded-2xl border border-[var(--gate-border)] bg-[var(--gate-panel)] p-2.5;
+  :is(.game-card, .collection-card) {
+    @apply rounded-2xl border p-2.5;
+    background-color: var(--gate-card, var(--gate-panel));
+    border-color: var(--gate-card-border, var(--gate-border));
+    box-shadow: var(--gate-card-shadow, none);
     transition: border-color .2s ease, box-shadow .2s ease;
   }
-  html:not(.dark) .home-section :is(.game-card, .collection-card) {
-    background-color: #fff;
-    box-shadow: 0 2px 5px #6439130d, 0 5px 14px #8447190d;
+  html:not(.dark) .home-section {
+    --gate-card: #fff;
+    --gate-card-shadow: 0 2px 5px #6439130d, 0 5px 14px #8447190d;
   }
-  html:not(.dark) :is(.game-card, .collection-card):is(:hover, :focus-visible) {
+  :is(.game-card, .collection-card):is(:hover, :focus-visible) {
     border-color: rgb(var(--gate-accent) / .45);
     box-shadow: var(--gate-panel-shadow);
   }
-  html:not(.dark) :is(.game-card, .collection-card) > :first-child {
+  :is(.game-card, .collection-card) > :first-child {
     @apply rounded-xl;
+  }
+  html.dark .home-section .collection-card .sf {
+    background-color: var(--gate-panel);
   }
   .post-panel {
     @apply rounded-2xl border border-[var(--gate-border)] bg-[var(--gate-panel)];
