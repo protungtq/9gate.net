@@ -97,7 +97,13 @@ details{border:1px solid var(--ln);border-radius:12px;padding:12px 14px;margin-b
       <div class="g2"><div class="f"><label>Link tải Android</label><input id="android" placeholder="https://play.google.com/store/apps/details?id=..."></div><div class="f"><label>Link tải iOS</label><input id="ios" placeholder="https://apps.apple.com/app/..."></div></div>
       <div class="f"><label>Mô tả</label><textarea id="description"></textarea></div>
       <div class="g2"><div class="f"><label>Điểm đánh giá (0 – 10)</label><input id="rating" type="number" min="0" max="10" step="0.1"><div class="hint">Nhập tay. Hiển thị ở thẻ game và trang chi tiết.</div></div>
-      <div class="f"><label>Hiển thị trên trang chủ</label><div class="chk"><label><input type="checkbox" id="featured">Game nổi bật</label><label><input type="checkbox" id="hot">Game hot</label></div></div></div>
+      <div class="f">
+        <label>Hiển thị trên trang chủ</label>
+        <div class="chk"><label><input type="checkbox" id="featured">Game nổi bật</label><label><input type="checkbox" id="hot">Game hot</label></div>
+        <label for="featured-hours">Thời hạn nổi bật (giờ)</label>
+        <input id="featured-hours" type="number" min="1" max="8760" step="1" value="24" disabled>
+        <div class="hint" id="featured-status">Mặc định 24 giờ kể từ lần lưu ghim.</div>
+      </div></div>
       <details><summary>SEO</summary><div style="margin-top:12px"><div class="f"><label>SEO title</label><input id="seoTitle"></div><div class="f"><label>SEO description</label><textarea id="seoDescription" style="min-height:60px"></textarea></div><div class="f"><label>SEO keywords</label><input id="seoKeywords"></div></div></details>
       <div class="bar" style="margin:0"><button class="btn p" id="save">Lưu game</button><button class="btn" id="back">Quay lại danh sách</button></div>
     </div>

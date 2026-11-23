@@ -33,13 +33,11 @@ const score = game.rating ?? game.provisionalRating;
     <div class="min-w-0">
       <h3 class="text-lg sm:text-xl font-extrabold truncate">{game.name}</h3>
       <div class="mt-1 text-xs muted flex items-center gap-1.5 flex-wrap">
-        <span>{game.genre}</span>
-        {platText && <span>• {platText}</span>}
+        <span data-card-genre>{game.genre}</span>
+        <span data-card-platforms hidden={!platText}>{platText ? `• ${platText}` : ''}</span>
       </div>
-      <div class="mt-0.5 text-xs muted truncate">{game.publisher}</div>
+      <div data-card-publisher class="mt-0.5 text-xs muted truncate">{game.publisher}</div>
     </div>
-    {score != null && (
-      <div class="text-xl font-extrabold text-tap leading-none shrink-0" aria-label={`Điểm ${score.toFixed(1)}`}>{score.toFixed(1)}</div>
-    )}
+    <div data-card-score hidden={score == null} class="text-xl font-extrabold text-tap leading-none shrink-0" aria-label={score != null ? `Điểm ${score.toFixed(1)}` : undefined}>{score?.toFixed(1)}</div>
   </div>
 </a>
