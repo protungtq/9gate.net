@@ -100,38 +100,41 @@ const description = activeTag
   keywords="blog game, bài viết về game, góc nhìn game"
 >
   <div class="py-6">
-    <h1 class="text-3xl sm:text-4xl font-extrabold">{title}</h1>
-    <p class="muted mt-1">Bản vá, hướng dẫn và sự kiện mới nhất từ các game</p>
+    <section class="content-panel" aria-labelledby="updates-heading">
+      <h1 id="updates-heading" class="text-3xl sm:text-4xl font-extrabold">{title}</h1>
+      <p class="muted mt-1">Bản vá, hướng dẫn và sự kiện mới nhất từ các game</p>
 
-    {tags.length > 1 && (
-      <nav id="post-topics" class="relative flex gap-2 overflow-x-auto p-1 pb-2 mt-4 mb-4" aria-label="Chủ đề bài viết">
-        {tags.map(({ label, path, href }) => (
-          <a
-            class:list={['chip shrink-0', { 'chip-on': path === activeTag }]}
-            aria-current={path === activeTag ? 'true' : undefined}
-            href={href}
-            draggable="false"
-          >{label}</a>
-        ))}
-      </nav>
-    )}
+      {tags.length > 1 && (
+        <nav id="post-topics" class="relative flex gap-2 overflow-x-auto p-1 pb-2 mt-4 mb-4" aria-label="Chủ đề bài viết">
+          {tags.map(({ label, path, href }) => (
+            <a
+              class:list={['chip shrink-0', { 'chip-on': path === activeTag }]}
+              aria-current={path === activeTag ? 'true' : undefined}
+              href={href}
+              draggable="false"
+            >{label}</a>
+          ))}
+        </nav>
+      )}
 
-    {posts.length > 0 ? (
-      <div class="grid lg:grid-cols-2 gap-x-4" id="post-grid">
-        {posts.map((post) => <NewsRow post={post} game={gameBySlug[post.gameSlug]} postImg={postImageMap[post.gameSlug]} />)}
-      </div>
-    ) : (
-      <div class="sf rounded-2xl p-12 text-center">
-        <p class="muted">Mình chưa có bài nào ở đây.</p>
-      </div>
-    )}
+      {posts.length > 0 ? (
+        <div class="grid lg:grid-cols-2 gap-x-4" id="post-grid">
+          {posts.map((post) => <NewsRow post={post} game={gameBySlug[post.gameSlug]} postImg={postImageMap[post.gameSlug]} />)}
+        </div>
+      ) : (
+        <div class="sf rounded-2xl p-12 text-center">
+          <p class="muted">Mình chưa có bài nào ở đây.</p>
+        </div>
+      )}
 
-    <Pagination label="Phân trang bài viết" {...{ currentPage, totalPages, previousHref, nextHref }} />
+      <Pagination label="Phân trang bài viết" {...{ currentPage, totalPages, previousHref, nextHref }} />
+    </section>
   </div>
 </Layout>
 
 <style>
   #post-topics {
+    scrollbar-width: thin;
     scrollbar-color: rgb(var(--gate-accent) / 0.45) transparent;
   }
 
