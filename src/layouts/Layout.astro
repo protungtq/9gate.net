@@ -106,7 +106,7 @@ const isActive = (href: string) =>
       </a>
       <nav aria-label="Điều hướng chính" class="hidden lg:flex shrink-0 gap-1 text-sm font-semibold">
         {NAV.map((n) => (
-          <a href={n.href} aria-current={isActive(n.href) ? "page" : undefined} class={`px-4 h-10 grid place-items-center whitespace-nowrap rounded-full transition ${isActive(n.href) ? 'bg-tap/10 text-tap' : 'hover:bg-black/5 dark:hover:bg-white/10'}`}>{n.label}</a>
+          <a href={n.href} aria-current={isActive(n.href) ? "page" : undefined} class="px-4 h-10 grid place-items-center whitespace-nowrap rounded-full transition hover:bg-black/5 dark:hover:bg-white/10">{n.label}</a>
         ))}
       </nav>
       <button id="search-toggle" type="button" aria-label="Tìm kiếm" aria-controls="header-search" aria-expanded="false" class="ml-auto grid h-11 w-11 shrink-0 place-items-center rounded-full sf hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-tap dark:hover:bg-white/15 lg:hidden">
@@ -129,7 +129,7 @@ const isActive = (href: string) =>
         </summary>
         <nav aria-label="Điều hướng trên màn hình nhỏ" class="absolute right-0 top-full z-30 mt-2 w-56 max-w-[calc(100vw-1.5rem)] rounded-2xl border border-[var(--gate-border)] bg-[var(--gate-panel)] p-1.5 shadow-xl">
           {NAV.map((n) => (
-            <a href={n.href} aria-current={isActive(n.href) ? "page" : undefined} class={`flex min-h-11 items-center gap-3 rounded-xl px-3 text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-tap ${isActive(n.href) ? 'bg-tap/10 text-tap' : 'hover:bg-black/5 dark:hover:bg-white/10'}`}>
+            <a href={n.href} aria-current={isActive(n.href) ? "page" : undefined} class="flex min-h-11 items-center gap-3 rounded-xl px-3 text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-tap hover:bg-black/5 dark:hover:bg-white/10">
               <svg aria-hidden="true" class="h-[18px] w-[18px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" set:html={n.icon}></svg>
               {n.label}
             </a>
