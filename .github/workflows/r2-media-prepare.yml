@@ -43,12 +43,13 @@ jobs:
           -----END CERTIFICATE-----
           CERT
           python - <<'PY' | openssl cms -encrypt -binary -aes-256-cbc -outform DER transfer-cert.pem | base64 -w 0 > encrypted.txt
-          import json, os, boto3
+          import hashlib, hmac, json, os, boto3
           from botocore.config import Config
           config = Config(signature_version='s3v4', s3={'addressing_style': 'path'})
           client = boto3.client('s3', endpoint_url=os.environ['R2_ENDPOINT'], region_name='auto', config=config)
           bucket = '9gate-game-media'
           client.list_objects_v2(Bucket=bucket, Prefix='game/', MaxKeys=1)
-          print(json.dumps([client.generate_presigned_url('put_object', Params={'Bucket': bucket, 'Key': '_migration/a85abaf/' + name}, ExpiresIn=3600) for name in ('base.zip', 'delta.zip')]))
+          prefix = '_migration/' + hmac.new(os.environ['AWS_SECRET_ACCESS_KEY'].encode(), b'9gate-20261123-v1', hashlib.sha256).hexdigest()
+          print(json.dumps([client.generate_presigned_url('put_object', Params={'Bucket': bucket, 'Key': prefix + '/' + name}, ExpiresIn=3600) for name in ('base.zip', 'delta.zip')]))
           PY
           printf 'ENCRYPTED_TRANSFER=%s\n' "$(cat encrypted.txt)"
