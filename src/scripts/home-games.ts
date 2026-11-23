@@ -1,4 +1,5 @@
 import { selectFeatured } from '../lib/featured.js';
+import { sample } from '../lib/sample';
 
 const hero = document.querySelector<HTMLElement>('#hero');
 if (hero) {
@@ -97,19 +98,10 @@ type Pick = {
   mobile: boolean;
 };
 
-function sample<T>(items: T[], count: number): T[] {
-  const pool = [...items];
-  for (let index = 0; index < Math.min(count, pool.length); index++) {
-    const randomIndex = index + Math.floor(Math.random() * (pool.length - index));
-    [pool[index], pool[randomIndex]] = [pool[randomIndex], pool[index]];
-  }
-  return pool.slice(0, count);
-}
-
 async function loadTrending(grid: HTMLElement) {
   const response = await fetch('/home-game-picks.json');
   if (!response.ok) return;
-  const all: Pick[] = await response.json();
+  const all: Pick[] = (await response.json() as Pick[]).filter(({ art }) => art);
   const pools = {
     games: all,
     mmorpg: all.filter(({ genre }) => /\bMMORPG\b/i.test(genre || '')),

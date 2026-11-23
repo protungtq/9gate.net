@@ -8,15 +8,14 @@ export const GET: APIRoute = async () => {
   const postImages = latestPostImageMap(posts.map(({ data }) => ({
     gameSlug: data.game, image: data.image, _ts: new Date(data.date || 0).getTime(),
   })));
-  const picks = games.flatMap((game) => {
+  const picks = games.map((game) => {
     const art = gameArt(game, postImages[game.slug]);
-    if (!art) return [];
-    return [{
-      slug: game.slug, name: game.name, art,
+    return {
+      slug: game.slug, name: game.name, art, icon: game.icon || '',
       genre: game.genre, publisher: game.publisher,
       platforms: game.platforms, score: game.rating ?? game.provisionalRating,
       mobile: game.category === 'mobile',
-    }];
+    };
   });
   return new Response(JSON.stringify(picks), {
     headers: { 'Content-Type': 'application/json; charset=utf-8' },
