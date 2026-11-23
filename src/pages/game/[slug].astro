@@ -68,6 +68,15 @@ const jsonLd = [
     "url": gameUrl,
     ...(game.publisher && { "publisher": { "@type": "Organization", "name": game.publisher } }),
     ...(shareImage && { "image": shareImage }),
+    ...(typeof game.rating === 'number' && {
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": game.rating,
+        "bestRating": 10,
+        "worstRating": 0,
+        "ratingCount": 1,
+      },
+    }),
     // Không gắn VideoObject cho trailer: Google yêu cầu uploadDate + description
     // cho kết quả video, mà trailer không phải nội dung chính của trang hub
     // (GSC báo thiếu 2 trường này trên 901 trang hub ngày 22/11/2026).
