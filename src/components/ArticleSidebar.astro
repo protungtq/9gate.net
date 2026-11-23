@@ -1,0 +1,53 @@
+---
+interface Entry {
+  t: string;
+  s: string;
+  u: string;
+  i: string;
+}
+
+interface Props {
+  posts: Entry[];
+  games: Entry[];
+  currentGame?: string;
+}
+
+const { posts, games, currentGame } = Astro.props;
+const sections = [
+  { id: 'article-sidebar-posts', title: 'Nổi bật', type: 'posts', entries: posts },
+  { id: 'article-sidebar-games', title: 'Game hay', type: 'games', entries: games },
+];
+---
+
+<aside class="hidden min-w-0 space-y-5 lg:block" aria-label="Khám phá 9Gate"
+  data-article-sidebar data-current-game={currentGame}>
+  {sections.map(({ id, title, type, entries }) => entries.length > 0 && (
+    <section class="post-panel px-4 py-5 xl:px-5" aria-labelledby={id}>
+      <h2 id={id} class="section-title mb-3">{title}</h2>
+      <ul data-picks={type} class="divide-y divide-[var(--gate-border)]">
+        {entries.map((entry) => (
+          <li>
+            <a href={entry.u} class="group flex items-center gap-2.5 py-2.5 hover:text-tap focus-visible:text-tap">
+              <span class:list={[
+                'relative grid shrink-0 place-items-center overflow-hidden bg-[var(--gate-inset)] font-bold muted',
+                type === 'posts' ? 'w-[4.75rem] aspect-video rounded-md' : 'size-11 rounded-[22%]',
+              ]} aria-hidden="true">
+                <span data-pick-initial>{entry.t.charAt(0)}</span>
+                <img src={entry.i || undefined} alt="" loading="lazy" decoding="async"
+                  hidden={!entry.i} class="absolute inset-0 size-full object-cover" />
+              </span>
+              <span class="min-w-0">
+                <span data-pick-title class="line-clamp-2 text-sm font-bold leading-snug">{entry.t}</span>
+                <span data-pick-detail class="muted mt-0.5 block truncate text-xs">{entry.s}</span>
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+</aside>
+
+<script>
+  import '../scripts/article-sidebar';
+</script>
