@@ -1,4 +1,6 @@
 ---
+import catalog from '../data/games.json';
+
 interface Entry {
   t: string;
   s: string;
@@ -7,20 +9,29 @@ interface Entry {
 }
 
 interface Props {
-  posts: Entry[];
-  games: Entry[];
+  posts?: Entry[];
+  gameLimit?: number;
+  stackOnMobile?: boolean;
   currentGame?: string;
 }
 
-const { posts, games, currentGame } = Astro.props;
+const { posts = [], gameLimit = 4, stackOnMobile = false, currentGame } = Astro.props;
+const games = catalog.filter((game) => game.slug !== currentGame).slice(0, gameLimit).map((game) => ({
+  t: game.name,
+  s: [game.genre, game.publisher].filter(Boolean).join(' · '),
+  u: `/game/${game.slug}/`,
+  i: game.icon || '',
+}));
 const sections = [
   { id: 'article-sidebar-posts', title: 'Nổi bật', type: 'posts', entries: posts },
   { id: 'article-sidebar-games', title: 'Game hay', type: 'games', entries: games },
 ];
 ---
 
-<aside class="hidden min-w-0 space-y-5 lg:block" aria-label="Khám phá 9Gate"
-  data-article-sidebar data-current-game={currentGame}>
+<aside class:list={['min-w-0 space-y-5', !stackOnMobile && 'hidden lg:block']} aria-label="Khám phá 9Gate"
+  data-article-sidebar data-current-game={currentGame ? `/game/${currentGame}/` : undefined}
+  data-stack-on-mobile={stackOnMobile ? '' : undefined}>
+  <slot />
   {sections.map(({ id, title, type, entries }) => entries.length > 0 && (
     <section class="post-panel px-4 py-5 xl:px-5" aria-labelledby={id}>
       <h2 id={id} class="section-title mb-3">{title}</h2>

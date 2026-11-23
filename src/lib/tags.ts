@@ -101,3 +101,10 @@ export function featuredGroups<T extends { label: string; posts: unknown[] }>(gr
   }
   return picked;
 }
+
+export function recentTagLinks(groups: TagGroup[], limit = 30): Pick<TagGroup, 'slug' | 'label'>[] {
+  return [...groups]
+    .sort((a, b) => b.posts[0]._ts - a.posts[0]._ts || a.label.localeCompare(b.label, 'vi'))
+    .slice(0, limit)
+    .map(({ slug, label }) => ({ slug, label }));
+}

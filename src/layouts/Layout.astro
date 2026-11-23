@@ -100,7 +100,7 @@ const isActive = (href: string) =>
   <!-- End Google Tag Manager (noscript) -->
   <header class="site-header site-chrome sticky top-[env(safe-area-inset-top,0px)] z-50 backdrop-blur shadow-[0_6px_24px_-10px_rgba(0,0,0,.25)] border-b">
     <div class="brand-stripe h-[3px]"></div>
-    <div class="max-w-[1280px] mx-auto px-3 sm:px-4 h-16 lg:h-[72px] flex items-center gap-2 lg:gap-4">
+    <div class="site-container h-16 lg:h-[72px] flex items-center gap-2 lg:gap-4">
       <a href="/" class="brand-link flex shrink-0 items-center rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-tap" aria-label={`${siteName} – Trang chủ`}>
         <img src="/brand/9gate-legacy.png" alt="" width="180" height="62" class="block h-auto w-28 sm:w-32" />
       </a>
@@ -139,7 +139,7 @@ const isActive = (href: string) =>
     </div>
   </header>
 
-  <main>
+  <main class="site-container">
     <slot />
   </main>
 
@@ -161,7 +161,7 @@ const isActive = (href: string) =>
 
   <footer class="site-footer mt-16 text-slate-300">
     <div class="brand-stripe h-[3px]"></div>
-    <div class="max-w-[1280px] mx-auto px-4 py-12 grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-10 lg:grid-cols-[1.6fr_1fr_1fr]">
+    <div class="site-container py-12 grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-10 lg:grid-cols-[1.6fr_1fr_1fr]">
       <div class="col-span-2 sm:col-span-1">
         <img src="/brand/9gate-legacy.png" alt={siteName} width="180" height="62" loading="lazy" class="block h-auto w-32" />
         <p class="mt-4 text-sm leading-relaxed text-slate-400 max-w-xs">Chia sẻ mọi thứ về game với đam mê và sự tử tế!</p>
@@ -186,7 +186,7 @@ const isActive = (href: string) =>
       </div>
     </div>
     <div class="border-t border-white/10">
-      <div class="max-w-[1280px] mx-auto grid gap-2 px-4 py-5 text-center text-xs text-slate-500">
+      <div class="site-container grid gap-2 py-5 text-center text-xs text-slate-500">
         <p>©2012 - <span id="copyright-year">{new Date().getFullYear()}</span> || {siteName} - Thế giới GAME của bạn</p>
         <span>Điều khoản · Chính sách bảo mật</span>
       </div>

@@ -36,13 +36,16 @@ async function populate(aside: HTMLElement) {
     saved = JSON.parse(sessionStorage.getItem(sessionKey) || '{}') || {};
   } catch {}
 
-  const next: Record<string, string[]> = {};
+  const next = { ...saved };
   for (const type of ['posts', 'games'] as const) {
     const rows = Array.from(aside.querySelectorAll<HTMLAnchorElement>(`[data-picks="${type}"] a`));
+    if (!rows.length) continue;
     const prefix = type === 'posts' ? '/p/' : '/game/';
     const current = type === 'posts' ? location.pathname : aside.dataset.currentGame;
     const pool = index.filter((entry) => entry.u.startsWith(prefix) && entry.t);
-    const selected = select(pool, saved[type], rows.length + 1);
+    const previous = saved[type];
+    const previousCount = Array.isArray(previous) ? previous.length : 0;
+    const selected = select(pool, previous, Math.max(rows.length + 1, previousCount));
     next[type] = selected.map((entry) => entry.u);
 
     selected.filter((entry) => entry.u !== current).slice(0, rows.length).forEach((entry, i) => {
@@ -69,7 +72,7 @@ if (sidebar) {
   }, true);
 
   const showPicks = () => {
-    if (!desktop.matches) return;
+    if (!sidebar.hasAttribute('data-stack-on-mobile') && !desktop.matches) return;
     desktop.removeEventListener('change', showPicks);
     populate(sidebar).catch(() => {});
   };
