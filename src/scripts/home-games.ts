@@ -122,11 +122,15 @@ async function loadTrending(grid: HTMLElement) {
   const next: Partial<Record<PoolName, string[]>> = {};
   const pick = (name: PoolName, count: number) => {
     const pool = pools[name];
-    const index = new Map(pool.map((game) => [game.slug, game]));
     const saved = previous[name];
-    const selected = Array.isArray(saved) && saved.length === count && new Set(saved).size === count && saved.every((slug) => index.has(slug))
+    const savedSlugs = new Set(Array.isArray(saved) ? saved : []);
+    const index = new Map(pool.map((game) => [game.slug, game]));
+    const reusable = Array.isArray(saved) && saved.length === count
+      && savedSlugs.size === count && saved.every((slug) => index.has(slug));
+    const fresh = name === 'games' ? pool : pool.filter(({ slug }) => !savedSlugs.has(slug));
+    const selected = name === 'games' && reusable
       ? saved.map((slug) => index.get(slug)!)
-      : sample(pool, count);
+      : sample(fresh.length >= count ? fresh : pool, count);
     next[name] = selected.map(({ slug }) => slug);
     return selected;
   };
