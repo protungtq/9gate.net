@@ -183,7 +183,28 @@ const jsonLd = [
           </section>
         )}
       </div>
-      <ArticleSidebar posts={sidebarPosts} currentGame={game?.slug} />
+      <div class="article-rail hidden min-w-0 lg:block">
+        <ArticleSidebar posts={sidebarPosts} currentGame={game?.slug} />
+      </div>
     </div>
   </div>
 </Layout>
+
+<style>
+  @media (min-width: 1024px) {
+    .article-rail {
+      /* The desktop header is 72px tall, plus its stripe and border. */
+      --rail-top: calc(76px + 0.5rem + env(safe-area-inset-top, 0px));
+      --rail-bottom: calc(0.5rem + env(safe-area-inset-bottom, 0px));
+      position: sticky;
+      top: var(--rail-top);
+      max-height: calc(100vh - var(--rail-top) - var(--rail-bottom));
+      max-height: calc(100dvh - var(--rail-top) - var(--rail-bottom));
+      margin: -0.5rem;
+      padding: 0.5rem;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: rgb(var(--gate-accent) / 0.4) transparent;
+    }
+  }
+</style>
