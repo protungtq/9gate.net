@@ -5,10 +5,9 @@ import Pagination from '../../../components/Pagination.astro';
 import { getCollection } from 'astro:content';
 import games from '../../../data/games.json';
 import { latestPostImageMap } from '../../../lib/gameArt';
-import { mapPost, sortPosts, groupPostsByTag, featuredGroups } from '../../../lib/tags';
+import { mapPost, sortPosts, groupPostsByTag, featuredGroups, POST_PAGE_SIZE } from '../../../lib/tags';
 
 export async function getStaticPaths({ paginate }) {
-  const PAGE_SIZE = 12;
   const entries = await getCollection('posts');
   const posts = sortPosts(entries.map(({ id, data }) => mapPost(id, data)));
   const postImageMap = latestPostImageMap(posts);
@@ -18,7 +17,7 @@ export async function getStaticPaths({ paginate }) {
     const paginated = paginate(group.posts, {
       params: { tag: group.slug },
       props: { tagLabel: group.label, tags: groups, navTags: featuredGroups(groups), postImageMap },
-      pageSize: PAGE_SIZE,
+      pageSize: POST_PAGE_SIZE,
     });
 
     // Bỏ qua trang 1 vì trang 1 đã được render bởi index.astro tại /tags/<tag>/
@@ -53,7 +52,7 @@ const jsonLd = {
 
 <Layout
   title={`Chủ đề: ${tagLabel} · Trang ${currentPage}`}
-  description={`Danh sách bài viết thuộc chủ đề ${tagLabel} trên 9Gate.`}
+  description={`Trang ${currentPage} của danh sách bài viết thuộc chủ đề ${tagLabel} trên 9Gate.`}
   keywords={`${tagLabel}, 9gate, game`}
   jsonLd={jsonLd}
 >

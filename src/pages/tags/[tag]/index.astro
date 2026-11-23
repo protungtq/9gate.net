@@ -5,24 +5,23 @@ import Pagination from '../../../components/Pagination.astro';
 import { getCollection } from 'astro:content';
 import games from '../../../data/games.json';
 import { latestPostImageMap } from '../../../lib/gameArt';
-import { mapPost, sortPosts, groupPostsByTag, featuredGroups } from '../../../lib/tags';
+import { mapPost, sortPosts, groupPostsByTag, featuredGroups, POST_PAGE_SIZE } from '../../../lib/tags';
 
 export async function getStaticPaths() {
-  const PAGE_SIZE = 12;
   const entries = await getCollection('posts');
   const posts = sortPosts(entries.map(({ id, data }) => mapPost(id, data)));
   const postImageMap = latestPostImageMap(posts);
   const groups = groupPostsByTag(posts);
 
   return groups.map((group) => {
-    const totalPages = Math.max(1, Math.ceil(group.posts.length / PAGE_SIZE));
+    const totalPages = Math.max(1, Math.ceil(group.posts.length / POST_PAGE_SIZE));
     return {
       params: { tag: group.slug },
       props: {
         tagLabel: group.label,
         tags: groups,
         navTags: featuredGroups(groups),
-        posts: group.posts.slice(0, PAGE_SIZE),
+        posts: group.posts.slice(0, POST_PAGE_SIZE),
         postImageMap,
         currentPage: 1,
         totalPages,

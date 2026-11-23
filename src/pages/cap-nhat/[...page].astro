@@ -5,10 +5,10 @@ import Pagination from '../../components/Pagination.astro';
 import { getCollection } from 'astro:content';
 import games from '../../data/games.json';
 import { latestPostImageMap } from '../../lib/gameArt';
-import { featuredGroups } from '../../lib/tags';
+import { featuredGroups, POST_PAGE_SIZE } from '../../lib/tags';
 
 export async function getStaticPaths() {
-  const pageSize = 12;
+  const pageSize = POST_PAGE_SIZE;
   const entries = await getCollection('posts');
   const posts = entries
     .map(({ id, data }) => ({
@@ -87,16 +87,20 @@ export async function getStaticPaths() {
 
 const gameBySlug = Object.fromEntries(games.map((game) => [game.slug, game]));
 const { posts, postImageMap, tags, activeTag, tagLabel, currentPage, totalPages, previousHref, nextHref } = Astro.props;
-const title = activeTag ? `Bài viết về ${tagLabel}` : 'Bài viết';
+const title = activeTag ? `Bài viết về ${tagLabel}` : 'Tin game, hướng dẫn và cập nhật';
+const description = activeTag
+  ? `Bài viết, hướng dẫn và cập nhật về ${tagLabel} trên 9Gate.`
+  : 'Tin tức, hướng dẫn, bản cập nhật và sự kiện về game mobile, PC và console trên 9Gate.';
 ---
 
 <Layout
   title={currentPage > 1 ? `${title} · Trang ${currentPage}` : title}
-  description="Những ghi chép và góc nhìn của mình về game mobile, PC, console và cộng đồng người chơi."
+  description={currentPage > 1 ? `Trang ${currentPage}. ${description}` : description}
+  robots={activeTag ? 'noindex, follow' : undefined}
   keywords="blog game, bài viết về game, góc nhìn game"
 >
   <div class="max-w-[1280px] mx-auto px-4 py-6">
-    <h1 class="text-3xl sm:text-4xl font-extrabold">Bài viết</h1>
+    <h1 class="text-3xl sm:text-4xl font-extrabold">{title}</h1>
     <p class="muted mt-1">Bản vá, hướng dẫn và sự kiện mới nhất từ các game</p>
 
     {tags.length > 1 && (

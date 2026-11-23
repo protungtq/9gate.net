@@ -6,6 +6,8 @@
 // - groupPostsByTag(): gom bài theo slug của tag, nhãn hiển thị lấy theo biến thể
 //   xuất hiện nhiều nhất trong nhóm.
 
+export const POST_PAGE_SIZE = 12;
+
 export interface TagPost {
   slug: string;
   title: string;

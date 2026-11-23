@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import games from '../data/games.json';
+import { absoluteImage } from '../lib/seo';
 
 interface Props {
   title: string;
@@ -13,10 +14,12 @@ interface Props {
   jsonLd?: object;
 }
 
-const { title, description, keywords, ogImage, ogType = 'website', canonical, jsonLd, robots = 'index, follow' } = Astro.props;
+const { title, description, keywords, ogImage, ogType = 'website', canonical, jsonLd, robots = 'index, follow, max-image-preview:large' } = Astro.props;
 const siteName = '9Gate';
 const pageUrl = canonical || new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
-const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
+const fullTitle = /(?:^9Gate\b|\b9Gate$)/i.test(title) ? title : `${title} | ${siteName}`;
+const socialImage = absoluteImage(ogImage, Astro.site ?? Astro.url);
+const schemaText = jsonLd ? JSON.stringify(jsonLd).replace(/</g, '\\u003c') : '';
 
 const gameBySlug = Object.fromEntries(games.map((g) => [g.slug, g]));
 
@@ -61,7 +64,7 @@ const isActive = (href: string) =>
   <meta property="og:site_name" content={siteName} />
   <meta property="og:title" content={fullTitle} />
   <meta property="og:description" content={description} />
-  {ogImage && <meta property="og:image" content={ogImage} />}
+  {socialImage && <meta property="og:image" content={socialImage} />}
   <meta property="og:url" content={pageUrl} />
   <meta property="og:locale" content="vi_VN" />
 
@@ -69,9 +72,9 @@ const isActive = (href: string) =>
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={fullTitle} />
   <meta name="twitter:description" content={description} />
-  {ogImage && <meta name="twitter:image" content={ogImage} />}
+  {socialImage && <meta name="twitter:image" content={socialImage} />}
 
-  {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+  {schemaText && <script type="application/ld+json" set:html={schemaText} />}
 
   <link rel="icon" type="image/x-icon" sizes="16x16" href="/favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />

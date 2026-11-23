@@ -3,8 +3,9 @@ import Layout from '../../layouts/Layout.astro';
 import NewsRow from '../../components/NewsRow.astro';
 import { getCollection, render } from 'astro:content';
 import games from '../../data/games.json';
-import { latestPostImageMap } from '../../lib/gameArt';
+import { gameImage, latestPostImageMap } from '../../lib/gameArt';
 import { tagSlug } from '../../lib/tags';
+import { absoluteImage, seoSummary } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
@@ -18,17 +19,20 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 
 const title = post.data.title ?? 'Bài viết';
-const description = post.data.description ?? '';
+const description = seoSummary(post.data.description?.trim() || title);
 const image = post.data.image ?? '';
 const tags: string[] = post.data.tags || [];
 const tagText = tags[0] || 'Bài viết';
-const dateText = post.data.date
-  ? new Date(post.data.date).toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric' })
-  : '';
-
+const publicationDate = post.data.date ? new Date(post.data.date) : undefined;
+const published = publicationDate && Number.isFinite(publicationDate.valueOf())
+  ? publicationDate.toISOString().slice(0, 10)
+  : undefined;
+const dateText = published ? publicationDate!.toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'UTC' }) : '';
+const originalAuthor = (post.data.legacyAuthor || '').trim();
+const authorName = originalAuthor || '9Gate';
+const editorialTeam = !originalAuthor || /^(9gate|bqt 9gate|admin|administrator)$/i.test(originalAuthor);
 const game = games.find((g) => g.slug === post.data.game);
-const cover = image || game?.cover || game?.icon || '';
-const shareImage = /^\/(?!\/)/.test(cover) ? new URL(cover, Astro.site ?? Astro.url).href : cover;
+const shareImage = absoluteImage(image || gameImage(game), Astro.site ?? Astro.url);
 const BADGES = ['bg-cyan-500', 'bg-violet-500', 'bg-rose-500', 'bg-amber-500', 'bg-emerald-500'];
 let hash = 0;
 for (const ch of tagText) hash += ch.charCodeAt(0);
@@ -71,13 +75,19 @@ const jsonLd = [
     "@type": "Article",
     "headline": title,
     "description": description,
-    "datePublished": post.data.date ?? '',
-    "dateModified": post.data.date ?? '',
+    ...(published && { "datePublished": published }),
     "inLanguage": "vi-VN",
     "mainEntityOfPage": articleUrl,
     ...(shareImage && { "image": shareImage }),
-    "author": { "@type": "Organization", "name": "9Gate", "url": homeUrl },
-    "publisher": { "@type": "Organization", "name": "9Gate", "url": homeUrl },
+    "author": editorialTeam
+      ? { "@type": "Organization", "name": authorName, "url": homeUrl }
+      : { "@type": "Person", "name": authorName },
+    "publisher": {
+      "@type": "Organization",
+      "name": "9Gate",
+      "url": homeUrl,
+      "logo": new URL('/brand/9gate-legacy.png', site).href,
+    },
     ...(game && { "about": { "@type": "VideoGame", "name": game.name, "url": new URL(`/game/${game.slug}/`, site).href } }),
   },
   {
@@ -85,7 +95,8 @@ const jsonLd = [
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Trang chủ", "item": homeUrl },
-      { "@type": "ListItem", "position": 2, "name": "Cập nhật mới", "item": new URL('/cap-nhat/', site).href },
+      { "@type": "ListItem", "position": 2, "name": game?.name || "Cập nhật mới",
+        "item": new URL(game ? `/game/${game.slug}/` : '/cap-nhat/', site).href },
       { "@type": "ListItem", "position": 3, "name": title, "item": articleUrl },
     ],
   },
@@ -115,9 +126,10 @@ const jsonLd = [
     </div>
 
     <article class="post-panel p-4 sm:p-8">
-      <div class="flex items-center gap-2">
+      <div class="flex flex-wrap items-center gap-2">
         <span class={`text-[11px] font-bold text-white rounded px-1.5 py-0.5 ${badge}`}>{tagText}</span>
-        <span class="text-sm muted">{dateText}{game ? ` · ${game.publisher}` : ''}</span>
+        {published && <time class="text-sm muted" datetime={published}>{dateText}</time>}
+        <span class="text-sm muted">· {authorName}</span>
       </div>
       <h1 class="text-3xl sm:text-4xl font-extrabold leading-tight mt-3">{title}</h1>
 
@@ -136,7 +148,7 @@ const jsonLd = [
         </a>
       )}
 
-      {image && <img src={image} alt={title} class="mt-6 w-full rounded-2xl" />}
+      {image && <img src={image} alt={title} class="mt-6 w-full rounded-2xl" fetchpriority="high" />}
 
       <div class="article-body mt-7 flow-root">
         <Content />

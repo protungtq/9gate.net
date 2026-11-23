@@ -12,8 +12,10 @@ const {
 } = Astro.props;
 const genre = filters.find(({ path }) => path === activeFilter)?.label ?? '';
 const pageTitle = activeFilter ? `${title} · ${genre}` : seoTitle;
-const legacyList = activeFilter.startsWith('khu-vuc/') || activeFilter.startsWith('nen-tang/');
-const heading = legacyList ? pageTitle : title;
+const heading = activeFilter ? pageTitle : title;
+const filterDescription = activeFilter
+  ? `Danh sách ${title} · ${genre} trên 9Gate, gồm thông tin game và các bài viết liên quan.`
+  : description;
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -30,7 +32,7 @@ const jsonLd = {
 
 <Layout
   title={currentPage > 1 ? `${pageTitle} · Trang ${currentPage}` : pageTitle}
-  description={legacyList ? `Danh sách game ${genre} trên 9Gate, gồm thông tin game và các bài viết liên quan.` : description}
+  description={currentPage > 1 ? `Trang ${currentPage}. ${filterDescription}` : filterDescription}
   keywords={keywords}
   jsonLd={jsonLd}
   robots={activeSort ? 'noindex, follow' : undefined}

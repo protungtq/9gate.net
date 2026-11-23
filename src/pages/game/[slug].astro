@@ -3,7 +3,8 @@ import Layout from '../../layouts/Layout.astro';
 import NewsRow from '../../components/NewsRow.astro';
 import { getCollection } from 'astro:content';
 import games from '../../data/games.json';
-import { gameArt, latestPostImageMap } from '../../lib/gameArt';
+import { absoluteImage, seoSummary } from '../../lib/seo';
+import { gameArt, gameImage, latestPostImageMap } from '../../lib/gameArt';
 
 export async function getStaticPaths() {
   const entries = await getCollection('posts');
@@ -49,6 +50,9 @@ const relatedGames = games
 
 const site = Astro.site ?? Astro.url;
 const gameUrl = new URL(Astro.url.pathname, site).href;
+const shareImage = absoluteImage(gameImage(game, postImg), site);
+const description = seoSummary(game.seoDescription?.trim() || game.description?.trim()
+  || [game.name, game.genre, platText, game.publisher].filter(Boolean).join(' · '));
 
 const videoLabel = game.trailerType === 'gameplay' ? 'Video trải nghiệm' : game.trailerType === 'intro' ? 'Video giới thiệu' : 'Trailer';
 const jsonLd = [
@@ -56,23 +60,14 @@ const jsonLd = [
     "@context": "https://schema.org",
     "@type": "VideoGame",
     "name": game.name,
-    "description": game.description,
+    "description": game.description?.trim() || description,
     "genre": game.genre,
     "gamePlatform": game.platforms,
     "applicationCategory": "Game",
     "inLanguage": "vi-VN",
     "url": gameUrl,
     ...(game.publisher && { "publisher": { "@type": "Organization", "name": game.publisher } }),
-    ...((game.cover || game.icon) && { "image": game.cover || game.icon }),
-    ...(typeof game.rating === 'number' && {
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": game.rating,
-        "bestRating": 10,
-        "worstRating": 0,
-        "ratingCount": 1,
-      },
-    }),
+    ...(shareImage && { "image": shareImage }),
     // Không gắn VideoObject cho trailer: Google yêu cầu uploadDate + description
     // cho kết quả video, mà trailer không phải nội dung chính của trang hub
     // (GSC báo thiếu 2 trường này trên 901 trang hub ngày 22/11/2026).
@@ -132,9 +127,9 @@ const secondary: Act[] = [
 
 <Layout
   title={game.seoTitle || `${game.name} | 9Gate`}
-  description={game.seoDescription || game.description}
+  description={description}
   keywords={game.seoKeywords}
-  ogImage={game.cover || game.icon}
+  ogImage={shareImage}
   ogType="article"
   jsonLd={jsonLd}
 >
@@ -147,6 +142,7 @@ const secondary: Act[] = [
     </div>
 
     <header class="game-feature p-4 sm:p-6 lg:p-7">
+    <h1 class="sr-only">{game.name}</h1>
     <!-- Đầu trang game (mobile, kiểu app-store) -->
     <div class="sm:hidden">
       <div class="flex gap-3.5">
@@ -156,7 +152,7 @@ const secondary: Act[] = [
           <div class="w-[72px] h-[72px] rounded-[20%] bg-gradient-to-br from-tap to-cyan-500 grid place-items-center text-white text-3xl font-black shrink-0 shadow">{game.name.charAt(0)}</div>
         )}
         <div class="min-w-0 flex-1">
-          <h1 class="text-xl font-extrabold leading-snug line-clamp-2">{game.name}</h1>
+          <p aria-hidden="true" class="text-xl font-extrabold leading-snug line-clamp-2">{game.name}</p>
           <div class="mt-1 flex items-center gap-1.5 text-xs muted flex-wrap">
             {platTokens.map((t) => (
               GLYPH[t]
@@ -203,7 +199,7 @@ const secondary: Act[] = [
         <div class="w-[136px] h-[136px] rounded-[22.5%] bg-gradient-to-br from-tap to-cyan-500 grid place-items-center text-white text-5xl font-black shrink-0 shadow-lg">{game.name.charAt(0)}</div>
       )}
       <div class="flex-1 min-w-0">
-        <h1 class="text-3xl sm:text-4xl font-extrabold">{game.name}</h1>
+        <p aria-hidden="true" class="text-3xl sm:text-4xl font-extrabold">{game.name}</p>
         <div class="muted text-sm mt-1">{game.publisher}</div>
         <div class="flex flex-wrap gap-2 mt-3">
           {[game.genre, ...(game.platforms || [])].map((t) => (
