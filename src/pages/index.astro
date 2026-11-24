@@ -4,18 +4,9 @@ import GameCard from '../components/GameCard.astro';
 import NewsRow from '../components/NewsRow.astro';
 import { getCollection } from 'astro:content';
 import games from '../data/games.json';
-import gameAddedDates from '../data/game-added-dates.json';
 import { featureWindow, featuredRank, selectFeatured } from '../lib/featured.js';
 import { gameArt, gameImage, latestPostImageMap } from '../lib/gameArt';
-
-const addedDates = new Map(Object.entries(gameAddedDates).flatMap(([date, slugs]) =>
-  slugs.map((slug) => [slug, Date.parse(date)] as const)
-));
-const indexedGames = games.map((game, index) => ({
-  game, index, added: Date.parse(game.addedAt || '') || addedDates.get(game.slug) || 0,
-})).sort((a, b) => b.added - a.added || b.index - a.index).map(({ game }) => game);
-const mobileGames = indexedGames.filter((game) => game.category === 'mobile');
-const pcGames = indexedGames.filter((game) => game.category === 'pc-console' || game.category === 'pc');
+import { compareGameRecency } from '../lib/gameRecency';
 
 // ===== Bài viết mới nhất =====
 const fmtDate = (d: any) =>
@@ -44,6 +35,12 @@ for (const post of allPostVMs) {
     latestPostTs.set(post.gameSlug, post._ts);
   }
 }
+
+// ===== Game mới nhất: mục Game Mobile / PC trên trang chủ xếp theo độ mới =====
+const nameOrder = new Intl.Collator('vi', { sensitivity: 'base' });
+const indexedGames = [...games].sort((a, b) => compareGameRecency(a, b, latestPostTs, nameOrder));
+const mobileGames = indexedGames.filter((game) => game.category === 'mobile');
+const pcGames = indexedGames.filter((game) => game.category === 'pc-console' || game.category === 'pc');
 const heroArt = (game: typeof games[number]) => postImageMap[game.slug] || gameImage(game);
 const eligible = games.map((game) => ({
   game, postAt: latestPostTs.get(game.slug) || 0, ...featureWindow(game),

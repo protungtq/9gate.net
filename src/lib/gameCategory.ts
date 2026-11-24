@@ -1,10 +1,12 @@
 import { getCollection } from 'astro:content';
 import games from '../data/games.json';
 import { latestPostImageMap } from './gameArt';
+import { compareGameRecency } from './gameRecency';
 
 export const GAME_PAGE_SIZE = 18;
 const sorts = [
-  { path: '', label: 'Đánh giá' },
+  { path: '', label: 'Mới nhất' },
+  { path: 'danh-gia', label: 'Đánh giá' },
   { path: 'a-z', label: 'A–Z' },
   { path: 'z-a', label: 'Z–A' },
 ] as const;
@@ -84,6 +86,15 @@ export async function gameCategoryPaths(category: Category) {
     );
 
   const byGenre = new Map<string, typeof allGames>();
+  const now = Date.now();
+  const latestPostTs = new Map<string, number>();
+  for (const { data } of entries) {
+    const slug = data.game || '';
+    const ts = data.date ? new Date(data.date).getTime() : 0;
+    if (slug && ts > 0 && ts <= now && ts > (latestPostTs.get(slug) || 0)) {
+      latestPostTs.set(slug, ts);
+    }
+  }
   for (const game of allGames) {
     for (const genre of splitGenres(game.genre ?? '')) {
       const genreGames = byGenre.get(genre) ?? [];
@@ -115,7 +126,8 @@ export async function gameCategoryPaths(category: Category) {
     const list = [...filter.games].sort((a, b) => {
       if (sort.path === 'a-z') return nameOrder.compare(a.name, b.name);
       if (sort.path === 'z-a') return nameOrder.compare(b.name, a.name);
-      return (b.rating ?? b.provisionalRating ?? 0) - (a.rating ?? a.provisionalRating ?? 0);
+      if (sort.path === 'danh-gia') return (b.rating ?? b.provisionalRating ?? 0) - (a.rating ?? a.provisionalRating ?? 0);
+      return compareGameRecency(a, b, latestPostTs, nameOrder);
     });
     const totalPages = Math.max(1, Math.ceil(list.length / GAME_PAGE_SIZE));
 
