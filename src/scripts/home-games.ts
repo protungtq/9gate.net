@@ -42,9 +42,13 @@ if (hero) {
     }
   }
 
+  // Chỉ dừng tự chạy khi rê chuột trên máy có chuột thật; trên cảm ứng
+  // :hover dính lại sau lần chạm đầu tiên nên sẽ kẹt luôn vòng xoay.
+  const canHover = window.matchMedia('(hover: hover)').matches;
+
   function restart() {
     window.clearInterval(rotation);
-    if (visible.length < 2 || !hero || hero.matches(':hover')) return;
+    if (visible.length < 2 || !hero || (canHover && hero.matches(':hover'))) return;
     rotation = window.setInterval(() => {
       const index = visible.findIndex(({ slug }) => slug === active);
       show(visible[(index + 1) % visible.length].slug);
@@ -80,8 +84,52 @@ if (hero) {
   for (const [slug, button] of [...dots, ...playlist]) {
     button.addEventListener('click', () => { show(slug); restart(); });
   }
-  hero.addEventListener('mouseenter', () => window.clearInterval(rotation));
-  hero.addEventListener('mouseleave', restart);
+
+  // Vuốt ngang trên cảm ứng để chuyển slide (mobile). Chỉ nhận vuốt ngang
+  // rõ ràng (tối thiểu 50px, ngang trội hơn dọc) để không chặn cuộn trang.
+  const viewport = hero.querySelector<HTMLElement>('.hero-viewport');
+  if (viewport) {
+    let startX = 0;
+    let startY = 0;
+    let tracking = false;
+    let swiped = false;
+    const SWIPE_MIN = 50;
+
+    const step = (dir: 1 | -1) => {
+      const index = visible.findIndex(({ slug }) => slug === active);
+      const next = visible[(index + dir + visible.length) % visible.length];
+      if (next) { show(next.slug); restart(); }
+    };
+
+    viewport.addEventListener('pointerdown', (event) => {
+      if (event.pointerType === 'mouse') return;
+      tracking = true;
+      swiped = false;
+      startX = event.clientX;
+      startY = event.clientY;
+    });
+    viewport.addEventListener('pointermove', (event) => {
+      if (!tracking) return;
+      const dx = event.clientX - startX;
+      const dy = event.clientY - startY;
+      if (!swiped && Math.abs(dx) >= SWIPE_MIN && Math.abs(dx) > Math.abs(dy)) {
+        swiped = true;
+        tracking = false;
+        step(dx < 0 ? 1 : -1);
+      }
+    });
+    const stopTracking = () => { tracking = false; };
+    viewport.addEventListener('pointerup', stopTracking);
+    viewport.addEventListener('pointercancel', stopTracking);
+    // Chặn click bấm nhầm vào link của slide ngay sau cú vuốt.
+    viewport.addEventListener('click', (event) => {
+      if (swiped) { event.preventDefault(); event.stopPropagation(); swiped = false; }
+    }, true);
+  }
+  if (canHover) {
+    hero.addEventListener('mouseenter', () => window.clearInterval(rotation));
+    hero.addEventListener('mouseleave', restart);
+  }
   document.addEventListener('visibilitychange', () => { if (!document.hidden) refresh(); });
   window.addEventListener('pageshow', refresh);
   refresh();

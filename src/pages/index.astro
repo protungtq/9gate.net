@@ -91,7 +91,7 @@ const jsonLd = {
     <!-- ============ HERO ============ -->
     <div id="hero" hidden={!featured.length} class="game-feature p-2.5 grid lg:grid-cols-[1fr_340px] gap-3">
       <div class="min-w-0">
-        <div class="relative aspect-[16/10] sm:aspect-video rounded-2xl overflow-hidden bg-slate-900">
+        <div class="hero-viewport relative aspect-[16/10] sm:aspect-video rounded-2xl overflow-hidden bg-slate-900">
           {candidates.map(({ game, postAt, starts, ends }) => (
             <a
               href={`/game/${game.slug}/`}
@@ -226,6 +226,7 @@ const jsonLd = {
 
 <style>
   #hero[hidden], #hero [hidden] { display: none; }
+  .hero-viewport { touch-action: pan-y; }
 </style>
 
 <script src="../scripts/home-games.ts"></script>
