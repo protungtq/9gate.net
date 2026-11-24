@@ -75,12 +75,21 @@ export async function gameCategoryPaths(category: Category) {
     _ts: data.date ? new Date(data.date).getTime() : 0,
   })));
 
+  // The loai rac khong bao gio lam chip loc: chu cai don (du lieu cu bi cat
+  // mat khi nhap 21/11) va ten danh muc/nen tang nham thanh the loai.
+  const junkGenres = new Set(['game mobile', 'game pc', 'game trình duyệt']);
+  const splitGenres = (raw: string) =>
+    raw.split(',').map((genre) => genre.trim()).filter(
+      (genre) => genre.length > 1 && !junkGenres.has(genre.toLowerCase()),
+    );
+
   const byGenre = new Map<string, typeof allGames>();
   for (const game of allGames) {
-    if (!game.genre) continue;
-    const genreGames = byGenre.get(game.genre) ?? [];
-    genreGames.push(game);
-    byGenre.set(game.genre, genreGames);
+    for (const genre of splitGenres(game.genre ?? '')) {
+      const genreGames = byGenre.get(genre) ?? [];
+      genreGames.push(game);
+      byGenre.set(genre, genreGames);
+    }
   }
   const usedSlugs = new Set<string>();
   const filters = [
