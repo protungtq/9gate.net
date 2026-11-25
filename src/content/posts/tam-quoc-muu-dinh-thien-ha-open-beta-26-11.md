@@ -14,16 +14,16 @@ tags:
   - SLG
 ---
 
-**Tam Quốc: Mưu Định Thiên Hạ** mở Open Beta tại Việt Nam vào **ngày mai, 26/11**, trên cả iOS lẫn Android. Đây là game SLG Tam Quốc thế hệ mới do LOULAN Entertainment phát hành, đăng ký trước đã mở từ 12/11. Điểm mình thấy khác biệt nhất so với mặt bằng SLG Tam Quốc hiện tại: game không bắt người chơi chạy theo lực chiến bằng mọi giá, mà đẩy mạnh vai trò của từng người trong liên minh — mỗi người chọn một nghề, phối hợp với nhau mới thắng được trận lớn.
+**Game Tam Quốc: Mưu Định Thiên Hạ** mở Open Beta tại Việt Nam vào **ngày mai, 26/11**, trên cả iOS lẫn Android. Đây là game SLG Tam Quốc thế hệ mới do LOULAN Entertainment phát hành, đăng ký trước đã mở từ 12/11. Điểm mình thấy khác biệt nhất so với mặt bằng SLG Tam Quốc hiện tại: game không bắt người chơi chạy theo lực chiến bằng mọi giá, mà đẩy mạnh vai trò của từng người trong liên minh — mỗi người chọn một nghề, phối hợp với nhau mới thắng được trận lớn.
 
 Thông tin nhanh:
 
-- **Mở Open Beta:** 26/11/2026, tại Việt Nam, iOS và Android
-- **Thể loại:** SLG chiến thuật, bản đồ Sa Bàn, liên minh tranh bá
-- **Nhà phát hành tại VN:** LOULAN Entertainment
-- **Đăng ký trước:** từ 12/11 trên App Store và Google Play
-- **Giấy phép G1:** số 7/QĐ-TTĐTCĐS, cấp ngày 22/10/2026
-- **Trang chủ:** newslg.vn
+-   **Mở Open Beta:** 26/11/2026, tại Việt Nam, iOS và Android
+-   **Thể loại:** SLG chiến thuật, bản đồ Sa Bàn, liên minh tranh bá
+-   **Nhà phát hành tại VN:** LOULAN Entertainment
+-   **Đăng ký trước:** từ 12/11 trên App Store và Google Play
+-   **Giấy phép G1:** số 7/QĐ-TTĐTCĐS, cấp ngày 22/10/2026
+-   **Trang chủ:** newslg.vn
 
 ## Sáu nghề, mỗi người một việc
 
@@ -31,7 +31,7 @@ Hệ thống nghề nghiệp là thứ mình muốn nói đầu tiên, vì nó q
 
 Để đỡ mất thời gian vào thao tác lặp, game có sẵn **Tự Động Trải Đường** và **Hẹn Giờ Công Thành** — hẹn giờ đánh thành rồi để đó, tới giờ vào đánh. Với ai từng chơi SLG thì biết hai tính năng này tiết kiệm thời gian cỡ nào.
 
-<img src="https://i.postimg.cc/TYc550r2/muu-inline.webp" alt="Màn hình chọn nghề Kỳ Tá với nhân vật Tư Mã Ý trong Tam Quốc: Mưu Định Thiên Hạ" width="750" height="346" loading="lazy">
+![Màn hình chọn nghề Kỳ Tá với nhân vật Tư Mã Ý trong Tam Quốc: Mưu Định Thiên Hạ](https://i.postimg.cc/TYc550r2/muu-inline.webp)
 
 ## Hợp tác Hỏa Phụng Liêu Nguyên ngay ngày đầu
 
@@ -57,7 +57,7 @@ Hai game Tam Quốc ra mắt sát nhau nên dễ nhầm: **Tam Quốc: Mưu Đ�
 
 **Tam Quốc: Mưu Định Thiên Hạ mở Open Beta khi nào?** Ngày 26/11/2026 tại Việt Nam, trên iOS và Android.
 
-**Đăng ký trước ở đâu?** Cổng đăng ký trước chính thức: https://newslgvnpage.onelink.me/Ibc9/uyejsbpo — hoặc tìm game trực tiếp trên App Store và Google Play.
+**Đăng ký trước ở đâu?** Cổng đăng ký trước chính thức: [https://newslgvnpage.onelink.me/Ibc9/uyejsbpo](https://newslgvnpage.onelink.me/Ibc9/uyejsbpo) — hoặc tìm game trực tiếp trên App Store và Google Play.
 
 **Hợp tác Hỏa Phụng Liêu Nguyên gồm những gì?** Cốt truyện "Lửa Lan Nhất Mộng", minigame bắn cung "Phục Cung Tàng Ảnh", hai ngoại trang động giới hạn Tiểu Mạnh x Điêu Thuyền và Liêu Nguyên Hỏa x Triệu Vân, cùng sự kiện điểm danh "Quà Tặng Liêu Nguyên".
 
