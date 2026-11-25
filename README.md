@@ -14,7 +14,7 @@ Blog game cá nhân, nơi lưu góc nhìn, ghi chép và những game đáng đ�
 
 ## Quản lý game
 
-Mở `/tools/gamehub-cms/` để quản lý game, soạn bài, nhập Markdown hoặc khôi phục bản nháp đã lưu trên trình duyệt. Đường dẫn cũ `/tools/gamehub-cms.html` chuyển tới CMS mới trên Cloudflare Pages.
+Mở `/tools/cms/` để quản lý game, soạn bài, nhập Markdown hoặc khôi phục bản nháp đã lưu trên trình duyệt. Các đường dẫn cũ `/tools/gamehub-cms/` và `/tools/gamehub-cms.html` chuyển hướng đến đây.
 
 Điền Worker Proxy, repo và nhánh xuất bản của 9Gate trong mục Kết nối. Worker cần hỗ trợ các tham số `repo` và `branch` cho thao tác đọc, ghi và xóa trên GitHub. Có thể dùng `/tools/games.html` để quản lý riêng danh mục game.
 
