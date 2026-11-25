@@ -478,3 +478,165 @@ const editor = createPostEditor({
 
 readDraft();
 loadGames();
+
+
+const historyView = $("#v-history");
+if (historyView) {
+  const scope = $("#history-scope");
+  const previous = $("#history-prev");
+  const next = $("#history-next");
+  const status = $("#history-status");
+  const commits = $("#history-commits");
+  const detail = $("#history-detail");
+  let page = 1;
+  let requestId = 0;
+
+  const make = (tag, value) => {
+    const element = document.createElement(tag);
+    if (value !== undefined) element.textContent = value;
+    return element;
+  };
+  const button = (label, handler) => {
+    const element = make("button", label);
+    element.type = "button";
+    element.className = "btn";
+    element.onclick = handler;
+    return element;
+  };
+  const query = (route, params) => api(route + "?" + new URLSearchParams(params));
+  const gamePath = "src/data/games.json";
+  const showError = error => { status.textContent = "Lỗi lịch sử: " + error.message; };
+  const compare = (label, value) => {
+    const heading = make("h3", label);
+    const field = make("textarea", value);
+    field.readOnly = true;
+    field.rows = 12;
+    field.style.width = "100%";
+    field.setAttribute("aria-label", label);
+    return [heading, field];
+  };
+
+  async function loadHistory() {
+    const id = ++requestId;
+    status.textContent = "Đang tải lịch sử…";
+    commits.replaceChildren();
+    detail.replaceChildren();
+    previous.disabled = next.disabled = true;
+    try {
+      const result = await query("/history", { scope: scope.value, page });
+      if (id !== requestId) return;
+      status.textContent = result.commits.length ? "Trang " + page : "Chưa có commit.";
+      previous.disabled = page <= 1;
+      next.disabled = !result.more;
+      for (const commit of result.commits) {
+        const row = make("p");
+        const date = new Date(commit.date).toLocaleString("vi-VN");
+        row.append(make("span", commit.sha.slice(0, 7) + " · " + date + " · " + commit.author + " · " + commit.message + " "),
+          button("Xem thay đổi", () => openCommit(commit)));
+        commits.append(row);
+      }
+    } catch (error) {
+      if (id === requestId) {
+        previous.disabled = page <= 1;
+        showError(error);
+      }
+    }
+  }
+
+  async function openCommit(commit) {
+    const id = ++requestId;
+    const filesBox = make("div");
+    const preview = make("div");
+    detail.replaceChildren(make("h2", "Commit " + commit.sha.slice(0, 7)), filesBox, preview);
+    status.textContent = "Đang tải thay đổi…";
+    try {
+      const result = await query("/history-files", { ref: commit.sha });
+      if (id !== requestId) return;
+      const files = result.files.filter(file => (file.path === gamePath) === (scope.value === "games"));
+      status.textContent = result.more ? "Đang hiện các tệp trong trang đầu của commit này." :
+        files.length ? "" : "Không tìm thấy tệp phù hợp trong commit.";
+      for (const file of files) {
+        const row = make("p");
+        row.append(make("span", file.path + " · " + file.status + " "));
+        if (file.status !== "removed") {
+          row.append(button("Xem bản tại commit", () => openVersion(file.path, commit.sha, preview)));
+        }
+        if (result.parent && file.status !== "added") {
+          row.append(button("Xem bản trước commit", () => openVersion(file.path, result.parent, preview)));
+        }
+        filesBox.append(row);
+      }
+      if (files.length) detail.scrollIntoView({ block: "nearest" });
+    } catch (error) {
+      if (id === requestId) showError(error);
+    }
+  }
+
+  async function openVersion(path, ref, preview) {
+    const id = ++requestId;
+    preview.replaceChildren(make("p", "Đang tải bản so sánh…"));
+    try {
+      const result = await query("/history-version", { path, ref });
+      if (id !== requestId) return;
+      const diff = make("div");
+      const restore = button("Khôi phục phiên bản này", async () => {
+        if (!confirm("Khôi phục nội dung đã chọn và tạo commit mới?")) return;
+        restore.disabled = true;
+        try {
+          const saved = await api("/history-restore", { path, ref, slug: selectedSlug, expectedSha: result.current.sha });
+          const note = make("p", "Đã khôi phục. Commit " + saved.commit.slice(0, 7) + ".");
+          if (path === gamePath) {
+            $("#push").disabled = true;
+            note.append(" Tải lại CMS trước khi đẩy danh sách game.");
+          }
+          preview.replaceChildren(note);
+          toast("Đã khôi phục phiên bản", "o");
+        } catch (error) {
+          showError(error);
+          toast(error.message, "e");
+          restore.disabled = false;
+        }
+      });
+      let selectedSlug;
+      preview.replaceChildren(make("h3", "Phiên bản " + ref.slice(0, 7)));
+      if (path === gamePath) {
+        const currentGames = new Map(JSON.parse(result.current.text ?? "[]").map(game => [game.slug, game]));
+        const changed = JSON.parse(result.previousText).filter(game =>
+          game.slug && JSON.stringify(game) !== JSON.stringify(currentGames.get(game.slug)));
+        if (!changed.length) {
+          preview.append(make("p", "Không có game khác với dữ liệu hiện tại để khôi phục."));
+          return;
+        }
+        const select = make("select");
+        select.setAttribute("aria-label", "Game cần khôi phục");
+        for (const game of changed) {
+          const option = make("option", (game.title || game.name || game.slug) +
+            (currentGames.has(game.slug) ? "" : " · Đã xóa"));
+          option.value = game.slug;
+          select.append(option);
+        }
+        select.onchange = () => {
+          selectedSlug = select.value;
+          const selected = changed.find(game => game.slug === selectedSlug);
+          const current = currentGames.get(selectedSlug);
+          diff.replaceChildren(...compare("Hiện tại", current ? JSON.stringify(current, null, 2) : "Game chưa có trong danh sách."),
+            ...compare("Bản đã chọn", JSON.stringify(selected, null, 2)));
+        };
+        preview.append(select);
+        select.onchange();
+      } else {
+        diff.append(...compare("Hiện tại", result.current.text ?? "Bài đã bị xóa."),
+          ...compare("Bản đã chọn", result.previousText));
+      }
+      preview.append(diff, restore);
+      preview.scrollIntoView({ block: "nearest" });
+    } catch (error) {
+      if (id === requestId) preview.replaceChildren(make("p", "Không tải được phiên bản: " + error.message));
+    }
+  }
+
+  $("[data-v=history]").addEventListener("click", loadHistory);
+  scope.onchange = () => { page = 1; loadHistory(); };
+  previous.onclick = () => { page -= 1; loadHistory(); };
+  next.onclick = () => { page += 1; loadHistory(); };
+}
