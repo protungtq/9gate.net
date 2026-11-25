@@ -47818,7 +47818,9 @@
     "trailer": "",
     "description": "Game mobile SLG chiến thuật thế hệ mới lấy bối cảnh Tam Quốc, đề cao tính công bằng: hệ thống 6 nghề nghiệp, bản đồ Sa Bàn rộng lớn, liên minh tranh bá. Bản Việt Nam do LOULAN Entertainment phát hành, mở Open Beta ngày 26/11/2026.",
     "website": "https://www.newslg.vn/",
-    "provisionalRating": 8.3
+    "provisionalRating": 8.3,
+    "featured": true,
+    "featuredAt": "2026-11-25T14:38:04+07:00"
   },
   {
     "slug": "warhammer-40000-dawn-of-war-iv",
