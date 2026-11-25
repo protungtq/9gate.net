@@ -1,10 +1,17 @@
 ---
 title: "Mưu Định Thiên Hạ mở server Việt Nam 26/11: 6 nghề, liên minh tranh bá và quà Hỏa Phụng Liêu Nguyên"
 description: "Tam Quốc: Mưu Định Thiên Hạ mở Open Beta tại Việt Nam ngày 26/11: SLG Tam Quốc với 6 nghề nghiệp, bản đồ Sa Bàn và sự kiện hợp tác Hỏa Phụng Liêu Nguyên ngay ngày đầu."
-image: "https://i.postimg.cc/L4L1225f/muu-cover.webp"
-tags: ["Tam Quốc: Mưu Định Thiên Hạ", "tải game Tam Quốc: Mưu Định Thiên Hạ", "LOULAN Entertainment", "cập nhật Tam Quốc: Mưu Định Thiên Hạ", "Chiến thuật", "SLG"]
-game: "tam-quoc-muu-dinh-thien-ha"
-date: "2026-11-25"
+date: 2026-11-25
+image: https://i.postimg.cc/L4L1225f/muu-cover.webp
+game: tam-quoc-muu-dinh-thien-ha
+type: Cập nhật
+tags:
+  - "Tam Quốc: Mưu Định Thiên Hạ"
+  - "tải game Tam Quốc: Mưu Định Thiên Hạ"
+  - LOULAN Entertainment
+  - "cập nhật Tam Quốc: Mưu Định Thiên Hạ"
+  - Chiến thuật
+  - SLG
 ---
 
 **Tam Quốc: Mưu Định Thiên Hạ** mở Open Beta tại Việt Nam vào **ngày mai, 26/11**, trên cả iOS lẫn Android. Đây là game SLG Tam Quốc thế hệ mới do LOULAN Entertainment phát hành, đăng ký trước đã mở từ 12/11. Điểm mình thấy khác biệt nhất so với mặt bằng SLG Tam Quốc hiện tại: game không bắt người chơi chạy theo lực chiến bằng mọi giá, mà đẩy mạnh vai trò của từng người trong liên minh — mỗi người chọn một nghề, phối hợp với nhau mới thắng được trận lớn.
