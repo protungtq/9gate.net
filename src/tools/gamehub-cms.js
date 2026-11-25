@@ -12,18 +12,42 @@ const sT=t=>{document.documentElement.dataset.t=t;LS("cms-theme",t)};
 sT(LS("cms-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light"));
 $("#theme").onclick=()=>sT(document.documentElement.dataset.t=="dark"?"light":"dark");
 /* config */
-const DEF={w:"",r:"",b:"main",j:"/tools/games-data.json",provider:"imgbb"};
-let cfg = { ...DEF };
-try {
-  cfg = { ...DEF, ...JSON.parse(LS("9gate-cms-cfg") || "{}") };
-} catch {}
-if (cfg.j === "/src/data/games.json") cfg.j = DEF.j;
-const cm={w:"cw",r:"cr",b:"cb",j:"cj",provider:"image-provider"};
-Object.entries(cm).forEach(([k,id])=>$("#"+id).value=cfg[k]);
-$("#cok").onclick=()=>{Object.entries(cm).forEach(([k,id])=>cfg[k]=$("#"+id).value.trim().replace(/\/+$/,""));LS("9gate-cms-cfg",JSON.stringify(cfg));toast("Đã lưu kết nối","o");loadGames()};
-async function api(path, body) {
-  if (!cfg.w || !cfg.r) throw new Error("Nhập Worker Proxy và repo GitHub trong mục Kết nối.");
+const cfg = {
+  w: "https://9gate.net/tools/cms/api",
+  r: "protungtq/9gate.net",
+  b: "main",
+  j: "/tools/games-data.json",
+  provider: "imgbb",
+};
 
+try {
+  const saved = JSON.parse(LS("9gate-cms-cfg") || "{}");
+  if (saved?.provider === "freeimage") cfg.provider = saved.provider;
+} catch {}
+
+const connectionButton = $("#cok");
+connectionButton.textContent = "Kiểm tra kết nối";
+connectionButton.onclick = async () => {
+  const status = $("#connection-status");
+  const report = (message, error = false) => {
+    if (status) status.textContent = message;
+    else if (message !== "Đang kiểm tra kết nối…") toast(message, error ? "e" : "o");
+  };
+
+  connectionButton.disabled = true;
+  report("Đang kiểm tra kết nối…");
+  try {
+    const file = "khan-mobi-game-mmo-boi-canh-de-che-mong-co-1464.md";
+    const result = await api("/github-get?file=" + encodeURIComponent(file));
+    if (typeof result.markdown !== "string") throw new Error("Worker không trả về nội dung bài.");
+    report("Kết nối thành công. Worker đã đọc được bài từ GitHub.");
+  } catch (error) {
+    report("Lỗi kết nối: " + error.message, true);
+  } finally {
+    connectionButton.disabled = false;
+  }
+};
+async function api(path, body) {
   const url = new URL(cfg.w + path);
   if (!body) {
     url.searchParams.set("repo", cfg.r);
@@ -51,7 +75,7 @@ let games=[],base={},fmiss="",editing=null;
 const miss={cover:g=>!g.cover,trailer:g=>!g.trailer,rating:g=>g.rating==null&&g.provisionalRating==null};
 function gameDataUrls() {
   const raw = cfg.r && `https://raw.githubusercontent.com/${cfg.r}/${cfg.b}/src/data/games.json`;
-  return (cfg.j === DEF.j ? [raw, cfg.j] : [cfg.j, raw]).filter(Boolean);
+  return [raw, cfg.j].filter(Boolean);
 }
 async function loadGames(){let d=null;for(const u of gameDataUrls()){try{const r=await fetch(u);if(r.ok){const data=await r.json();if(Array.isArray(data)){d=data;break}}}catch(e){}}
   if(!Array.isArray(d)){$("#list").innerHTML='<div class="empty">Chưa tải được games.json. Kiểm tra mục Kết nối, hoặc bấm "Nhập games.json" để chọn file từ máy.</div>';return}
