@@ -3,6 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import GameCard from './GameCard.astro';
 import Pagination from './Pagination.astro';
 import { GAME_PAGE_SIZE, type gameCategoryPaths } from '../lib/gameCategory';
+import { breadcrumbSchema, listSchema } from '../lib/seo';
+import { gameImage } from '../lib/gameArt';
 
 type Props = Awaited<ReturnType<typeof gameCategoryPaths>>[number]['props'];
 
@@ -17,23 +19,25 @@ const filterDescription = activeFilter
   ? `Danh sách ${title} · ${genre} trên 9Gate, gồm thông tin game và các bài viết liên quan.`
   : description;
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'ItemList',
-  name: activeFilter ? pageTitle : title,
-  itemListElement: games.map((game, index) => ({
-    '@type': 'ListItem',
-    position: (currentPage - 1) * GAME_PAGE_SIZE + index + 1,
-    name: game.name,
-    url: new URL(`/game/${game.slug}/`, Astro.site ?? Astro.url).href,
-  })),
-};
+const site = Astro.site ?? Astro.url;
+const categoryPath = title === 'Game Mobile' ? '/mobile/' : '/pc/';
+const filterPath = activeFilter ? `${categoryPath}${activeFilter}/` : categoryPath;
+const currentPath = Astro.url.pathname;
+const crumbs = [{ name: title, path: categoryPath }];
+if (activeFilter) crumbs.push({ name: genre, path: filterPath });
+if (currentPage > 1) crumbs.push({ name: `Trang ${currentPage}`, path: currentPath });
+const jsonLd = [
+  breadcrumbSchema(site, crumbs),
+  listSchema(site, heading, games.map((game) => ({ name: game.name, path: `/game/${game.slug}/` })), (currentPage - 1) * GAME_PAGE_SIZE),
+];
+const ogImage = games[0] ? gameImage(games[0], postImages[games[0].slug]) : undefined;
 ---
 
 <Layout
   title={currentPage > 1 ? `${pageTitle} · Trang ${currentPage}` : pageTitle}
   description={currentPage > 1 ? `Trang ${currentPage}. ${filterDescription}` : filterDescription}
   keywords={keywords}
+  ogImage={ogImage}
   jsonLd={jsonLd}
   robots={activeSort ? 'noindex, follow' : undefined}
 >

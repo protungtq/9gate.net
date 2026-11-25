@@ -4,7 +4,9 @@ import ArticleSidebar from './ArticleSidebar.astro';
 import NewsRow from './NewsRow.astro';
 import Pagination from './Pagination.astro';
 import games from '../data/games.json';
-import type { TagGroup, TagPost } from '../lib/tags';
+import { POST_PAGE_SIZE, type TagGroup, type TagPost } from '../lib/tags';
+import { breadcrumbSchema, listSchema, seoSummary } from '../lib/seo';
+import { gameImage } from '../lib/gameArt';
 
 type TagLink = Pick<TagGroup, 'slug' | 'label'>;
 
@@ -29,20 +31,25 @@ const gameBySlug = Object.fromEntries(games.map((game) => [game.slug, game]));
 const slug = Astro.params.tag;
 const site = Astro.site ?? Astro.url;
 const paginated = currentPage > 1;
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Trang chủ', item: new URL('/', site).href },
-    { '@type': 'ListItem', position: 2, name: 'Cập nhật mới', item: new URL('/cap-nhat/', site).href },
-    { '@type': 'ListItem', position: 3, name: tagLabel, item: new URL(`/tags/${slug}/`, site).href },
-  ],
-};
+const crumbs = [
+  { name: 'Cập nhật mới', path: '/cap-nhat/' },
+  { name: 'Chủ đề bài viết', path: '/tags/' },
+  { name: tagLabel, path: `/tags/${slug}/` },
+];
+if (paginated) crumbs.push({ name: `Trang ${currentPage}`, path: Astro.url.pathname });
+const jsonLd = [
+  breadcrumbSchema(site, crumbs),
+  listSchema(site, tagLabel, posts.map((post) => ({ name: post.title, path: `/p/${post.slug}/` })), (currentPage - 1) * POST_PAGE_SIZE),
+];
+const description = seoSummary(`${tagLabel} trên 9Gate · ${totalPosts} bài viết.${paginated ? ` Trang ${currentPage}.` : ''}${posts[0] ? ` ${posts[0].title}` : ''}`);
+const first = posts[0];
+const ogImage = first ? first.image || gameImage(gameBySlug[first.gameSlug], postImageMap[first.gameSlug]) : undefined;
 ---
 
 <Layout
   title={`Chủ đề: ${tagLabel}${paginated ? ` · Trang ${currentPage}` : ''}`}
-  description={`${paginated ? `Trang ${currentPage} của danh sách` : 'Danh sách'} bài viết thuộc chủ đề ${tagLabel} trên 9Gate.`}
+  description={description}
+  ogImage={ogImage}
   keywords={`${tagLabel}, 9gate, game`}
   jsonLd={jsonLd}
 >
@@ -56,7 +63,7 @@ const jsonLd = {
       <p class="muted mt-1">{totalPosts} bài viết</p>
 
       <nav class="tag-topics flex gap-2 overflow-x-auto p-1 pb-2 my-4" aria-label="Chủ đề bài viết">
-        <a class="chip shrink-0" href="/cap-nhat/">Tất cả</a>
+        <a class="chip shrink-0" href="/tags/">Tất cả chủ đề</a>
         {navTags.map((tag) => (
           <a
             class:list={['chip shrink-0', { 'chip-on': tag.slug === slug }]}

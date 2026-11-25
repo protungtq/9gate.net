@@ -9,12 +9,14 @@ export const GET: APIRoute = async () => {
     ...games.map((game) => ({
       t: game.name,
       s: [game.genre, game.publisher].filter(Boolean).join(' · '),
+      k: [game.slug, game.seoKeywords, ...(game.platforms || [])].filter(Boolean).join(' '),
       u: `/game/${game.slug}/`,
       i: game.icon || '',
     })),
     ...posts.map(({ id, data }) => ({
       t: data.title,
       s: gameBySlug[data.game]?.name || 'Bài viết',
+      k: (data.tags || []).join(' '),
       u: `/p/${id.replace(/\.(md|mdx)$/i, '')}/`,
       i: data.image || gameBySlug[data.game]?.icon || '',
     })),

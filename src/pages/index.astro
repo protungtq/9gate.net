@@ -66,18 +66,22 @@ const trending = trendingFallback.slice(0, 4);
 const mmorpgSet = games.filter((g) => (g.genre || '').includes('MMORPG') && gameArt(g, postImageMap[g.slug])).slice(0, 4);
 const mobileSet = mobileGames.filter((g) => gameArt(g, postImageMap[g.slug])).slice(0, 4);
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "9Gate",
-  "url": new URL('/', Astro.site ?? Astro.url).href,
-  "description": "9Gate là blog cá nhân về game mobile, PC và console, với ghi chép, góc nhìn và những game mình để ý.",
-};
+const site = Astro.site ?? Astro.url;
+const siteUrl = new URL('/', site).href;
+const siteDescription = '9Gate là blog cá nhân về game Mobile, PC và Console. Khám phá danh mục game, thông tin nền tảng, trailer, link tải và các bài cập nhật mới.';
+const publisherId = new URL('/#organization', site).href;
+const jsonLd = [
+  { '@context': 'https://schema.org', '@type': 'WebSite', '@id': new URL('/#website', site).href,
+    name: '9Gate', url: siteUrl, description: siteDescription, inLanguage: 'vi-VN', publisher: { '@id': publisherId } },
+  { '@context': 'https://schema.org', '@type': 'Organization', '@id': publisherId, name: '9Gate',
+    url: siteUrl, logo: new URL('/brand/9gate-legacy.png', site).href },
+];
 ---
 
 <Layout
   title="9Gate - Thế giới GAME của bạn"
-  description="Mình viết về những tựa game đang để ý, những thay đổi đáng bàn và chuyện cộng đồng game."
+  description={siteDescription}
+  ogImage={featured[0] ? heroArt(featured[0].game) : undefined}
   keywords="blog game cá nhân, game mobile, game PC, console, góc nhìn game"
   jsonLd={jsonLd}
 >

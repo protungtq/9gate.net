@@ -1,0 +1,26 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { groupPostsByTag, mapPost, sortPosts } from '../../lib/tags';
+import { breadcrumbSchema } from '../../lib/seo';
+
+const tags = groupPostsByTag(sortPosts((await getCollection('posts')).map(({ id, data }) => mapPost(id, data))));
+const jsonLd = breadcrumbSchema(Astro.site ?? Astro.url, [
+  { name: 'Cập nhật mới', path: '/cap-nhat/' },
+  { name: 'Chủ đề bài viết', path: '/tags/' },
+]);
+---
+
+<Layout title="Chủ đề và từ khóa game" description="Tìm bài viết trên 9Gate theo chủ đề: tên game, thể loại, nhà phát hành, hướng dẫn và bản cập nhật." jsonLd={jsonLd}>
+  <section class="content-panel mt-6" aria-labelledby="topic-directory">
+    <h1 id="topic-directory" class="text-3xl font-extrabold">Chủ đề bài viết</h1>
+    <ul class="mt-5 grid gap-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      {tags.map((tag) => (
+        <li><a class="flex h-full items-center justify-between gap-2 rounded-xl p-3 sf hover:text-tap" href={`/tags/${tag.slug}/`}>
+          <span class="font-semibold break-words min-w-0">{tag.label}</span>
+          <span class="muted text-xs whitespace-nowrap">{tag.posts.length} bài</span>
+        </a></li>
+      ))}
+    </ul>
+  </section>
+</Layout>

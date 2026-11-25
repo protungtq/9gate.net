@@ -9,12 +9,13 @@ interface Props {
   keywords?: string;
   ogImage?: string;
   ogType?: string;
+  published?: string;
   canonical?: string;
   robots?: string;
   jsonLd?: object;
 }
 
-const { title, description, keywords, ogImage, ogType = 'website', canonical, jsonLd, robots = 'index, follow, max-image-preview:large' } = Astro.props;
+const { title, description, keywords, ogImage, ogType = 'website', published, canonical, jsonLd, robots = 'index, follow, max-image-preview:large' } = Astro.props;
 const siteName = '9Gate';
 const pageUrl = canonical || new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
 const fullTitle = /(?:^9Gate\b|\b9Gate$)/i.test(title) ? title : `${title} | ${siteName}`;
@@ -65,11 +66,12 @@ const isActive = (href: string) =>
   <meta property="og:title" content={fullTitle} />
   <meta property="og:description" content={description} />
   {socialImage && <meta property="og:image" content={socialImage} />}
+  {ogType === 'article' && published && <meta property="article:published_time" content={published} />}
   <meta property="og:url" content={pageUrl} />
   <meta property="og:locale" content="vi_VN" />
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:card" content={socialImage ? "summary_large_image" : "summary"} />
   <meta name="twitter:title" content={fullTitle} />
   <meta name="twitter:description" content={description} />
   {socialImage && <meta name="twitter:image" content={socialImage} />}
@@ -112,12 +114,12 @@ const isActive = (href: string) =>
       <button id="search-toggle" type="button" aria-label="Tìm kiếm" aria-controls="header-search" aria-expanded="false" class="ml-auto grid h-11 w-11 shrink-0 place-items-center rounded-full sf hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-tap dark:hover:bg-white/15 lg:hidden">
         <svg aria-hidden="true" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
       </button>
-      <div id="header-search" role="search" class="hidden absolute inset-x-3 top-full z-20 mt-2 rounded-2xl bg-[var(--gate-panel)] p-2 shadow-lg ring-1 ring-[var(--gate-border)] lg:relative lg:inset-auto lg:mt-0 lg:ml-auto lg:block lg:min-w-0 lg:flex-1 lg:max-w-xl lg:bg-transparent lg:p-0 lg:shadow-none lg:ring-0 lg:dark:bg-transparent">
-        <div class="relative">
+      <div id="header-search" role="search" aria-label="Tìm kiếm nhanh" class="hidden absolute inset-x-3 top-full z-20 mt-2 rounded-2xl bg-[var(--gate-panel)] p-2 shadow-lg ring-1 ring-[var(--gate-border)] lg:relative lg:inset-auto lg:mt-0 lg:ml-auto lg:block lg:min-w-0 lg:flex-1 lg:max-w-xl lg:bg-transparent lg:p-0 lg:shadow-none lg:ring-0 lg:dark:bg-transparent">
+        <form class="relative" action="/tim-kiem/" method="get">
           <svg aria-hidden="true" class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 muted pointer-events-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-          <input id="q" type="search" aria-label="Tìm game hoặc bài viết" placeholder="Tìm game, bài viết…" autocomplete="off" class="w-full h-11 rounded-full bg-[var(--gate-inset)] pl-10 pr-4 text-base lg:text-sm placeholder:text-slate-600 dark:placeholder:text-slate-400 outline-none focus:ring-2 ring-tap" />
+          <input id="q" name="q" type="search" maxlength="120" required aria-label="Tìm game hoặc bài viết" placeholder="Tìm game, bài viết…" autocomplete="off" class="w-full h-11 rounded-full bg-[var(--gate-inset)] pl-10 pr-4 text-base lg:text-sm placeholder:text-slate-600 dark:placeholder:text-slate-400 outline-none focus:ring-2 ring-tap" />
           <div id="sr" class="hidden absolute left-0 right-0 top-full mt-2 rounded-2xl bg-[var(--gate-panel)] ring-1 ring-[var(--gate-border)] shadow-xl p-2 max-h-80 overflow-auto z-50"></div>
-        </div>
+        </form>
       </div>
       <button id="tg" type="button" aria-label="Chuyển giao diện sáng / tối" title="Sáng / tối" class="w-11 h-11 shrink-0 rounded-full sf grid place-items-center hover:bg-black/10 dark:hover:bg-white/15 transition">
         <svg class="w-5 h-5 hidden dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
@@ -193,12 +195,14 @@ const isActive = (href: string) =>
     </div>
   </footer>
 
-  <script is:inline>
+  <script>
+    import { loadSearchIndex, searchEntries, searchResultLink } from '../lib/siteSearch';
+
     const copyrightYear = document.getElementById('copyright-year');
     if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
 
     // ===== Sáng / tối =====
-    function setTheme(t) {
+    function setTheme(t: string) {
       document.documentElement.classList.toggle('dark', t === 'dark');
       try { localStorage.setItem('theme', t); } catch (e) {}
       var m = document.querySelector('meta[name="theme-color"]');
@@ -209,75 +213,42 @@ const isActive = (href: string) =>
       setTheme(document.documentElement.classList.contains('dark') ? 'light' : 'dark');
     });
 
-    // ===== Tìm kiếm =====
-    var norm = function (s) {
-      return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
-    };
-    var q = document.getElementById('q');
-    var sr = document.getElementById('sr');
-    let searchIndexPromise;
+    const q = document.querySelector<HTMLInputElement>('#q')!;
+    const sr = document.getElementById('sr')!;
     let searchRequest = 0;
     function hideSr() {
       searchRequest++;
-      if (sr) sr.classList.add('hidden');
-    }
-    function loadSearchIndex() {
-      searchIndexPromise ??= fetch('/search-index.json').then(function (response) {
-        if (!response.ok) throw new Error('Không tải được dữ liệu tìm kiếm');
-        return response.json();
-      }).catch(function (error) {
-        searchIndexPromise = undefined;
-        throw error;
-      });
-      return searchIndexPromise;
-    }
-    const escapeSearchText = (value) => String(value || '').replace(/[&<>"']/g, (char) => ({
-      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
-    })[char]);
-    if (q && sr) {
-      q.addEventListener('input', async function () {
-        const term = norm(q.value.trim());
-        hideSr();
-        if (!term) return;
-        const request = searchRequest;
-        let searchIndex;
-        try {
-          searchIndex = await loadSearchIndex();
-        } catch {
-          if (request !== searchRequest) return;
-          sr.textContent = 'Không tải được dữ liệu tìm kiếm.';
-          sr.classList.remove('hidden');
-          return;
-        }
-        if (request !== searchRequest) return;
-        const results = searchIndex.filter((entry) => norm(entry.t + ' ' + entry.s).includes(term)).slice(0, 8);
-        sr.innerHTML = results.length
-          ? results.map(function (entry) {
-              const { t, s, i, u } = Object.fromEntries(
-                Object.entries(entry).map(([key, value]) => [key, escapeSearchText(value)])
-              );
-              return '<a href="' + u + '" class="flex items-center gap-3 p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/10">' +
-                (i ? '<img src="' + i + '" alt="" class="w-10 h-10 rounded-[22%] object-cover shrink-0" loading="lazy">' : '<span class="w-10 h-10 rounded-[22%] bg-tap/15 shrink-0"></span>') +
-                '<span class="min-w-0"><span class="block font-bold text-sm truncate">' + t + '</span>' +
-                '<span class="block text-xs muted truncate">' + s + '</span></span></a>';
-            }).join('')
-          : '<div class="p-3 text-sm muted">Không tìm thấy kết quả phù hợp</div>';
-        sr.classList.remove('hidden');
-      });
-      q.addEventListener('keydown', function (e) {
-        if (e.key === 'Enter' && !sr.classList.contains('hidden')) {
-          var first = sr.querySelector('a');
-          if (first) window.location.href = first.getAttribute('href');
-        }
-      });
+      sr.classList.add('hidden');
     }
 
+    q.addEventListener('input', async () => {
+      const term = q.value.trim();
+      hideSr();
+      if (!term) return;
+      const request = searchRequest;
+      try {
+        const index = await loadSearchIndex();
+        if (request !== searchRequest) return;
+        const results = searchEntries(index, term).slice(0, 8);
+        sr.replaceChildren(...results.map(searchResultLink));
+        const all = document.createElement('a');
+        all.href = `/tim-kiem/?${new URLSearchParams({ q: term })}`;
+        all.className = 'block p-3 text-sm font-semibold text-tap';
+        all.textContent = results.length ? 'Xem tất cả kết quả' : 'Không tìm thấy gợi ý · Mở trang tìm kiếm';
+        sr.append(all);
+      } catch {
+        if (request !== searchRequest) return;
+        sr.textContent = 'Không tải được dữ liệu tìm kiếm.';
+      }
+      sr.classList.remove('hidden');
+    });
+
     // ===== Điều hướng và tìm kiếm trên màn hình nhỏ =====
-    var headerMenu = document.getElementById('header-menu');
-    var searchToggle = document.getElementById('search-toggle');
-    var headerSearch = document.getElementById('header-search');
+    const headerMenu = document.querySelector<HTMLDetailsElement>('#header-menu')!;
+    const searchToggle = document.getElementById('search-toggle')!;
+    const headerSearch = document.getElementById('header-search')!;
     var desktopHeader = window.matchMedia('(min-width: 1024px)');
-    function setMobileSearch(open) {
+    function setMobileSearch(open: boolean) {
       headerSearch.classList.toggle('hidden', !open);
       searchToggle.setAttribute('aria-expanded', String(open));
       if (open) {
@@ -299,8 +270,8 @@ const isActive = (href: string) =>
       setMobileSearch(false);
     });
     document.addEventListener('click', function (e) {
-      if (!headerMenu.contains(e.target)) headerMenu.open = false;
-      if (!headerSearch.contains(e.target) && !searchToggle.contains(e.target)) {
+      if (!headerMenu.contains(e.target as Node)) headerMenu.open = false;
+      if (!headerSearch.contains(e.target as Node) && !searchToggle.contains(e.target as Node)) {
         if (desktopHeader.matches) hideSr();
         else setMobileSearch(false);
       }
@@ -309,7 +280,7 @@ const isActive = (href: string) =>
       if (e.key !== 'Escape') return;
       if (headerMenu.open) {
         headerMenu.open = false;
-        headerMenu.querySelector('summary').focus();
+        headerMenu.querySelector('summary')?.focus();
       } else if (searchToggle.getAttribute('aria-expanded') === 'true') {
         setMobileSearch(false);
         searchToggle.focus();

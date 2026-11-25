@@ -4,8 +4,9 @@ import NewsRow from '../../components/NewsRow.astro';
 import Pagination from '../../components/Pagination.astro';
 import { getCollection } from 'astro:content';
 import games from '../../data/games.json';
-import { latestPostImageMap } from '../../lib/gameArt';
-import { featuredGroups, POST_PAGE_SIZE } from '../../lib/tags';
+import { gameImage, latestPostImageMap } from '../../lib/gameArt';
+import { breadcrumbSchema, listSchema } from '../../lib/seo';
+import { featuredGroups, POST_PAGE_SIZE, tagSlug } from '../../lib/tags';
 
 export async function getStaticPaths() {
   const pageSize = POST_PAGE_SIZE;
@@ -53,7 +54,6 @@ export async function getStaticPaths() {
     const path = pagePath(filterPath, number);
     return path ? `/cap-nhat/${encodeURI(path)}/` : '/cap-nhat/';
   };
-  const tags = filters.map(({ label, path }) => ({ label, path, href: pageHref(path, 1) }));
 
   // Thanh chip chỉ hiện tag nổi bật (top 20 theo số bài); các trang lọc chu-de vẫn giữ nguyên.
   const featuredTags = [
@@ -72,7 +72,9 @@ export async function getStaticPaths() {
         props: {
           posts: filteredPosts.slice(index * pageSize, currentPage * pageSize),
           postImageMap,
-          tags: featuredTags,
+          tags: path ? featuredTags : featuredTags
+            .filter(({ path, label }) => !path || tagSlug(label))
+            .map((tag) => ({ ...tag, href: tag.path ? `/tags/${tagSlug(tag.label)}/` : tag.href })),
           activeTag: path,
           tagLabel: label,
           currentPage,
@@ -87,22 +89,34 @@ export async function getStaticPaths() {
 
 const gameBySlug = Object.fromEntries(games.map((game) => [game.slug, game]));
 const { posts, postImageMap, tags, activeTag, tagLabel, currentPage, totalPages, previousHref, nextHref } = Astro.props;
-const title = activeTag ? `Bài viết về ${tagLabel}` : 'Tin game, hướng dẫn và cập nhật';
+const title = activeTag ? `Bài viết về ${tagLabel}` : 'Cập nhật mới, hướng dẫn và góc nhìn game';
 const description = activeTag
   ? `Bài viết, hướng dẫn và cập nhật về ${tagLabel} trên 9Gate.`
-  : 'Tin tức, hướng dẫn, bản cập nhật và sự kiện về game mobile, PC và console trên 9Gate.';
+  : 'Đọc bài cập nhật, hướng dẫn, sự kiện và góc nhìn về game mobile, PC và console trên 9Gate.';
+const site = Astro.site ?? Astro.url;
+const crumbs = [{ name: 'Cập nhật mới', path: '/cap-nhat/' }];
+if (activeTag) crumbs.push({ name: tagLabel, path: `/cap-nhat/${activeTag}/` });
+if (currentPage > 1) crumbs.push({ name: `Trang ${currentPage}`, path: Astro.url.pathname });
+const jsonLd = [
+  breadcrumbSchema(site, crumbs),
+  listSchema(site, title, posts.map((post: { title: string; slug: string }) => ({ name: post.title, path: `/p/${post.slug}/` })), (currentPage - 1) * POST_PAGE_SIZE),
+];
+const first = posts[0];
+const ogImage = first ? first.image || gameImage(gameBySlug[first.gameSlug], postImageMap[first.gameSlug]) : undefined;
 ---
 
 <Layout
   title={currentPage > 1 ? `${title} · Trang ${currentPage}` : title}
   description={currentPage > 1 ? `Trang ${currentPage}. ${description}` : description}
+  jsonLd={jsonLd}
+  ogImage={ogImage}
   robots={activeTag ? 'noindex, follow' : undefined}
   keywords="blog game, bài viết về game, góc nhìn game"
 >
   <div class="py-6">
     <section class="content-panel" aria-labelledby="updates-heading">
       <h1 id="updates-heading" class="text-3xl sm:text-4xl font-extrabold">{title}</h1>
-      <p class="muted mt-1">Bản vá, hướng dẫn và sự kiện mới nhất từ các game</p>
+      <p class="muted mt-1">Bản vá, hướng dẫn và sự kiện mới nhất từ các game. <a class="text-tap hover:underline" href="/tags/">Xem tất cả chủ đề</a></p>
 
       {tags.length > 1 && (
         <nav id="post-topics" class="relative flex gap-2 overflow-x-auto p-1 pb-2 mt-4 mb-4" aria-label="Chủ đề bài viết">

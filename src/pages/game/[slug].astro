@@ -4,7 +4,8 @@ import NewsRow from '../../components/NewsRow.astro';
 import GameGallery from '../../components/GameGallery.astro';
 import { getCollection } from 'astro:content';
 import games from '../../data/games.json';
-import { absoluteImage, seoSummary } from '../../lib/seo';
+import { absoluteImage } from '../../lib/seo';
+import { gameSearchMetadata } from '../../lib/gameSeo';
 import { gameArt, gameImage, latestPostImageMap } from '../../lib/gameArt';
 
 export async function getStaticPaths() {
@@ -52,8 +53,7 @@ const relatedGames = games
 const site = Astro.site ?? Astro.url;
 const gameUrl = new URL(Astro.url.pathname, site).href;
 const shareImage = absoluteImage(gameImage(game, postImg), site);
-const description = seoSummary(game.seoDescription?.trim() || game.description?.trim()
-  || [game.name, game.genre, platText, game.publisher].filter(Boolean).join(' · '));
+const { title: seoTitle, description } = gameSearchMetadata(game, catLabel);
 
 const videoLabel = game.trailerType === 'gameplay' ? 'Video trải nghiệm' : game.trailerType === 'intro' ? 'Video giới thiệu' : 'Trailer';
 const jsonLd = [
@@ -136,11 +136,10 @@ const secondary: Act[] = [
 ---
 
 <Layout
-  title={game.seoTitle || `${game.name} | 9Gate`}
+  title={seoTitle}
   description={description}
   keywords={game.seoKeywords}
   ogImage={shareImage}
-  ogType="article"
   jsonLd={jsonLd}
 >
   <div class="py-6">

@@ -27,6 +27,7 @@ export const GET: APIRoute = async ({ site, url }) => {
   type Entry = { path: string; image?: string };
   const entries: Entry[] = [
     { path: '/' },
+    { path: '/tags/' },
     ...categories.flat().map((path) => ({ path })),
     ...Array.from({ length: Math.max(1, Math.ceil(posts.length / POST_PAGE_SIZE)) }, (_, index) => ({
       path: index === 0 ? '/cap-nhat/' : `/cap-nhat/${index + 1}/`,

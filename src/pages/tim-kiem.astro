@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Tìm kiếm game và bài viết" description="Tìm game hoặc bài viết trên 9Gate bằng tên, nền tảng, thể loại hay từ khóa tiếng Việt có dấu hoặc không dấu." robots="noindex, follow">
+  <section class="content-panel mt-6" aria-labelledby="search-heading">
+    <h1 id="search-heading" class="text-3xl font-extrabold">Tìm kiếm game và bài viết</h1>
+    <form action="/tim-kiem/" method="get" role="search" aria-label="Tìm trong 9Gate" class="flex flex-wrap gap-3 my-5">
+      <input name="q" id="search-page-query" type="search" aria-label="Từ khóa" placeholder="Tên game, thể loại hoặc chủ đề…" required maxlength="120" class="sf rounded-xl px-4 py-2 min-w-0 flex-1" />
+      <button type="submit" class="btn btn-p">Tìm kiếm</button>
+    </form>
+    <p class="muted mb-3 text-sm" id="search-page-status" role="status">Nhập từ khóa để bắt đầu tìm kiếm.</p>
+    <div id="search-page-results" class="grid gap-2 sm:grid-cols-2"></div>
+    <button type="button" id="search-page-more" class="btn btn-o mt-5" hidden>Xem thêm kết quả</button>
+    <noscript><p class="muted">Bật JavaScript để tìm kiếm, hoặc xem <a class="text-tap" href="/mobile/">Game Mobile</a>, <a class="text-tap" href="/pc/">PC / Console</a> và <a class="text-tap" href="/cap-nhat/">Cập nhật mới</a>.</p></noscript>
+  </section>
+</Layout>
+
+<script>
+  import { loadSearchIndex, searchEntries, searchResultLink, type SearchEntry } from '../lib/siteSearch';
+
+  const input = document.querySelector<HTMLInputElement>('#search-page-query')!;
+  const status = document.querySelector('#search-page-status')!;
+  const list = document.querySelector('#search-page-results')!;
+  const more = document.querySelector<HTMLButtonElement>('#search-page-more')!;
+  const query = (new URLSearchParams(location.search).get('q') ?? '').trim().slice(0, 120);
+  input.value = query;
+  let results: SearchEntry[] = [];
+  let shown = 0;
+
+  function appendResults() {
+    const batch = results.slice(shown, shown + 24);
+    list.append(...batch.map(searchResultLink));
+    shown += batch.length;
+    more.hidden = shown >= results.length;
+  }
+
+  more.addEventListener('click', appendResults);
+  if (query) {
+    status.textContent = 'Đang tìm kiếm…';
+    loadSearchIndex().then((index) => {
+      results = searchEntries(index, query);
+      status.textContent = results.length
+        ? `${results.length} kết quả cho “${query}”`
+        : `Không tìm thấy kết quả cho “${query}”.`;
+      appendResults();
+    }).catch(() => {
+      status.textContent = 'Không tải được dữ liệu tìm kiếm. Bạn có thể thử lại.';
+    });
+  }
+</script>
