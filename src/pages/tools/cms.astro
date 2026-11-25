@@ -169,14 +169,11 @@ details{border:1px solid var(--ln);border-radius:12px;padding:12px 14px;margin-b
 
 <!-- CONNECT -->
 <section class="v" id="v-conn">
-  <h1>Kết nối</h1><p class="sub">Lưu trên trình duyệt này. Worker dùng Cloudflare Access, nên cần đăng nhập trước.</p>
+  <h1>Kết nối</h1><p class="sub">CMS tự dùng phiên Cloudflare Access để kết nối GitHub.</p>
   <div class="card">
-    <div class="f"><label>Worker proxy URL</label><input id="cw"></div>
-    <div class="g2"><div class="f"><label>GitHub repo (owner/repo)</label><input id="cr"></div><div class="f"><label>Nhánh</label><input id="cb"></div></div>
     <div class="f"><label for="cs">Tên miền chính thức</label><input id="cs" value={siteOrigin} readonly title="Đổi thiết lập site trong astro.config.mjs"></div>
-    <div class="f"><label>Nơi đọc games.json</label><input id="cj" placeholder="/tools/games-data.json"><div class="hint">Nếu không tải được, CMS đọc từ GitHub raw. Bạn cũng có thể nhập file ở danh sách game.</div></div>
-    <div class="f"><label for="image-provider">Dịch vụ lưu ảnh</label><select id="image-provider"><option value="imgbb">ImgBB</option><option value="freeimage">Freeimage.host</option></select><p class="hint">Tải và rehost ảnh qua Worker đã cấu hình.</p></div>
-    <button class="btn p" id="cok">Lưu kết nối</button>
+    <button type="button" class="btn p" id="cok">Kiểm tra kết nối</button>
+    <p class="hint" id="connection-status" role="status"></p>
   </div>
 </section>
 </main>
