@@ -452,7 +452,7 @@ P("ppush").onclick = () => {
     toast("Đã đăng bài lên GitHub.", "o");
     if (notifyGoogle) {
       try {
-        await api("/google-index", { articleUrl: new URL(`/p/${slug}/`, $("#cs").value).href });
+        await api("/google-index", { articleUrl: new URL(`/p/${slug}/`, connectionButton.dataset.siteOrigin || $("#cs")?.value || new URL(cfg.w).origin).href });
         toast("Đã báo Google index.", "o");
       } catch (error) {
         toast("Đã đăng bài, nhưng báo Google lỗi: " + error.message, "e");
