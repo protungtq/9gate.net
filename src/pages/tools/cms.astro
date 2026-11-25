@@ -73,7 +73,8 @@ details{border:1px solid var(--ln);border-radius:12px;padding:12px 14px;margin-b
   <div class="logo">9<b>Gate</b> CMS<small>Quản lý game và bài viết</small></div>
   <button class="nav on" data-v="games">Game <i id="nG">0</i></button>
   <button class="nav" data-v="posts">Bài viết</button>
-  <button class="nav" data-v="conn">Kết nối</button>
+  <button type="button" class="nav" id="cok" data-site-origin={siteOrigin}>Kiểm tra kết nối</button>
+  <p class="hint" id="connection-status" role="status"></p>
   <div class="sp"></div>
   <button class="nav" id="theme" aria-label="Đổi giao diện sáng hoặc tối">Giao diện sáng / tối</button>
 </aside>
@@ -167,15 +168,6 @@ details{border:1px solid var(--ln);border-radius:12px;padding:12px 14px;margin-b
   </div>
 </section>
 
-<!-- CONNECT -->
-<section class="v" id="v-conn">
-  <h1>Kết nối</h1><p class="sub">CMS tự dùng phiên Cloudflare Access để kết nối GitHub.</p>
-  <div class="card">
-    <div class="f"><label for="cs">Tên miền chính thức</label><input id="cs" value={siteOrigin} readonly title="Đổi thiết lập site trong astro.config.mjs"></div>
-    <button type="button" class="btn p" id="cok">Kiểm tra kết nối</button>
-    <p class="hint" id="connection-status" role="status"></p>
-  </div>
-</section>
 </main>
 </div>
 <div class="fix" id="fix"><span id="fs"></span><button class="btn" id="imp">Nhập games.json</button><button class="btn" id="exp">Tải games.json</button><button class="btn p" id="push">Đẩy lên GitHub</button><input type="file" id="file" accept=".json" hidden></div>
