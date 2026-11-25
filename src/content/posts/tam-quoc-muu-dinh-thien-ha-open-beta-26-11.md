@@ -14,7 +14,7 @@ tags:
   - SLG
 ---
 
-**Game Tam Quốc: Mưu Định Thiên Hạ** mở Open Beta tại Việt Nam vào **ngày mai, 26/11**, trên cả iOS lẫn Android. Đây là game SLG Tam Quốc thế hệ mới do LOULAN Entertainment phát hành, đăng ký trước đã mở từ 12/11. Điểm mình thấy khác biệt nhất so với mặt bằng SLG Tam Quốc hiện tại: game không bắt người chơi chạy theo lực chiến bằng mọi giá, mà đẩy mạnh vai trò của từng người trong liên minh — mỗi người chọn một nghề, phối hợp với nhau mới thắng được trận lớn.
+**Game Tam Quốc: Mưu Định Thiên Hạ** sẽ mở Open Beta tại Việt Nam vào **ngày mai, 26/11**, trên cả iOS lẫn Android. Đây là game SLG Tam Quốc thế hệ mới do LOULAN Entertainment phát hành, đăng ký trước đã mở từ 12/11. Điểm mình thấy khác biệt nhất so với mặt bằng SLG Tam Quốc hiện tại: game không bắt người chơi chạy theo lực chiến bằng mọi giá, mà đẩy mạnh vai trò của từng người trong liên minh — mỗi người chọn một nghề, phối hợp với nhau mới thắng được trận lớn.
 
 Thông tin nhanh:
 
