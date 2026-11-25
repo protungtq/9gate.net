@@ -73,6 +73,7 @@ details{border:1px solid var(--ln);border-radius:12px;padding:12px 14px;margin-b
   <div class="logo">9<b>Gate</b> CMS<small>Quản lý game và bài viết</small></div>
   <button class="nav on" data-v="games">Game <i id="nG">0</i></button>
   <button class="nav" data-v="posts">Bài viết</button>
+  <button type="button" class="nav" data-v="history">Lịch sử</button>
   <button type="button" class="nav" id="cok" data-site-origin={siteOrigin}>Kiểm tra kết nối</button>
   <p class="hint" id="connection-status" role="status"></p>
   <div class="sp"></div>
@@ -168,6 +169,20 @@ details{border:1px solid var(--ln);border-radius:12px;padding:12px 14px;margin-b
   </div>
 </section>
 
+<section class="v" id="v-history">
+  <h1>Lịch sử</h1>
+  <div class="card">
+    <div class="bar">
+      <label for="history-scope">Nội dung</label>
+      <select id="history-scope"><option value="posts">Bài viết</option><option value="games">Game</option></select>
+      <button type="button" class="btn" id="history-prev" disabled>Trang trước</button>
+      <button type="button" class="btn" id="history-next" disabled>Trang sau</button>
+    </div>
+    <p id="history-status" role="status"></p>
+    <div id="history-commits"></div>
+    <div id="history-detail"></div>
+  </div>
+</section>
 </main>
 </div>
 <div class="fix" id="fix"><span id="fs"></span><button class="btn" id="imp">Nhập games.json</button><button class="btn" id="exp">Tải games.json</button><button class="btn p" id="push">Đẩy lên GitHub</button><input type="file" id="file" accept=".json" hidden></div>
