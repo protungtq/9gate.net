@@ -47803,5 +47803,37 @@
     "description": "RPG thế giới mở huyền thoại của Piranha Bytes lần đầu lên console: Myrtana chìm trong chiến tranh giữa orc, quân nổi dậy và hội Hashishin, số phận đại lục nằm trong tay anh hùng Vô Danh. Ra mắt 24/11/2026 trên PS5, PS4, Xbox One và Xbox Series X|S, tích hợp Community Patch 1.75.",
     "website": "https://gothic3classic.thqnordic.com/",
     "provisionalRating": 8.3
+  },
+  {
+    "slug": "tam-quoc-muu-dinh-thien-ha",
+    "name": "Tam Quốc: Mưu Định Thiên Hạ",
+    "publisher": "LOULAN Entertainment",
+    "genre": "Chiến thuật, SLG",
+    "platforms": [
+      "Mobile"
+    ],
+    "category": "mobile",
+    "icon": "https://i.postimg.cc/6pj7YQbt/muu-logo.webp",
+    "cover": "https://i.postimg.cc/L4L1225f/muu-cover.webp",
+    "trailer": "",
+    "description": "Game mobile SLG chiến thuật thế hệ mới lấy bối cảnh Tam Quốc, đề cao tính công bằng: hệ thống 6 nghề nghiệp, bản đồ Sa Bàn rộng lớn, liên minh tranh bá. Bản Việt Nam do LOULAN Entertainment phát hành, mở Open Beta ngày 26/11/2026.",
+    "website": "https://www.newslg.vn/",
+    "provisionalRating": 8.3
+  },
+  {
+    "slug": "warhammer-40000-dawn-of-war-iv",
+    "name": "Warhammer 40,000: Dawn of War IV",
+    "publisher": "Deep Silver",
+    "genre": "Chiến thuật, RTS",
+    "platforms": [
+      "PC"
+    ],
+    "category": "pc",
+    "icon": "https://i.postimg.cc/1XGnHc2w/dow4-logo-250.webp",
+    "cover": "https://i.postimg.cc/02GDdPqR/dow4-thumb-750.webp",
+    "trailer": "https://www.youtube.com/watch?v=YVmXDMM48zg",
+    "description": "Game chiến thuật thời gian thực trở lại cội nguồn dòng Dawn of War: 4 phe, 4 chiến dịch với hơn 70 nhiệm vụ trên hành tinh Kronus. Do KING Art Games phát triển, Deep Silver phát hành, ra mắt 3/12/2026 trên PC (Steam).",
+    "website": "https://dawnofwar4.com/",
+    "provisionalRating": 8.7
   }
 ]
