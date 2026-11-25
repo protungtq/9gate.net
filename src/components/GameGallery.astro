@@ -1,0 +1,174 @@
+---
+interface Props {
+  name: string;
+  screenshots: string[];
+}
+
+const { name, screenshots } = Astro.props;
+---
+
+<section id="anh" class="game-panel scroll-mt-24 p-4 sm:p-5" data-game-gallery>
+  <h2 class="section-title mb-3">Ảnh trong game</h2>
+  <div class="flex gap-3 overflow-x-auto pb-2">
+    {screenshots.map((src, index) => (
+      <a href={src} target="_blank" rel="noopener noreferrer" data-gallery-image class="block shrink-0 cursor-zoom-in rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-tap">
+        <img src={src} alt={`Ảnh ${index + 1} của ${name}`} loading="lazy" class="h-40 w-auto rounded-lg sm:h-52" />
+      </a>
+    ))}
+  </div>
+  <dialog class="gallery-viewer" aria-labelledby="gallery-title">
+    <header class="viewer-toolbar">
+      <div class="viewer-label">
+        <h3 id="gallery-title">{name}</h3>
+        <span class="viewer-count" data-gallery-count aria-live="polite"></span>
+      </div>
+      <button type="button" data-gallery-zoom aria-label="Phóng to ảnh" aria-pressed="false" title="Phóng to hoặc thu nhỏ">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5M7 10h6"/></svg>
+      </button>
+      <button type="button" data-gallery-close aria-label="Đóng ảnh" title="Đóng (Esc)" autofocus>
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg>
+      </button>
+    </header>
+
+    <div class="viewer-stage">
+      <div class="viewer-photo" data-gallery-photo>
+        <img data-gallery-full alt="" draggable="false" />
+        <p data-gallery-error role="status" hidden>Không tải được ảnh này.</p>
+      </div>
+      {screenshots.length > 1 && (
+        <>
+          <button type="button" class="viewer-prev" data-gallery-step="-1" aria-label="Ảnh trước" title="Ảnh trước">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <button type="button" class="viewer-next" data-gallery-step="1" aria-label="Ảnh tiếp theo" title="Ảnh tiếp theo">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </>
+      )}
+    </div>
+  </dialog>
+</section>
+
+<style>
+  :global(html:has(.gallery-viewer[open])) {
+    overflow: hidden;
+  }
+
+  .gallery-viewer {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    background: #101113;
+    color: #fff;
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+  }
+
+  .gallery-viewer[open] {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+  }
+
+  .viewer-toolbar {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #ffffff20;
+  }
+
+  .viewer-label {
+    flex: 1;
+    min-width: 0;
+    font-weight: 600;
+  }
+
+  .viewer-label h3 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .viewer-count {
+    display: block;
+    font-size: 0.8rem;
+    color: #b8bbc1;
+  }
+
+  .gallery-viewer button {
+    display: grid;
+    flex: none;
+    width: 2.75rem;
+    height: 2.75rem;
+    place-items: center;
+    border-radius: 50%;
+    background: #303238;
+  }
+
+  .gallery-viewer button:not(:disabled):is(:hover, :focus-visible, [aria-pressed="true"]) {
+    background: #53565f;
+  }
+
+  .gallery-viewer button:disabled {
+    opacity: 0.4;
+  }
+
+  .gallery-viewer svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .viewer-stage {
+    position: relative;
+    min-height: 0;
+    padding-inline: clamp(0.25rem, 5vw, 4rem);
+  }
+
+  .viewer-photo {
+    display: flex;
+    height: 100%;
+    padding: 0.75rem;
+    overflow: auto;
+    touch-action: pan-y;
+  }
+
+  .viewer-photo > :is(img, p) {
+    flex-shrink: 0;
+    margin: auto;
+  }
+
+  .viewer-photo img {
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .viewer-photo[data-zoomed] {
+    touch-action: pan-x pan-y;
+  }
+
+  .viewer-photo[data-zoomed] img {
+    max-width: none;
+    max-height: none;
+  }
+
+  .viewer-stage > button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .viewer-prev { inset-inline-start: 0.5rem; }
+  .viewer-next { inset-inline-end: 0.5rem; }
+</style>
+
+<script>
+  import '../scripts/game-gallery';
+</script>

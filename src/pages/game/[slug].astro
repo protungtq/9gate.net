@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import NewsRow from '../../components/NewsRow.astro';
+import GameGallery from '../../components/GameGallery.astro';
 import { getCollection } from 'astro:content';
 import games from '../../data/games.json';
 import { absoluteImage, seoSummary } from '../../lib/seo';
@@ -257,16 +258,7 @@ const secondary: Act[] = [
         </section>
 
         {!!game.legacy?.screenshots?.length && (
-          <section id="anh" class="game-panel scroll-mt-24 p-4 sm:p-5">
-            <h2 class="section-title mb-3">Ảnh trong game</h2>
-            <div class="flex gap-3 overflow-x-auto pb-2">
-              {game.legacy.screenshots.map((src, index) => (
-                <a href={src} target="_blank" rel="noopener noreferrer" class="block shrink-0">
-                  <img src={src} alt={`Ảnh ${index + 1} của ${game.name}`} loading="lazy" class="h-40 w-auto rounded-lg sm:h-52" />
-                </a>
-              ))}
-            </div>
-          </section>
+          <GameGallery name={game.name} screenshots={game.legacy.screenshots} />
         )}
 
         {embedUrl && (
