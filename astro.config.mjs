@@ -49,6 +49,15 @@ function externalLinks() {
             else rel.add('nofollow');
 
             const attrs = node.attrs.filter(attr => attr.name !== 'target' && attr.name !== 'rel');
+            if (!url.searchParams.has('utm_source')) {
+              // Keep existing query bytes intact (some destinations use signed URLs).
+              const hashStart = href.indexOf('#');
+              const base = hashStart === -1 ? href : href.slice(0, hashStart);
+              const hash = hashStart === -1 ? '' : href.slice(hashStart);
+              const separator = !base.includes('?') ? '?' : /[?&]$/.test(base) ? '' : '&';
+              attrs.find(attr => attr.name === 'href').value =
+                base + separator + 'utm_source=' + site.hostname + hash;
+            }
             attrs.push({ name: 'target', value: '_blank' }, { name: 'rel', value: [...rel].join(' ') });
             const opening = serializeOuter({ ...node, attrs, childNodes: [] }).slice(0, -4);
             if (html.slice(tag.startOffset, tag.endOffset) !== opening) edits.push({ ...tag, opening });
