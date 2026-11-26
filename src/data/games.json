@@ -47869,5 +47869,21 @@
     "description": "MMORPG võ hiệp 3D từ IP Hiệp Khách Giang Hồ chính hãng, do SolaPlay phát hành tại Việt Nam. Ra mắt 9h sáng 26/11/2026 trên mobile.",
     "website": "https://www.yulgang.vn/index_pc.html",
     "provisionalRating": 8.4
+  },
+  {
+    "slug": "chu-cong-cuu-thanh",
+    "name": "Chủ Công Cứu Thành",
+    "publisher": "VTC Game",
+    "genre": "Thủ thành, Chiến thuật, Roguelike",
+    "platforms": [
+      "Mobile"
+    ],
+    "category": "mobile",
+    "icon": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinUZSjXN6_W5juZEntXsNA-KU_OsAep58lfSOMZp5mtFHadrkJ-c8EcvF0kBdFDAcfnwzLdthvnxKpQfTp1bZvjA00HmNWjXvdjy6S8q8nbf_Vs2Jg9CpmBAQ-ltheAPDULKbPS-ZkV4lVI3VEHR16Ghs4X2JJYgfnhUGQvkjRXeDvpApnhaPKNIj8tNo/s1600/logo-250.webp",
+    "cover": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdxNKaKiqy7S13R-J0ks2FOk5WnUsxiVmFrg07x4PZ4TwVggoG0btXub8UC1yjZID0CGs2fMz3bD8gpdIj-6KqrrDSqwpScpBBxKPVUSx8N680w7uFiYwWOxwM8wjo20F4Fuz74wWGC8E9z9UK6Fn-yv5BrWbvXoU_Rcrh7ofVD5811mX7nW3zw4Q35Zs/s1600/cover-750.webp",
+    "trailer": "",
+    "description": "Game thủ thành Tam Quốc kết hợp Roguelike, mỗi ván chỉ 5 phút, do VTC Game phát hành tại Việt Nam. Đang chuẩn bị ra mắt.",
+    "website": "https://www.facebook.com/chucongcuuthanhvtc",
+    "provisionalRating": 8.2
   }
 ]
