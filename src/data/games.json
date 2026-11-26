@@ -47837,5 +47837,21 @@
     "description": "Game chiến thuật thời gian thực trở lại cội nguồn dòng Dawn of War: 4 phe, 4 chiến dịch với hơn 70 nhiệm vụ trên hành tinh Kronus. Do KING Art Games phát triển, Deep Silver phát hành, ra mắt 3/12/2026 trên PC (Steam).",
     "website": "https://dawnofwar4.com/",
     "provisionalRating": 8.7
+  },
+  {
+    "slug": "hao-khi-nu-de",
+    "name": "Hào Khí Nữ Đế",
+    "publisher": "MYE",
+    "genre": "Nhập vai, Mô phỏng",
+    "platforms": [
+      "Mobile"
+    ],
+    "category": "mobile",
+    "icon": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyadRSU_zV9M1NGd24JAx0yuIeMhwtL_Q_2q6HFzmhpiV5yEav9-7j1kEdOlhqG0rkzIZUvsP2vmBU-rAoRtlG_4L6sDBzoBQu6O6YH_quGKg8Frgl0gDkDzN27ncTqdjJNpjn879aBhQMant5uiWF6ra6d4nnSl0DfvfD-ii_KU2UI-wFEy046vfBPU0/s1600/logo-250.webp",
+    "cover": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3IUOUjE8pCdgb6oGODAmSqdismi2cvnr3I7TOs5FyYpgLlFi2SZvmjYZU0xAwHcp9GqPw71vpF_NdAkUHlYZU0XZI80IumEA-V5Qla7WwT78t6KyH-LXQKZ8VHkOVFMw5NyYZM9k1DVDEVwnkD4MsHaWZAIKV48wxHifn4Dq1vAqVENQesysCGpk-iq0/s1600/cover-750.webp",
+    "trailer": "",
+    "description": "Game nhập vai mô phỏng quyền lực kết hợp thời trang cổ phong và xây dựng gia tộc, do MYE phát hành độc quyền tại Việt Nam. Mở Open Beta ngày 26/11/2026.",
+    "website": "https://migame.vn/",
+    "provisionalRating": 8.1
   }
 ]
