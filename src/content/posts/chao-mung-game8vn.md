@@ -22,3 +22,7 @@ Chào mừng bạn đến với **9Gate** — nơi mọi thứ đều xoay quanh
 Vì game thủ thường bắt đầu bằng một câu hỏi rất cụ thể: game này chơi thế nào, tải ở đâu, có gì mới? 9Gate được dựng để trả lời đúng những câu hỏi đó — mở trang game là thấy đủ, khỏi phải đào bới giữa một rừng thông tin không liên quan.
 
 Hãy bắt đầu bằng một vòng [Game Mobile](/mobile/) hoặc [Game PC / Console](/pc/), chọn một game bạn thích và bấm Theo dõi nhé!
+
+## 9Gate và Game8
+
+9Gate là trang game mới do cùng đội ngũ đứng sau [game8vn](https://game8.info/) xây dựng — bên [game8.vn](https://game8.info/) vẫn cập nhật tin game, hướng dẫn và đánh giá như trước, còn 9Gate tập trung vào kho game với từng trang game riêng. Thích đọc tin thì ghé game8, thích tra cứu game thì ở lại đây nhé!
