@@ -2,7 +2,7 @@
 title: "Hiệp Khách: Bảo Khí Trở Lại ra mắt hôm nay 26/11: vào game lên thẳng cấp 30, tặng 500 trứng vàng"
 description: "Hiệp Khách: Bảo Khí Trở Lại ra mắt 9h sáng nay 26/11 tại Việt Nam. MMORPG võ hiệp từ IP Yulgang chính hãng của SolaPlay, vào game lên thẳng cấp 30, giftcode yulgang88 và YG500."
 image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWCxxKeI7q9jIkpexC6_lyjz3Ll7Cwvewl6o_tpDQALGV0AU1MOBim4_8jD34V2uv-ykARARDh5RuslZWytju0MhAZ5D-V3TqzSeAO9yaoTzSXGAv2__AcHzTqsBsb85krcR-yaXlveJCIgtuZKkWcn0f9O8WlYovYPbu1Agf4JoIQKgaGH1B0L1RZfE8/s1600/cover-750.webp"
-tags: ["Hiệp Khách: Bảo Khí Trở Lại", "tải game Hiệp Khách: Bảo Khí Trở Lại", "SolaPlay", "cập nhật Hiệp Khách: Bảo Khí Trở Lại", "Nhập vai", "MMORPG"]
+tags: ["Hiệp Khách: Bảo Khí Trở Lại", "tải game Hiệp Khách: Bảo Khí Trở Lại", "SolaPlay", "Giftcode Hiệp Khách: Bảo Khí Trở Lại", "cập nhật Hiệp Khách: Bảo Khí Trở Lại", "Nhập vai", "MMORPG"]
 game: hiep-khach-bao-khi-tro-lai
 date: "2026-11-26"
 ---
