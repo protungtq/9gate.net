@@ -65,6 +65,9 @@ details{border:1px solid var(--ln);border-radius:12px;padding:12px 14px;margin-b
 #ai-result{margin-top:8px}
 @media(max-width:480px){.gi{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:8px}.gi .ac{grid-column:2 / -1;flex-direction:row}.fix{flex-wrap:wrap;gap:6px}.fix span{flex:0 0 100%}.fix .btn{padding:8px 10px}main{padding-bottom:155px}}
 @media(max-width:820px){.app{display:block}aside{position:static;height:auto;flex-direction:row;flex-wrap:wrap;padding:10px;border-right:0;border-bottom:1px solid var(--ln)}.logo{padding:6px 10px;width:100%}.sp{display:none}.fix{left:0}.g2,.g3{grid-template-columns:1fr}}
+.cms-post-list{padding:0;margin:0 0 12px;list-style:none}
+.cms-post-list li{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid var(--ln)}
+.cms-post-list .btn{flex:none}
 </style>
 </head>
 <body>
@@ -114,6 +117,17 @@ details{border:1px solid var(--ln);border-radius:12px;padding:12px 14px;margin-b
 
 <!-- POSTS -->
 <section class="v" id="v-posts">
+  <div class="card" id="post-library">
+    <h2>Danh sách bài viết</h2>
+    <div class="f">
+      <label for="post-search">Tìm theo tiêu đề</label>
+      <input id="post-search" type="search" placeholder="Nhập tên bài viết">
+    </div>
+    <p id="post-list-status" class="hint" role="status"></p>
+    <ul id="post-list" class="cms-post-list"></ul>
+    <button class="btn" type="button" id="post-list-more" hidden>Xem thêm</button>
+    <button class="btn" type="button" id="post-list-retry" hidden>Thử lại</button>
+  </div>
   <h1>Bài viết cập nhật</h1><p class="sub">Mỗi bài là một file Markdown trong <code>src/content/posts/</code>.</p>
   <div class="card" style="padding:14px"><div class="bar" style="margin:0"><input id="lp" placeholder="Dán link bài hoặc nhập slug để mở bài đã đăng"><button class="btn" id="lo">Mở bài</button><button class="btn d" id="ld">Xóa bài</button><button class="btn" id="ln">Bài mới</button><button class="btn" id="import-post">Nhập .md</button><input type="file" id="post-file" accept=".md,.markdown,text/markdown" hidden></div></div>
   <div class="card">
