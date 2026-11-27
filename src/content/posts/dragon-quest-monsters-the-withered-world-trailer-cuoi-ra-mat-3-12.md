@@ -1,7 +1,7 @@
 ---
 title: "Dragon Quest Monsters: The Withered World tung trailer cuối, ra mắt 3/12 trên PS5, Xbox, Switch 2 và PC"
 description: "Dragon Quest Monsters: The Withered World tung trailer cuối trước ngày ra mắt 3/12. Bản Deluxe chơi sớm từ 1/12, demo miễn phí đã có trên Steam, PS5, Xbox và Switch 2."
-image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipzJz6HfW0SYas-jByAXfgqxP7T73BZ55iu4anFqaTt_AkTleox9ax1JdjSX-t90VaVZaVM8ujEOnUQ_41wYM4smNZGVll9Togx6iDd8g3GtbWsuVTuDO2WY1p54-i5XmLybrzE3SJrbpaZnU3giAWXeiFqmasoqBj-RR5vvrDRIo3ajXlBGc5pMRKhhQ/s1600/dqm-bg.webp"
+image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRa_afbeHitn1LkhLJrx4M_3pRxQfxc70OKqvnZ1ccWyLpcrfC6m9JIQph0QeOW8LDUCCm9L5opSrx6OHsTFksOmxCg_5W1r3aqnO_mwv2iG5ilBGFpKfyjXqPsFcu55gSSj4trStXW4dTOokra84SuPk3KPbf7j5gr4oDInlx0rwo-m4aX7xPHYndxTQ/s1600/dqm-thumb750.webp"
 tags: ["DRAGON QUEST MONSTERS: The Withered World", "tải game DRAGON QUEST MONSTERS: The Withered World", "Square Enix", "cập nhật DRAGON QUEST MONSTERS: The Withered World", "Nhập vai", "Phiêu lưu"]
 game: dragon-quest-monsters-the-withered-world
 date: "2026-11-27"
