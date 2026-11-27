@@ -352,7 +352,7 @@ function postSlug(value) {
     }
   }
   const slug = path.replace(/\.(?:md|markdown)$/i, "");
-  return validSlug.test(slug) ? slug : "";
+  return validSlug.test(slug) || /^[a-z0-9][a-z0-9_-]*$/i.test(slug) ? slug : "";
 }
 
 async function runPostAction(action, errorMessage) {
@@ -400,8 +400,7 @@ P("post-file").onchange = async () => {
   }
 };
 
-P("lo").onclick = () => {
-  const slug = postSlug(P("lp").value || P("pslug").value);
+function openPost(slug, focusEditor = false) {
   if (!slug) return toast("Nhập slug hoặc link bài viết hợp lệ.", "e");
   if (!canReplaceDraft()) return;
   const before = snapshot();
@@ -413,9 +412,11 @@ P("lo").onclick = () => {
     clearDraft();
     fillPost(metadata, body, slug);
     P("lp").value = slug;
+    if (focusEditor) P("ptitle").focus();
     toast("Đã mở bài viết.", "o");
   }, "Không mở được bài");
-};
+}
+P("lo").onclick = () => openPost(postSlug(P("lp").value || P("pslug").value));
 
 P("ld").onclick = () => {
   const slug = postSlug(P("lp").value || P("pslug").value);
@@ -425,6 +426,7 @@ P("ld").onclick = () => {
   runPostAction(async () => {
     await api("/github-delete", { filename, path: "src/content/posts/" + filename });
     P("lp").value = "";
+    refreshPostList(slug);
     toast("Đã xóa bài viết. Bản nháp trên máy vẫn còn nếu đã lưu.", "o");
   }, "Xóa thất bại");
 };
@@ -433,7 +435,7 @@ P("ppush").onclick = () => {
   const title = P("ptitle").value.trim();
   const slug = P("pslug").value.trim() || slugify(title);
   if (!title) return toast("Nhập tiêu đề bài viết.", "e");
-  if (!validSlug.test(slug)) return toast("Slug chỉ dùng chữ thường, số và dấu gạch ngang.", "e");
+  if (!validSlug.test(slug) && !(slug === P("lp").value && postSlug(slug) === slug)) return toast("Slug chỉ dùng chữ thường, số và dấu gạch ngang.", "e");
   if (!P("pdate").value) return toast("Chọn ngày xuất bản.", "e");
   const filename = slug + ".md";
   if (!confirm(`Đăng hoặc ghi đè ${filename} lên ${cfg.r} (${cfg.b})?`)) return;
@@ -449,6 +451,7 @@ P("ppush").onclick = () => {
       P("lp").value = slug;
       clearDraft();
     }
+    refreshPostList(slug, title);
     toast("Đã đăng bài lên GitHub.", "o");
     if (notifyGoogle) {
       try {
@@ -639,4 +642,80 @@ if (historyView) {
   scope.onchange = () => { page = 1; loadHistory(); };
   previous.onclick = () => { page -= 1; loadHistory(); };
   next.onclick = () => { page += 1; loadHistory(); };
+}
+
+
+const postLibrary = P("post-library");
+const postEdits = new Map();
+let publishedPosts;
+function refreshPostList(slug, title) {
+  postEdits.set(slug, title);
+  if (publishedPosts) renderPostList();
+}
+
+let visiblePostCount = 30;
+function renderPostList() {
+  const search = slugify(P("post-search").value).replaceAll("-", " ");
+  const posts = new Map(publishedPosts);
+  for (const [slug, title] of postEdits) {
+    if (title === undefined) posts.delete(slug);
+    else posts.set(slug, title);
+  }
+
+  const words = search.split(" ").filter(Boolean);
+  const matches = [...posts].filter(([, title]) => {
+    const normalized = slugify(title).replaceAll("-", " ");
+    return words.every(word => normalized.includes(word));
+  }).sort((a, b) => a[1].localeCompare(b[1], "vi"));
+
+  P("post-list").replaceChildren(...matches.slice(0, visiblePostCount).map(([slug, title]) => {
+    const item = document.createElement("li");
+    const name = document.createElement("span");
+    name.textContent = title;
+    const edit = document.createElement("button");
+    edit.type = "button";
+    edit.className = "btn";
+    edit.textContent = "Sửa";
+    edit.setAttribute("aria-label", "Sửa bài " + title);
+    edit.onclick = () => openPost(slug, true);
+    item.append(name, edit);
+    return item;
+  }));
+  P("post-list-status").textContent = matches.length ? matches.length + " bài viết" : "Không tìm thấy bài viết.";
+  P("post-list-more").hidden = matches.length <= visiblePostCount;
+}
+
+let loadingPosts = false;
+async function loadPostList() {
+  if (loadingPosts || publishedPosts) return;
+  loadingPosts = true;
+  P("post-list-retry").hidden = true;
+  P("post-list-status").textContent = "Đang tải danh sách bài…";
+  try {
+    const response = await fetch("/search-index.json", { cache: "no-cache" });
+    if (!response.ok) throw new Error("HTTP " + response.status);
+    const entries = await response.json();
+    publishedPosts = new Map(entries.filter(entry =>
+      typeof entry.t === "string" && /^[/]p[/][a-z0-9_-]+[/]$/i.test(entry.u)
+    ).map(entry => [entry.u.slice(3, -1), entry.t]));
+    renderPostList();
+  } catch {
+    P("post-list-status").textContent = "Chưa tải được danh sách bài.";
+    P("post-list-retry").hidden = false;
+  } finally {
+    loadingPosts = false;
+  }
+}
+
+if (postLibrary) {
+  $('[data-v="posts"]').addEventListener("click", loadPostList);
+  P("post-search").addEventListener("input", () => {
+    visiblePostCount = 30;
+    if (publishedPosts) renderPostList();
+  });
+  P("post-list-more").onclick = () => {
+    visiblePostCount += 30;
+    renderPostList();
+  };
+  P("post-list-retry").onclick = loadPostList;
 }
