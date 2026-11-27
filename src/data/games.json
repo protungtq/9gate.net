@@ -47989,5 +47989,25 @@
     "description": "Game chiến thuật nhẹ nhàng kết hợp cờ tự động và roguelike: leo tháp bí ẩn, thu thập trang bị và di vật, ghép quân cờ để tạo ra những tổ hợp độc đáo của riêng mình.",
     "website": "https://store.steampowered.com/app/2123460/Auto_Chess_Souls/",
     "rating": 8.1
+  },
+  {
+    "category": "pc",
+    "cover": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipzJz6HfW0SYas-jByAXfgqxP7T73BZ55iu4anFqaTt_AkTleox9ax1JdjSX-t90VaVZaVM8ujEOnUQ_41wYM4smNZGVll9Togx6iDd8g3GtbWsuVTuDO2WY1p54-i5XmLybrzE3SJrbpaZnU3giAWXeiFqmasoqBj-RR5vvrDRIo3ajXlBGc5pMRKhhQ/s1600/dqm-bg.webp",
+    "description": "Nhập vai nuôi quái của Square Enix: vào vai hai monster wrangler trẻ Bianca và Nera, kết bạn với quái vật trong series Dragon Quest, nuôi lớn và phối giống để tạo ra quái mới, rồi đưa đội hình đi đấu online với người chơi khắp thế giới.",
+    "genre": "Nhập vai, Phiêu lưu",
+    "icon": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6_-thwpPCHDdjIo-r7DDPTHZZ-QNDNDBnOkmiIAtnypGsTBd17Q4kyCCSsptti_kvQTxjpIrLIFPDFSoBT_GR1KCiPkQIuIIo5AlCmIanQeiE_NFvBN_AiTyVtYHUKklO86fbg3k-CGZ9QDqjJYW7e6PUIzXJfxGLWvaH3lnp0kOI375NpjdfyMBP3Ds/s1600/dqm-icon.webp",
+    "name": "DRAGON QUEST MONSTERS: The Withered World",
+    "platforms": [
+      "PC",
+      "PlayStation 5",
+      "Xbox Series X|S",
+      "Nintendo Switch 2",
+      "Nintendo Switch"
+    ],
+    "publisher": "Square Enix",
+    "rating": 8.4,
+    "slug": "dragon-quest-monsters-the-withered-world",
+    "trailer": "https://www.youtube.com/watch?v=GqoZZ-DcEtQ",
+    "website": "https://store.steampowered.com/app/3681610/DRAGON_QUEST_MONSTERS_The_Withered_World/"
   }
 ]
