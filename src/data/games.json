@@ -47895,5 +47895,99 @@
     "seoTitle": "Chủ Công Cứu Thành VTC - Tải game và nhận giftcode ngay hôm nay",
     "seoDescription": "Chủ Công Cứu Thành VTC - Game thủ thành Tam Quốc kết hợp Roguelike, mỗi ván chỉ 5 phút định thắng thua, bản lĩnh và may mắn sẽ định đoạt kết quả, tựa game do VTC Game phát hành tại Việt Nam.",
     "seoKeywords": "Chủ Công Cứu Thành VTC, Chủ Công Cứu Thành, code game Chủ Công Cứu Thành VTC, tải game Chủ Công Cứu Thành VTC"
+  },
+  {
+    "slug": "phantom-blade-zero",
+    "name": "Phantom Blade Zero",
+    "publisher": "S-Game",
+    "genre": "Hành động, Nhập vai",
+    "platforms": [
+      "PC",
+      "PlayStation 5"
+    ],
+    "category": "pc",
+    "icon": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9LKdVwpyraEMMCoj226aSeIxGmO3-SVXmA0Cg0G_h96BZbj7Bgm6m4TjVEE7MagNXB7WhvERE-VB_-f7S5B536c9AjqayzThqbBVJuZIQ_h4_trmiMYWtowDppedj9y3rEnXIO3nsISiR9HsodSkXvSNfPSf7gt8GwLAgYa8NeGnGGjtp8vefpAyD28s/s1600/phantom-blade-zero-icon.webp",
+    "cover": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTlpqHgQb6NMROGp-RxzfGQw0nEpcPlLMsNQHGtKVa2xggpCkx1i9og66Wt8aJ_E4ReXZsvee3o9IBAKhiEpbcQaLJcdOJ4wChj2zDrez7NdrRgQsluC3uyeQvxSYPk6-eE2Fy1BBJ8M92nx5PM9BlBRgFefrOBDsYrYZbYv8l5LmLxvmMvpj-2cl0A-E/s1600/phantom-blade-zero-cover.webp",
+    "trailer": "https://www.youtube.com/watch?v=qgJBFa952mY",
+    "description": "Action RPG võ hiệp phong cách kungfupunk của S-Game: vào vai kiếm khách Soul chỉ còn 66 ngày để sống, chiến đấu qua thế giới võ lâm pha hơi thở steampunk bằng hệ thống chiến đấu Sha-Chi đầy tốc độ.",
+    "website": "https://pbz.s-game.com/",
+    "rating": 8.8
+  },
+  {
+    "slug": "warhammer-40000-space-marine-2",
+    "name": "Warhammer 40,000: Space Marine 2",
+    "publisher": "Focus Entertainment",
+    "genre": "Hành động, Bắn súng",
+    "platforms": [
+      "PC",
+      "PlayStation 5",
+      "Xbox Series X|S"
+    ],
+    "category": "pc",
+    "icon": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhB57Q3GOlZbg6l67hdD7wQvLSvBTspHLfvdJ8Ngd4YNYJ69J4wLrcldQmMw2s7TLQj3qB3QGhf6gW0IgNWm817oAxD7hmwLMEAZB48UueFaSwvTEpWnrlKh3Xj53Qc39rQKHx5rlO9EAzXcQKPAKQB7mAfVRwo2wVrIEQR44Hx80HZI_cYbiPWO6BI7gE/s1600/warhammer-40000-space-marine-2-icon.webp",
+    "cover": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNdw9nLdFplJIubaXdWJhJ3RwXUGf3XkrwKp7GHMEYqTIDtvBa8ANXMizCd3zkhfdL-IIo9kadV_iZm9mst__JF0Nx-iz-wWXC60zC4yUL1ekHcGN0N0xdVkDyWTQGH8WjVmn90K3fQQFq4W_4NkNAMXlaY3e5n7oZQFrlilow6mSvoddEJXV2jJFp2rg/s1600/warhammer-40000-space-marine-2-cover.webp",
+    "trailer": "https://www.youtube.com/watch?v=5RlbrV641WA",
+    "description": "Hành động bắn súng góc nhìn thứ ba trong vũ trụ Warhammer 40,000: vào vai Space Marine Titus chiến đấu chống bầy Tyranid và lực lượng Chaos, với chiến dịch co-op 3 người, chế độ PvE Operations và PvP Eternal War.",
+    "website": "https://www.focus-entmt.com/en/games/warhammer-40000-space-marine-2",
+    "rating": 8.7
+  },
+  {
+    "slug": "hitman-world-of-assassination",
+    "name": "HITMAN World of Assassination",
+    "publisher": "IO Interactive",
+    "genre": "Hành động, Lén lút",
+    "platforms": [
+      "PC",
+      "PlayStation 5",
+      "PlayStation 4",
+      "Xbox Series X|S",
+      "Xbox One",
+      "Nintendo Switch 2",
+      "Nintendo Switch",
+      "iOS",
+      "macOS"
+    ],
+    "category": "pc",
+    "icon": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwnlZ4n9fEbE0s4iQNPsu2IA_XASP7O7fDlZ9Gdqo1Vfw8307IzlOAY3pwOztKb0rhiGcHmU_lRvoJfxnQqCL4tP5O5t4rcszHSE-5McvKUHrw4k2DGF-KepM_Tl4E3_yd2DRPNwE58BqUsfxR8oWECKnam5tsJMRFxUQweXdULxySZ-w7xdMYf6op9tk/s1600/hitman-world-of-assassination-icon.webp",
+    "cover": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyUjqa2is06gBQu9FD97G4z5W699AC7sxHWH9Weku3syt4NuFrnfwKZUB_jv6a3oL09h36msFJGBEm-G8ajOZVhg0wMgjFHVsDttf69SsPg9QWiBqTxk1laaO94AhFz3QnawoTL2uBDuMl7-WXe6A0KN03sKroXxZH1_B7SBtmidqKz69wM55dySip2qM/s1600/hitman-world-of-assassination-cover.webp",
+    "trailer": "https://www.youtube.com/watch?v=ry9UrFINN8I",
+    "description": "HITMAN World of Assassination gộp ba phần HITMAN thành một gói duy nhất, đưa Agent 47 đi ám sát khắp thế giới trong những màn chơi sandbox tự do, cùng chế độ Freelancer và các nhiệm vụ Elusive Target giới hạn thời gian.",
+    "website": "https://www.hitman.com/",
+    "rating": 8.7
+  },
+  {
+    "slug": "rayman-legends-retold",
+    "name": "Rayman Legends Retold",
+    "publisher": "Ubisoft",
+    "genre": "Phiêu lưu, Đi cảnh",
+    "platforms": [
+      "PC",
+      "PlayStation 5",
+      "Xbox Series X|S",
+      "Nintendo Switch 2"
+    ],
+    "category": "pc",
+    "icon": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieqX_OEqaGndnfPKF6FdTD_WGZgCoQcxHPPmPRE6aCFn6pwA0JYbXq1o6CaKWUIgxXcoLpSn111W68o-puMar4AIbDhmwGBE9EZUTPqQ0OLckv_jvHznGJteuleY3qwwpepl9-8-vUpupD8LohmZq0_WBIvWu5dmosSN_gIdAHQ962lFTohjTRXGzGymE/s1600/rayman-legends-retold-icon.webp",
+    "cover": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtplgqvbr5SHn7iWkft7edWyEdJ0VDfdIT_JKNb-Quu-FB6OU7rrhucp2nsbP-7T4bRFSOmS1bMmJrB1M2zUz1lx6o9pohBwMSopco8eZdULLzEzr78Iynbp6Qc__SUcaHXDP0h4nmTnX1NBethaoUaqwRciQD6jlfBokkStDXTn_mHXX3zYAzdAEmtvE/s1600/rayman-legends-retold-trailer-cot-truyen-ra-mat-3-12-2026-inline.webp",
+    "trailer": "https://www.youtube.com/watch?v=hXLrSLQVv9w",
+    "description": "Bản làm lại của Rayman Legends (2013) với đồ họa 3D hoàn toàn mới, cốt truyện mới có lồng tiếng đầy đủ và vùng đất thứ sáu chưa từng xuất hiện.",
+    "website": "https://www.raymanlegendsretold.com/",
+    "rating": 8.4
+  },
+  {
+    "slug": "auto-chess-souls",
+    "name": "Auto Chess Souls",
+    "publisher": "JackyGames",
+    "genre": "Chiến thuật, Nhập vai",
+    "platforms": [
+      "PC"
+    ],
+    "category": "pc",
+    "icon": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilv6QOdXi96CF32xQKYh0AhfjsxP5IokFEbhxKl8GjHERCIvgsnViYHI-QI0xx0L46yGl8QpgnBdnNLAUGpD5bzulLjvxfhoiyVrJGXFtCN8qV0EUOeLLqWxQpNn_n4QzNJvpXWOekEcz3XfM2I0jbuU3y4VKA1AVA1NLKu1nVdZvCzyIgbJUM8pSd2UU/s1600/auto-chess-souls-icon.webp",
+    "cover": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOzihBzXjjtkoGI5JZSa0rxYxbeNhy8wpqlElhgccFHN99e4LTYK1DWmUqVmGRG27HVsidWbztpcuVPNfBXnBdG9CruV2M1xC81ExleiZEm1tKDD-aMWxALtVlr5L_nyj2cuKtNhfQzYpWGEQ1KZIvMIE0Ps-GgDfzyMcaAtN6tC-pFjdbYjSsUfHsa3k/s1600/auto-chess-souls-mien-phi-tren-steam-thumb.webp",
+    "trailer": "https://www.youtube.com/watch?v=mLcwGl1qLM0",
+    "description": "Game chiến thuật nhẹ nhàng kết hợp cờ tự động và roguelike: leo tháp bí ẩn, thu thập trang bị và di vật, ghép quân cờ để tạo ra những tổ hợp độc đáo của riêng mình.",
+    "website": "https://store.steampowered.com/app/2123460/Auto_Chess_Souls/",
+    "rating": 8.1
   }
 ]
