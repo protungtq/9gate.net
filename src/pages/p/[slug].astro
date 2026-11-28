@@ -6,6 +6,7 @@ import { getCollection, render } from 'astro:content';
 import games from '../../data/games.json';
 import { gameImage, latestPostImageMap } from '../../lib/gameArt';
 import { tagSlug } from '../../lib/tags';
+import { articleDate, articleDateMetadata, isNewsArticle } from '../../lib/news';
 import { absoluteImage, seoSummary } from '../../lib/seo';
 
 export async function getStaticPaths() {
@@ -24,11 +25,14 @@ const description = seoSummary(post.data.description?.trim() || title);
 const image = post.data.image ?? '';
 const tags: string[] = post.data.tags || [];
 const tagText = tags[0] || 'Bài viết';
-const publicationDate = post.data.date ? new Date(post.data.date) : undefined;
-const published = publicationDate && Number.isFinite(publicationDate.valueOf())
-  ? publicationDate.toISOString().slice(0, 10)
-  : undefined;
-const dateText = published ? publicationDate!.toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'UTC' }) : '';
+const publicationDate = articleDate(post.data.date);
+const published = articleDateMetadata(post.data.date);
+const updated = articleDateMetadata(post.data.updated);
+const modified = publicationDate && updated && Date.parse(updated) > publicationDate.getTime() ? updated : undefined;
+const displayDate = (value: string | Date) => new Date(value).toLocaleDateString('vi-VN', {
+  day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'Asia/Ho_Chi_Minh',
+});
+const dateText = publicationDate ? displayDate(publicationDate) : '';
 const originalAuthor = (post.data.legacyAuthor || '').trim();
 const authorName = originalAuthor || '9Gate';
 const editorialTeam = !originalAuthor || /^(9gate|bqt 9gate|admin|administrator)$/i.test(originalAuthor);
@@ -79,10 +83,11 @@ const homeUrl = new URL('/', site).href;
 const jsonLd = [
   {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": published && isNewsArticle(selfSlug, post.data.type) ? "NewsArticle" : "Article",
     "headline": title,
     "description": description,
     ...(published && { "datePublished": published }),
+    ...(modified && { "dateModified": modified }),
     "inLanguage": "vi-VN",
     "url": articleUrl,
     "mainEntityOfPage": { "@type": "WebPage", "@id": articleUrl },
@@ -141,6 +146,7 @@ const jsonLd = [
           <div class="flex flex-wrap items-center gap-2">
             <span class={`text-[11px] font-bold text-white rounded px-1.5 py-0.5 ${badge}`}>{tagText}</span>
             {published && <time class="text-sm muted" datetime={published}>{dateText}</time>}
+            {modified && <span class="text-sm muted">· Cập nhật <time datetime={modified}>{displayDate(modified)}</time></span>}
             <span class="text-sm muted">· {authorName}</span>
           </div>
           <h1 class="text-3xl sm:text-4xl font-extrabold leading-tight mt-3">{title}</h1>
