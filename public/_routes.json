@@ -1,6 +1,7 @@
 {
   "version": 1,
   "include": [
+    "/news-sitemap.xml",
     "/game/cn/*",
     "/game/h5/*",
     "/game/hk/*",
